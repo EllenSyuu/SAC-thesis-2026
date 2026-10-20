@@ -1,0 +1,12 @@
+^analysis$
+^data$
+^results$
+^docs$
+^\.github$
+^Makefile$
+^CITATION\.cff$
+^README\.md$
+^\.lintr$
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$

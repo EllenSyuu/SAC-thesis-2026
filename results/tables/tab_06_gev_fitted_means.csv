@@ -1,0 +1,97 @@
+season,period,station,model,mean
+AM,pre,Drummondville,Station-specific,20.8
+JJ,pre,Drummondville,Station-specific,26.14
+AS,pre,Drummondville,Station-specific,30.49
+ON,pre,Drummondville,Station-specific,23.48
+AM,post,Drummondville,Station-specific,22.25
+JJ,post,Drummondville,Station-specific,27.59
+AS,post,Drummondville,Station-specific,31.94
+ON,post,Drummondville,Station-specific,24.93
+AM,pre,Drummondville,Pooled,21.14
+JJ,pre,Drummondville,Pooled,27.1
+AS,pre,Drummondville,Pooled,29.5
+ON,pre,Drummondville,Pooled,23.79
+AM,post,Drummondville,Pooled,22.48
+JJ,post,Drummondville,Pooled,28.45
+AS,post,Drummondville,Pooled,30.84
+ON,post,Drummondville,Pooled,25.14
+AM,pre,L'Assomption,Station-specific,22.47
+JJ,pre,L'Assomption,Station-specific,28.45
+AS,pre,L'Assomption,Station-specific,29.93
+ON,pre,L'Assomption,Station-specific,25.34
+AM,post,L'Assomption,Station-specific,22.89
+JJ,post,L'Assomption,Station-specific,28.87
+AS,post,L'Assomption,Station-specific,30.34
+ON,post,L'Assomption,Station-specific,25.76
+AM,pre,L'Assomption,Pooled,21.76
+JJ,pre,L'Assomption,Pooled,27.73
+AS,pre,L'Assomption,Pooled,30.12
+ON,pre,L'Assomption,Pooled,24.41
+AM,post,L'Assomption,Pooled,22.17
+JJ,post,L'Assomption,Pooled,28.14
+AS,post,L'Assomption,Pooled,30.54
+ON,post,L'Assomption,Pooled,24.83
+AM,pre,Les Cèdres,Station-specific,19.92
+JJ,pre,Les Cèdres,Station-specific,26.06
+AS,pre,Les Cèdres,Station-specific,27.32
+ON,pre,Les Cèdres,Station-specific,23.1
+AM,post,Les Cèdres,Station-specific,21.57
+JJ,post,Les Cèdres,Station-specific,27.71
+AS,post,Les Cèdres,Station-specific,28.97
+ON,post,Les Cèdres,Station-specific,24.75
+AM,pre,Les Cèdres,Pooled,19.83
+JJ,pre,Les Cèdres,Pooled,25.8
+AS,pre,Les Cèdres,Pooled,28.19
+ON,pre,Les Cèdres,Pooled,22.48
+AM,post,Les Cèdres,Pooled,21.52
+JJ,post,Les Cèdres,Pooled,27.49
+AS,post,Les Cèdres,Pooled,29.89
+ON,post,Les Cèdres,Pooled,24.18
+AM,pre,St-Charles-de-Mandeville,Station-specific,18.85
+JJ,pre,St-Charles-de-Mandeville,Station-specific,24.25
+AS,pre,St-Charles-de-Mandeville,Station-specific,26.84
+ON,pre,St-Charles-de-Mandeville,Station-specific,22.64
+AM,post,St-Charles-de-Mandeville,Station-specific,22.65
+JJ,post,St-Charles-de-Mandeville,Station-specific,28.05
+AS,post,St-Charles-de-Mandeville,Station-specific,30.64
+ON,post,St-Charles-de-Mandeville,Station-specific,26.44
+AM,pre,St-Charles-de-Mandeville,Pooled,18.86
+JJ,pre,St-Charles-de-Mandeville,Pooled,24.82
+AS,pre,St-Charles-de-Mandeville,Pooled,27.22
+ON,pre,St-Charles-de-Mandeville,Pooled,21.51
+AM,post,St-Charles-de-Mandeville,Pooled,22.42
+JJ,post,St-Charles-de-Mandeville,Pooled,28.38
+AS,post,St-Charles-de-Mandeville,Pooled,30.78
+ON,post,St-Charles-de-Mandeville,Pooled,25.07
+AM,pre,Lennoxville,Station-specific,21.62
+JJ,pre,Lennoxville,Station-specific,29.3
+AS,pre,Lennoxville,Station-specific,30.09
+ON,pre,Lennoxville,Station-specific,22.73
+AM,post,Lennoxville,Station-specific,20.39
+JJ,post,Lennoxville,Station-specific,28.07
+AS,post,Lennoxville,Station-specific,28.86
+ON,post,Lennoxville,Station-specific,21.51
+AM,pre,Lennoxville,Pooled,22.15
+JJ,pre,Lennoxville,Pooled,28.11
+AS,pre,Lennoxville,Pooled,30.51
+ON,pre,Lennoxville,Pooled,24.8
+AM,post,Lennoxville,Pooled,20.98
+JJ,post,Lennoxville,Pooled,26.95
+AS,post,Lennoxville,Pooled,29.35
+ON,post,Lennoxville,Pooled,23.64
+AM,pre,Nicolet,Station-specific,21.03
+JJ,pre,Nicolet,Station-specific,26.13
+AS,pre,Nicolet,Station-specific,30.22
+ON,pre,Nicolet,Station-specific,23.44
+AM,post,Nicolet,Station-specific,20.6
+JJ,post,Nicolet,Station-specific,25.7
+AS,post,Nicolet,Station-specific,29.8
+ON,post,Nicolet,Station-specific,23.01
+AM,pre,Nicolet,Pooled,21.02
+JJ,pre,Nicolet,Pooled,26.99
+AS,pre,Nicolet,Pooled,29.38
+ON,pre,Nicolet,Pooled,23.67
+AM,post,Nicolet,Pooled,20.63
+JJ,post,Nicolet,Pooled,26.6
+AS,post,Nicolet,Pooled,28.99
+ON,post,Nicolet,Pooled,23.29

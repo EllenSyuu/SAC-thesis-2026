@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or analysis, please cite the thesis."
+title: "Semiparametric Analysis of Precipitation Extremes in Southern Québec using Archimax Copulas"
+type: software
+authors:
+  - family-names: Zhou
+    given-names: Ziyi
+    alias: Ellen Zhou
+    affiliation: "Department of Mathematics and Statistics, McGill University"
+repository-code: "https://github.com/EllenSyuu/SAC-thesis-2026"
+license: MIT
+version: 1.0.0
+date-released: 2026-06-24
+keywords:
+  - extreme value theory
+  - Archimax copula
+  - Pickands dependence function
+  - non-stationary GEV
+  - precipitation extremes
+  - R
+preferred-citation:
+  type: thesis
+  thesis-type: "M.Sc. thesis"
+  title: "Semiparametric Analysis of Precipitation Extremes in Southern Québec using Archimax Copulas"
+  authors:
+    - family-names: Zhou
+      given-names: Ziyi
+  institution:
+    name: "McGill University"
+    city: "Montréal"
+  year: 2026
+  notes: "Supervisor: Prof. Johanna G. Nešlehová"

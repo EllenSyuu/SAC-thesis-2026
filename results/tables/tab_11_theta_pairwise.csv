@@ -1,0 +1,17 @@
+station_1,station_2,n,theta,se,ci_lower,ci_upper
+Drummondville,L'Assomption,685,0.483,0.1114,0.2999,0.6662
+Drummondville,Les Cèdres,688,0.3364,0.09949,0.1728,0.5
+Drummondville,St-Charles-de-Mandeville,675,0.5058,0.1059,0.3316,0.6801
+Drummondville,Lennoxville,693,0.2748,0.09045,0.126,0.4235
+Drummondville,Nicolet,690,0.5369,0.1205,0.3387,0.7351
+L'Assomption,Les Cèdres,690,0.4691,0.1139,0.2817,0.6566
+L'Assomption,St-Charles-de-Mandeville,675,0.2561,0.0999,0.09182,0.4205
+L'Assomption,Lennoxville,694,0.3272,0.08688,0.1843,0.4701
+L'Assomption,Nicolet,691,0.3919,0.1089,0.2128,0.571
+Les Cèdres,St-Charles-de-Mandeville,679,0.3174,0.09091,0.1679,0.4669
+Les Cèdres,Lennoxville,697,0.2862,0.08389,0.1482,0.4242
+Les Cèdres,Nicolet,694,0.2637,0.08627,0.1218,0.4056
+St-Charles-de-Mandeville,Lennoxville,683,0.2112,0.07563,0.08676,0.3356
+St-Charles-de-Mandeville,Nicolet,680,0.3153,0.1009,0.1493,0.4813
+Lennoxville,Nicolet,699,0.2438,0.08378,0.1059,0.3816
+Global (mean of pairs),,NA,0.3479,NA,NA,NA

@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-smoke-run:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::rcmdcheck
+            any::devtools
+            any::rprojroot
+            any::ragg
+            any::rnaturalearth
+            any::rnaturalearthdata
+            any::sf
+            any::lintr
+          needs: check
+
+      - name: R CMD check (unit tests)
+        uses: r-lib/actions/check-r-package@v2
+        with:
+          args: 'c("--no-manual", "--as-cran")'
+          error-on: '"error"'
+
+      - name: Pipeline smoke run (QUICK=1)
+        run: |
+          QUICK=1 Rscript analysis/01_prepare_data.R
+          QUICK=1 Rscript analysis/02_marginal_gev.R
+          QUICK=1 Rscript analysis/04_simulation_study.R
+          QUICK=1 Rscript analysis/06_archimax_6d.R

@@ -1,0 +1,121 @@
+pair,i,j,season,period,A_half,lambda_L,lambda_U
+Drum. & L'Ass.,1,2,AM,pre,0.8216,0.2399,0.3567
+Drum. & L'Ass.,1,2,JJ,pre,0.9353,0.1653,0.1293
+Drum. & L'Ass.,1,2,AS,pre,0.8513,0.2166,0.2974
+Drum. & L'Ass.,1,2,ON,pre,0.869,0.2042,0.262
+Drum. & L'Ass.,1,2,AM,post,0.8041,0.2553,0.3919
+Drum. & L'Ass.,1,2,JJ,post,0.9177,0.1745,0.1645
+Drum. & L'Ass.,1,2,AS,post,0.8337,0.23,0.3326
+Drum. & L'Ass.,1,2,ON,post,0.8514,0.2166,0.2972
+Drum. & Les Cèd.,1,3,AM,pre,0.8762,0.1994,0.2476
+Drum. & Les Cèd.,1,3,JJ,pre,0.9845,0.1426,0.0309
+Drum. & Les Cèd.,1,3,AS,pre,0.8983,0.1856,0.2034
+Drum. & Les Cèd.,1,3,ON,pre,0.8499,0.2177,0.3002
+Drum. & Les Cèd.,1,3,AM,post,0.8916,0.1897,0.2168
+Drum. & Les Cèd.,1,3,JJ,post,1,0.1364,4.502e-5
+Drum. & Les Cèd.,1,3,AS,post,0.9137,0.1768,0.1725
+Drum. & Les Cèd.,1,3,ON,post,0.8653,0.2067,0.2694
+Drum. & St-Ch.,1,4,AM,pre,0.9081,0.1799,0.1837
+Drum. & St-Ch.,1,4,JJ,pre,1,0.1364,7.507e-7
+Drum. & St-Ch.,1,4,AS,pre,0.9485,0.1588,0.103
+Drum. & St-Ch.,1,4,ON,pre,0.9582,0.1542,0.08351
+Drum. & St-Ch.,1,4,AM,post,0.8445,0.2216,0.3109
+Drum. & St-Ch.,1,4,JJ,post,0.9364,0.1647,0.1272
+Drum. & St-Ch.,1,4,AS,post,0.8849,0.1938,0.2302
+Drum. & St-Ch.,1,4,ON,post,0.8947,0.1878,0.2107
+Drum. & Lennox.,1,5,AM,pre,0.9121,0.1777,0.1758
+Drum. & Lennox.,1,5,JJ,pre,1,0.1364,2.262e-7
+Drum. & Lennox.,1,5,AS,pre,0.935,0.1654,0.1299
+Drum. & Lennox.,1,5,ON,pre,0.9693,0.1492,0.06139
+Drum. & Lennox.,1,5,AM,post,0.9006,0.1843,0.1988
+Drum. & Lennox.,1,5,JJ,post,0.9885,0.141,0.02299
+Drum. & Lennox.,1,5,AS,post,0.9236,0.1714,0.1529
+Drum. & Lennox.,1,5,ON,post,0.9578,0.1544,0.08438
+Drum. & Nicolet,1,6,AM,pre,0.7953,0.2634,0.4094
+Drum. & Nicolet,1,6,JJ,pre,0.9463,0.1598,0.1074
+Drum. & Nicolet,1,6,AS,pre,0.8677,0.205,0.2645
+Drum. & Nicolet,1,6,ON,pre,0.7848,0.2737,0.4304
+Drum. & Nicolet,1,6,AM,post,0.7996,0.2594,0.4009
+Drum. & Nicolet,1,6,JJ,post,0.9506,0.1578,0.09883
+Drum. & Nicolet,1,6,AS,post,0.872,0.2022,0.256
+Drum. & Nicolet,1,6,ON,post,0.7891,0.2694,0.4219
+L'Ass. & Les Cèd.,2,3,AM,pre,0.8514,0.2166,0.2973
+L'Ass. & Les Cèd.,2,3,JJ,pre,1,0.1364,4.478e-5
+L'Ass. & Les Cèd.,2,3,AS,pre,0.845,0.2213,0.3101
+L'Ass. & Les Cèd.,2,3,ON,pre,0.7797,0.2788,0.4405
+L'Ass. & Les Cèd.,2,3,AM,post,0.8359,0.2283,0.3282
+L'Ass. & Les Cèd.,2,3,JJ,post,0.9845,0.1426,0.03095
+L'Ass. & Les Cèd.,2,3,AS,post,0.8295,0.2334,0.341
+L'Ass. & Les Cèd.,2,3,ON,post,0.7643,0.2953,0.4714
+L'Ass. & St-Ch.,2,4,AM,pre,0.9081,0.1799,0.1839
+L'Ass. & St-Ch.,2,4,JJ,pre,1,0.1364,6.981e-7
+L'Ass. & St-Ch.,2,4,AS,pre,0.9527,0.1568,0.09458
+L'Ass. & St-Ch.,2,4,ON,pre,0.9082,0.1799,0.1836
+L'Ass. & St-Ch.,2,4,AM,post,0.7689,0.2902,0.4621
+L'Ass. & St-Ch.,2,4,JJ,post,0.8609,0.2098,0.2783
+L'Ass. & St-Ch.,2,4,AS,post,0.8136,0.2468,0.3728
+L'Ass. & St-Ch.,2,4,ON,post,0.769,0.2901,0.4619
+L'Ass. & Lennox.,2,5,AM,pre,0.9507,0.1577,0.09864
+L'Ass. & Lennox.,2,5,JJ,pre,0.9999,0.1364,2.403e-4
+L'Ass. & Lennox.,2,5,AS,pre,0.9111,0.1782,0.1778
+L'Ass. & Lennox.,2,5,ON,pre,1,0.1364,2.143e-6
+L'Ass. & Lennox.,2,5,AM,post,0.9317,0.1672,0.1367
+L'Ass. & Lennox.,2,5,JJ,post,0.9809,0.1442,0.03829
+L'Ass. & Lennox.,2,5,AS,post,0.8921,0.1894,0.2158
+L'Ass. & Lennox.,2,5,ON,post,0.981,0.1441,0.03805
+L'Ass. & Nicolet,2,6,AM,pre,0.8613,0.2095,0.2773
+L'Ass. & Nicolet,2,6,JJ,pre,0.9372,0.1643,0.1256
+L'Ass. & Nicolet,2,6,AS,pre,0.8696,0.2038,0.2608
+L'Ass. & Nicolet,2,6,ON,pre,0.7739,0.2849,0.4522
+L'Ass. & Nicolet,2,6,AM,post,0.8389,0.2259,0.3222
+L'Ass. & Nicolet,2,6,JJ,post,0.9148,0.1762,0.1704
+L'Ass. & Nicolet,2,6,AS,post,0.8472,0.2197,0.3056
+L'Ass. & Nicolet,2,6,ON,post,0.7515,0.31,0.497
+Les Cèd. & St-Ch.,3,4,AM,pre,0.9025,0.1831,0.195
+Les Cèd. & St-Ch.,3,4,JJ,pre,1,0.1364,3.378e-6
+Les Cèd. & St-Ch.,3,4,AS,pre,0.9884,0.141,0.02318
+Les Cèd. & St-Ch.,3,4,ON,pre,0.914,0.1766,0.172
+Les Cèd. & St-Ch.,3,4,AM,post,0.8449,0.2214,0.3103
+Les Cèd. & St-Ch.,3,4,JJ,post,0.9424,0.1618,0.1153
+Les Cèd. & St-Ch.,3,4,AS,post,0.9308,0.1676,0.1385
+Les Cèd. & St-Ch.,3,4,ON,post,0.8564,0.213,0.2873
+Les Cèd. & Lennox.,3,5,AM,pre,0.9732,0.1475,0.05368
+Les Cèd. & Lennox.,3,5,JJ,pre,1,0.1364,2.883e-7
+Les Cèd. & Lennox.,3,5,AS,pre,0.9215,0.1725,0.1571
+Les Cèd. & Lennox.,3,5,ON,pre,1,0.1364,2.469e-6
+Les Cèd. & Lennox.,3,5,AM,post,0.9732,0.1475,0.05368
+Les Cèd. & Lennox.,3,5,JJ,post,1,0.1364,5.125e-7
+Les Cèd. & Lennox.,3,5,AS,post,0.9215,0.1725,0.1571
+Les Cèd. & Lennox.,3,5,ON,post,1,0.1364,2.693e-6
+Les Cèd. & Nicolet,3,6,AM,pre,0.9227,0.1718,0.1545
+Les Cèd. & Nicolet,3,6,JJ,pre,0.9934,0.139,0.01327
+Les Cèd. & Nicolet,3,6,AS,pre,0.9474,0.1593,0.1053
+Les Cèd. & Nicolet,3,6,ON,pre,0.8591,0.2111,0.2819
+Les Cèd. & Nicolet,3,6,AM,post,0.9294,0.1683,0.1413
+Les Cèd. & Nicolet,3,6,JJ,post,1,0.1364,2.22e-5
+Les Cèd. & Nicolet,3,6,AS,post,0.954,0.1562,0.09201
+Les Cèd. & Nicolet,3,6,ON,post,0.8657,0.2064,0.2686
+St-Ch. & Lennox.,4,5,AM,pre,0.9537,0.1563,0.09252
+St-Ch. & Lennox.,4,5,JJ,pre,1,0.1364,2.558e-8
+St-Ch. & Lennox.,4,5,AS,pre,1,0.1364,2.59e-8
+St-Ch. & Lennox.,4,5,ON,pre,1,0.1364,2.559e-8
+St-Ch. & Lennox.,4,5,AM,post,0.9537,0.1563,0.09252
+St-Ch. & Lennox.,4,5,JJ,post,1,0.1364,5.096e-13
+St-Ch. & Lennox.,4,5,AS,post,1,0.1364,3.179e-10
+St-Ch. & Lennox.,4,5,ON,post,1,0.1364,1.584e-11
+St-Ch. & Nicolet,4,6,AM,pre,0.9089,0.1795,0.1822
+St-Ch. & Nicolet,4,6,JJ,pre,1,0.1364,8.416e-7
+St-Ch. & Nicolet,4,6,AS,pre,0.9404,0.1627,0.1191
+St-Ch. & Nicolet,4,6,ON,pre,0.907,0.1805,0.1859
+St-Ch. & Nicolet,4,6,AM,post,0.7988,0.2601,0.4024
+St-Ch. & Nicolet,4,6,JJ,post,0.8899,0.1907,0.2203
+St-Ch. & Nicolet,4,6,AS,post,0.8303,0.2328,0.3394
+St-Ch. & Nicolet,4,6,ON,post,0.7969,0.2619,0.4062
+Lennox. & Nicolet,5,6,AM,pre,0.9191,0.1738,0.1619
+Lennox. & Nicolet,5,6,JJ,pre,0.9907,0.1401,0.01854
+Lennox. & Nicolet,5,6,AS,pre,0.935,0.1655,0.1301
+Lennox. & Nicolet,5,6,ON,pre,0.9993,0.1366,0.001321
+Lennox. & Nicolet,5,6,AM,post,0.9013,0.1838,0.1973
+Lennox. & Nicolet,5,6,JJ,post,0.973,0.1475,0.05397
+Lennox. & Nicolet,5,6,AS,post,0.9173,0.1748,0.1655
+Lennox. & Nicolet,5,6,ON,post,0.9816,0.1438,0.03674

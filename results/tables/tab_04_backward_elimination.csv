@@ -1,0 +1,7 @@
+station,location_scale_first,scale_scale_first,BIC_scale_first,location_loc_first,scale_loc_first,BIC_loc_first,same_model
+Drummondville,period + season,season,5318,period + season,season,5318,TRUE
+L'Assomption,season,anomaly + period + season + anomaly:period,5443,season,anomaly + period + season + anomaly:period,5443,TRUE
+Les Cèdres,period + season,season,5402,period + season,season,5402,TRUE
+St-Charles-de-Mandeville,anomaly + period + season + anomaly:period,season,5295,anomaly + period + season + anomaly:period + period:season,season,5308,FALSE
+Lennoxville,anomaly + season,season,5332,anomaly + season,season,5332,TRUE
+Nicolet,season,season,5379,season,season,5379,TRUE

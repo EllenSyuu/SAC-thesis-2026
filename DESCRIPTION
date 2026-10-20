@@ -1,0 +1,32 @@
+Package: covarchimax
+Type: Package
+Title: Covariate-Dependent Clayton-Archimax Copulas for Spatial Extremes
+Version: 1.0.0
+Authors@R: person("Ziyi (Ellen)", "Zhou", email = "ellen.zy.syuu@gmail.com",
+    role = c("aut", "cre"))
+Description: Semiparametric inference for Clayton-Archimax copulas with
+    covariate-dependent Pickands dependence functions. Implements the
+    moment-based estimator of the Clayton generator parameter and its
+    asymptotic variance (Chatelain, Fougeres and Neslehova, 2020), the
+    Pickands-type, CFG-type and a new maximum-likelihood estimator of the
+    Pickands dependence function in arbitrary dimension, a linear and a
+    logit-link covariate model for A(omega | z) evaluated pointwise on the
+    unit simplex, a conditional-inversion sampler, and the non-stationary
+    GEV margin tooling used to analyse precipitation extremes at six
+    stations in southern Quebec (1930-2017).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports:
+    extRemes (>= 2.1),
+    stats
+Suggests:
+    copula,
+    dplyr,
+    ggplot2,
+    patchwork,
+    readr,
+    tidyr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
