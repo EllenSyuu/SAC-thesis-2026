@@ -64,8 +64,8 @@ test_that("tail-dependence formulas match closed forms", {
 test_that("Gumbel transform inverts the GEV cdf", {
   x <- c(10, 25, 60)
   z <- gev_to_gumbel(x, mu = 17, sigma = 7, xi = 0.06)
-  F <- extRemes::pevd(x, loc = 17, scale = 7, shape = 0.06)
-  expect_equal(exp(-exp(-z)), F)
+  p_gev <- extRemes::pevd(x, loc = 17, scale = 7, shape = 0.06)
+  expect_equal(exp(-exp(-z)), p_gev)
 })
 
 test_that("season / period helpers", {
