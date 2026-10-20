@@ -1,0 +1,2971 @@
+model,pair,w,status,nll,n_feasible_starts,at_bound
+season x period,Drum. & L'Ass.,0.01,ok,886,6,TRUE
+season x period,Drum. & L'Ass.,0.02,ok,888.8,7,TRUE
+season x period,Drum. & L'Ass.,0.03,ok,892.4,7,TRUE
+season x period,Drum. & L'Ass.,0.04,ok,896.2,7,FALSE
+season x period,Drum. & L'Ass.,0.05,ok,899.6,7,FALSE
+season x period,Drum. & L'Ass.,0.06,ok,903.1,7,FALSE
+season x period,Drum. & L'Ass.,0.07,ok,906.9,7,FALSE
+season x period,Drum. & L'Ass.,0.08,ok,910.9,7,TRUE
+season x period,Drum. & L'Ass.,0.09,ok,914.9,7,FALSE
+season x period,Drum. & L'Ass.,0.1,ok,919,7,FALSE
+season x period,Drum. & L'Ass.,0.11,ok,922.9,7,FALSE
+season x period,Drum. & L'Ass.,0.12,ok,926.4,7,TRUE
+season x period,Drum. & L'Ass.,0.13,ok,929.8,7,TRUE
+season x period,Drum. & L'Ass.,0.14,ok,933.3,7,FALSE
+season x period,Drum. & L'Ass.,0.15,ok,937.1,7,FALSE
+season x period,Drum. & L'Ass.,0.16,ok,940.7,7,FALSE
+season x period,Drum. & L'Ass.,0.17,ok,943.8,7,FALSE
+season x period,Drum. & L'Ass.,0.18,ok,946.5,7,FALSE
+season x period,Drum. & L'Ass.,0.19,ok,949,7,FALSE
+season x period,Drum. & L'Ass.,0.2,ok,951.7,7,FALSE
+season x period,Drum. & L'Ass.,0.21,ok,954.2,7,TRUE
+season x period,Drum. & L'Ass.,0.22,ok,956.6,7,FALSE
+season x period,Drum. & L'Ass.,0.23,ok,958.8,7,FALSE
+season x period,Drum. & L'Ass.,0.24,ok,960.9,7,FALSE
+season x period,Drum. & L'Ass.,0.25,ok,963.2,7,FALSE
+season x period,Drum. & L'Ass.,0.26,ok,965.4,7,FALSE
+season x period,Drum. & L'Ass.,0.27,ok,967.7,7,FALSE
+season x period,Drum. & L'Ass.,0.28,ok,970.2,7,FALSE
+season x period,Drum. & L'Ass.,0.29,ok,972.7,7,FALSE
+season x period,Drum. & L'Ass.,0.3,ok,975.1,7,FALSE
+season x period,Drum. & L'Ass.,0.31,ok,977,7,FALSE
+season x period,Drum. & L'Ass.,0.32,ok,978.8,7,FALSE
+season x period,Drum. & L'Ass.,0.33,ok,980.8,7,FALSE
+season x period,Drum. & L'Ass.,0.34,ok,983,7,FALSE
+season x period,Drum. & L'Ass.,0.35,ok,985.1,7,FALSE
+season x period,Drum. & L'Ass.,0.36,ok,987.4,7,FALSE
+season x period,Drum. & L'Ass.,0.37,ok,989.8,7,FALSE
+season x period,Drum. & L'Ass.,0.38,ok,992,7,FALSE
+season x period,Drum. & L'Ass.,0.39,ok,994.1,7,FALSE
+season x period,Drum. & L'Ass.,0.4,ok,996.4,7,FALSE
+season x period,Drum. & L'Ass.,0.41,ok,998.5,7,FALSE
+season x period,Drum. & L'Ass.,0.42,ok,1000,7,FALSE
+season x period,Drum. & L'Ass.,0.43,ok,1002,7,FALSE
+season x period,Drum. & L'Ass.,0.44,ok,1004,7,FALSE
+season x period,Drum. & L'Ass.,0.45,ok,1005,7,FALSE
+season x period,Drum. & L'Ass.,0.46,ok,1007,7,FALSE
+season x period,Drum. & L'Ass.,0.47,ok,1008,7,FALSE
+season x period,Drum. & L'Ass.,0.48,ok,1009,7,FALSE
+season x period,Drum. & L'Ass.,0.49,ok,1010,7,FALSE
+season x period,Drum. & L'Ass.,0.5,ok,1010,7,FALSE
+season x period,Drum. & L'Ass.,0.51,ok,1010,7,FALSE
+season x period,Drum. & L'Ass.,0.52,ok,1010,7,FALSE
+season x period,Drum. & L'Ass.,0.53,ok,1010,7,FALSE
+season x period,Drum. & L'Ass.,0.54,ok,1009,7,FALSE
+season x period,Drum. & L'Ass.,0.55,ok,1009,7,FALSE
+season x period,Drum. & L'Ass.,0.56,ok,1008,7,FALSE
+season x period,Drum. & L'Ass.,0.57,ok,1008,7,FALSE
+season x period,Drum. & L'Ass.,0.58,ok,1007,7,FALSE
+season x period,Drum. & L'Ass.,0.59,ok,1006,7,FALSE
+season x period,Drum. & L'Ass.,0.6,ok,1005,7,FALSE
+season x period,Drum. & L'Ass.,0.61,ok,1005,7,FALSE
+season x period,Drum. & L'Ass.,0.62,ok,1004,7,FALSE
+season x period,Drum. & L'Ass.,0.63,ok,1003,7,FALSE
+season x period,Drum. & L'Ass.,0.64,ok,1002,7,FALSE
+season x period,Drum. & L'Ass.,0.65,ok,1000,7,FALSE
+season x period,Drum. & L'Ass.,0.66,ok,999.2,7,FALSE
+season x period,Drum. & L'Ass.,0.67,ok,997.9,7,FALSE
+season x period,Drum. & L'Ass.,0.68,ok,996.2,7,FALSE
+season x period,Drum. & L'Ass.,0.69,ok,994.5,7,FALSE
+season x period,Drum. & L'Ass.,0.7,ok,992.5,7,FALSE
+season x period,Drum. & L'Ass.,0.71,ok,990.4,7,FALSE
+season x period,Drum. & L'Ass.,0.72,ok,988.1,7,FALSE
+season x period,Drum. & L'Ass.,0.73,ok,985.9,7,FALSE
+season x period,Drum. & L'Ass.,0.74,ok,983.6,7,FALSE
+season x period,Drum. & L'Ass.,0.75,ok,981.2,7,FALSE
+season x period,Drum. & L'Ass.,0.76,ok,978.9,7,FALSE
+season x period,Drum. & L'Ass.,0.77,ok,976.2,7,FALSE
+season x period,Drum. & L'Ass.,0.78,ok,973.4,7,FALSE
+season x period,Drum. & L'Ass.,0.79,ok,970.4,7,FALSE
+season x period,Drum. & L'Ass.,0.8,ok,967.3,7,FALSE
+season x period,Drum. & L'Ass.,0.81,ok,963.4,7,FALSE
+season x period,Drum. & L'Ass.,0.82,ok,959.5,7,FALSE
+season x period,Drum. & L'Ass.,0.83,ok,956.1,7,FALSE
+season x period,Drum. & L'Ass.,0.84,ok,952.5,7,FALSE
+season x period,Drum. & L'Ass.,0.85,ok,948.5,7,FALSE
+season x period,Drum. & L'Ass.,0.86,ok,944.2,7,FALSE
+season x period,Drum. & L'Ass.,0.87,ok,940.2,7,FALSE
+season x period,Drum. & L'Ass.,0.88,ok,936.3,7,FALSE
+season x period,Drum. & L'Ass.,0.89,ok,932.3,7,FALSE
+season x period,Drum. & L'Ass.,0.9,ok,928.5,7,FALSE
+season x period,Drum. & L'Ass.,0.91,ok,925,7,FALSE
+season x period,Drum. & L'Ass.,0.92,ok,921.6,7,FALSE
+season x period,Drum. & L'Ass.,0.93,ok,918.3,7,FALSE
+season x period,Drum. & L'Ass.,0.94,ok,914.5,7,FALSE
+season x period,Drum. & L'Ass.,0.95,ok,909.7,7,FALSE
+season x period,Drum. & L'Ass.,0.96,ok,904.8,7,FALSE
+season x period,Drum. & L'Ass.,0.97,ok,900.2,7,FALSE
+season x period,Drum. & L'Ass.,0.98,ok,896.7,7,FALSE
+season x period,Drum. & L'Ass.,0.99,ok,890.7,7,TRUE
+season x period,Drum. & Les Cèd.,0.01,ok,894,6,TRUE
+season x period,Drum. & Les Cèd.,0.02,ok,896.9,6,FALSE
+season x period,Drum. & Les Cèd.,0.03,ok,900.2,6,FALSE
+season x period,Drum. & Les Cèd.,0.04,ok,903.9,6,TRUE
+season x period,Drum. & Les Cèd.,0.05,ok,907.7,7,FALSE
+season x period,Drum. & Les Cèd.,0.06,ok,910.9,7,TRUE
+season x period,Drum. & Les Cèd.,0.07,ok,913.1,7,FALSE
+season x period,Drum. & Les Cèd.,0.08,ok,914.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.09,ok,915.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.1,ok,917.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.11,ok,919.4,7,FALSE
+season x period,Drum. & Les Cèd.,0.12,ok,921.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.13,ok,923.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.14,ok,925.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.15,ok,928,7,FALSE
+season x period,Drum. & Les Cèd.,0.16,ok,929.2,7,FALSE
+season x period,Drum. & Les Cèd.,0.17,ok,930,7,FALSE
+season x period,Drum. & Les Cèd.,0.18,ok,931,7,FALSE
+season x period,Drum. & Les Cèd.,0.19,ok,932.3,7,FALSE
+season x period,Drum. & Les Cèd.,0.2,ok,933.7,7,FALSE
+season x period,Drum. & Les Cèd.,0.21,ok,935.3,7,FALSE
+season x period,Drum. & Les Cèd.,0.22,ok,936.7,7,FALSE
+season x period,Drum. & Les Cèd.,0.23,ok,938.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.24,ok,940.3,7,FALSE
+season x period,Drum. & Les Cèd.,0.25,ok,942,7,FALSE
+season x period,Drum. & Les Cèd.,0.26,ok,943.4,7,FALSE
+season x period,Drum. & Les Cèd.,0.27,ok,945,7,FALSE
+season x period,Drum. & Les Cèd.,0.28,ok,946.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.29,ok,948.3,7,FALSE
+season x period,Drum. & Les Cèd.,0.3,ok,950,7,FALSE
+season x period,Drum. & Les Cèd.,0.31,ok,951.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.32,ok,953.4,7,FALSE
+season x period,Drum. & Les Cèd.,0.33,ok,954.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.34,ok,955.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.35,ok,957.2,7,FALSE
+season x period,Drum. & Les Cèd.,0.36,ok,958.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.37,ok,959.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.38,ok,960.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.39,ok,961.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.4,ok,962.4,7,FALSE
+season x period,Drum. & Les Cèd.,0.41,ok,963.2,7,FALSE
+season x period,Drum. & Les Cèd.,0.42,ok,964,7,FALSE
+season x period,Drum. & Les Cèd.,0.43,ok,964.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.44,ok,965.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.45,ok,966,7,FALSE
+season x period,Drum. & Les Cèd.,0.46,ok,966.3,7,FALSE
+season x period,Drum. & Les Cèd.,0.47,ok,966.7,7,TRUE
+season x period,Drum. & Les Cèd.,0.48,ok,967.3,7,FALSE
+season x period,Drum. & Les Cèd.,0.49,ok,968,7,FALSE
+season x period,Drum. & Les Cèd.,0.5,ok,968.7,7,FALSE
+season x period,Drum. & Les Cèd.,0.51,ok,968.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.52,ok,968.1,7,FALSE
+season x period,Drum. & Les Cèd.,0.53,ok,967.7,7,FALSE
+season x period,Drum. & Les Cèd.,0.54,ok,967.3,7,TRUE
+season x period,Drum. & Les Cèd.,0.55,ok,966.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.56,ok,966.4,7,FALSE
+season x period,Drum. & Les Cèd.,0.57,ok,965.9,7,TRUE
+season x period,Drum. & Les Cèd.,0.58,ok,965,7,TRUE
+season x period,Drum. & Les Cèd.,0.59,ok,964.2,7,FALSE
+season x period,Drum. & Les Cèd.,0.6,ok,963.4,7,TRUE
+season x period,Drum. & Les Cèd.,0.61,ok,962.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.62,ok,961.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.63,ok,960.6,7,TRUE
+season x period,Drum. & Les Cèd.,0.64,ok,959.7,7,TRUE
+season x period,Drum. & Les Cèd.,0.65,ok,959,7,TRUE
+season x period,Drum. & Les Cèd.,0.66,ok,957.9,7,TRUE
+season x period,Drum. & Les Cèd.,0.67,ok,956.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.68,ok,955.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.69,ok,954.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.7,ok,954,7,TRUE
+season x period,Drum. & Les Cèd.,0.71,ok,952.9,7,TRUE
+season x period,Drum. & Les Cèd.,0.72,ok,951.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.73,ok,949.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.74,ok,947.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.75,ok,945.4,7,TRUE
+season x period,Drum. & Les Cèd.,0.76,ok,943.2,7,TRUE
+season x period,Drum. & Les Cèd.,0.77,ok,940.9,7,TRUE
+season x period,Drum. & Les Cèd.,0.78,ok,938.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.79,ok,936.3,7,TRUE
+season x period,Drum. & Les Cèd.,0.8,ok,933.7,7,TRUE
+season x period,Drum. & Les Cèd.,0.81,ok,930.9,7,FALSE
+season x period,Drum. & Les Cèd.,0.82,ok,928.1,7,FALSE
+season x period,Drum. & Les Cèd.,0.83,ok,925,7,FALSE
+season x period,Drum. & Les Cèd.,0.84,ok,922.1,7,TRUE
+season x period,Drum. & Les Cèd.,0.85,ok,919.3,6,FALSE
+season x period,Drum. & Les Cèd.,0.86,ok,916.7,6,TRUE
+season x period,Drum. & Les Cèd.,0.87,ok,914.6,6,TRUE
+season x period,Drum. & Les Cèd.,0.88,ok,912.7,6,TRUE
+season x period,Drum. & Les Cèd.,0.89,ok,910.6,6,TRUE
+season x period,Drum. & Les Cèd.,0.9,ok,908.6,6,FALSE
+season x period,Drum. & Les Cèd.,0.91,ok,906.4,7,TRUE
+season x period,Drum. & Les Cèd.,0.92,ok,904.6,7,FALSE
+season x period,Drum. & Les Cèd.,0.93,ok,903.4,7,FALSE
+season x period,Drum. & Les Cèd.,0.94,ok,901.8,7,FALSE
+season x period,Drum. & Les Cèd.,0.95,ok,900.5,7,FALSE
+season x period,Drum. & Les Cèd.,0.96,ok,899.4,7,TRUE
+season x period,Drum. & Les Cèd.,0.97,ok,897.3,6,TRUE
+season x period,Drum. & Les Cèd.,0.98,ok,894.4,6,FALSE
+season x period,Drum. & Les Cèd.,0.99,ok,891.5,7,TRUE
+season x period,Drum. & St-Ch.,0.01,ok,872.8,6,TRUE
+season x period,Drum. & St-Ch.,0.02,ok,874.5,7,TRUE
+season x period,Drum. & St-Ch.,0.03,ok,874.2,7,TRUE
+season x period,Drum. & St-Ch.,0.04,ok,874.1,6,FALSE
+season x period,Drum. & St-Ch.,0.05,ok,874.6,6,TRUE
+season x period,Drum. & St-Ch.,0.06,ok,875.3,6,TRUE
+season x period,Drum. & St-Ch.,0.07,ok,876.1,6,TRUE
+season x period,Drum. & St-Ch.,0.08,ok,877.3,6,FALSE
+season x period,Drum. & St-Ch.,0.09,ok,878.9,6,FALSE
+season x period,Drum. & St-Ch.,0.1,ok,881.2,6,FALSE
+season x period,Drum. & St-Ch.,0.11,ok,883.5,6,FALSE
+season x period,Drum. & St-Ch.,0.12,ok,886.1,7,FALSE
+season x period,Drum. & St-Ch.,0.13,ok,888.9,7,FALSE
+season x period,Drum. & St-Ch.,0.14,ok,892,7,FALSE
+season x period,Drum. & St-Ch.,0.15,ok,895.1,7,TRUE
+season x period,Drum. & St-Ch.,0.16,ok,897.8,7,TRUE
+season x period,Drum. & St-Ch.,0.17,ok,900.8,7,FALSE
+season x period,Drum. & St-Ch.,0.18,ok,904,7,FALSE
+season x period,Drum. & St-Ch.,0.19,ok,907.1,7,FALSE
+season x period,Drum. & St-Ch.,0.2,ok,910.1,7,FALSE
+season x period,Drum. & St-Ch.,0.21,ok,913.1,7,FALSE
+season x period,Drum. & St-Ch.,0.22,ok,915.5,7,FALSE
+season x period,Drum. & St-Ch.,0.23,ok,917.8,7,FALSE
+season x period,Drum. & St-Ch.,0.24,ok,919.9,7,FALSE
+season x period,Drum. & St-Ch.,0.25,ok,922,7,FALSE
+season x period,Drum. & St-Ch.,0.26,ok,924,7,FALSE
+season x period,Drum. & St-Ch.,0.27,ok,925.7,7,FALSE
+season x period,Drum. & St-Ch.,0.28,ok,927.5,7,FALSE
+season x period,Drum. & St-Ch.,0.29,ok,929.2,7,FALSE
+season x period,Drum. & St-Ch.,0.3,ok,930.8,7,FALSE
+season x period,Drum. & St-Ch.,0.31,ok,932.1,7,FALSE
+season x period,Drum. & St-Ch.,0.32,ok,933.5,7,FALSE
+season x period,Drum. & St-Ch.,0.33,ok,934.7,7,FALSE
+season x period,Drum. & St-Ch.,0.34,ok,935.7,7,FALSE
+season x period,Drum. & St-Ch.,0.35,ok,936.5,7,FALSE
+season x period,Drum. & St-Ch.,0.36,ok,937.3,7,FALSE
+season x period,Drum. & St-Ch.,0.37,ok,937.9,7,FALSE
+season x period,Drum. & St-Ch.,0.38,ok,938.3,7,FALSE
+season x period,Drum. & St-Ch.,0.39,ok,938.6,7,FALSE
+season x period,Drum. & St-Ch.,0.4,ok,939,7,FALSE
+season x period,Drum. & St-Ch.,0.41,ok,939.5,7,FALSE
+season x period,Drum. & St-Ch.,0.42,ok,939.8,7,TRUE
+season x period,Drum. & St-Ch.,0.43,ok,940.2,7,FALSE
+season x period,Drum. & St-Ch.,0.44,ok,940.5,7,FALSE
+season x period,Drum. & St-Ch.,0.45,ok,940.8,7,FALSE
+season x period,Drum. & St-Ch.,0.46,ok,941.3,7,FALSE
+season x period,Drum. & St-Ch.,0.47,ok,941.7,7,FALSE
+season x period,Drum. & St-Ch.,0.48,ok,942,7,FALSE
+season x period,Drum. & St-Ch.,0.49,ok,942.1,7,FALSE
+season x period,Drum. & St-Ch.,0.5,ok,942.3,7,FALSE
+season x period,Drum. & St-Ch.,0.51,ok,942.2,7,FALSE
+season x period,Drum. & St-Ch.,0.52,ok,941.9,7,FALSE
+season x period,Drum. & St-Ch.,0.53,ok,941.7,7,TRUE
+season x period,Drum. & St-Ch.,0.54,ok,941.7,7,FALSE
+season x period,Drum. & St-Ch.,0.55,ok,941.6,7,FALSE
+season x period,Drum. & St-Ch.,0.56,ok,941.6,7,FALSE
+season x period,Drum. & St-Ch.,0.57,ok,941.3,7,FALSE
+season x period,Drum. & St-Ch.,0.58,ok,940.7,7,TRUE
+season x period,Drum. & St-Ch.,0.59,ok,940.1,7,FALSE
+season x period,Drum. & St-Ch.,0.6,ok,939.2,7,FALSE
+season x period,Drum. & St-Ch.,0.61,ok,938.3,7,TRUE
+season x period,Drum. & St-Ch.,0.62,ok,937.4,7,FALSE
+season x period,Drum. & St-Ch.,0.63,ok,936.8,7,FALSE
+season x period,Drum. & St-Ch.,0.64,ok,935.9,7,FALSE
+season x period,Drum. & St-Ch.,0.65,ok,934.9,7,FALSE
+season x period,Drum. & St-Ch.,0.66,ok,934,7,FALSE
+season x period,Drum. & St-Ch.,0.67,ok,933.2,7,FALSE
+season x period,Drum. & St-Ch.,0.68,ok,932.3,7,FALSE
+season x period,Drum. & St-Ch.,0.69,ok,931.1,7,FALSE
+season x period,Drum. & St-Ch.,0.7,ok,929.6,7,FALSE
+season x period,Drum. & St-Ch.,0.71,ok,928.1,7,FALSE
+season x period,Drum. & St-Ch.,0.72,ok,926.8,7,FALSE
+season x period,Drum. & St-Ch.,0.73,ok,925.4,7,FALSE
+season x period,Drum. & St-Ch.,0.74,ok,923.7,7,FALSE
+season x period,Drum. & St-Ch.,0.75,ok,922.2,7,FALSE
+season x period,Drum. & St-Ch.,0.76,ok,920.4,7,FALSE
+season x period,Drum. & St-Ch.,0.77,ok,918.2,7,FALSE
+season x period,Drum. & St-Ch.,0.78,ok,916.1,7,FALSE
+season x period,Drum. & St-Ch.,0.79,ok,914.3,7,FALSE
+season x period,Drum. & St-Ch.,0.8,ok,912.6,7,TRUE
+season x period,Drum. & St-Ch.,0.81,ok,911,7,FALSE
+season x period,Drum. & St-Ch.,0.82,ok,909.3,7,FALSE
+season x period,Drum. & St-Ch.,0.83,ok,907.4,7,TRUE
+season x period,Drum. & St-Ch.,0.84,ok,905.4,7,TRUE
+season x period,Drum. & St-Ch.,0.85,ok,903.2,7,TRUE
+season x period,Drum. & St-Ch.,0.86,ok,900.9,7,FALSE
+season x period,Drum. & St-Ch.,0.87,ok,899,7,TRUE
+season x period,Drum. & St-Ch.,0.88,ok,897.1,7,FALSE
+season x period,Drum. & St-Ch.,0.89,ok,895,6,TRUE
+season x period,Drum. & St-Ch.,0.9,ok,892.4,6,FALSE
+season x period,Drum. & St-Ch.,0.91,ok,889.8,6,TRUE
+season x period,Drum. & St-Ch.,0.92,ok,887.2,6,TRUE
+season x period,Drum. & St-Ch.,0.93,ok,884.3,7,FALSE
+season x period,Drum. & St-Ch.,0.94,ok,881.8,7,FALSE
+season x period,Drum. & St-Ch.,0.95,ok,879.9,7,FALSE
+season x period,Drum. & St-Ch.,0.96,ok,878,7,FALSE
+season x period,Drum. & St-Ch.,0.97,ok,876.3,6,FALSE
+season x period,Drum. & St-Ch.,0.98,ok,874.7,6,TRUE
+season x period,Drum. & St-Ch.,0.99,ok,871.6,7,TRUE
+season x period,Drum. & Lennox.,0.01,ok,898.8,6,TRUE
+season x period,Drum. & Lennox.,0.02,ok,900.4,6,TRUE
+season x period,Drum. & Lennox.,0.03,ok,902.4,6,FALSE
+season x period,Drum. & Lennox.,0.04,ok,904.2,6,FALSE
+season x period,Drum. & Lennox.,0.05,ok,906.1,6,TRUE
+season x period,Drum. & Lennox.,0.06,ok,907.6,6,FALSE
+season x period,Drum. & Lennox.,0.07,ok,909.5,6,TRUE
+season x period,Drum. & Lennox.,0.08,ok,911.5,6,TRUE
+season x period,Drum. & Lennox.,0.09,ok,914,6,FALSE
+season x period,Drum. & Lennox.,0.1,ok,916.4,6,TRUE
+season x period,Drum. & Lennox.,0.11,ok,918.7,6,FALSE
+season x period,Drum. & Lennox.,0.12,ok,920.8,6,FALSE
+season x period,Drum. & Lennox.,0.13,ok,922.6,7,TRUE
+season x period,Drum. & Lennox.,0.14,ok,923.8,6,FALSE
+season x period,Drum. & Lennox.,0.15,ok,925,7,FALSE
+season x period,Drum. & Lennox.,0.16,ok,926,7,FALSE
+season x period,Drum. & Lennox.,0.17,ok,927.1,7,TRUE
+season x period,Drum. & Lennox.,0.18,ok,928.3,7,FALSE
+season x period,Drum. & Lennox.,0.19,ok,929.5,7,FALSE
+season x period,Drum. & Lennox.,0.2,ok,930.3,6,FALSE
+season x period,Drum. & Lennox.,0.21,ok,931.2,6,FALSE
+season x period,Drum. & Lennox.,0.22,ok,931.7,7,FALSE
+season x period,Drum. & Lennox.,0.23,ok,931.7,7,FALSE
+season x period,Drum. & Lennox.,0.24,ok,931.9,7,FALSE
+season x period,Drum. & Lennox.,0.25,ok,932,7,FALSE
+season x period,Drum. & Lennox.,0.26,ok,932,7,FALSE
+season x period,Drum. & Lennox.,0.27,ok,931.9,7,FALSE
+season x period,Drum. & Lennox.,0.28,ok,931.8,7,FALSE
+season x period,Drum. & Lennox.,0.29,ok,932.2,7,FALSE
+season x period,Drum. & Lennox.,0.3,ok,933,7,FALSE
+season x period,Drum. & Lennox.,0.31,ok,933.7,7,FALSE
+season x period,Drum. & Lennox.,0.32,ok,934.4,7,FALSE
+season x period,Drum. & Lennox.,0.33,ok,935.1,7,FALSE
+season x period,Drum. & Lennox.,0.34,ok,936.1,7,FALSE
+season x period,Drum. & Lennox.,0.35,ok,937,7,FALSE
+season x period,Drum. & Lennox.,0.36,ok,937.8,7,FALSE
+season x period,Drum. & Lennox.,0.37,ok,938.4,7,FALSE
+season x period,Drum. & Lennox.,0.38,ok,939.2,7,FALSE
+season x period,Drum. & Lennox.,0.39,ok,939.7,7,FALSE
+season x period,Drum. & Lennox.,0.4,ok,940.1,7,FALSE
+season x period,Drum. & Lennox.,0.41,ok,940.2,7,FALSE
+season x period,Drum. & Lennox.,0.42,ok,940.3,7,FALSE
+season x period,Drum. & Lennox.,0.43,ok,940.7,7,FALSE
+season x period,Drum. & Lennox.,0.44,ok,941.2,7,FALSE
+season x period,Drum. & Lennox.,0.45,ok,941.7,7,FALSE
+season x period,Drum. & Lennox.,0.46,ok,942.1,7,FALSE
+season x period,Drum. & Lennox.,0.47,ok,942.5,7,FALSE
+season x period,Drum. & Lennox.,0.48,ok,943,7,FALSE
+season x period,Drum. & Lennox.,0.49,ok,943.6,7,FALSE
+season x period,Drum. & Lennox.,0.5,ok,944.1,7,FALSE
+season x period,Drum. & Lennox.,0.51,ok,944.3,7,FALSE
+season x period,Drum. & Lennox.,0.52,ok,944.6,6,FALSE
+season x period,Drum. & Lennox.,0.53,ok,944.9,6,FALSE
+season x period,Drum. & Lennox.,0.54,ok,945.2,6,FALSE
+season x period,Drum. & Lennox.,0.55,ok,945.6,6,FALSE
+season x period,Drum. & Lennox.,0.56,ok,945.9,6,FALSE
+season x period,Drum. & Lennox.,0.57,ok,946,6,FALSE
+season x period,Drum. & Lennox.,0.58,ok,946,6,FALSE
+season x period,Drum. & Lennox.,0.59,ok,945.8,6,TRUE
+season x period,Drum. & Lennox.,0.6,ok,945.7,6,FALSE
+season x period,Drum. & Lennox.,0.61,ok,945.9,6,FALSE
+season x period,Drum. & Lennox.,0.62,ok,945.7,6,TRUE
+season x period,Drum. & Lennox.,0.63,ok,945.2,6,TRUE
+season x period,Drum. & Lennox.,0.64,ok,944.6,6,FALSE
+season x period,Drum. & Lennox.,0.65,ok,944,6,FALSE
+season x period,Drum. & Lennox.,0.66,ok,943.2,6,FALSE
+season x period,Drum. & Lennox.,0.67,ok,942.4,6,FALSE
+season x period,Drum. & Lennox.,0.68,ok,941.9,6,FALSE
+season x period,Drum. & Lennox.,0.69,ok,941.6,6,FALSE
+season x period,Drum. & Lennox.,0.7,ok,941.4,6,TRUE
+season x period,Drum. & Lennox.,0.71,ok,941.1,6,FALSE
+season x period,Drum. & Lennox.,0.72,ok,940.5,6,TRUE
+season x period,Drum. & Lennox.,0.73,ok,939.9,6,FALSE
+season x period,Drum. & Lennox.,0.74,ok,939.5,6,TRUE
+season x period,Drum. & Lennox.,0.75,ok,938.8,6,FALSE
+season x period,Drum. & Lennox.,0.76,ok,937.8,6,TRUE
+season x period,Drum. & Lennox.,0.77,ok,936.3,6,FALSE
+season x period,Drum. & Lennox.,0.78,ok,934.7,6,FALSE
+season x period,Drum. & Lennox.,0.79,ok,933,6,FALSE
+season x period,Drum. & Lennox.,0.8,ok,931.7,6,FALSE
+season x period,Drum. & Lennox.,0.81,ok,930.4,6,FALSE
+season x period,Drum. & Lennox.,0.82,ok,928.9,6,FALSE
+season x period,Drum. & Lennox.,0.83,ok,927.3,6,FALSE
+season x period,Drum. & Lennox.,0.84,ok,925.5,6,FALSE
+season x period,Drum. & Lennox.,0.85,ok,923.8,6,FALSE
+season x period,Drum. & Lennox.,0.86,ok,922.2,6,TRUE
+season x period,Drum. & Lennox.,0.87,ok,921,6,TRUE
+season x period,Drum. & Lennox.,0.88,ok,920.1,6,FALSE
+season x period,Drum. & Lennox.,0.89,ok,919,6,FALSE
+season x period,Drum. & Lennox.,0.9,ok,918.2,6,TRUE
+season x period,Drum. & Lennox.,0.91,ok,917.9,6,TRUE
+season x period,Drum. & Lennox.,0.92,ok,917.4,7,FALSE
+season x period,Drum. & Lennox.,0.93,ok,917,7,FALSE
+season x period,Drum. & Lennox.,0.94,ok,916.5,7,FALSE
+season x period,Drum. & Lennox.,0.95,ok,915.7,7,FALSE
+season x period,Drum. & Lennox.,0.96,ok,914.3,7,FALSE
+season x period,Drum. & Lennox.,0.97,ok,910.5,7,FALSE
+season x period,Drum. & Lennox.,0.98,ok,906,7,FALSE
+season x period,Drum. & Lennox.,0.99,ok,901.2,7,TRUE
+season x period,Drum. & Nicolet,0.01,ok,893.3,6,TRUE
+season x period,Drum. & Nicolet,0.02,ok,896.2,7,TRUE
+season x period,Drum. & Nicolet,0.03,ok,899.6,7,TRUE
+season x period,Drum. & Nicolet,0.04,ok,903.9,7,TRUE
+season x period,Drum. & Nicolet,0.05,ok,909,7,FALSE
+season x period,Drum. & Nicolet,0.06,ok,914.4,7,FALSE
+season x period,Drum. & Nicolet,0.07,ok,919.3,7,FALSE
+season x period,Drum. & Nicolet,0.08,ok,923.7,7,FALSE
+season x period,Drum. & Nicolet,0.09,ok,927.8,7,FALSE
+season x period,Drum. & Nicolet,0.1,ok,932.1,7,FALSE
+season x period,Drum. & Nicolet,0.11,ok,936.5,7,FALSE
+season x period,Drum. & Nicolet,0.12,ok,940.6,7,FALSE
+season x period,Drum. & Nicolet,0.13,ok,945,7,FALSE
+season x period,Drum. & Nicolet,0.14,ok,949.4,7,FALSE
+season x period,Drum. & Nicolet,0.15,ok,953.7,7,FALSE
+season x period,Drum. & Nicolet,0.16,ok,957.7,7,FALSE
+season x period,Drum. & Nicolet,0.17,ok,961.6,7,FALSE
+season x period,Drum. & Nicolet,0.18,ok,965.5,7,FALSE
+season x period,Drum. & Nicolet,0.19,ok,969,7,FALSE
+season x period,Drum. & Nicolet,0.2,ok,972,7,FALSE
+season x period,Drum. & Nicolet,0.21,ok,975.1,7,FALSE
+season x period,Drum. & Nicolet,0.22,ok,978.1,7,FALSE
+season x period,Drum. & Nicolet,0.23,ok,981,7,FALSE
+season x period,Drum. & Nicolet,0.24,ok,983.7,7,FALSE
+season x period,Drum. & Nicolet,0.25,ok,986.2,7,FALSE
+season x period,Drum. & Nicolet,0.26,ok,988.6,7,FALSE
+season x period,Drum. & Nicolet,0.27,ok,990.8,7,FALSE
+season x period,Drum. & Nicolet,0.28,ok,993,7,FALSE
+season x period,Drum. & Nicolet,0.29,ok,995.3,7,FALSE
+season x period,Drum. & Nicolet,0.3,ok,997.8,7,FALSE
+season x period,Drum. & Nicolet,0.31,ok,1000,7,FALSE
+season x period,Drum. & Nicolet,0.32,ok,1003,7,FALSE
+season x period,Drum. & Nicolet,0.33,ok,1005,7,FALSE
+season x period,Drum. & Nicolet,0.34,ok,1007,7,FALSE
+season x period,Drum. & Nicolet,0.35,ok,1009,7,FALSE
+season x period,Drum. & Nicolet,0.36,ok,1010,7,FALSE
+season x period,Drum. & Nicolet,0.37,ok,1012,7,FALSE
+season x period,Drum. & Nicolet,0.38,ok,1013,7,FALSE
+season x period,Drum. & Nicolet,0.39,ok,1014,7,FALSE
+season x period,Drum. & Nicolet,0.4,ok,1015,7,FALSE
+season x period,Drum. & Nicolet,0.41,ok,1016,7,FALSE
+season x period,Drum. & Nicolet,0.42,ok,1017,7,FALSE
+season x period,Drum. & Nicolet,0.43,ok,1018,7,FALSE
+season x period,Drum. & Nicolet,0.44,ok,1019,7,FALSE
+season x period,Drum. & Nicolet,0.45,ok,1019,7,FALSE
+season x period,Drum. & Nicolet,0.46,ok,1020,7,FALSE
+season x period,Drum. & Nicolet,0.47,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.48,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.49,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.5,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.51,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.52,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.53,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.54,ok,1021,7,FALSE
+season x period,Drum. & Nicolet,0.55,ok,1020,7,FALSE
+season x period,Drum. & Nicolet,0.56,ok,1020,7,FALSE
+season x period,Drum. & Nicolet,0.57,ok,1019,7,FALSE
+season x period,Drum. & Nicolet,0.58,ok,1018,7,FALSE
+season x period,Drum. & Nicolet,0.59,ok,1017,7,FALSE
+season x period,Drum. & Nicolet,0.6,ok,1016,7,FALSE
+season x period,Drum. & Nicolet,0.61,ok,1015,7,FALSE
+season x period,Drum. & Nicolet,0.62,ok,1013,7,FALSE
+season x period,Drum. & Nicolet,0.63,ok,1012,7,FALSE
+season x period,Drum. & Nicolet,0.64,ok,1011,7,FALSE
+season x period,Drum. & Nicolet,0.65,ok,1009,7,FALSE
+season x period,Drum. & Nicolet,0.66,ok,1008,7,FALSE
+season x period,Drum. & Nicolet,0.67,ok,1006,7,FALSE
+season x period,Drum. & Nicolet,0.68,ok,1004,7,FALSE
+season x period,Drum. & Nicolet,0.69,ok,1002,7,FALSE
+season x period,Drum. & Nicolet,0.7,ok,1001,7,FALSE
+season x period,Drum. & Nicolet,0.71,ok,998.7,7,FALSE
+season x period,Drum. & Nicolet,0.72,ok,996.9,7,FALSE
+season x period,Drum. & Nicolet,0.73,ok,995,7,FALSE
+season x period,Drum. & Nicolet,0.74,ok,993.2,7,FALSE
+season x period,Drum. & Nicolet,0.75,ok,991.3,7,FALSE
+season x period,Drum. & Nicolet,0.76,ok,989.3,7,FALSE
+season x period,Drum. & Nicolet,0.77,ok,987.1,7,FALSE
+season x period,Drum. & Nicolet,0.78,ok,984.4,7,FALSE
+season x period,Drum. & Nicolet,0.79,ok,981.6,7,FALSE
+season x period,Drum. & Nicolet,0.8,ok,978.7,7,FALSE
+season x period,Drum. & Nicolet,0.81,ok,975.8,7,FALSE
+season x period,Drum. & Nicolet,0.82,ok,972.8,7,FALSE
+season x period,Drum. & Nicolet,0.83,ok,969.8,7,FALSE
+season x period,Drum. & Nicolet,0.84,ok,967,7,FALSE
+season x period,Drum. & Nicolet,0.85,ok,964.2,7,FALSE
+season x period,Drum. & Nicolet,0.86,ok,961.3,7,FALSE
+season x period,Drum. & Nicolet,0.87,ok,958.4,7,FALSE
+season x period,Drum. & Nicolet,0.88,ok,954.6,7,FALSE
+season x period,Drum. & Nicolet,0.89,ok,950.7,7,FALSE
+season x period,Drum. & Nicolet,0.9,ok,946,7,FALSE
+season x period,Drum. & Nicolet,0.91,ok,940.6,7,FALSE
+season x period,Drum. & Nicolet,0.92,ok,935.4,7,FALSE
+season x period,Drum. & Nicolet,0.93,ok,930,7,FALSE
+season x period,Drum. & Nicolet,0.94,ok,924.7,7,FALSE
+season x period,Drum. & Nicolet,0.95,ok,919.4,7,FALSE
+season x period,Drum. & Nicolet,0.96,ok,913.9,7,FALSE
+season x period,Drum. & Nicolet,0.97,ok,908.5,7,FALSE
+season x period,Drum. & Nicolet,0.98,ok,902.9,7,FALSE
+season x period,Drum. & Nicolet,0.99,ok,896.7,7,TRUE
+season x period,L'Ass. & Les Cèd.,0.01,ok,897.4,6,TRUE
+season x period,L'Ass. & Les Cèd.,0.02,ok,902.9,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.03,ok,906.3,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.04,ok,910.1,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.05,ok,914.4,6,TRUE
+season x period,L'Ass. & Les Cèd.,0.06,ok,919.2,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.07,ok,924.1,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.08,ok,928.7,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.09,ok,932.9,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.1,ok,936.9,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.11,ok,940.6,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.12,ok,944.5,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.13,ok,948.5,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.14,ok,952.4,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.15,ok,956.2,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.16,ok,959.5,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.17,ok,962.5,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.18,ok,965.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.19,ok,968.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.2,ok,971.3,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.21,ok,974,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.22,ok,976.8,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.23,ok,979.7,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.24,ok,982.7,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.25,ok,985.5,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.26,ok,988.2,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.27,ok,990.8,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.28,ok,993,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.29,ok,994.9,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.3,ok,996.9,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.31,ok,998.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.32,ok,1000,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.33,ok,1002,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.34,ok,1003,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.35,ok,1004,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.36,ok,1005,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.37,ok,1006,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.38,ok,1007,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.39,ok,1009,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.4,ok,1010,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.41,ok,1011,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.42,ok,1012,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.43,ok,1013,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.44,ok,1014,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.45,ok,1015,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.46,ok,1015,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.47,ok,1015,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.48,ok,1015,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.49,ok,1015,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.5,ok,1015,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.51,ok,1014,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.52,ok,1013,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.53,ok,1012,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.54,ok,1011,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.55,ok,1010,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.56,ok,1008,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.57,ok,1007,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.58,ok,1005,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.59,ok,1003,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.6,ok,1002,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.61,ok,1000,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.62,ok,998.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.63,ok,997.1,7,TRUE
+season x period,L'Ass. & Les Cèd.,0.64,ok,995.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.65,ok,994,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.66,ok,992.5,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.67,ok,990.7,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.68,ok,988.7,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.69,ok,986.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.7,ok,984.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.71,ok,982.4,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.72,ok,980.1,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.73,ok,977.4,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.74,ok,974.5,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.75,ok,971.4,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.76,ok,968.3,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.77,ok,965,7,TRUE
+season x period,L'Ass. & Les Cèd.,0.78,ok,961.9,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.79,ok,959.1,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.8,ok,956.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.81,ok,954.2,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.82,ok,952,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.83,ok,950.1,7,TRUE
+season x period,L'Ass. & Les Cèd.,0.84,ok,948.3,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.85,ok,946.2,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.86,ok,943.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.87,ok,940.6,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.88,ok,937.7,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.89,ok,934.4,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.9,ok,930.4,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.91,ok,926.1,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.92,ok,922,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.93,ok,918.2,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.94,ok,914.5,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.95,ok,910.5,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.96,ok,906.8,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.97,ok,903.7,6,FALSE
+season x period,L'Ass. & Les Cèd.,0.98,ok,900.3,7,FALSE
+season x period,L'Ass. & Les Cèd.,0.99,ok,896.2,7,TRUE
+season x period,L'Ass. & St-Ch.,0.01,ok,873,6,TRUE
+season x period,L'Ass. & St-Ch.,0.02,ok,877.2,7,TRUE
+season x period,L'Ass. & St-Ch.,0.03,ok,881.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.04,ok,886.2,7,TRUE
+season x period,L'Ass. & St-Ch.,0.05,ok,890.5,7,TRUE
+season x period,L'Ass. & St-Ch.,0.06,ok,894.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.07,ok,898.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.08,ok,902.7,7,TRUE
+season x period,L'Ass. & St-Ch.,0.09,ok,906.3,7,FALSE
+season x period,L'Ass. & St-Ch.,0.1,ok,909.8,7,FALSE
+season x period,L'Ass. & St-Ch.,0.11,ok,913.1,7,FALSE
+season x period,L'Ass. & St-Ch.,0.12,ok,916,7,FALSE
+season x period,L'Ass. & St-Ch.,0.13,ok,918.4,7,FALSE
+season x period,L'Ass. & St-Ch.,0.14,ok,921.1,7,TRUE
+season x period,L'Ass. & St-Ch.,0.15,ok,923.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.16,ok,926.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.17,ok,929.8,7,TRUE
+season x period,L'Ass. & St-Ch.,0.18,ok,933.1,7,FALSE
+season x period,L'Ass. & St-Ch.,0.19,ok,935.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.2,ok,939,7,FALSE
+season x period,L'Ass. & St-Ch.,0.21,ok,941.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.22,ok,944.8,7,FALSE
+season x period,L'Ass. & St-Ch.,0.23,ok,947.3,7,FALSE
+season x period,L'Ass. & St-Ch.,0.24,ok,949.5,7,FALSE
+season x period,L'Ass. & St-Ch.,0.25,ok,951.3,7,TRUE
+season x period,L'Ass. & St-Ch.,0.26,ok,952.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.27,ok,954.6,7,FALSE
+season x period,L'Ass. & St-Ch.,0.28,ok,956.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.29,ok,957.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.3,ok,958.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.31,ok,959.2,6,TRUE
+season x period,L'Ass. & St-Ch.,0.32,ok,960.2,6,FALSE
+season x period,L'Ass. & St-Ch.,0.33,ok,961,6,TRUE
+season x period,L'Ass. & St-Ch.,0.34,ok,961.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.35,ok,962.1,6,FALSE
+season x period,L'Ass. & St-Ch.,0.36,ok,962.7,6,TRUE
+season x period,L'Ass. & St-Ch.,0.37,ok,963.3,6,TRUE
+season x period,L'Ass. & St-Ch.,0.38,ok,963.8,6,FALSE
+season x period,L'Ass. & St-Ch.,0.39,ok,964,6,FALSE
+season x period,L'Ass. & St-Ch.,0.4,ok,964.2,6,TRUE
+season x period,L'Ass. & St-Ch.,0.41,ok,964.5,6,TRUE
+season x period,L'Ass. & St-Ch.,0.42,ok,964.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.43,ok,964.7,6,TRUE
+season x period,L'Ass. & St-Ch.,0.44,ok,964.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.45,ok,964.2,6,TRUE
+season x period,L'Ass. & St-Ch.,0.46,ok,963.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.47,ok,963,6,FALSE
+season x period,L'Ass. & St-Ch.,0.48,ok,962.5,6,TRUE
+season x period,L'Ass. & St-Ch.,0.49,ok,962.3,6,TRUE
+season x period,L'Ass. & St-Ch.,0.5,ok,962.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.51,ok,961.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.52,ok,961.3,6,TRUE
+season x period,L'Ass. & St-Ch.,0.53,ok,961.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.54,ok,960.9,6,TRUE
+season x period,L'Ass. & St-Ch.,0.55,ok,960.8,6,FALSE
+season x period,L'Ass. & St-Ch.,0.56,ok,960.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.57,ok,960.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.58,ok,959.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.59,ok,959.3,6,TRUE
+season x period,L'Ass. & St-Ch.,0.6,ok,959,6,FALSE
+season x period,L'Ass. & St-Ch.,0.61,ok,958.5,6,TRUE
+season x period,L'Ass. & St-Ch.,0.62,ok,957.3,6,TRUE
+season x period,L'Ass. & St-Ch.,0.63,ok,956.2,6,FALSE
+season x period,L'Ass. & St-Ch.,0.64,ok,954.9,6,TRUE
+season x period,L'Ass. & St-Ch.,0.65,ok,953.7,6,TRUE
+season x period,L'Ass. & St-Ch.,0.66,ok,952.6,6,FALSE
+season x period,L'Ass. & St-Ch.,0.67,ok,951.4,6,TRUE
+season x period,L'Ass. & St-Ch.,0.68,ok,950.2,6,TRUE
+season x period,L'Ass. & St-Ch.,0.69,ok,948.7,6,TRUE
+season x period,L'Ass. & St-Ch.,0.7,ok,947.1,6,TRUE
+season x period,L'Ass. & St-Ch.,0.71,ok,945.5,6,TRUE
+season x period,L'Ass. & St-Ch.,0.72,ok,943.7,6,FALSE
+season x period,L'Ass. & St-Ch.,0.73,ok,942,6,FALSE
+season x period,L'Ass. & St-Ch.,0.74,ok,940.5,6,TRUE
+season x period,L'Ass. & St-Ch.,0.75,ok,939,6,FALSE
+season x period,L'Ass. & St-Ch.,0.76,ok,937.5,7,TRUE
+season x period,L'Ass. & St-Ch.,0.77,ok,935.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.78,ok,933.9,7,TRUE
+season x period,L'Ass. & St-Ch.,0.79,ok,932.1,7,FALSE
+season x period,L'Ass. & St-Ch.,0.8,ok,930.6,7,FALSE
+season x period,L'Ass. & St-Ch.,0.81,ok,928.8,7,FALSE
+season x period,L'Ass. & St-Ch.,0.82,ok,927.2,7,FALSE
+season x period,L'Ass. & St-Ch.,0.83,ok,925.8,7,FALSE
+season x period,L'Ass. & St-Ch.,0.84,ok,924.2,7,FALSE
+season x period,L'Ass. & St-Ch.,0.85,ok,922.4,7,TRUE
+season x period,L'Ass. & St-Ch.,0.86,ok,920.3,7,FALSE
+season x period,L'Ass. & St-Ch.,0.87,ok,918.5,7,FALSE
+season x period,L'Ass. & St-Ch.,0.88,ok,916.4,7,FALSE
+season x period,L'Ass. & St-Ch.,0.89,ok,913.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.9,ok,910.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.91,ok,907.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.92,ok,903.9,7,FALSE
+season x period,L'Ass. & St-Ch.,0.93,ok,899.7,7,FALSE
+season x period,L'Ass. & St-Ch.,0.94,ok,895.6,6,FALSE
+season x period,L'Ass. & St-Ch.,0.95,ok,891.6,6,TRUE
+season x period,L'Ass. & St-Ch.,0.96,ok,888.4,6,FALSE
+season x period,L'Ass. & St-Ch.,0.97,ok,885.4,7,TRUE
+season x period,L'Ass. & St-Ch.,0.98,ok,880.6,7,FALSE
+season x period,L'Ass. & St-Ch.,0.99,ok,876.2,7,TRUE
+season x period,L'Ass. & Lennox.,0.01,ok,895.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.02,ok,892.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.03,ok,891.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.04,ok,892.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.05,ok,892.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.06,ok,892,6,FALSE
+season x period,L'Ass. & Lennox.,0.07,ok,892,6,TRUE
+season x period,L'Ass. & Lennox.,0.08,ok,893,6,TRUE
+season x period,L'Ass. & Lennox.,0.09,ok,894.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.1,ok,896.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.11,ok,898.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.12,ok,901.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.13,ok,903.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.14,ok,905.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.15,ok,907.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.16,ok,909.5,6,FALSE
+season x period,L'Ass. & Lennox.,0.17,ok,911.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.18,ok,913.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.19,ok,915.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.2,ok,917.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.21,ok,919.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.22,ok,921.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.23,ok,924.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.24,ok,926.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.25,ok,928.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.26,ok,929.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.27,ok,931.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.28,ok,932.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.29,ok,934,6,FALSE
+season x period,L'Ass. & Lennox.,0.3,ok,934.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.31,ok,935.7,6,TRUE
+season x period,L'Ass. & Lennox.,0.32,ok,936.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.33,ok,937.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.34,ok,938.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.35,ok,939.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.36,ok,940.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.37,ok,941.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.38,ok,942.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.39,ok,941.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.4,ok,941.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.41,ok,940.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.42,ok,939.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.43,ok,938.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.44,ok,937,6,TRUE
+season x period,L'Ass. & Lennox.,0.45,ok,936.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.46,ok,935.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.47,ok,935.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.48,ok,935.3,6,FALSE
+season x period,L'Ass. & Lennox.,0.49,ok,935,6,FALSE
+season x period,L'Ass. & Lennox.,0.5,ok,934.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.51,ok,934.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.52,ok,933.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.53,ok,932.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.54,ok,931.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.55,ok,930.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.56,ok,929.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.57,ok,928.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.58,ok,927.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.59,ok,927.3,6,FALSE
+season x period,L'Ass. & Lennox.,0.6,ok,926.7,6,TRUE
+season x period,L'Ass. & Lennox.,0.61,ok,926.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.62,ok,925.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.63,ok,924.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.64,ok,924.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.65,ok,923.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.66,ok,923.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.67,ok,923.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.68,ok,922.9,6,TRUE
+season x period,L'Ass. & Lennox.,0.69,ok,922.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.7,ok,922.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.71,ok,922.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.72,ok,922.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.73,ok,922.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.74,ok,922.2,6,TRUE
+season x period,L'Ass. & Lennox.,0.75,ok,921.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.76,ok,920.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.77,ok,920,6,FALSE
+season x period,L'Ass. & Lennox.,0.78,ok,919.6,6,TRUE
+season x period,L'Ass. & Lennox.,0.79,ok,919.3,6,TRUE
+season x period,L'Ass. & Lennox.,0.8,ok,919.2,6,FALSE
+season x period,L'Ass. & Lennox.,0.81,ok,919,6,FALSE
+season x period,L'Ass. & Lennox.,0.82,ok,919.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.83,ok,919.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.84,ok,919.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.85,ok,919.6,6,FALSE
+season x period,L'Ass. & Lennox.,0.86,ok,919.4,6,FALSE
+season x period,L'Ass. & Lennox.,0.87,ok,919.1,6,FALSE
+season x period,L'Ass. & Lennox.,0.88,ok,918.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.89,ok,917.8,6,FALSE
+season x period,L'Ass. & Lennox.,0.9,ok,916.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.91,ok,915.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.92,ok,914.4,6,TRUE
+season x period,L'Ass. & Lennox.,0.93,ok,912.1,6,TRUE
+season x period,L'Ass. & Lennox.,0.94,ok,909.1,6,FALSE
+season x period,L'Ass. & Lennox.,0.95,ok,906.5,6,FALSE
+season x period,L'Ass. & Lennox.,0.96,ok,904.5,6,TRUE
+season x period,L'Ass. & Lennox.,0.97,ok,903.1,6,FALSE
+season x period,L'Ass. & Lennox.,0.98,ok,900.8,6,TRUE
+season x period,L'Ass. & Lennox.,0.99,ok,899.1,7,TRUE
+season x period,L'Ass. & Nicolet,0.01,ok,898.3,6,TRUE
+season x period,L'Ass. & Nicolet,0.02,ok,903.1,6,FALSE
+season x period,L'Ass. & Nicolet,0.03,ok,908.5,7,FALSE
+season x period,L'Ass. & Nicolet,0.04,ok,913.3,7,FALSE
+season x period,L'Ass. & Nicolet,0.05,ok,918.3,7,FALSE
+season x period,L'Ass. & Nicolet,0.06,ok,923.2,7,FALSE
+season x period,L'Ass. & Nicolet,0.07,ok,928.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.08,ok,932.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.09,ok,937.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.1,ok,940.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.11,ok,944.6,7,FALSE
+season x period,L'Ass. & Nicolet,0.12,ok,948.2,7,FALSE
+season x period,L'Ass. & Nicolet,0.13,ok,951.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.14,ok,955,7,FALSE
+season x period,L'Ass. & Nicolet,0.15,ok,957.9,7,FALSE
+season x period,L'Ass. & Nicolet,0.16,ok,960.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.17,ok,963.5,7,FALSE
+season x period,L'Ass. & Nicolet,0.18,ok,966.2,7,FALSE
+season x period,L'Ass. & Nicolet,0.19,ok,968.9,7,FALSE
+season x period,L'Ass. & Nicolet,0.2,ok,971.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.21,ok,975,7,FALSE
+season x period,L'Ass. & Nicolet,0.22,ok,978,7,FALSE
+season x period,L'Ass. & Nicolet,0.23,ok,980.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.24,ok,983.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.25,ok,986.6,7,FALSE
+season x period,L'Ass. & Nicolet,0.26,ok,989.6,7,FALSE
+season x period,L'Ass. & Nicolet,0.27,ok,992.6,7,FALSE
+season x period,L'Ass. & Nicolet,0.28,ok,995.6,7,FALSE
+season x period,L'Ass. & Nicolet,0.29,ok,998.3,7,FALSE
+season x period,L'Ass. & Nicolet,0.3,ok,1001,7,FALSE
+season x period,L'Ass. & Nicolet,0.31,ok,1002,7,FALSE
+season x period,L'Ass. & Nicolet,0.32,ok,1004,7,FALSE
+season x period,L'Ass. & Nicolet,0.33,ok,1005,7,FALSE
+season x period,L'Ass. & Nicolet,0.34,ok,1006,7,FALSE
+season x period,L'Ass. & Nicolet,0.35,ok,1007,7,FALSE
+season x period,L'Ass. & Nicolet,0.36,ok,1008,7,FALSE
+season x period,L'Ass. & Nicolet,0.37,ok,1009,7,FALSE
+season x period,L'Ass. & Nicolet,0.38,ok,1010,7,FALSE
+season x period,L'Ass. & Nicolet,0.39,ok,1011,7,FALSE
+season x period,L'Ass. & Nicolet,0.4,ok,1012,7,FALSE
+season x period,L'Ass. & Nicolet,0.41,ok,1013,7,FALSE
+season x period,L'Ass. & Nicolet,0.42,ok,1014,7,FALSE
+season x period,L'Ass. & Nicolet,0.43,ok,1015,7,FALSE
+season x period,L'Ass. & Nicolet,0.44,ok,1016,7,FALSE
+season x period,L'Ass. & Nicolet,0.45,ok,1017,7,FALSE
+season x period,L'Ass. & Nicolet,0.46,ok,1017,7,FALSE
+season x period,L'Ass. & Nicolet,0.47,ok,1018,7,FALSE
+season x period,L'Ass. & Nicolet,0.48,ok,1018,7,FALSE
+season x period,L'Ass. & Nicolet,0.49,ok,1018,7,FALSE
+season x period,L'Ass. & Nicolet,0.5,ok,1018,7,FALSE
+season x period,L'Ass. & Nicolet,0.51,ok,1017,7,FALSE
+season x period,L'Ass. & Nicolet,0.52,ok,1017,7,FALSE
+season x period,L'Ass. & Nicolet,0.53,ok,1016,7,FALSE
+season x period,L'Ass. & Nicolet,0.54,ok,1015,7,FALSE
+season x period,L'Ass. & Nicolet,0.55,ok,1014,7,FALSE
+season x period,L'Ass. & Nicolet,0.56,ok,1013,7,FALSE
+season x period,L'Ass. & Nicolet,0.57,ok,1012,7,FALSE
+season x period,L'Ass. & Nicolet,0.58,ok,1011,7,FALSE
+season x period,L'Ass. & Nicolet,0.59,ok,1010,7,FALSE
+season x period,L'Ass. & Nicolet,0.6,ok,1008,7,FALSE
+season x period,L'Ass. & Nicolet,0.61,ok,1007,7,FALSE
+season x period,L'Ass. & Nicolet,0.62,ok,1005,7,FALSE
+season x period,L'Ass. & Nicolet,0.63,ok,1003,7,FALSE
+season x period,L'Ass. & Nicolet,0.64,ok,1001,7,FALSE
+season x period,L'Ass. & Nicolet,0.65,ok,998.4,7,FALSE
+season x period,L'Ass. & Nicolet,0.66,ok,996.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.67,ok,993.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.68,ok,991.4,7,FALSE
+season x period,L'Ass. & Nicolet,0.69,ok,989,7,FALSE
+season x period,L'Ass. & Nicolet,0.7,ok,986.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.71,ok,984.4,7,FALSE
+season x period,L'Ass. & Nicolet,0.72,ok,982.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.73,ok,979.9,7,FALSE
+season x period,L'Ass. & Nicolet,0.74,ok,977.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.75,ok,975.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.76,ok,973.5,7,FALSE
+season x period,L'Ass. & Nicolet,0.77,ok,971.4,7,FALSE
+season x period,L'Ass. & Nicolet,0.78,ok,969.2,7,FALSE
+season x period,L'Ass. & Nicolet,0.79,ok,967.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.8,ok,964.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.81,ok,962.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.82,ok,959.6,7,FALSE
+season x period,L'Ass. & Nicolet,0.83,ok,957,7,FALSE
+season x period,L'Ass. & Nicolet,0.84,ok,954.3,7,FALSE
+season x period,L'Ass. & Nicolet,0.85,ok,951.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.86,ok,949.2,7,FALSE
+season x period,L'Ass. & Nicolet,0.87,ok,946.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.88,ok,943.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.89,ok,940.4,7,FALSE
+season x period,L'Ass. & Nicolet,0.9,ok,936.9,7,FALSE
+season x period,L'Ass. & Nicolet,0.91,ok,933.1,7,FALSE
+season x period,L'Ass. & Nicolet,0.92,ok,929.2,7,FALSE
+season x period,L'Ass. & Nicolet,0.93,ok,925.5,7,FALSE
+season x period,L'Ass. & Nicolet,0.94,ok,921.8,7,FALSE
+season x period,L'Ass. & Nicolet,0.95,ok,918,7,FALSE
+season x period,L'Ass. & Nicolet,0.96,ok,914.5,7,FALSE
+season x period,L'Ass. & Nicolet,0.97,ok,909.7,7,FALSE
+season x period,L'Ass. & Nicolet,0.98,ok,903.8,7,TRUE
+season x period,L'Ass. & Nicolet,0.99,ok,898,7,TRUE
+season x period,Les Cèd. & St-Ch.,0.01,ok,880.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.02,ok,881.6,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.03,ok,884.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.04,ok,888.5,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.05,ok,891.3,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.06,ok,892.9,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.07,ok,893.6,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.08,ok,893.8,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.09,ok,894,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.1,ok,894.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.11,ok,894.8,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.12,ok,895.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.13,ok,896.8,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.14,ok,898.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.15,ok,899.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.16,ok,900.8,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.17,ok,901.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.18,ok,902.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.19,ok,903.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.2,ok,903.8,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.21,ok,903.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.22,ok,904.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.23,ok,904.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.24,ok,904.8,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.25,ok,905.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.26,ok,906.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.27,ok,907.2,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.28,ok,908.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.29,ok,910.4,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.3,ok,912.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.31,ok,914.2,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.32,ok,916.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.33,ok,917.9,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.34,ok,919.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.35,ok,920.6,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.36,ok,921.9,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.37,ok,923.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.38,ok,925,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.39,ok,926.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.4,ok,928.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.41,ok,929.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.42,ok,931.4,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.43,ok,932.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.44,ok,933.4,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.45,ok,934.2,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.46,ok,935,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.47,ok,935.6,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.48,ok,936.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.49,ok,936.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.5,ok,936.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.51,ok,936.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.52,ok,936.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.53,ok,936.8,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.54,ok,936.7,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.55,ok,936.2,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.56,ok,935.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.57,ok,934.9,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.58,ok,934.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.59,ok,933.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.6,ok,933.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.61,ok,933.1,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.62,ok,932.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.63,ok,931.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.64,ok,930.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.65,ok,929,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.66,ok,927.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.67,ok,926,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.68,ok,924.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.69,ok,923.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.7,ok,921.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.71,ok,920.8,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.72,ok,919.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.73,ok,919.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.74,ok,918.4,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.75,ok,917.6,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.76,ok,916.9,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.77,ok,916.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.78,ok,915.5,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.79,ok,914.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.8,ok,913.7,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.81,ok,911.7,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.82,ok,909.9,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.83,ok,907.8,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.84,ok,906.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.85,ok,904.1,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.86,ok,902.5,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.87,ok,901,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.88,ok,899.8,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.89,ok,898.2,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.9,ok,896.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.91,ok,894.4,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.92,ok,892.7,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.93,ok,890.3,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.94,ok,887.9,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.95,ok,886.2,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.96,ok,884.3,6,FALSE
+season x period,Les Cèd. & St-Ch.,0.97,ok,883.1,6,TRUE
+season x period,Les Cèd. & St-Ch.,0.98,ok,882.4,7,TRUE
+season x period,Les Cèd. & St-Ch.,0.99,ok,882,7,TRUE
+season x period,Les Cèd. & Lennox.,0.01,ok,902.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.02,ok,903.8,6,TRUE
+season x period,Les Cèd. & Lennox.,0.03,ok,907.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.04,ok,910.8,6,TRUE
+season x period,Les Cèd. & Lennox.,0.05,ok,912.4,6,FALSE
+season x period,Les Cèd. & Lennox.,0.06,ok,913.5,6,FALSE
+season x period,Les Cèd. & Lennox.,0.07,ok,914.2,6,FALSE
+season x period,Les Cèd. & Lennox.,0.08,ok,914.8,6,FALSE
+season x period,Les Cèd. & Lennox.,0.09,ok,915.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.1,ok,916.3,6,FALSE
+season x period,Les Cèd. & Lennox.,0.11,ok,916.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.12,ok,917,6,TRUE
+season x period,Les Cèd. & Lennox.,0.13,ok,917.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.14,ok,916.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.15,ok,916.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.16,ok,917.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.17,ok,917.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.18,ok,917.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.19,ok,917.2,6,FALSE
+season x period,Les Cèd. & Lennox.,0.2,ok,917.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.21,ok,917.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.22,ok,917.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.23,ok,917.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.24,ok,917.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.25,ok,917.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.26,ok,917.7,6,FALSE
+season x period,Les Cèd. & Lennox.,0.27,ok,917.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.28,ok,918.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.29,ok,918.5,6,TRUE
+season x period,Les Cèd. & Lennox.,0.3,ok,919,6,TRUE
+season x period,Les Cèd. & Lennox.,0.31,ok,919.4,6,FALSE
+season x period,Les Cèd. & Lennox.,0.32,ok,919.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.33,ok,919.8,6,TRUE
+season x period,Les Cèd. & Lennox.,0.34,ok,920.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.35,ok,920.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.36,ok,920.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.37,ok,920.7,6,FALSE
+season x period,Les Cèd. & Lennox.,0.38,ok,920.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.39,ok,920.4,6,FALSE
+season x period,Les Cèd. & Lennox.,0.4,ok,920.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.41,ok,920.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.42,ok,920,6,TRUE
+season x period,Les Cèd. & Lennox.,0.43,ok,919.8,6,TRUE
+season x period,Les Cèd. & Lennox.,0.44,ok,919.5,6,TRUE
+season x period,Les Cèd. & Lennox.,0.45,ok,919.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.46,ok,919.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.47,ok,919.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.48,ok,919.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.49,ok,919.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.5,ok,919.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.51,ok,918.7,6,TRUE
+season x period,Les Cèd. & Lennox.,0.52,ok,918.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.53,ok,917.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.54,ok,917.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.55,ok,917,6,TRUE
+season x period,Les Cèd. & Lennox.,0.56,ok,916.7,6,TRUE
+season x period,Les Cèd. & Lennox.,0.57,ok,916.5,6,TRUE
+season x period,Les Cèd. & Lennox.,0.58,ok,916.5,6,TRUE
+season x period,Les Cèd. & Lennox.,0.59,ok,916.6,6,FALSE
+season x period,Les Cèd. & Lennox.,0.6,ok,916.6,6,FALSE
+season x period,Les Cèd. & Lennox.,0.61,ok,916.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.62,ok,916.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.63,ok,916.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.64,ok,916.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.65,ok,915.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.66,ok,915.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.67,ok,915.7,6,TRUE
+season x period,Les Cèd. & Lennox.,0.68,ok,915.4,6,FALSE
+season x period,Les Cèd. & Lennox.,0.69,ok,914.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.7,ok,914.1,6,FALSE
+season x period,Les Cèd. & Lennox.,0.71,ok,912.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.72,ok,912,6,TRUE
+season x period,Les Cèd. & Lennox.,0.73,ok,911.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.74,ok,910.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.75,ok,909.5,6,TRUE
+season x period,Les Cèd. & Lennox.,0.76,ok,908.7,6,TRUE
+season x period,Les Cèd. & Lennox.,0.77,ok,908.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.78,ok,907.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.79,ok,906.5,6,FALSE
+season x period,Les Cèd. & Lennox.,0.8,ok,906,6,TRUE
+season x period,Les Cèd. & Lennox.,0.81,ok,905.7,6,TRUE
+season x period,Les Cèd. & Lennox.,0.82,ok,905.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.83,ok,905.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.84,ok,906.4,6,FALSE
+season x period,Les Cèd. & Lennox.,0.85,ok,907.1,6,TRUE
+season x period,Les Cèd. & Lennox.,0.86,ok,907.5,6,FALSE
+season x period,Les Cèd. & Lennox.,0.87,ok,907.4,6,TRUE
+season x period,Les Cèd. & Lennox.,0.88,ok,906.9,6,FALSE
+season x period,Les Cèd. & Lennox.,0.89,ok,906.5,6,FALSE
+season x period,Les Cèd. & Lennox.,0.9,ok,906.8,6,FALSE
+season x period,Les Cèd. & Lennox.,0.91,ok,907.4,6,FALSE
+season x period,Les Cèd. & Lennox.,0.92,ok,907.8,6,FALSE
+season x period,Les Cèd. & Lennox.,0.93,ok,908.2,6,TRUE
+season x period,Les Cèd. & Lennox.,0.94,ok,908.9,6,TRUE
+season x period,Les Cèd. & Lennox.,0.95,ok,908.3,6,TRUE
+season x period,Les Cèd. & Lennox.,0.96,ok,907.6,6,TRUE
+season x period,Les Cèd. & Lennox.,0.97,ok,906.7,6,TRUE
+season x period,Les Cèd. & Lennox.,0.98,ok,906,6,TRUE
+season x period,Les Cèd. & Lennox.,0.99,ok,905.3,7,TRUE
+season x period,Les Cèd. & Nicolet,0.01,ok,902,6,TRUE
+season x period,Les Cèd. & Nicolet,0.02,ok,905.5,6,FALSE
+season x period,Les Cèd. & Nicolet,0.03,ok,909.4,6,FALSE
+season x period,Les Cèd. & Nicolet,0.04,ok,910.8,6,FALSE
+season x period,Les Cèd. & Nicolet,0.05,ok,912,6,FALSE
+season x period,Les Cèd. & Nicolet,0.06,ok,914.2,6,TRUE
+season x period,Les Cèd. & Nicolet,0.07,ok,916.6,6,TRUE
+season x period,Les Cèd. & Nicolet,0.08,ok,917.9,6,FALSE
+season x period,Les Cèd. & Nicolet,0.09,ok,918.2,6,FALSE
+season x period,Les Cèd. & Nicolet,0.1,ok,918.9,6,TRUE
+season x period,Les Cèd. & Nicolet,0.11,ok,919.9,6,FALSE
+season x period,Les Cèd. & Nicolet,0.12,ok,921.3,6,TRUE
+season x period,Les Cèd. & Nicolet,0.13,ok,922.7,6,TRUE
+season x period,Les Cèd. & Nicolet,0.14,ok,924,6,TRUE
+season x period,Les Cèd. & Nicolet,0.15,ok,926,6,TRUE
+season x period,Les Cèd. & Nicolet,0.16,ok,927.7,6,FALSE
+season x period,Les Cèd. & Nicolet,0.17,ok,929.5,6,FALSE
+season x period,Les Cèd. & Nicolet,0.18,ok,931.6,6,TRUE
+season x period,Les Cèd. & Nicolet,0.19,ok,933.3,6,FALSE
+season x period,Les Cèd. & Nicolet,0.2,ok,934.5,6,FALSE
+season x period,Les Cèd. & Nicolet,0.21,ok,935.7,6,FALSE
+season x period,Les Cèd. & Nicolet,0.22,ok,936.5,6,FALSE
+season x period,Les Cèd. & Nicolet,0.23,ok,937.2,6,FALSE
+season x period,Les Cèd. & Nicolet,0.24,ok,937.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.25,ok,938,6,TRUE
+season x period,Les Cèd. & Nicolet,0.26,ok,937.9,6,TRUE
+season x period,Les Cèd. & Nicolet,0.27,ok,937.7,6,FALSE
+season x period,Les Cèd. & Nicolet,0.28,ok,937.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.29,ok,937.6,6,TRUE
+season x period,Les Cèd. & Nicolet,0.3,ok,937.6,6,TRUE
+season x period,Les Cèd. & Nicolet,0.31,ok,937.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.32,ok,937.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.33,ok,937.8,6,FALSE
+season x period,Les Cèd. & Nicolet,0.34,ok,937.9,6,TRUE
+season x period,Les Cèd. & Nicolet,0.35,ok,938.3,6,FALSE
+season x period,Les Cèd. & Nicolet,0.36,ok,939,6,FALSE
+season x period,Les Cèd. & Nicolet,0.37,ok,939.9,6,TRUE
+season x period,Les Cèd. & Nicolet,0.38,ok,940.8,6,FALSE
+season x period,Les Cèd. & Nicolet,0.39,ok,941.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.4,ok,942.4,6,TRUE
+season x period,Les Cèd. & Nicolet,0.41,ok,943.5,6,FALSE
+season x period,Les Cèd. & Nicolet,0.42,ok,944.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.43,ok,945.4,6,TRUE
+season x period,Les Cèd. & Nicolet,0.44,ok,946.2,6,TRUE
+season x period,Les Cèd. & Nicolet,0.45,ok,946.7,6,FALSE
+season x period,Les Cèd. & Nicolet,0.46,ok,947.3,6,FALSE
+season x period,Les Cèd. & Nicolet,0.47,ok,947.8,6,FALSE
+season x period,Les Cèd. & Nicolet,0.48,ok,948.4,6,TRUE
+season x period,Les Cèd. & Nicolet,0.49,ok,949,6,FALSE
+season x period,Les Cèd. & Nicolet,0.5,ok,949.7,6,TRUE
+season x period,Les Cèd. & Nicolet,0.51,ok,950,6,FALSE
+season x period,Les Cèd. & Nicolet,0.52,ok,950.1,6,FALSE
+season x period,Les Cèd. & Nicolet,0.53,ok,950.2,6,TRUE
+season x period,Les Cèd. & Nicolet,0.54,ok,950.5,7,TRUE
+season x period,Les Cèd. & Nicolet,0.55,ok,950.9,7,FALSE
+season x period,Les Cèd. & Nicolet,0.56,ok,951.4,7,FALSE
+season x period,Les Cèd. & Nicolet,0.57,ok,951.8,7,FALSE
+season x period,Les Cèd. & Nicolet,0.58,ok,952.1,7,FALSE
+season x period,Les Cèd. & Nicolet,0.59,ok,952.3,7,FALSE
+season x period,Les Cèd. & Nicolet,0.6,ok,952.4,7,FALSE
+season x period,Les Cèd. & Nicolet,0.61,ok,952.5,7,FALSE
+season x period,Les Cèd. & Nicolet,0.62,ok,952.8,7,FALSE
+season x period,Les Cèd. & Nicolet,0.63,ok,952.9,7,FALSE
+season x period,Les Cèd. & Nicolet,0.64,ok,952.7,7,FALSE
+season x period,Les Cèd. & Nicolet,0.65,ok,952.7,7,FALSE
+season x period,Les Cèd. & Nicolet,0.66,ok,952.5,7,FALSE
+season x period,Les Cèd. & Nicolet,0.67,ok,951.6,7,FALSE
+season x period,Les Cèd. & Nicolet,0.68,ok,950.5,7,FALSE
+season x period,Les Cèd. & Nicolet,0.69,ok,949.4,7,FALSE
+season x period,Les Cèd. & Nicolet,0.7,ok,948.3,7,FALSE
+season x period,Les Cèd. & Nicolet,0.71,ok,947.4,7,FALSE
+season x period,Les Cèd. & Nicolet,0.72,ok,946.6,7,TRUE
+season x period,Les Cèd. & Nicolet,0.73,ok,945.7,7,TRUE
+season x period,Les Cèd. & Nicolet,0.74,ok,944.9,7,FALSE
+season x period,Les Cèd. & Nicolet,0.75,ok,944.4,7,FALSE
+season x period,Les Cèd. & Nicolet,0.76,ok,943.9,7,FALSE
+season x period,Les Cèd. & Nicolet,0.77,ok,943.1,7,TRUE
+season x period,Les Cèd. & Nicolet,0.78,ok,942.1,7,FALSE
+season x period,Les Cèd. & Nicolet,0.79,ok,940.8,7,FALSE
+season x period,Les Cèd. & Nicolet,0.8,ok,939.4,7,FALSE
+season x period,Les Cèd. & Nicolet,0.81,ok,938.1,7,FALSE
+season x period,Les Cèd. & Nicolet,0.82,ok,936.7,7,FALSE
+season x period,Les Cèd. & Nicolet,0.83,ok,935.3,6,FALSE
+season x period,Les Cèd. & Nicolet,0.84,ok,934.2,6,TRUE
+season x period,Les Cèd. & Nicolet,0.85,ok,932.9,6,FALSE
+season x period,Les Cèd. & Nicolet,0.86,ok,931.5,6,TRUE
+season x period,Les Cèd. & Nicolet,0.87,ok,930.1,6,TRUE
+season x period,Les Cèd. & Nicolet,0.88,ok,928.3,6,FALSE
+season x period,Les Cèd. & Nicolet,0.89,ok,926.1,6,FALSE
+season x period,Les Cèd. & Nicolet,0.9,ok,924.1,6,FALSE
+season x period,Les Cèd. & Nicolet,0.91,ok,922,6,FALSE
+season x period,Les Cèd. & Nicolet,0.92,ok,919.9,6,TRUE
+season x period,Les Cèd. & Nicolet,0.93,ok,917.6,6,TRUE
+season x period,Les Cèd. & Nicolet,0.94,ok,915,6,TRUE
+season x period,Les Cèd. & Nicolet,0.95,ok,912,6,FALSE
+season x period,Les Cèd. & Nicolet,0.96,ok,908.5,6,TRUE
+season x period,Les Cèd. & Nicolet,0.97,ok,905.9,6,TRUE
+season x period,Les Cèd. & Nicolet,0.98,ok,903.6,6,FALSE
+season x period,Les Cèd. & Nicolet,0.99,ok,901.1,7,TRUE
+season x period,St-Ch. & Lennox.,0.01,ok,884.4,6,TRUE
+season x period,St-Ch. & Lennox.,0.02,ok,886.2,6,FALSE
+season x period,St-Ch. & Lennox.,0.03,ok,888,6,FALSE
+season x period,St-Ch. & Lennox.,0.04,ok,889.4,6,FALSE
+season x period,St-Ch. & Lennox.,0.05,ok,889.4,6,FALSE
+season x period,St-Ch. & Lennox.,0.06,ok,890.1,6,FALSE
+season x period,St-Ch. & Lennox.,0.07,ok,891.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.08,ok,892.5,6,FALSE
+season x period,St-Ch. & Lennox.,0.09,ok,892.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.1,ok,892.2,6,FALSE
+season x period,St-Ch. & Lennox.,0.11,ok,890.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.12,ok,889.7,6,TRUE
+season x period,St-Ch. & Lennox.,0.13,ok,888.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.14,ok,887.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.15,ok,885.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.16,ok,882.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.17,ok,881,6,TRUE
+season x period,St-Ch. & Lennox.,0.18,ok,879.4,6,FALSE
+season x period,St-Ch. & Lennox.,0.19,ok,877.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.2,ok,876.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.21,ok,874.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.22,ok,873.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.23,ok,872,6,TRUE
+season x period,St-Ch. & Lennox.,0.24,ok,870.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.25,ok,870.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.26,ok,869.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.27,ok,868.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.28,ok,867.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.29,ok,867.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.3,ok,867.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.31,ok,867.7,6,TRUE
+season x period,St-Ch. & Lennox.,0.32,ok,868,6,TRUE
+season x period,St-Ch. & Lennox.,0.33,ok,868.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.34,ok,868.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.35,ok,868.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.36,ok,868.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.37,ok,868.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.38,ok,867.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.39,ok,867.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.4,ok,867,6,TRUE
+season x period,St-Ch. & Lennox.,0.41,ok,866.7,6,TRUE
+season x period,St-Ch. & Lennox.,0.42,ok,866.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.43,ok,865.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.44,ok,865.4,6,TRUE
+season x period,St-Ch. & Lennox.,0.45,ok,864.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.46,ok,864.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.47,ok,864.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.48,ok,864.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.49,ok,864.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.5,ok,864.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.51,ok,864.2,6,TRUE
+season x period,St-Ch. & Lennox.,0.52,ok,864.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.53,ok,864.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.54,ok,864.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.55,ok,864.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.56,ok,865.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.57,ok,865.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.58,ok,866.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.59,ok,867,6,TRUE
+season x period,St-Ch. & Lennox.,0.6,ok,867.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.61,ok,868.3,6,TRUE
+season x period,St-Ch. & Lennox.,0.62,ok,868.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.63,ok,868.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.64,ok,869,6,TRUE
+season x period,St-Ch. & Lennox.,0.65,ok,869.4,6,TRUE
+season x period,St-Ch. & Lennox.,0.66,ok,870.2,6,TRUE
+season x period,St-Ch. & Lennox.,0.67,ok,871.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.68,ok,872.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.69,ok,873.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.7,ok,873.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.71,ok,874,6,TRUE
+season x period,St-Ch. & Lennox.,0.72,ok,874.4,6,TRUE
+season x period,St-Ch. & Lennox.,0.73,ok,874.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.74,ok,875.2,6,TRUE
+season x period,St-Ch. & Lennox.,0.75,ok,875.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.76,ok,876.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.77,ok,877.7,6,TRUE
+season x period,St-Ch. & Lennox.,0.78,ok,878.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.79,ok,879.2,6,TRUE
+season x period,St-Ch. & Lennox.,0.8,ok,879.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.81,ok,879.9,6,TRUE
+season x period,St-Ch. & Lennox.,0.82,ok,880.2,6,TRUE
+season x period,St-Ch. & Lennox.,0.83,ok,880.7,6,TRUE
+season x period,St-Ch. & Lennox.,0.84,ok,881.7,6,TRUE
+season x period,St-Ch. & Lennox.,0.85,ok,882.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.86,ok,883.6,6,TRUE
+season x period,St-Ch. & Lennox.,0.87,ok,884.5,6,TRUE
+season x period,St-Ch. & Lennox.,0.88,ok,885.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.89,ok,885.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.9,ok,886.8,6,TRUE
+season x period,St-Ch. & Lennox.,0.91,ok,888.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.92,ok,889.1,6,TRUE
+season x period,St-Ch. & Lennox.,0.93,ok,889.8,6,FALSE
+season x period,St-Ch. & Lennox.,0.94,ok,890.1,6,FALSE
+season x period,St-Ch. & Lennox.,0.95,ok,889.9,6,FALSE
+season x period,St-Ch. & Lennox.,0.96,ok,889.7,6,FALSE
+season x period,St-Ch. & Lennox.,0.97,ok,889.1,6,FALSE
+season x period,St-Ch. & Lennox.,0.98,ok,889,6,TRUE
+season x period,St-Ch. & Lennox.,0.99,ok,887.5,7,TRUE
+season x period,St-Ch. & Nicolet,0.01,ok,880.3,6,TRUE
+season x period,St-Ch. & Nicolet,0.02,ok,882,6,TRUE
+season x period,St-Ch. & Nicolet,0.03,ok,882.4,6,TRUE
+season x period,St-Ch. & Nicolet,0.04,ok,884.8,6,FALSE
+season x period,St-Ch. & Nicolet,0.05,ok,887.7,6,FALSE
+season x period,St-Ch. & Nicolet,0.06,ok,890.6,7,TRUE
+season x period,St-Ch. & Nicolet,0.07,ok,893.5,7,FALSE
+season x period,St-Ch. & Nicolet,0.08,ok,896.2,7,FALSE
+season x period,St-Ch. & Nicolet,0.09,ok,898.7,7,TRUE
+season x period,St-Ch. & Nicolet,0.1,ok,900.9,7,TRUE
+season x period,St-Ch. & Nicolet,0.11,ok,902.8,7,FALSE
+season x period,St-Ch. & Nicolet,0.12,ok,904.3,7,TRUE
+season x period,St-Ch. & Nicolet,0.13,ok,905.7,7,TRUE
+season x period,St-Ch. & Nicolet,0.14,ok,907.4,7,FALSE
+season x period,St-Ch. & Nicolet,0.15,ok,909.4,7,TRUE
+season x period,St-Ch. & Nicolet,0.16,ok,911,7,FALSE
+season x period,St-Ch. & Nicolet,0.17,ok,912,7,TRUE
+season x period,St-Ch. & Nicolet,0.18,ok,913.1,7,TRUE
+season x period,St-Ch. & Nicolet,0.19,ok,914.1,7,TRUE
+season x period,St-Ch. & Nicolet,0.2,ok,915.5,7,TRUE
+season x period,St-Ch. & Nicolet,0.21,ok,917.1,7,FALSE
+season x period,St-Ch. & Nicolet,0.22,ok,918.9,7,FALSE
+season x period,St-Ch. & Nicolet,0.23,ok,920.8,7,TRUE
+season x period,St-Ch. & Nicolet,0.24,ok,922.8,7,TRUE
+season x period,St-Ch. & Nicolet,0.25,ok,925,7,TRUE
+season x period,St-Ch. & Nicolet,0.26,ok,927.2,7,TRUE
+season x period,St-Ch. & Nicolet,0.27,ok,929.3,7,FALSE
+season x period,St-Ch. & Nicolet,0.28,ok,931.5,7,TRUE
+season x period,St-Ch. & Nicolet,0.29,ok,933.9,7,TRUE
+season x period,St-Ch. & Nicolet,0.3,ok,936.2,7,TRUE
+season x period,St-Ch. & Nicolet,0.31,ok,938.6,7,TRUE
+season x period,St-Ch. & Nicolet,0.32,ok,940.7,7,TRUE
+season x period,St-Ch. & Nicolet,0.33,ok,942.9,7,TRUE
+season x period,St-Ch. & Nicolet,0.34,ok,945.1,7,TRUE
+season x period,St-Ch. & Nicolet,0.35,ok,947.2,7,TRUE
+season x period,St-Ch. & Nicolet,0.36,ok,949.1,7,FALSE
+season x period,St-Ch. & Nicolet,0.37,ok,950.8,7,TRUE
+season x period,St-Ch. & Nicolet,0.38,ok,952.5,7,TRUE
+season x period,St-Ch. & Nicolet,0.39,ok,953.8,7,TRUE
+season x period,St-Ch. & Nicolet,0.4,ok,955.1,7,TRUE
+season x period,St-Ch. & Nicolet,0.41,ok,956.2,7,FALSE
+season x period,St-Ch. & Nicolet,0.42,ok,957,7,FALSE
+season x period,St-Ch. & Nicolet,0.43,ok,958,7,TRUE
+season x period,St-Ch. & Nicolet,0.44,ok,959,7,TRUE
+season x period,St-Ch. & Nicolet,0.45,ok,959.9,7,TRUE
+season x period,St-Ch. & Nicolet,0.46,ok,961,7,TRUE
+season x period,St-Ch. & Nicolet,0.47,ok,962,7,TRUE
+season x period,St-Ch. & Nicolet,0.48,ok,963,7,FALSE
+season x period,St-Ch. & Nicolet,0.49,ok,963.9,7,TRUE
+season x period,St-Ch. & Nicolet,0.5,ok,964.7,7,FALSE
+season x period,St-Ch. & Nicolet,0.51,ok,964.9,7,FALSE
+season x period,St-Ch. & Nicolet,0.52,ok,965.1,7,TRUE
+season x period,St-Ch. & Nicolet,0.53,ok,965.3,7,TRUE
+season x period,St-Ch. & Nicolet,0.54,ok,965.3,7,FALSE
+season x period,St-Ch. & Nicolet,0.55,ok,965.2,7,FALSE
+season x period,St-Ch. & Nicolet,0.56,ok,965.1,7,FALSE
+season x period,St-Ch. & Nicolet,0.57,ok,964.9,7,TRUE
+season x period,St-Ch. & Nicolet,0.58,ok,965,7,FALSE
+season x period,St-Ch. & Nicolet,0.59,ok,964.7,7,TRUE
+season x period,St-Ch. & Nicolet,0.6,ok,964,7,FALSE
+season x period,St-Ch. & Nicolet,0.61,ok,962.9,7,FALSE
+season x period,St-Ch. & Nicolet,0.62,ok,961.7,7,FALSE
+season x period,St-Ch. & Nicolet,0.63,ok,960.4,7,FALSE
+season x period,St-Ch. & Nicolet,0.64,ok,959,7,TRUE
+season x period,St-Ch. & Nicolet,0.65,ok,957.6,7,TRUE
+season x period,St-Ch. & Nicolet,0.66,ok,956.4,7,FALSE
+season x period,St-Ch. & Nicolet,0.67,ok,955.2,7,TRUE
+season x period,St-Ch. & Nicolet,0.68,ok,954,7,FALSE
+season x period,St-Ch. & Nicolet,0.69,ok,952.6,7,TRUE
+season x period,St-Ch. & Nicolet,0.7,ok,951,7,TRUE
+season x period,St-Ch. & Nicolet,0.71,ok,949.2,7,FALSE
+season x period,St-Ch. & Nicolet,0.72,ok,947.3,7,FALSE
+season x period,St-Ch. & Nicolet,0.73,ok,945.5,7,FALSE
+season x period,St-Ch. & Nicolet,0.74,ok,944.1,7,FALSE
+season x period,St-Ch. & Nicolet,0.75,ok,942.5,7,FALSE
+season x period,St-Ch. & Nicolet,0.76,ok,940.6,7,TRUE
+season x period,St-Ch. & Nicolet,0.77,ok,938.6,7,FALSE
+season x period,St-Ch. & Nicolet,0.78,ok,936.7,7,FALSE
+season x period,St-Ch. & Nicolet,0.79,ok,934.6,7,FALSE
+season x period,St-Ch. & Nicolet,0.8,ok,931.7,7,FALSE
+season x period,St-Ch. & Nicolet,0.81,ok,929,7,FALSE
+season x period,St-Ch. & Nicolet,0.82,ok,926.3,7,FALSE
+season x period,St-Ch. & Nicolet,0.83,ok,923.7,7,TRUE
+season x period,St-Ch. & Nicolet,0.84,ok,921.3,7,FALSE
+season x period,St-Ch. & Nicolet,0.85,ok,919,7,FALSE
+season x period,St-Ch. & Nicolet,0.86,ok,916.8,7,FALSE
+season x period,St-Ch. & Nicolet,0.87,ok,914.8,7,FALSE
+season x period,St-Ch. & Nicolet,0.88,ok,912.7,7,TRUE
+season x period,St-Ch. & Nicolet,0.89,ok,910.7,7,FALSE
+season x period,St-Ch. & Nicolet,0.9,ok,909.1,7,FALSE
+season x period,St-Ch. & Nicolet,0.91,ok,907,7,FALSE
+season x period,St-Ch. & Nicolet,0.92,ok,905.4,7,FALSE
+season x period,St-Ch. & Nicolet,0.93,ok,903.6,7,FALSE
+season x period,St-Ch. & Nicolet,0.94,ok,901.8,7,FALSE
+season x period,St-Ch. & Nicolet,0.95,ok,899.3,7,FALSE
+season x period,St-Ch. & Nicolet,0.96,ok,894.6,7,FALSE
+season x period,St-Ch. & Nicolet,0.97,ok,889.8,7,FALSE
+season x period,St-Ch. & Nicolet,0.98,ok,885,6,FALSE
+season x period,St-Ch. & Nicolet,0.99,ok,880.5,7,TRUE
+season x period,Lennox. & Nicolet,0.01,ok,905.6,6,TRUE
+season x period,Lennox. & Nicolet,0.02,ok,908.9,6,TRUE
+season x period,Lennox. & Nicolet,0.03,ok,911.7,6,TRUE
+season x period,Lennox. & Nicolet,0.04,ok,914.1,6,TRUE
+season x period,Lennox. & Nicolet,0.05,ok,916.5,7,FALSE
+season x period,Lennox. & Nicolet,0.06,ok,918.9,7,FALSE
+season x period,Lennox. & Nicolet,0.07,ok,921.3,7,FALSE
+season x period,Lennox. & Nicolet,0.08,ok,922.8,7,FALSE
+season x period,Lennox. & Nicolet,0.09,ok,924.2,7,FALSE
+season x period,Lennox. & Nicolet,0.1,ok,924.9,7,FALSE
+season x period,Lennox. & Nicolet,0.11,ok,925.7,7,FALSE
+season x period,Lennox. & Nicolet,0.12,ok,926.1,7,FALSE
+season x period,Lennox. & Nicolet,0.13,ok,926.3,7,FALSE
+season x period,Lennox. & Nicolet,0.14,ok,927,7,FALSE
+season x period,Lennox. & Nicolet,0.15,ok,927.7,7,FALSE
+season x period,Lennox. & Nicolet,0.16,ok,928.3,6,FALSE
+season x period,Lennox. & Nicolet,0.17,ok,928.9,6,FALSE
+season x period,Lennox. & Nicolet,0.18,ok,929.7,6,FALSE
+season x period,Lennox. & Nicolet,0.19,ok,930.7,6,TRUE
+season x period,Lennox. & Nicolet,0.2,ok,931.6,6,TRUE
+season x period,Lennox. & Nicolet,0.21,ok,932.1,6,FALSE
+season x period,Lennox. & Nicolet,0.22,ok,932.6,6,TRUE
+season x period,Lennox. & Nicolet,0.23,ok,933.3,6,FALSE
+season x period,Lennox. & Nicolet,0.24,ok,933.9,6,FALSE
+season x period,Lennox. & Nicolet,0.25,ok,934.4,6,FALSE
+season x period,Lennox. & Nicolet,0.26,ok,934.5,6,FALSE
+season x period,Lennox. & Nicolet,0.27,ok,934.7,6,FALSE
+season x period,Lennox. & Nicolet,0.28,ok,935.2,6,FALSE
+season x period,Lennox. & Nicolet,0.29,ok,935.8,6,FALSE
+season x period,Lennox. & Nicolet,0.3,ok,936.5,6,TRUE
+season x period,Lennox. & Nicolet,0.31,ok,937.2,6,FALSE
+season x period,Lennox. & Nicolet,0.32,ok,938.1,6,FALSE
+season x period,Lennox. & Nicolet,0.33,ok,939.1,6,FALSE
+season x period,Lennox. & Nicolet,0.34,ok,940.1,6,FALSE
+season x period,Lennox. & Nicolet,0.35,ok,941.4,6,FALSE
+season x period,Lennox. & Nicolet,0.36,ok,942.3,6,TRUE
+season x period,Lennox. & Nicolet,0.37,ok,943.1,6,FALSE
+season x period,Lennox. & Nicolet,0.38,ok,943.9,6,FALSE
+season x period,Lennox. & Nicolet,0.39,ok,944.8,6,FALSE
+season x period,Lennox. & Nicolet,0.4,ok,945.7,7,TRUE
+season x period,Lennox. & Nicolet,0.41,ok,946.3,7,FALSE
+season x period,Lennox. & Nicolet,0.42,ok,946.8,7,FALSE
+season x period,Lennox. & Nicolet,0.43,ok,947.3,7,FALSE
+season x period,Lennox. & Nicolet,0.44,ok,947.5,7,FALSE
+season x period,Lennox. & Nicolet,0.45,ok,947.9,7,FALSE
+season x period,Lennox. & Nicolet,0.46,ok,948.5,7,FALSE
+season x period,Lennox. & Nicolet,0.47,ok,949.1,7,FALSE
+season x period,Lennox. & Nicolet,0.48,ok,949.7,7,FALSE
+season x period,Lennox. & Nicolet,0.49,ok,950.5,7,FALSE
+season x period,Lennox. & Nicolet,0.5,ok,951.4,7,FALSE
+season x period,Lennox. & Nicolet,0.51,ok,951.8,7,FALSE
+season x period,Lennox. & Nicolet,0.52,ok,952.3,7,FALSE
+season x period,Lennox. & Nicolet,0.53,ok,952.8,7,FALSE
+season x period,Lennox. & Nicolet,0.54,ok,953.3,7,FALSE
+season x period,Lennox. & Nicolet,0.55,ok,953.8,7,FALSE
+season x period,Lennox. & Nicolet,0.56,ok,954.3,7,FALSE
+season x period,Lennox. & Nicolet,0.57,ok,954.5,7,FALSE
+season x period,Lennox. & Nicolet,0.58,ok,954.4,7,FALSE
+season x period,Lennox. & Nicolet,0.59,ok,954.1,7,FALSE
+season x period,Lennox. & Nicolet,0.6,ok,954,7,FALSE
+season x period,Lennox. & Nicolet,0.61,ok,953.9,7,FALSE
+season x period,Lennox. & Nicolet,0.62,ok,953.6,7,FALSE
+season x period,Lennox. & Nicolet,0.63,ok,953.1,7,FALSE
+season x period,Lennox. & Nicolet,0.64,ok,952.3,7,FALSE
+season x period,Lennox. & Nicolet,0.65,ok,951.6,7,FALSE
+season x period,Lennox. & Nicolet,0.66,ok,950.9,7,TRUE
+season x period,Lennox. & Nicolet,0.67,ok,950.2,7,FALSE
+season x period,Lennox. & Nicolet,0.68,ok,949.6,7,FALSE
+season x period,Lennox. & Nicolet,0.69,ok,948.8,7,TRUE
+season x period,Lennox. & Nicolet,0.7,ok,947.9,7,FALSE
+season x period,Lennox. & Nicolet,0.71,ok,946.7,7,TRUE
+season x period,Lennox. & Nicolet,0.72,ok,945.4,7,TRUE
+season x period,Lennox. & Nicolet,0.73,ok,944.2,7,FALSE
+season x period,Lennox. & Nicolet,0.74,ok,942.8,7,FALSE
+season x period,Lennox. & Nicolet,0.75,ok,941.6,7,FALSE
+season x period,Lennox. & Nicolet,0.76,ok,940.3,6,FALSE
+season x period,Lennox. & Nicolet,0.77,ok,939,6,FALSE
+season x period,Lennox. & Nicolet,0.78,ok,937.1,6,TRUE
+season x period,Lennox. & Nicolet,0.79,ok,935.3,6,FALSE
+season x period,Lennox. & Nicolet,0.8,ok,933.4,6,TRUE
+season x period,Lennox. & Nicolet,0.81,ok,931.5,6,TRUE
+season x period,Lennox. & Nicolet,0.82,ok,929.8,6,TRUE
+season x period,Lennox. & Nicolet,0.83,ok,928.4,6,FALSE
+season x period,Lennox. & Nicolet,0.84,ok,927,6,FALSE
+season x period,Lennox. & Nicolet,0.85,ok,926,6,TRUE
+season x period,Lennox. & Nicolet,0.86,ok,925.1,6,TRUE
+season x period,Lennox. & Nicolet,0.87,ok,924.3,6,TRUE
+season x period,Lennox. & Nicolet,0.88,ok,923.2,6,TRUE
+season x period,Lennox. & Nicolet,0.89,ok,922.3,6,TRUE
+season x period,Lennox. & Nicolet,0.9,ok,921.2,6,TRUE
+season x period,Lennox. & Nicolet,0.91,ok,919.7,6,FALSE
+season x period,Lennox. & Nicolet,0.92,ok,918.2,6,FALSE
+season x period,Lennox. & Nicolet,0.93,ok,917.1,6,TRUE
+season x period,Lennox. & Nicolet,0.94,ok,916.1,6,TRUE
+season x period,Lennox. & Nicolet,0.95,ok,914.7,6,TRUE
+season x period,Lennox. & Nicolet,0.96,ok,913,6,TRUE
+season x period,Lennox. & Nicolet,0.97,ok,910.1,6,FALSE
+season x period,Lennox. & Nicolet,0.98,ok,906.8,6,FALSE
+season x period,Lennox. & Nicolet,0.99,ok,904,7,TRUE
+season only,Drum. & L'Ass.,0.01,ok,896.3,6,TRUE
+season only,Drum. & L'Ass.,0.02,ok,898.5,7,TRUE
+season only,Drum. & L'Ass.,0.03,ok,900.9,7,TRUE
+season only,Drum. & L'Ass.,0.04,ok,904.5,7,TRUE
+season only,Drum. & L'Ass.,0.05,ok,907.5,7,TRUE
+season only,Drum. & L'Ass.,0.06,ok,910.9,7,TRUE
+season only,Drum. & L'Ass.,0.07,ok,914.9,7,TRUE
+season only,Drum. & L'Ass.,0.08,ok,919.3,7,FALSE
+season only,Drum. & L'Ass.,0.09,ok,922.9,7,FALSE
+season only,Drum. & L'Ass.,0.1,ok,926.8,7,FALSE
+season only,Drum. & L'Ass.,0.11,ok,930.6,7,FALSE
+season only,Drum. & L'Ass.,0.12,ok,934.5,7,FALSE
+season only,Drum. & L'Ass.,0.13,ok,938.2,7,FALSE
+season only,Drum. & L'Ass.,0.14,ok,941.7,7,FALSE
+season only,Drum. & L'Ass.,0.15,ok,945.1,7,FALSE
+season only,Drum. & L'Ass.,0.16,ok,948.3,7,FALSE
+season only,Drum. & L'Ass.,0.17,ok,951.4,7,FALSE
+season only,Drum. & L'Ass.,0.18,ok,954.3,7,FALSE
+season only,Drum. & L'Ass.,0.19,ok,956.8,7,FALSE
+season only,Drum. & L'Ass.,0.2,ok,959.2,7,FALSE
+season only,Drum. & L'Ass.,0.21,ok,961.4,7,FALSE
+season only,Drum. & L'Ass.,0.22,ok,963.8,7,FALSE
+season only,Drum. & L'Ass.,0.23,ok,965.9,7,FALSE
+season only,Drum. & L'Ass.,0.24,ok,967.9,7,FALSE
+season only,Drum. & L'Ass.,0.25,ok,969.8,7,FALSE
+season only,Drum. & L'Ass.,0.26,ok,971.9,7,FALSE
+season only,Drum. & L'Ass.,0.27,ok,973.9,7,FALSE
+season only,Drum. & L'Ass.,0.28,ok,976,7,FALSE
+season only,Drum. & L'Ass.,0.29,ok,978,7,FALSE
+season only,Drum. & L'Ass.,0.3,ok,980.1,7,FALSE
+season only,Drum. & L'Ass.,0.31,ok,982.3,7,FALSE
+season only,Drum. & L'Ass.,0.32,ok,984.6,7,FALSE
+season only,Drum. & L'Ass.,0.33,ok,986.7,7,FALSE
+season only,Drum. & L'Ass.,0.34,ok,988.4,7,FALSE
+season only,Drum. & L'Ass.,0.35,ok,990.4,7,FALSE
+season only,Drum. & L'Ass.,0.36,ok,992.5,7,FALSE
+season only,Drum. & L'Ass.,0.37,ok,994.4,7,FALSE
+season only,Drum. & L'Ass.,0.38,ok,996.4,7,FALSE
+season only,Drum. & L'Ass.,0.39,ok,998.1,7,FALSE
+season only,Drum. & L'Ass.,0.4,ok,1000,7,FALSE
+season only,Drum. & L'Ass.,0.41,ok,1002,7,FALSE
+season only,Drum. & L'Ass.,0.42,ok,1004,7,FALSE
+season only,Drum. & L'Ass.,0.43,ok,1006,7,FALSE
+season only,Drum. & L'Ass.,0.44,ok,1007,7,FALSE
+season only,Drum. & L'Ass.,0.45,ok,1009,7,FALSE
+season only,Drum. & L'Ass.,0.46,ok,1010,7,FALSE
+season only,Drum. & L'Ass.,0.47,ok,1011,7,FALSE
+season only,Drum. & L'Ass.,0.48,ok,1012,7,FALSE
+season only,Drum. & L'Ass.,0.49,ok,1013,7,FALSE
+season only,Drum. & L'Ass.,0.5,ok,1014,7,FALSE
+season only,Drum. & L'Ass.,0.51,ok,1014,7,FALSE
+season only,Drum. & L'Ass.,0.52,ok,1015,7,FALSE
+season only,Drum. & L'Ass.,0.53,ok,1015,7,FALSE
+season only,Drum. & L'Ass.,0.54,ok,1015,7,FALSE
+season only,Drum. & L'Ass.,0.55,ok,1014,7,FALSE
+season only,Drum. & L'Ass.,0.56,ok,1014,7,FALSE
+season only,Drum. & L'Ass.,0.57,ok,1013,7,FALSE
+season only,Drum. & L'Ass.,0.58,ok,1013,7,FALSE
+season only,Drum. & L'Ass.,0.59,ok,1012,7,FALSE
+season only,Drum. & L'Ass.,0.6,ok,1012,7,FALSE
+season only,Drum. & L'Ass.,0.61,ok,1011,7,FALSE
+season only,Drum. & L'Ass.,0.62,ok,1010,7,FALSE
+season only,Drum. & L'Ass.,0.63,ok,1009,7,FALSE
+season only,Drum. & L'Ass.,0.64,ok,1008,7,FALSE
+season only,Drum. & L'Ass.,0.65,ok,1007,7,FALSE
+season only,Drum. & L'Ass.,0.66,ok,1006,7,FALSE
+season only,Drum. & L'Ass.,0.67,ok,1004,7,FALSE
+season only,Drum. & L'Ass.,0.68,ok,1002,7,FALSE
+season only,Drum. & L'Ass.,0.69,ok,1000,7,FALSE
+season only,Drum. & L'Ass.,0.7,ok,998.7,7,FALSE
+season only,Drum. & L'Ass.,0.71,ok,996.7,7,FALSE
+season only,Drum. & L'Ass.,0.72,ok,994.8,7,FALSE
+season only,Drum. & L'Ass.,0.73,ok,992.8,7,FALSE
+season only,Drum. & L'Ass.,0.74,ok,990.4,7,FALSE
+season only,Drum. & L'Ass.,0.75,ok,987.6,7,FALSE
+season only,Drum. & L'Ass.,0.76,ok,984.8,7,FALSE
+season only,Drum. & L'Ass.,0.77,ok,982,7,FALSE
+season only,Drum. & L'Ass.,0.78,ok,979.1,7,FALSE
+season only,Drum. & L'Ass.,0.79,ok,975.9,7,FALSE
+season only,Drum. & L'Ass.,0.8,ok,972.7,7,FALSE
+season only,Drum. & L'Ass.,0.81,ok,969.3,7,FALSE
+season only,Drum. & L'Ass.,0.82,ok,966.1,7,FALSE
+season only,Drum. & L'Ass.,0.83,ok,962.5,7,FALSE
+season only,Drum. & L'Ass.,0.84,ok,958.9,7,FALSE
+season only,Drum. & L'Ass.,0.85,ok,955.2,7,FALSE
+season only,Drum. & L'Ass.,0.86,ok,951.4,7,FALSE
+season only,Drum. & L'Ass.,0.87,ok,947.4,7,FALSE
+season only,Drum. & L'Ass.,0.88,ok,943.5,7,FALSE
+season only,Drum. & L'Ass.,0.89,ok,940,7,FALSE
+season only,Drum. & L'Ass.,0.9,ok,936.8,7,FALSE
+season only,Drum. & L'Ass.,0.91,ok,933.3,7,FALSE
+season only,Drum. & L'Ass.,0.92,ok,929.9,7,FALSE
+season only,Drum. & L'Ass.,0.93,ok,926.4,7,FALSE
+season only,Drum. & L'Ass.,0.94,ok,921.8,7,FALSE
+season only,Drum. & L'Ass.,0.95,ok,917,7,FALSE
+season only,Drum. & L'Ass.,0.96,ok,912.2,7,FALSE
+season only,Drum. & L'Ass.,0.97,ok,907.9,7,FALSE
+season only,Drum. & L'Ass.,0.98,ok,904.1,7,FALSE
+season only,Drum. & L'Ass.,0.99,ok,899.9,7,TRUE
+season only,Drum. & Les Cèd.,0.01,ok,903.7,6,TRUE
+season only,Drum. & Les Cèd.,0.02,ok,907.1,7,TRUE
+season only,Drum. & Les Cèd.,0.03,ok,910.6,7,TRUE
+season only,Drum. & Les Cèd.,0.04,ok,914.8,7,FALSE
+season only,Drum. & Les Cèd.,0.05,ok,918.3,7,FALSE
+season only,Drum. & Les Cèd.,0.06,ok,920.3,7,FALSE
+season only,Drum. & Les Cèd.,0.07,ok,922.8,7,FALSE
+season only,Drum. & Les Cèd.,0.08,ok,924.3,7,FALSE
+season only,Drum. & Les Cèd.,0.09,ok,925.3,7,FALSE
+season only,Drum. & Les Cèd.,0.1,ok,926.7,7,FALSE
+season only,Drum. & Les Cèd.,0.11,ok,928.4,7,FALSE
+season only,Drum. & Les Cèd.,0.12,ok,930.2,7,FALSE
+season only,Drum. & Les Cèd.,0.13,ok,931.9,7,FALSE
+season only,Drum. & Les Cèd.,0.14,ok,933.3,7,FALSE
+season only,Drum. & Les Cèd.,0.15,ok,934,7,FALSE
+season only,Drum. & Les Cèd.,0.16,ok,934.7,7,FALSE
+season only,Drum. & Les Cèd.,0.17,ok,935.6,7,FALSE
+season only,Drum. & Les Cèd.,0.18,ok,936.7,7,FALSE
+season only,Drum. & Les Cèd.,0.19,ok,938,7,FALSE
+season only,Drum. & Les Cèd.,0.2,ok,939.1,7,FALSE
+season only,Drum. & Les Cèd.,0.21,ok,940.5,7,FALSE
+season only,Drum. & Les Cèd.,0.22,ok,942.2,7,FALSE
+season only,Drum. & Les Cèd.,0.23,ok,943.9,7,FALSE
+season only,Drum. & Les Cèd.,0.24,ok,945.8,7,FALSE
+season only,Drum. & Les Cèd.,0.25,ok,947.5,7,FALSE
+season only,Drum. & Les Cèd.,0.26,ok,949.4,7,FALSE
+season only,Drum. & Les Cèd.,0.27,ok,951.2,7,FALSE
+season only,Drum. & Les Cèd.,0.28,ok,953,7,FALSE
+season only,Drum. & Les Cèd.,0.29,ok,954.6,7,FALSE
+season only,Drum. & Les Cèd.,0.3,ok,956.2,7,FALSE
+season only,Drum. & Les Cèd.,0.31,ok,957.9,7,FALSE
+season only,Drum. & Les Cèd.,0.32,ok,959.6,7,FALSE
+season only,Drum. & Les Cèd.,0.33,ok,961.3,7,FALSE
+season only,Drum. & Les Cèd.,0.34,ok,962.8,7,FALSE
+season only,Drum. & Les Cèd.,0.35,ok,964.3,7,FALSE
+season only,Drum. & Les Cèd.,0.36,ok,965.7,7,FALSE
+season only,Drum. & Les Cèd.,0.37,ok,967.1,7,FALSE
+season only,Drum. & Les Cèd.,0.38,ok,968.3,7,FALSE
+season only,Drum. & Les Cèd.,0.39,ok,969.5,7,FALSE
+season only,Drum. & Les Cèd.,0.4,ok,970.6,7,FALSE
+season only,Drum. & Les Cèd.,0.41,ok,971.5,7,FALSE
+season only,Drum. & Les Cèd.,0.42,ok,972.2,7,FALSE
+season only,Drum. & Les Cèd.,0.43,ok,972.7,7,FALSE
+season only,Drum. & Les Cèd.,0.44,ok,973.4,7,FALSE
+season only,Drum. & Les Cèd.,0.45,ok,974,7,FALSE
+season only,Drum. & Les Cèd.,0.46,ok,974.7,7,FALSE
+season only,Drum. & Les Cèd.,0.47,ok,975.2,7,FALSE
+season only,Drum. & Les Cèd.,0.48,ok,975.6,7,FALSE
+season only,Drum. & Les Cèd.,0.49,ok,975.8,7,FALSE
+season only,Drum. & Les Cèd.,0.5,ok,975.8,7,FALSE
+season only,Drum. & Les Cèd.,0.51,ok,975.5,7,FALSE
+season only,Drum. & Les Cèd.,0.52,ok,975.2,7,FALSE
+season only,Drum. & Les Cèd.,0.53,ok,975.1,7,FALSE
+season only,Drum. & Les Cèd.,0.54,ok,974.8,7,FALSE
+season only,Drum. & Les Cèd.,0.55,ok,974.5,7,FALSE
+season only,Drum. & Les Cèd.,0.56,ok,973.9,7,FALSE
+season only,Drum. & Les Cèd.,0.57,ok,973.2,7,FALSE
+season only,Drum. & Les Cèd.,0.58,ok,972.8,7,FALSE
+season only,Drum. & Les Cèd.,0.59,ok,972.6,7,FALSE
+season only,Drum. & Les Cèd.,0.6,ok,972.4,7,FALSE
+season only,Drum. & Les Cèd.,0.61,ok,972.1,7,FALSE
+season only,Drum. & Les Cèd.,0.62,ok,971.5,7,FALSE
+season only,Drum. & Les Cèd.,0.63,ok,970.6,7,TRUE
+season only,Drum. & Les Cèd.,0.64,ok,969.8,7,TRUE
+season only,Drum. & Les Cèd.,0.65,ok,969.1,7,TRUE
+season only,Drum. & Les Cèd.,0.66,ok,968,7,TRUE
+season only,Drum. & Les Cèd.,0.67,ok,966.7,7,TRUE
+season only,Drum. & Les Cèd.,0.68,ok,965.4,7,TRUE
+season only,Drum. & Les Cèd.,0.69,ok,964,7,TRUE
+season only,Drum. & Les Cèd.,0.7,ok,962.5,7,TRUE
+season only,Drum. & Les Cèd.,0.71,ok,961,7,TRUE
+season only,Drum. & Les Cèd.,0.72,ok,959.5,7,TRUE
+season only,Drum. & Les Cèd.,0.73,ok,958,7,TRUE
+season only,Drum. & Les Cèd.,0.74,ok,956.4,7,TRUE
+season only,Drum. & Les Cèd.,0.75,ok,954.5,7,TRUE
+season only,Drum. & Les Cèd.,0.76,ok,952.6,7,TRUE
+season only,Drum. & Les Cèd.,0.77,ok,950.6,7,TRUE
+season only,Drum. & Les Cèd.,0.78,ok,948.3,7,TRUE
+season only,Drum. & Les Cèd.,0.79,ok,945.7,7,TRUE
+season only,Drum. & Les Cèd.,0.8,ok,943,7,TRUE
+season only,Drum. & Les Cèd.,0.81,ok,940,7,TRUE
+season only,Drum. & Les Cèd.,0.82,ok,936.7,7,TRUE
+season only,Drum. & Les Cèd.,0.83,ok,933.7,7,TRUE
+season only,Drum. & Les Cèd.,0.84,ok,930.6,7,TRUE
+season only,Drum. & Les Cèd.,0.85,ok,927.7,7,TRUE
+season only,Drum. & Les Cèd.,0.86,ok,925,7,TRUE
+season only,Drum. & Les Cèd.,0.87,ok,922.4,7,TRUE
+season only,Drum. & Les Cèd.,0.88,ok,919.9,7,TRUE
+season only,Drum. & Les Cèd.,0.89,ok,917.5,7,TRUE
+season only,Drum. & Les Cèd.,0.9,ok,915.6,7,TRUE
+season only,Drum. & Les Cèd.,0.91,ok,913.9,7,TRUE
+season only,Drum. & Les Cèd.,0.92,ok,912.1,7,TRUE
+season only,Drum. & Les Cèd.,0.93,ok,910,7,TRUE
+season only,Drum. & Les Cèd.,0.94,ok,908,7,TRUE
+season only,Drum. & Les Cèd.,0.95,ok,906.3,7,TRUE
+season only,Drum. & Les Cèd.,0.96,ok,904.4,7,TRUE
+season only,Drum. & Les Cèd.,0.97,ok,903.8,7,TRUE
+season only,Drum. & Les Cèd.,0.98,ok,901.3,7,TRUE
+season only,Drum. & Les Cèd.,0.99,ok,899,6,TRUE
+season only,Drum. & St-Ch.,0.01,ok,881.9,6,TRUE
+season only,Drum. & St-Ch.,0.02,ok,881.7,7,TRUE
+season only,Drum. & St-Ch.,0.03,ok,881.2,7,TRUE
+season only,Drum. & St-Ch.,0.04,ok,881.2,7,TRUE
+season only,Drum. & St-Ch.,0.05,ok,881.4,7,TRUE
+season only,Drum. & St-Ch.,0.06,ok,881.1,7,TRUE
+season only,Drum. & St-Ch.,0.07,ok,881.7,7,TRUE
+season only,Drum. & St-Ch.,0.08,ok,883.2,7,TRUE
+season only,Drum. & St-Ch.,0.09,ok,884.9,7,TRUE
+season only,Drum. & St-Ch.,0.1,ok,887.1,7,TRUE
+season only,Drum. & St-Ch.,0.11,ok,889.8,7,TRUE
+season only,Drum. & St-Ch.,0.12,ok,892.7,7,TRUE
+season only,Drum. & St-Ch.,0.13,ok,895.4,7,TRUE
+season only,Drum. & St-Ch.,0.14,ok,897.6,7,TRUE
+season only,Drum. & St-Ch.,0.15,ok,900.4,7,FALSE
+season only,Drum. & St-Ch.,0.16,ok,903.4,7,FALSE
+season only,Drum. & St-Ch.,0.17,ok,906.7,7,FALSE
+season only,Drum. & St-Ch.,0.18,ok,910,7,FALSE
+season only,Drum. & St-Ch.,0.19,ok,913.2,7,FALSE
+season only,Drum. & St-Ch.,0.2,ok,915.9,7,FALSE
+season only,Drum. & St-Ch.,0.21,ok,918.7,7,FALSE
+season only,Drum. & St-Ch.,0.22,ok,921.7,7,FALSE
+season only,Drum. & St-Ch.,0.23,ok,925,7,FALSE
+season only,Drum. & St-Ch.,0.24,ok,927.7,7,FALSE
+season only,Drum. & St-Ch.,0.25,ok,930,7,FALSE
+season only,Drum. & St-Ch.,0.26,ok,932.1,7,FALSE
+season only,Drum. & St-Ch.,0.27,ok,934.3,7,FALSE
+season only,Drum. & St-Ch.,0.28,ok,936.1,7,FALSE
+season only,Drum. & St-Ch.,0.29,ok,938,7,FALSE
+season only,Drum. & St-Ch.,0.3,ok,939.7,7,FALSE
+season only,Drum. & St-Ch.,0.31,ok,941.4,7,FALSE
+season only,Drum. & St-Ch.,0.32,ok,943,7,FALSE
+season only,Drum. & St-Ch.,0.33,ok,944.6,7,FALSE
+season only,Drum. & St-Ch.,0.34,ok,946,7,FALSE
+season only,Drum. & St-Ch.,0.35,ok,947.1,7,FALSE
+season only,Drum. & St-Ch.,0.36,ok,947.9,7,FALSE
+season only,Drum. & St-Ch.,0.37,ok,948.3,7,FALSE
+season only,Drum. & St-Ch.,0.38,ok,948.6,7,FALSE
+season only,Drum. & St-Ch.,0.39,ok,948.6,7,FALSE
+season only,Drum. & St-Ch.,0.4,ok,948.4,7,FALSE
+season only,Drum. & St-Ch.,0.41,ok,948.5,7,FALSE
+season only,Drum. & St-Ch.,0.42,ok,948.7,7,FALSE
+season only,Drum. & St-Ch.,0.43,ok,948.8,7,FALSE
+season only,Drum. & St-Ch.,0.44,ok,948.8,7,FALSE
+season only,Drum. & St-Ch.,0.45,ok,948.8,7,FALSE
+season only,Drum. & St-Ch.,0.46,ok,948.9,7,FALSE
+season only,Drum. & St-Ch.,0.47,ok,949,7,FALSE
+season only,Drum. & St-Ch.,0.48,ok,949.2,7,FALSE
+season only,Drum. & St-Ch.,0.49,ok,949.5,7,FALSE
+season only,Drum. & St-Ch.,0.5,ok,950,7,FALSE
+season only,Drum. & St-Ch.,0.51,ok,950,7,FALSE
+season only,Drum. & St-Ch.,0.52,ok,949.8,7,FALSE
+season only,Drum. & St-Ch.,0.53,ok,949.5,7,FALSE
+season only,Drum. & St-Ch.,0.54,ok,948.7,7,FALSE
+season only,Drum. & St-Ch.,0.55,ok,947.9,7,FALSE
+season only,Drum. & St-Ch.,0.56,ok,947,7,FALSE
+season only,Drum. & St-Ch.,0.57,ok,946.3,7,FALSE
+season only,Drum. & St-Ch.,0.58,ok,945.4,7,FALSE
+season only,Drum. & St-Ch.,0.59,ok,944.7,7,FALSE
+season only,Drum. & St-Ch.,0.6,ok,944.1,7,FALSE
+season only,Drum. & St-Ch.,0.61,ok,943.4,7,FALSE
+season only,Drum. & St-Ch.,0.62,ok,942.9,7,FALSE
+season only,Drum. & St-Ch.,0.63,ok,942.6,7,FALSE
+season only,Drum. & St-Ch.,0.64,ok,942.1,7,FALSE
+season only,Drum. & St-Ch.,0.65,ok,941.4,7,FALSE
+season only,Drum. & St-Ch.,0.66,ok,940.7,7,FALSE
+season only,Drum. & St-Ch.,0.67,ok,939.9,7,FALSE
+season only,Drum. & St-Ch.,0.68,ok,939,7,FALSE
+season only,Drum. & St-Ch.,0.69,ok,938.1,7,FALSE
+season only,Drum. & St-Ch.,0.7,ok,936.9,7,FALSE
+season only,Drum. & St-Ch.,0.71,ok,935.8,7,FALSE
+season only,Drum. & St-Ch.,0.72,ok,934.3,7,FALSE
+season only,Drum. & St-Ch.,0.73,ok,932.5,7,FALSE
+season only,Drum. & St-Ch.,0.74,ok,930.7,7,FALSE
+season only,Drum. & St-Ch.,0.75,ok,928.8,7,FALSE
+season only,Drum. & St-Ch.,0.76,ok,926.7,7,FALSE
+season only,Drum. & St-Ch.,0.77,ok,924.6,7,FALSE
+season only,Drum. & St-Ch.,0.78,ok,922.5,7,FALSE
+season only,Drum. & St-Ch.,0.79,ok,920.3,7,FALSE
+season only,Drum. & St-Ch.,0.8,ok,918.2,7,FALSE
+season only,Drum. & St-Ch.,0.81,ok,916.5,7,FALSE
+season only,Drum. & St-Ch.,0.82,ok,914.9,7,FALSE
+season only,Drum. & St-Ch.,0.83,ok,913.3,7,FALSE
+season only,Drum. & St-Ch.,0.84,ok,911.6,7,FALSE
+season only,Drum. & St-Ch.,0.85,ok,909.8,7,FALSE
+season only,Drum. & St-Ch.,0.86,ok,908.5,7,TRUE
+season only,Drum. & St-Ch.,0.87,ok,906.8,7,TRUE
+season only,Drum. & St-Ch.,0.88,ok,904.8,7,TRUE
+season only,Drum. & St-Ch.,0.89,ok,902.6,7,TRUE
+season only,Drum. & St-Ch.,0.9,ok,899.9,7,TRUE
+season only,Drum. & St-Ch.,0.91,ok,897.2,7,TRUE
+season only,Drum. & St-Ch.,0.92,ok,894.2,7,TRUE
+season only,Drum. & St-Ch.,0.93,ok,890.9,7,TRUE
+season only,Drum. & St-Ch.,0.94,ok,888,7,TRUE
+season only,Drum. & St-Ch.,0.95,ok,885.5,7,TRUE
+season only,Drum. & St-Ch.,0.96,ok,883.9,7,TRUE
+season only,Drum. & St-Ch.,0.97,ok,882.3,7,TRUE
+season only,Drum. & St-Ch.,0.98,ok,882,7,TRUE
+season only,Drum. & St-Ch.,0.99,ok,881,7,TRUE
+season only,Drum. & Lennox.,0.01,ok,906.3,6,TRUE
+season only,Drum. & Lennox.,0.02,ok,907.3,7,TRUE
+season only,Drum. & Lennox.,0.03,ok,909,7,TRUE
+season only,Drum. & Lennox.,0.04,ok,911.1,7,TRUE
+season only,Drum. & Lennox.,0.05,ok,913.3,7,TRUE
+season only,Drum. & Lennox.,0.06,ok,915.7,7,TRUE
+season only,Drum. & Lennox.,0.07,ok,917.9,7,TRUE
+season only,Drum. & Lennox.,0.08,ok,920.1,7,FALSE
+season only,Drum. & Lennox.,0.09,ok,922.4,7,FALSE
+season only,Drum. & Lennox.,0.1,ok,924.3,7,FALSE
+season only,Drum. & Lennox.,0.11,ok,926,7,FALSE
+season only,Drum. & Lennox.,0.12,ok,926.6,7,FALSE
+season only,Drum. & Lennox.,0.13,ok,926.7,7,FALSE
+season only,Drum. & Lennox.,0.14,ok,927.3,7,FALSE
+season only,Drum. & Lennox.,0.15,ok,928,7,FALSE
+season only,Drum. & Lennox.,0.16,ok,928.9,7,FALSE
+season only,Drum. & Lennox.,0.17,ok,929.1,7,FALSE
+season only,Drum. & Lennox.,0.18,ok,929.5,7,FALSE
+season only,Drum. & Lennox.,0.19,ok,930,7,FALSE
+season only,Drum. & Lennox.,0.2,ok,930.4,7,FALSE
+season only,Drum. & Lennox.,0.21,ok,930.3,7,FALSE
+season only,Drum. & Lennox.,0.22,ok,930.5,7,FALSE
+season only,Drum. & Lennox.,0.23,ok,930.7,7,FALSE
+season only,Drum. & Lennox.,0.24,ok,931,7,FALSE
+season only,Drum. & Lennox.,0.25,ok,931.2,7,FALSE
+season only,Drum. & Lennox.,0.26,ok,931,7,FALSE
+season only,Drum. & Lennox.,0.27,ok,931.1,7,FALSE
+season only,Drum. & Lennox.,0.28,ok,931.2,7,FALSE
+season only,Drum. & Lennox.,0.29,ok,931.3,7,FALSE
+season only,Drum. & Lennox.,0.3,ok,931.5,7,FALSE
+season only,Drum. & Lennox.,0.31,ok,932.1,7,FALSE
+season only,Drum. & Lennox.,0.32,ok,932.8,7,FALSE
+season only,Drum. & Lennox.,0.33,ok,933.7,7,FALSE
+season only,Drum. & Lennox.,0.34,ok,934.3,7,FALSE
+season only,Drum. & Lennox.,0.35,ok,935,7,FALSE
+season only,Drum. & Lennox.,0.36,ok,935.7,7,FALSE
+season only,Drum. & Lennox.,0.37,ok,936.5,7,FALSE
+season only,Drum. & Lennox.,0.38,ok,937.3,7,FALSE
+season only,Drum. & Lennox.,0.39,ok,938.1,7,FALSE
+season only,Drum. & Lennox.,0.4,ok,938.9,7,FALSE
+season only,Drum. & Lennox.,0.41,ok,939.9,7,FALSE
+season only,Drum. & Lennox.,0.42,ok,940.4,7,FALSE
+season only,Drum. & Lennox.,0.43,ok,940.8,7,FALSE
+season only,Drum. & Lennox.,0.44,ok,941.3,7,FALSE
+season only,Drum. & Lennox.,0.45,ok,941.8,7,FALSE
+season only,Drum. & Lennox.,0.46,ok,942.3,7,FALSE
+season only,Drum. & Lennox.,0.47,ok,942.7,7,FALSE
+season only,Drum. & Lennox.,0.48,ok,943.1,7,FALSE
+season only,Drum. & Lennox.,0.49,ok,943.4,7,FALSE
+season only,Drum. & Lennox.,0.5,ok,943.8,7,FALSE
+season only,Drum. & Lennox.,0.51,ok,944.2,7,FALSE
+season only,Drum. & Lennox.,0.52,ok,944.5,7,TRUE
+season only,Drum. & Lennox.,0.53,ok,945,7,TRUE
+season only,Drum. & Lennox.,0.54,ok,945.6,7,TRUE
+season only,Drum. & Lennox.,0.55,ok,946.1,7,TRUE
+season only,Drum. & Lennox.,0.56,ok,946.7,7,TRUE
+season only,Drum. & Lennox.,0.57,ok,947.5,7,TRUE
+season only,Drum. & Lennox.,0.58,ok,948.1,7,TRUE
+season only,Drum. & Lennox.,0.59,ok,948.5,7,TRUE
+season only,Drum. & Lennox.,0.6,ok,949.1,7,TRUE
+season only,Drum. & Lennox.,0.61,ok,949.5,7,TRUE
+season only,Drum. & Lennox.,0.62,ok,950.1,7,TRUE
+season only,Drum. & Lennox.,0.63,ok,950.4,7,TRUE
+season only,Drum. & Lennox.,0.64,ok,950.5,7,TRUE
+season only,Drum. & Lennox.,0.65,ok,950.3,7,TRUE
+season only,Drum. & Lennox.,0.66,ok,949.8,7,TRUE
+season only,Drum. & Lennox.,0.67,ok,949.3,7,TRUE
+season only,Drum. & Lennox.,0.68,ok,949,7,TRUE
+season only,Drum. & Lennox.,0.69,ok,948.8,7,TRUE
+season only,Drum. & Lennox.,0.7,ok,948.4,7,TRUE
+season only,Drum. & Lennox.,0.71,ok,947.8,7,TRUE
+season only,Drum. & Lennox.,0.72,ok,947.1,7,TRUE
+season only,Drum. & Lennox.,0.73,ok,946.5,7,TRUE
+season only,Drum. & Lennox.,0.74,ok,945.4,7,TRUE
+season only,Drum. & Lennox.,0.75,ok,944.5,7,TRUE
+season only,Drum. & Lennox.,0.76,ok,943.6,7,TRUE
+season only,Drum. & Lennox.,0.77,ok,942.1,7,TRUE
+season only,Drum. & Lennox.,0.78,ok,940.5,7,TRUE
+season only,Drum. & Lennox.,0.79,ok,938.7,7,TRUE
+season only,Drum. & Lennox.,0.8,ok,937.1,7,TRUE
+season only,Drum. & Lennox.,0.81,ok,935.7,7,TRUE
+season only,Drum. & Lennox.,0.82,ok,934,7,TRUE
+season only,Drum. & Lennox.,0.83,ok,932.3,7,TRUE
+season only,Drum. & Lennox.,0.84,ok,930.7,7,TRUE
+season only,Drum. & Lennox.,0.85,ok,929,7,TRUE
+season only,Drum. & Lennox.,0.86,ok,927.3,7,TRUE
+season only,Drum. & Lennox.,0.87,ok,925.8,7,TRUE
+season only,Drum. & Lennox.,0.88,ok,924.6,7,TRUE
+season only,Drum. & Lennox.,0.89,ok,924.2,7,TRUE
+season only,Drum. & Lennox.,0.9,ok,923.8,7,TRUE
+season only,Drum. & Lennox.,0.91,ok,923.5,7,TRUE
+season only,Drum. & Lennox.,0.92,ok,923.1,7,TRUE
+season only,Drum. & Lennox.,0.93,ok,922.6,7,TRUE
+season only,Drum. & Lennox.,0.94,ok,922,7,TRUE
+season only,Drum. & Lennox.,0.95,ok,921.2,7,FALSE
+season only,Drum. & Lennox.,0.96,ok,920.8,7,FALSE
+season only,Drum. & Lennox.,0.97,ok,919.6,6,FALSE
+season only,Drum. & Lennox.,0.98,ok,915.9,6,FALSE
+season only,Drum. & Lennox.,0.99,ok,910.9,6,FALSE
+season only,Drum. & Nicolet,0.01,ok,901.3,6,TRUE
+season only,Drum. & Nicolet,0.02,ok,904.6,7,TRUE
+season only,Drum. & Nicolet,0.03,ok,908.8,7,TRUE
+season only,Drum. & Nicolet,0.04,ok,913.1,7,FALSE
+season only,Drum. & Nicolet,0.05,ok,917.8,7,FALSE
+season only,Drum. & Nicolet,0.06,ok,923,7,FALSE
+season only,Drum. & Nicolet,0.07,ok,928.1,7,FALSE
+season only,Drum. & Nicolet,0.08,ok,932.6,7,FALSE
+season only,Drum. & Nicolet,0.09,ok,936.9,7,FALSE
+season only,Drum. & Nicolet,0.1,ok,941,7,FALSE
+season only,Drum. & Nicolet,0.11,ok,944.6,7,FALSE
+season only,Drum. & Nicolet,0.12,ok,948.4,7,FALSE
+season only,Drum. & Nicolet,0.13,ok,952.6,7,FALSE
+season only,Drum. & Nicolet,0.14,ok,957,7,FALSE
+season only,Drum. & Nicolet,0.15,ok,961.5,7,FALSE
+season only,Drum. & Nicolet,0.16,ok,965.3,7,FALSE
+season only,Drum. & Nicolet,0.17,ok,968.5,7,FALSE
+season only,Drum. & Nicolet,0.18,ok,971.7,7,FALSE
+season only,Drum. & Nicolet,0.19,ok,975,7,FALSE
+season only,Drum. & Nicolet,0.2,ok,978.4,7,FALSE
+season only,Drum. & Nicolet,0.21,ok,981.8,7,FALSE
+season only,Drum. & Nicolet,0.22,ok,984.7,7,FALSE
+season only,Drum. & Nicolet,0.23,ok,987.4,7,FALSE
+season only,Drum. & Nicolet,0.24,ok,990,7,FALSE
+season only,Drum. & Nicolet,0.25,ok,992.6,7,FALSE
+season only,Drum. & Nicolet,0.26,ok,995.3,7,FALSE
+season only,Drum. & Nicolet,0.27,ok,997.9,7,FALSE
+season only,Drum. & Nicolet,0.28,ok,1001,7,FALSE
+season only,Drum. & Nicolet,0.29,ok,1003,7,FALSE
+season only,Drum. & Nicolet,0.3,ok,1006,7,FALSE
+season only,Drum. & Nicolet,0.31,ok,1009,7,FALSE
+season only,Drum. & Nicolet,0.32,ok,1011,7,FALSE
+season only,Drum. & Nicolet,0.33,ok,1013,7,FALSE
+season only,Drum. & Nicolet,0.34,ok,1014,7,FALSE
+season only,Drum. & Nicolet,0.35,ok,1016,7,FALSE
+season only,Drum. & Nicolet,0.36,ok,1017,7,FALSE
+season only,Drum. & Nicolet,0.37,ok,1018,7,FALSE
+season only,Drum. & Nicolet,0.38,ok,1019,7,FALSE
+season only,Drum. & Nicolet,0.39,ok,1020,7,FALSE
+season only,Drum. & Nicolet,0.4,ok,1021,7,FALSE
+season only,Drum. & Nicolet,0.41,ok,1022,7,FALSE
+season only,Drum. & Nicolet,0.42,ok,1023,7,FALSE
+season only,Drum. & Nicolet,0.43,ok,1023,7,FALSE
+season only,Drum. & Nicolet,0.44,ok,1024,7,FALSE
+season only,Drum. & Nicolet,0.45,ok,1025,7,FALSE
+season only,Drum. & Nicolet,0.46,ok,1026,7,FALSE
+season only,Drum. & Nicolet,0.47,ok,1026,7,FALSE
+season only,Drum. & Nicolet,0.48,ok,1027,7,FALSE
+season only,Drum. & Nicolet,0.49,ok,1028,7,FALSE
+season only,Drum. & Nicolet,0.5,ok,1029,7,FALSE
+season only,Drum. & Nicolet,0.51,ok,1029,7,FALSE
+season only,Drum. & Nicolet,0.52,ok,1029,7,FALSE
+season only,Drum. & Nicolet,0.53,ok,1029,7,FALSE
+season only,Drum. & Nicolet,0.54,ok,1029,7,FALSE
+season only,Drum. & Nicolet,0.55,ok,1028,7,FALSE
+season only,Drum. & Nicolet,0.56,ok,1027,7,FALSE
+season only,Drum. & Nicolet,0.57,ok,1027,7,FALSE
+season only,Drum. & Nicolet,0.58,ok,1026,7,FALSE
+season only,Drum. & Nicolet,0.59,ok,1025,7,FALSE
+season only,Drum. & Nicolet,0.6,ok,1024,7,FALSE
+season only,Drum. & Nicolet,0.61,ok,1023,7,FALSE
+season only,Drum. & Nicolet,0.62,ok,1021,7,FALSE
+season only,Drum. & Nicolet,0.63,ok,1020,7,FALSE
+season only,Drum. & Nicolet,0.64,ok,1018,7,FALSE
+season only,Drum. & Nicolet,0.65,ok,1016,7,FALSE
+season only,Drum. & Nicolet,0.66,ok,1014,7,FALSE
+season only,Drum. & Nicolet,0.67,ok,1012,7,FALSE
+season only,Drum. & Nicolet,0.68,ok,1010,7,FALSE
+season only,Drum. & Nicolet,0.69,ok,1008,7,FALSE
+season only,Drum. & Nicolet,0.7,ok,1006,7,FALSE
+season only,Drum. & Nicolet,0.71,ok,1004,7,FALSE
+season only,Drum. & Nicolet,0.72,ok,1002,7,FALSE
+season only,Drum. & Nicolet,0.73,ok,1001,7,FALSE
+season only,Drum. & Nicolet,0.74,ok,999,7,FALSE
+season only,Drum. & Nicolet,0.75,ok,997.3,7,FALSE
+season only,Drum. & Nicolet,0.76,ok,995.4,7,FALSE
+season only,Drum. & Nicolet,0.77,ok,993.3,7,FALSE
+season only,Drum. & Nicolet,0.78,ok,990.8,7,FALSE
+season only,Drum. & Nicolet,0.79,ok,988.3,7,FALSE
+season only,Drum. & Nicolet,0.8,ok,985.4,7,FALSE
+season only,Drum. & Nicolet,0.81,ok,982.2,7,FALSE
+season only,Drum. & Nicolet,0.82,ok,979.1,7,FALSE
+season only,Drum. & Nicolet,0.83,ok,976.2,7,FALSE
+season only,Drum. & Nicolet,0.84,ok,972.8,7,FALSE
+season only,Drum. & Nicolet,0.85,ok,969.3,7,FALSE
+season only,Drum. & Nicolet,0.86,ok,966,7,FALSE
+season only,Drum. & Nicolet,0.87,ok,962.9,7,FALSE
+season only,Drum. & Nicolet,0.88,ok,959.7,7,FALSE
+season only,Drum. & Nicolet,0.89,ok,956.5,7,FALSE
+season only,Drum. & Nicolet,0.9,ok,952.8,7,FALSE
+season only,Drum. & Nicolet,0.91,ok,948.5,7,FALSE
+season only,Drum. & Nicolet,0.92,ok,944.2,7,FALSE
+season only,Drum. & Nicolet,0.93,ok,939,7,FALSE
+season only,Drum. & Nicolet,0.94,ok,933.9,7,FALSE
+season only,Drum. & Nicolet,0.95,ok,928.9,7,FALSE
+season only,Drum. & Nicolet,0.96,ok,923.6,6,FALSE
+season only,Drum. & Nicolet,0.97,ok,918.5,6,FALSE
+season only,Drum. & Nicolet,0.98,ok,913,6,FALSE
+season only,Drum. & Nicolet,0.99,ok,907.2,6,FALSE
+season only,L'Ass. & Les Cèd.,0.01,ok,907.2,6,FALSE
+season only,L'Ass. & Les Cèd.,0.02,ok,911.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.03,ok,914.9,7,TRUE
+season only,L'Ass. & Les Cèd.,0.04,ok,919.2,7,TRUE
+season only,L'Ass. & Les Cèd.,0.05,ok,923.9,7,TRUE
+season only,L'Ass. & Les Cèd.,0.06,ok,928.3,7,TRUE
+season only,L'Ass. & Les Cèd.,0.07,ok,933,7,TRUE
+season only,L'Ass. & Les Cèd.,0.08,ok,937.4,7,TRUE
+season only,L'Ass. & Les Cèd.,0.09,ok,941.4,7,TRUE
+season only,L'Ass. & Les Cèd.,0.1,ok,945.1,7,TRUE
+season only,L'Ass. & Les Cèd.,0.11,ok,948.5,7,TRUE
+season only,L'Ass. & Les Cèd.,0.12,ok,952.4,7,TRUE
+season only,L'Ass. & Les Cèd.,0.13,ok,956.2,7,FALSE
+season only,L'Ass. & Les Cèd.,0.14,ok,959.7,7,FALSE
+season only,L'Ass. & Les Cèd.,0.15,ok,963.3,7,FALSE
+season only,L'Ass. & Les Cèd.,0.16,ok,966.7,7,FALSE
+season only,L'Ass. & Les Cèd.,0.17,ok,970,7,FALSE
+season only,L'Ass. & Les Cèd.,0.18,ok,973.1,7,FALSE
+season only,L'Ass. & Les Cèd.,0.19,ok,976.4,7,FALSE
+season only,L'Ass. & Les Cèd.,0.2,ok,979.6,7,FALSE
+season only,L'Ass. & Les Cèd.,0.21,ok,982.9,7,FALSE
+season only,L'Ass. & Les Cèd.,0.22,ok,985.7,7,FALSE
+season only,L'Ass. & Les Cèd.,0.23,ok,988.4,7,FALSE
+season only,L'Ass. & Les Cèd.,0.24,ok,991,7,FALSE
+season only,L'Ass. & Les Cèd.,0.25,ok,993.5,7,FALSE
+season only,L'Ass. & Les Cèd.,0.26,ok,995.5,7,FALSE
+season only,L'Ass. & Les Cèd.,0.27,ok,997.4,7,FALSE
+season only,L'Ass. & Les Cèd.,0.28,ok,999.1,7,FALSE
+season only,L'Ass. & Les Cèd.,0.29,ok,1001,7,FALSE
+season only,L'Ass. & Les Cèd.,0.3,ok,1002,7,FALSE
+season only,L'Ass. & Les Cèd.,0.31,ok,1004,7,FALSE
+season only,L'Ass. & Les Cèd.,0.32,ok,1005,7,FALSE
+season only,L'Ass. & Les Cèd.,0.33,ok,1006,7,FALSE
+season only,L'Ass. & Les Cèd.,0.34,ok,1008,7,FALSE
+season only,L'Ass. & Les Cèd.,0.35,ok,1008,7,FALSE
+season only,L'Ass. & Les Cèd.,0.36,ok,1009,7,FALSE
+season only,L'Ass. & Les Cèd.,0.37,ok,1010,7,FALSE
+season only,L'Ass. & Les Cèd.,0.38,ok,1011,7,FALSE
+season only,L'Ass. & Les Cèd.,0.39,ok,1011,7,FALSE
+season only,L'Ass. & Les Cèd.,0.4,ok,1012,7,FALSE
+season only,L'Ass. & Les Cèd.,0.41,ok,1013,7,FALSE
+season only,L'Ass. & Les Cèd.,0.42,ok,1014,7,FALSE
+season only,L'Ass. & Les Cèd.,0.43,ok,1015,7,FALSE
+season only,L'Ass. & Les Cèd.,0.44,ok,1015,7,FALSE
+season only,L'Ass. & Les Cèd.,0.45,ok,1016,7,FALSE
+season only,L'Ass. & Les Cèd.,0.46,ok,1016,7,FALSE
+season only,L'Ass. & Les Cèd.,0.47,ok,1016,7,FALSE
+season only,L'Ass. & Les Cèd.,0.48,ok,1016,7,FALSE
+season only,L'Ass. & Les Cèd.,0.49,ok,1016,7,FALSE
+season only,L'Ass. & Les Cèd.,0.5,ok,1016,7,FALSE
+season only,L'Ass. & Les Cèd.,0.51,ok,1015,7,FALSE
+season only,L'Ass. & Les Cèd.,0.52,ok,1014,7,FALSE
+season only,L'Ass. & Les Cèd.,0.53,ok,1013,7,FALSE
+season only,L'Ass. & Les Cèd.,0.54,ok,1012,7,FALSE
+season only,L'Ass. & Les Cèd.,0.55,ok,1011,7,TRUE
+season only,L'Ass. & Les Cèd.,0.56,ok,1010,7,TRUE
+season only,L'Ass. & Les Cèd.,0.57,ok,1009,7,TRUE
+season only,L'Ass. & Les Cèd.,0.58,ok,1008,7,TRUE
+season only,L'Ass. & Les Cèd.,0.59,ok,1007,7,TRUE
+season only,L'Ass. & Les Cèd.,0.6,ok,1006,7,TRUE
+season only,L'Ass. & Les Cèd.,0.61,ok,1005,7,TRUE
+season only,L'Ass. & Les Cèd.,0.62,ok,1004,7,TRUE
+season only,L'Ass. & Les Cèd.,0.63,ok,1004,7,TRUE
+season only,L'Ass. & Les Cèd.,0.64,ok,1002,7,TRUE
+season only,L'Ass. & Les Cèd.,0.65,ok,1001,7,TRUE
+season only,L'Ass. & Les Cèd.,0.66,ok,999.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.67,ok,998,7,TRUE
+season only,L'Ass. & Les Cèd.,0.68,ok,995.9,7,TRUE
+season only,L'Ass. & Les Cèd.,0.69,ok,993.7,7,TRUE
+season only,L'Ass. & Les Cèd.,0.7,ok,991.3,7,TRUE
+season only,L'Ass. & Les Cèd.,0.71,ok,988.8,7,TRUE
+season only,L'Ass. & Les Cèd.,0.72,ok,986.1,7,TRUE
+season only,L'Ass. & Les Cèd.,0.73,ok,983.2,7,TRUE
+season only,L'Ass. & Les Cèd.,0.74,ok,980.3,7,TRUE
+season only,L'Ass. & Les Cèd.,0.75,ok,977.5,7,TRUE
+season only,L'Ass. & Les Cèd.,0.76,ok,974.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.77,ok,971.8,7,TRUE
+season only,L'Ass. & Les Cèd.,0.78,ok,969.2,7,TRUE
+season only,L'Ass. & Les Cèd.,0.79,ok,966.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.8,ok,964.1,7,TRUE
+season only,L'Ass. & Les Cèd.,0.81,ok,961.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.82,ok,959.2,7,TRUE
+season only,L'Ass. & Les Cèd.,0.83,ok,956.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.84,ok,954.1,7,TRUE
+season only,L'Ass. & Les Cèd.,0.85,ok,951.5,7,TRUE
+season only,L'Ass. & Les Cèd.,0.86,ok,948.8,7,TRUE
+season only,L'Ass. & Les Cèd.,0.87,ok,945.7,7,TRUE
+season only,L'Ass. & Les Cèd.,0.88,ok,942.2,7,TRUE
+season only,L'Ass. & Les Cèd.,0.89,ok,938.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.9,ok,935,7,TRUE
+season only,L'Ass. & Les Cèd.,0.91,ok,931.4,7,FALSE
+season only,L'Ass. & Les Cèd.,0.92,ok,927.6,7,FALSE
+season only,L'Ass. & Les Cèd.,0.93,ok,923.8,7,FALSE
+season only,L'Ass. & Les Cèd.,0.94,ok,919.9,7,FALSE
+season only,L'Ass. & Les Cèd.,0.95,ok,916,7,FALSE
+season only,L'Ass. & Les Cèd.,0.96,ok,912.3,7,TRUE
+season only,L'Ass. & Les Cèd.,0.97,ok,909.6,7,TRUE
+season only,L'Ass. & Les Cèd.,0.98,ok,908,7,TRUE
+season only,L'Ass. & Les Cèd.,0.99,ok,905.1,6,TRUE
+season only,L'Ass. & St-Ch.,0.01,ok,883.4,6,TRUE
+season only,L'Ass. & St-Ch.,0.02,ok,887.2,7,TRUE
+season only,L'Ass. & St-Ch.,0.03,ok,890.6,7,TRUE
+season only,L'Ass. & St-Ch.,0.04,ok,895,7,TRUE
+season only,L'Ass. & St-Ch.,0.05,ok,900,7,TRUE
+season only,L'Ass. & St-Ch.,0.06,ok,905.1,7,TRUE
+season only,L'Ass. & St-Ch.,0.07,ok,909.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.08,ok,914.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.09,ok,918.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.1,ok,922.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.11,ok,926.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.12,ok,929.8,7,FALSE
+season only,L'Ass. & St-Ch.,0.13,ok,933.5,7,FALSE
+season only,L'Ass. & St-Ch.,0.14,ok,936.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.15,ok,939,7,FALSE
+season only,L'Ass. & St-Ch.,0.16,ok,941.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.17,ok,943.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.18,ok,945.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.19,ok,948.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.2,ok,950.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.21,ok,951.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.22,ok,953.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.23,ok,955.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.24,ok,957.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.25,ok,958.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.26,ok,960.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.27,ok,961.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.28,ok,963.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.29,ok,964.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.3,ok,965.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.31,ok,967.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.32,ok,968.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.33,ok,970,7,FALSE
+season only,L'Ass. & St-Ch.,0.34,ok,971.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.35,ok,972.2,7,FALSE
+season only,L'Ass. & St-Ch.,0.36,ok,972.8,7,FALSE
+season only,L'Ass. & St-Ch.,0.37,ok,973.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.38,ok,973.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.39,ok,974.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.4,ok,974.5,7,FALSE
+season only,L'Ass. & St-Ch.,0.41,ok,974.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.42,ok,974.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.43,ok,974.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.44,ok,974.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.45,ok,974.2,7,FALSE
+season only,L'Ass. & St-Ch.,0.46,ok,973.8,7,FALSE
+season only,L'Ass. & St-Ch.,0.47,ok,973.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.48,ok,973,7,FALSE
+season only,L'Ass. & St-Ch.,0.49,ok,972.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.5,ok,972.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.51,ok,972,7,FALSE
+season only,L'Ass. & St-Ch.,0.52,ok,971.5,7,FALSE
+season only,L'Ass. & St-Ch.,0.53,ok,971,7,FALSE
+season only,L'Ass. & St-Ch.,0.54,ok,970.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.55,ok,970.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.56,ok,970.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.57,ok,969.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.58,ok,969.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.59,ok,968.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.6,ok,967.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.61,ok,967.2,7,FALSE
+season only,L'Ass. & St-Ch.,0.62,ok,966.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.63,ok,966.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.64,ok,965.5,7,FALSE
+season only,L'Ass. & St-Ch.,0.65,ok,964.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.66,ok,963.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.67,ok,962.8,7,FALSE
+season only,L'Ass. & St-Ch.,0.68,ok,961.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.69,ok,960.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.7,ok,959.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.71,ok,957.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.72,ok,955.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.73,ok,954,7,FALSE
+season only,L'Ass. & St-Ch.,0.74,ok,952.5,7,FALSE
+season only,L'Ass. & St-Ch.,0.75,ok,950.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.76,ok,949,7,FALSE
+season only,L'Ass. & St-Ch.,0.77,ok,947.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.78,ok,946.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.79,ok,944.8,7,FALSE
+season only,L'Ass. & St-Ch.,0.8,ok,943,7,FALSE
+season only,L'Ass. & St-Ch.,0.81,ok,941.2,7,FALSE
+season only,L'Ass. & St-Ch.,0.82,ok,939.4,7,FALSE
+season only,L'Ass. & St-Ch.,0.83,ok,937.2,7,FALSE
+season only,L'Ass. & St-Ch.,0.84,ok,934.8,7,FALSE
+season only,L'Ass. & St-Ch.,0.85,ok,932.3,7,FALSE
+season only,L'Ass. & St-Ch.,0.86,ok,930,7,FALSE
+season only,L'Ass. & St-Ch.,0.87,ok,927.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.88,ok,925.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.89,ok,922.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.9,ok,919.1,7,FALSE
+season only,L'Ass. & St-Ch.,0.91,ok,915.7,7,FALSE
+season only,L'Ass. & St-Ch.,0.92,ok,911.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.93,ok,907.9,7,FALSE
+season only,L'Ass. & St-Ch.,0.94,ok,904.6,7,FALSE
+season only,L'Ass. & St-Ch.,0.95,ok,901.5,7,TRUE
+season only,L'Ass. & St-Ch.,0.96,ok,898.2,7,TRUE
+season only,L'Ass. & St-Ch.,0.97,ok,894.6,6,TRUE
+season only,L'Ass. & St-Ch.,0.98,ok,889.9,6,TRUE
+season only,L'Ass. & St-Ch.,0.99,ok,885.4,6,TRUE
+season only,L'Ass. & Lennox.,0.01,ok,904.3,6,TRUE
+season only,L'Ass. & Lennox.,0.02,ok,900.7,7,TRUE
+season only,L'Ass. & Lennox.,0.03,ok,899.9,7,TRUE
+season only,L'Ass. & Lennox.,0.04,ok,900.1,7,TRUE
+season only,L'Ass. & Lennox.,0.05,ok,900.1,7,TRUE
+season only,L'Ass. & Lennox.,0.06,ok,899.3,7,TRUE
+season only,L'Ass. & Lennox.,0.07,ok,899.3,7,TRUE
+season only,L'Ass. & Lennox.,0.08,ok,900.3,7,TRUE
+season only,L'Ass. & Lennox.,0.09,ok,902,7,TRUE
+season only,L'Ass. & Lennox.,0.1,ok,904.2,7,TRUE
+season only,L'Ass. & Lennox.,0.11,ok,906.4,7,TRUE
+season only,L'Ass. & Lennox.,0.12,ok,908.7,7,TRUE
+season only,L'Ass. & Lennox.,0.13,ok,911.2,7,TRUE
+season only,L'Ass. & Lennox.,0.14,ok,913.3,7,TRUE
+season only,L'Ass. & Lennox.,0.15,ok,915.1,7,TRUE
+season only,L'Ass. & Lennox.,0.16,ok,916.6,7,TRUE
+season only,L'Ass. & Lennox.,0.17,ok,918.2,7,TRUE
+season only,L'Ass. & Lennox.,0.18,ok,919.9,7,TRUE
+season only,L'Ass. & Lennox.,0.19,ok,921.6,7,TRUE
+season only,L'Ass. & Lennox.,0.2,ok,923.4,7,TRUE
+season only,L'Ass. & Lennox.,0.21,ok,925.3,7,TRUE
+season only,L'Ass. & Lennox.,0.22,ok,927.2,7,TRUE
+season only,L'Ass. & Lennox.,0.23,ok,928.7,7,TRUE
+season only,L'Ass. & Lennox.,0.24,ok,930.2,7,TRUE
+season only,L'Ass. & Lennox.,0.25,ok,931.7,7,TRUE
+season only,L'Ass. & Lennox.,0.26,ok,933.1,7,TRUE
+season only,L'Ass. & Lennox.,0.27,ok,934,7,TRUE
+season only,L'Ass. & Lennox.,0.28,ok,934.7,7,TRUE
+season only,L'Ass. & Lennox.,0.29,ok,935.5,7,TRUE
+season only,L'Ass. & Lennox.,0.3,ok,936,7,TRUE
+season only,L'Ass. & Lennox.,0.31,ok,936.6,7,TRUE
+season only,L'Ass. & Lennox.,0.32,ok,937.4,7,TRUE
+season only,L'Ass. & Lennox.,0.33,ok,938.1,7,TRUE
+season only,L'Ass. & Lennox.,0.34,ok,938.6,7,TRUE
+season only,L'Ass. & Lennox.,0.35,ok,938.8,7,TRUE
+season only,L'Ass. & Lennox.,0.36,ok,939,7,TRUE
+season only,L'Ass. & Lennox.,0.37,ok,939.2,7,TRUE
+season only,L'Ass. & Lennox.,0.38,ok,939.4,7,TRUE
+season only,L'Ass. & Lennox.,0.39,ok,939.5,7,TRUE
+season only,L'Ass. & Lennox.,0.4,ok,939.4,7,TRUE
+season only,L'Ass. & Lennox.,0.41,ok,939.2,7,TRUE
+season only,L'Ass. & Lennox.,0.42,ok,938.9,7,TRUE
+season only,L'Ass. & Lennox.,0.43,ok,938.7,7,TRUE
+season only,L'Ass. & Lennox.,0.44,ok,938.1,7,TRUE
+season only,L'Ass. & Lennox.,0.45,ok,937.4,7,TRUE
+season only,L'Ass. & Lennox.,0.46,ok,936.8,7,TRUE
+season only,L'Ass. & Lennox.,0.47,ok,936.2,7,TRUE
+season only,L'Ass. & Lennox.,0.48,ok,935.9,7,TRUE
+season only,L'Ass. & Lennox.,0.49,ok,935.7,7,TRUE
+season only,L'Ass. & Lennox.,0.5,ok,935.4,7,TRUE
+season only,L'Ass. & Lennox.,0.51,ok,935.1,7,TRUE
+season only,L'Ass. & Lennox.,0.52,ok,934.5,7,TRUE
+season only,L'Ass. & Lennox.,0.53,ok,934.2,7,TRUE
+season only,L'Ass. & Lennox.,0.54,ok,933.7,7,TRUE
+season only,L'Ass. & Lennox.,0.55,ok,933.3,7,TRUE
+season only,L'Ass. & Lennox.,0.56,ok,932.6,7,TRUE
+season only,L'Ass. & Lennox.,0.57,ok,931.7,7,TRUE
+season only,L'Ass. & Lennox.,0.58,ok,930.9,7,TRUE
+season only,L'Ass. & Lennox.,0.59,ok,930,7,TRUE
+season only,L'Ass. & Lennox.,0.6,ok,928.8,7,TRUE
+season only,L'Ass. & Lennox.,0.61,ok,927.9,7,TRUE
+season only,L'Ass. & Lennox.,0.62,ok,927,7,TRUE
+season only,L'Ass. & Lennox.,0.63,ok,926.1,7,TRUE
+season only,L'Ass. & Lennox.,0.64,ok,925.5,7,TRUE
+season only,L'Ass. & Lennox.,0.65,ok,925.1,7,TRUE
+season only,L'Ass. & Lennox.,0.66,ok,924.6,7,TRUE
+season only,L'Ass. & Lennox.,0.67,ok,924.4,7,TRUE
+season only,L'Ass. & Lennox.,0.68,ok,924.5,7,TRUE
+season only,L'Ass. & Lennox.,0.69,ok,924.7,7,TRUE
+season only,L'Ass. & Lennox.,0.7,ok,924.8,7,TRUE
+season only,L'Ass. & Lennox.,0.71,ok,925,7,TRUE
+season only,L'Ass. & Lennox.,0.72,ok,925.1,7,TRUE
+season only,L'Ass. & Lennox.,0.73,ok,925.2,7,TRUE
+season only,L'Ass. & Lennox.,0.74,ok,925.2,7,TRUE
+season only,L'Ass. & Lennox.,0.75,ok,925.3,7,TRUE
+season only,L'Ass. & Lennox.,0.76,ok,924.9,7,TRUE
+season only,L'Ass. & Lennox.,0.77,ok,924.5,7,TRUE
+season only,L'Ass. & Lennox.,0.78,ok,924.4,7,TRUE
+season only,L'Ass. & Lennox.,0.79,ok,924.2,7,TRUE
+season only,L'Ass. & Lennox.,0.8,ok,923.8,7,TRUE
+season only,L'Ass. & Lennox.,0.81,ok,923.3,7,TRUE
+season only,L'Ass. & Lennox.,0.82,ok,922.9,7,TRUE
+season only,L'Ass. & Lennox.,0.83,ok,922.9,7,TRUE
+season only,L'Ass. & Lennox.,0.84,ok,922.9,7,TRUE
+season only,L'Ass. & Lennox.,0.85,ok,922.9,7,TRUE
+season only,L'Ass. & Lennox.,0.86,ok,923.4,7,TRUE
+season only,L'Ass. & Lennox.,0.87,ok,924.1,7,TRUE
+season only,L'Ass. & Lennox.,0.88,ok,924.9,7,TRUE
+season only,L'Ass. & Lennox.,0.89,ok,925.4,7,TRUE
+season only,L'Ass. & Lennox.,0.9,ok,924.3,7,TRUE
+season only,L'Ass. & Lennox.,0.91,ok,922.5,7,TRUE
+season only,L'Ass. & Lennox.,0.92,ok,920.3,7,TRUE
+season only,L'Ass. & Lennox.,0.93,ok,918.3,7,TRUE
+season only,L'Ass. & Lennox.,0.94,ok,916.4,7,TRUE
+season only,L'Ass. & Lennox.,0.95,ok,914.2,7,TRUE
+season only,L'Ass. & Lennox.,0.96,ok,912.4,7,TRUE
+season only,L'Ass. & Lennox.,0.97,ok,912.1,7,TRUE
+season only,L'Ass. & Lennox.,0.98,ok,912.4,7,TRUE
+season only,L'Ass. & Lennox.,0.99,ok,909.8,7,TRUE
+season only,L'Ass. & Nicolet,0.01,ok,907.5,6,TRUE
+season only,L'Ass. & Nicolet,0.02,ok,912.7,7,FALSE
+season only,L'Ass. & Nicolet,0.03,ok,918.2,7,FALSE
+season only,L'Ass. & Nicolet,0.04,ok,923.1,7,FALSE
+season only,L'Ass. & Nicolet,0.05,ok,928.1,7,FALSE
+season only,L'Ass. & Nicolet,0.06,ok,933,7,FALSE
+season only,L'Ass. & Nicolet,0.07,ok,937.3,7,FALSE
+season only,L'Ass. & Nicolet,0.08,ok,941,7,FALSE
+season only,L'Ass. & Nicolet,0.09,ok,943.8,7,FALSE
+season only,L'Ass. & Nicolet,0.1,ok,947,7,FALSE
+season only,L'Ass. & Nicolet,0.11,ok,950.3,7,FALSE
+season only,L'Ass. & Nicolet,0.12,ok,953.5,7,FALSE
+season only,L'Ass. & Nicolet,0.13,ok,956.3,7,FALSE
+season only,L'Ass. & Nicolet,0.14,ok,958.9,7,FALSE
+season only,L'Ass. & Nicolet,0.15,ok,961.7,7,FALSE
+season only,L'Ass. & Nicolet,0.16,ok,964.5,7,FALSE
+season only,L'Ass. & Nicolet,0.17,ok,967.4,7,FALSE
+season only,L'Ass. & Nicolet,0.18,ok,970.3,7,FALSE
+season only,L'Ass. & Nicolet,0.19,ok,973.5,7,FALSE
+season only,L'Ass. & Nicolet,0.2,ok,976.4,7,FALSE
+season only,L'Ass. & Nicolet,0.21,ok,978.8,7,FALSE
+season only,L'Ass. & Nicolet,0.22,ok,981.3,7,FALSE
+season only,L'Ass. & Nicolet,0.23,ok,984,7,FALSE
+season only,L'Ass. & Nicolet,0.24,ok,986.6,7,FALSE
+season only,L'Ass. & Nicolet,0.25,ok,989.2,7,FALSE
+season only,L'Ass. & Nicolet,0.26,ok,991.6,7,FALSE
+season only,L'Ass. & Nicolet,0.27,ok,994.1,7,FALSE
+season only,L'Ass. & Nicolet,0.28,ok,996.2,7,FALSE
+season only,L'Ass. & Nicolet,0.29,ok,998.2,7,FALSE
+season only,L'Ass. & Nicolet,0.3,ok,999.9,7,FALSE
+season only,L'Ass. & Nicolet,0.31,ok,1001,7,FALSE
+season only,L'Ass. & Nicolet,0.32,ok,1003,7,FALSE
+season only,L'Ass. & Nicolet,0.33,ok,1004,7,FALSE
+season only,L'Ass. & Nicolet,0.34,ok,1006,7,FALSE
+season only,L'Ass. & Nicolet,0.35,ok,1007,7,FALSE
+season only,L'Ass. & Nicolet,0.36,ok,1008,7,FALSE
+season only,L'Ass. & Nicolet,0.37,ok,1009,7,FALSE
+season only,L'Ass. & Nicolet,0.38,ok,1010,7,FALSE
+season only,L'Ass. & Nicolet,0.39,ok,1011,7,FALSE
+season only,L'Ass. & Nicolet,0.4,ok,1012,7,FALSE
+season only,L'Ass. & Nicolet,0.41,ok,1013,7,FALSE
+season only,L'Ass. & Nicolet,0.42,ok,1013,7,FALSE
+season only,L'Ass. & Nicolet,0.43,ok,1014,7,FALSE
+season only,L'Ass. & Nicolet,0.44,ok,1014,7,FALSE
+season only,L'Ass. & Nicolet,0.45,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.46,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.47,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.48,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.49,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.5,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.51,ok,1015,7,FALSE
+season only,L'Ass. & Nicolet,0.52,ok,1014,7,FALSE
+season only,L'Ass. & Nicolet,0.53,ok,1014,7,FALSE
+season only,L'Ass. & Nicolet,0.54,ok,1013,7,FALSE
+season only,L'Ass. & Nicolet,0.55,ok,1013,7,FALSE
+season only,L'Ass. & Nicolet,0.56,ok,1012,7,FALSE
+season only,L'Ass. & Nicolet,0.57,ok,1011,7,FALSE
+season only,L'Ass. & Nicolet,0.58,ok,1011,7,FALSE
+season only,L'Ass. & Nicolet,0.59,ok,1010,7,FALSE
+season only,L'Ass. & Nicolet,0.6,ok,1009,7,FALSE
+season only,L'Ass. & Nicolet,0.61,ok,1008,7,FALSE
+season only,L'Ass. & Nicolet,0.62,ok,1006,7,FALSE
+season only,L'Ass. & Nicolet,0.63,ok,1005,7,FALSE
+season only,L'Ass. & Nicolet,0.64,ok,1003,7,FALSE
+season only,L'Ass. & Nicolet,0.65,ok,1001,7,FALSE
+season only,L'Ass. & Nicolet,0.66,ok,999.8,7,FALSE
+season only,L'Ass. & Nicolet,0.67,ok,998.1,7,FALSE
+season only,L'Ass. & Nicolet,0.68,ok,996.1,7,FALSE
+season only,L'Ass. & Nicolet,0.69,ok,994,7,FALSE
+season only,L'Ass. & Nicolet,0.7,ok,992.1,7,FALSE
+season only,L'Ass. & Nicolet,0.71,ok,990.1,7,FALSE
+season only,L'Ass. & Nicolet,0.72,ok,988.3,7,FALSE
+season only,L'Ass. & Nicolet,0.73,ok,986.8,7,FALSE
+season only,L'Ass. & Nicolet,0.74,ok,985,7,FALSE
+season only,L'Ass. & Nicolet,0.75,ok,982.8,7,FALSE
+season only,L'Ass. & Nicolet,0.76,ok,980.8,7,FALSE
+season only,L'Ass. & Nicolet,0.77,ok,979,7,FALSE
+season only,L'Ass. & Nicolet,0.78,ok,977.1,7,FALSE
+season only,L'Ass. & Nicolet,0.79,ok,975.1,7,FALSE
+season only,L'Ass. & Nicolet,0.8,ok,972.9,7,FALSE
+season only,L'Ass. & Nicolet,0.81,ok,970.8,7,FALSE
+season only,L'Ass. & Nicolet,0.82,ok,968.5,7,FALSE
+season only,L'Ass. & Nicolet,0.83,ok,965.7,7,FALSE
+season only,L'Ass. & Nicolet,0.84,ok,962.9,7,FALSE
+season only,L'Ass. & Nicolet,0.85,ok,960.1,7,FALSE
+season only,L'Ass. & Nicolet,0.86,ok,957.5,7,FALSE
+season only,L'Ass. & Nicolet,0.87,ok,954.9,7,FALSE
+season only,L'Ass. & Nicolet,0.88,ok,951.9,7,FALSE
+season only,L'Ass. & Nicolet,0.89,ok,948.6,7,FALSE
+season only,L'Ass. & Nicolet,0.9,ok,945.1,7,FALSE
+season only,L'Ass. & Nicolet,0.91,ok,941.6,7,FALSE
+season only,L'Ass. & Nicolet,0.92,ok,937.9,7,FALSE
+season only,L'Ass. & Nicolet,0.93,ok,934.2,7,FALSE
+season only,L'Ass. & Nicolet,0.94,ok,931,7,FALSE
+season only,L'Ass. & Nicolet,0.95,ok,928.4,7,FALSE
+season only,L'Ass. & Nicolet,0.96,ok,924.9,7,FALSE
+season only,L'Ass. & Nicolet,0.97,ok,919.9,6,FALSE
+season only,L'Ass. & Nicolet,0.98,ok,914.3,6,FALSE
+season only,L'Ass. & Nicolet,0.99,ok,908.2,6,FALSE
+season only,Les Cèd. & St-Ch.,0.01,ok,889.1,6,TRUE
+season only,Les Cèd. & St-Ch.,0.02,ok,892.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.03,ok,895.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.04,ok,897.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.05,ok,899.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.06,ok,900.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.07,ok,901,7,TRUE
+season only,Les Cèd. & St-Ch.,0.08,ok,900.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.09,ok,900.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.1,ok,901.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.11,ok,901.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.12,ok,902.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.13,ok,903.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.14,ok,904.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.15,ok,905.4,7,TRUE
+season only,Les Cèd. & St-Ch.,0.16,ok,906.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.17,ok,906.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.18,ok,907.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.19,ok,907.9,7,TRUE
+season only,Les Cèd. & St-Ch.,0.2,ok,908.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.21,ok,908.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.22,ok,909.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.23,ok,909.9,7,TRUE
+season only,Les Cèd. & St-Ch.,0.24,ok,911,7,TRUE
+season only,Les Cèd. & St-Ch.,0.25,ok,912.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.26,ok,913.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.27,ok,914.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.28,ok,915.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.29,ok,916.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.3,ok,918.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.31,ok,919.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.32,ok,921.4,7,TRUE
+season only,Les Cèd. & St-Ch.,0.33,ok,923.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.34,ok,924.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.35,ok,926.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.36,ok,927.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.37,ok,929.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.38,ok,930.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.39,ok,931.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.4,ok,932.9,7,TRUE
+season only,Les Cèd. & St-Ch.,0.41,ok,934,7,TRUE
+season only,Les Cèd. & St-Ch.,0.42,ok,934.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.43,ok,935.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.44,ok,935.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.45,ok,936.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.46,ok,936.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.47,ok,937.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.48,ok,937.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.49,ok,937.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.5,ok,938.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.51,ok,938.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.52,ok,938.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.53,ok,938.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.54,ok,938.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.55,ok,938.4,7,TRUE
+season only,Les Cèd. & St-Ch.,0.56,ok,938.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.57,ok,938.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.58,ok,938.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.59,ok,938.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.6,ok,938.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.61,ok,938.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.62,ok,938.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.63,ok,938.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.64,ok,937.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.65,ok,937.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.66,ok,936.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.67,ok,934.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.68,ok,933,7,TRUE
+season only,Les Cèd. & St-Ch.,0.69,ok,931.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.7,ok,930,7,TRUE
+season only,Les Cèd. & St-Ch.,0.71,ok,928.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.72,ok,927.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.73,ok,926.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.74,ok,925.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.75,ok,924.9,7,TRUE
+season only,Les Cèd. & St-Ch.,0.76,ok,924.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.77,ok,923.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.78,ok,922.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.79,ok,921.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.8,ok,920,7,TRUE
+season only,Les Cèd. & St-Ch.,0.81,ok,918.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.82,ok,917.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.83,ok,916.1,7,TRUE
+season only,Les Cèd. & St-Ch.,0.84,ok,914.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.85,ok,912.9,7,TRUE
+season only,Les Cèd. & St-Ch.,0.86,ok,911.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.87,ok,910.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.88,ok,909.5,7,TRUE
+season only,Les Cèd. & St-Ch.,0.89,ok,907.8,7,TRUE
+season only,Les Cèd. & St-Ch.,0.9,ok,905.9,7,TRUE
+season only,Les Cèd. & St-Ch.,0.91,ok,904.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.92,ok,902.6,7,TRUE
+season only,Les Cèd. & St-Ch.,0.93,ok,900.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.94,ok,897.7,7,TRUE
+season only,Les Cèd. & St-Ch.,0.95,ok,895.2,7,TRUE
+season only,Les Cèd. & St-Ch.,0.96,ok,892.4,7,TRUE
+season only,Les Cèd. & St-Ch.,0.97,ok,890.3,7,TRUE
+season only,Les Cèd. & St-Ch.,0.98,ok,890,7,TRUE
+season only,Les Cèd. & St-Ch.,0.99,ok,890.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.01,ok,911.7,6,TRUE
+season only,Les Cèd. & Lennox.,0.02,ok,914,7,TRUE
+season only,Les Cèd. & Lennox.,0.03,ok,916.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.04,ok,917.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.05,ok,918.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.06,ok,919.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.07,ok,920.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.08,ok,920.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.09,ok,921.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.1,ok,922.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.11,ok,923,7,TRUE
+season only,Les Cèd. & Lennox.,0.12,ok,923.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.13,ok,923.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.14,ok,923.9,7,TRUE
+season only,Les Cèd. & Lennox.,0.15,ok,923.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.16,ok,922.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.17,ok,922.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.18,ok,921.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.19,ok,921.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.2,ok,921.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.21,ok,921.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.22,ok,921.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.23,ok,921.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.24,ok,921,7,TRUE
+season only,Les Cèd. & Lennox.,0.25,ok,920.9,7,TRUE
+season only,Les Cèd. & Lennox.,0.26,ok,920.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.27,ok,920.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.28,ok,920.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.29,ok,920.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.3,ok,920,7,TRUE
+season only,Les Cèd. & Lennox.,0.31,ok,919.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.32,ok,919.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.33,ok,919.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.34,ok,919.7,7,TRUE
+season only,Les Cèd. & Lennox.,0.35,ok,919.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.36,ok,919.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.37,ok,919.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.38,ok,918.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.39,ok,918.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.4,ok,918.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.41,ok,918,7,TRUE
+season only,Les Cèd. & Lennox.,0.42,ok,918,7,TRUE
+season only,Les Cèd. & Lennox.,0.43,ok,918.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.44,ok,918.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.45,ok,918.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.46,ok,918.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.47,ok,918,7,TRUE
+season only,Les Cèd. & Lennox.,0.48,ok,918.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.49,ok,918.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.5,ok,918.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.51,ok,918.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.52,ok,918.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.53,ok,918.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.54,ok,918.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.55,ok,917.7,7,TRUE
+season only,Les Cèd. & Lennox.,0.56,ok,917.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.57,ok,916.9,7,TRUE
+season only,Les Cèd. & Lennox.,0.58,ok,916.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.59,ok,916.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.6,ok,916.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.61,ok,916.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.62,ok,916.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.63,ok,916.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.64,ok,916.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.65,ok,916.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.66,ok,916.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.67,ok,916.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.68,ok,916.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.69,ok,916.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.7,ok,915.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.71,ok,915.7,7,TRUE
+season only,Les Cèd. & Lennox.,0.72,ok,915.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.73,ok,915.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.74,ok,915.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.75,ok,915.2,7,TRUE
+season only,Les Cèd. & Lennox.,0.76,ok,915,7,TRUE
+season only,Les Cèd. & Lennox.,0.77,ok,914.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.78,ok,913.5,7,TRUE
+season only,Les Cèd. & Lennox.,0.79,ok,912.7,7,TRUE
+season only,Les Cèd. & Lennox.,0.8,ok,912,7,TRUE
+season only,Les Cèd. & Lennox.,0.81,ok,911.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.82,ok,910.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.83,ok,910.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.84,ok,910.6,7,TRUE
+season only,Les Cèd. & Lennox.,0.85,ok,910.9,7,TRUE
+season only,Les Cèd. & Lennox.,0.86,ok,911.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.87,ok,911.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.88,ok,911.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.89,ok,911.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.9,ok,911.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.91,ok,911.8,7,TRUE
+season only,Les Cèd. & Lennox.,0.92,ok,912.7,7,TRUE
+season only,Les Cèd. & Lennox.,0.93,ok,914,7,TRUE
+season only,Les Cèd. & Lennox.,0.94,ok,914.4,7,TRUE
+season only,Les Cèd. & Lennox.,0.95,ok,914.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.96,ok,914.3,7,TRUE
+season only,Les Cèd. & Lennox.,0.97,ok,914.7,7,TRUE
+season only,Les Cèd. & Lennox.,0.98,ok,916.1,7,TRUE
+season only,Les Cèd. & Lennox.,0.99,ok,915.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.01,ok,911.1,6,TRUE
+season only,Les Cèd. & Nicolet,0.02,ok,914.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.03,ok,916.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.04,ok,916.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.05,ok,917.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.06,ok,919.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.07,ok,921.8,7,TRUE
+season only,Les Cèd. & Nicolet,0.08,ok,923.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.09,ok,924.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.1,ok,925.8,7,TRUE
+season only,Les Cèd. & Nicolet,0.11,ok,926.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.12,ok,927.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.13,ok,927.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.14,ok,928.8,7,TRUE
+season only,Les Cèd. & Nicolet,0.15,ok,930,7,TRUE
+season only,Les Cèd. & Nicolet,0.16,ok,931.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.17,ok,932.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.18,ok,933.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.19,ok,935.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.2,ok,936.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.21,ok,937.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.22,ok,938.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.23,ok,939.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.24,ok,939.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.25,ok,939.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.26,ok,939.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.27,ok,939.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.28,ok,939.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.29,ok,939.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.3,ok,939.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.31,ok,939.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.32,ok,939.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.33,ok,940.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.34,ok,941.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.35,ok,941.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.36,ok,942.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.37,ok,943.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.38,ok,944.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.39,ok,945.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.4,ok,946.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.41,ok,947,7,TRUE
+season only,Les Cèd. & Nicolet,0.42,ok,948.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.43,ok,949.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.44,ok,950.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.45,ok,950.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.46,ok,951.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.47,ok,952.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.48,ok,952.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.49,ok,953.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.5,ok,953.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.51,ok,953.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.52,ok,953.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.53,ok,953.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.54,ok,953.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.55,ok,953.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.56,ok,953.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.57,ok,953.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.58,ok,954,7,TRUE
+season only,Les Cèd. & Nicolet,0.59,ok,954.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.6,ok,954.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.61,ok,955.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.62,ok,955.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.63,ok,955,7,TRUE
+season only,Les Cèd. & Nicolet,0.64,ok,955,7,TRUE
+season only,Les Cèd. & Nicolet,0.65,ok,954.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.66,ok,954,7,TRUE
+season only,Les Cèd. & Nicolet,0.67,ok,953.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.68,ok,952.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.69,ok,951.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.7,ok,950.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.71,ok,949.8,7,TRUE
+season only,Les Cèd. & Nicolet,0.72,ok,949,7,TRUE
+season only,Les Cèd. & Nicolet,0.73,ok,948.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.74,ok,947.5,7,TRUE
+season only,Les Cèd. & Nicolet,0.75,ok,946.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.76,ok,945.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.77,ok,945.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.78,ok,944.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.79,ok,943.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.8,ok,942.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.81,ok,941.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.82,ok,939.7,7,TRUE
+season only,Les Cèd. & Nicolet,0.83,ok,938.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.84,ok,937.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.85,ok,936,7,TRUE
+season only,Les Cèd. & Nicolet,0.86,ok,934.8,7,TRUE
+season only,Les Cèd. & Nicolet,0.87,ok,933.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.88,ok,932.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.89,ok,930.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.9,ok,929.4,7,TRUE
+season only,Les Cèd. & Nicolet,0.91,ok,928.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.92,ok,926.1,7,TRUE
+season only,Les Cèd. & Nicolet,0.93,ok,924.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.94,ok,922.9,7,TRUE
+season only,Les Cèd. & Nicolet,0.95,ok,921,7,TRUE
+season only,Les Cèd. & Nicolet,0.96,ok,918.3,7,TRUE
+season only,Les Cèd. & Nicolet,0.97,ok,916.6,7,TRUE
+season only,Les Cèd. & Nicolet,0.98,ok,915.2,7,TRUE
+season only,Les Cèd. & Nicolet,0.99,ok,911.9,6,TRUE
+season only,St-Ch. & Lennox.,0.01,ok,892.2,6,TRUE
+season only,St-Ch. & Lennox.,0.02,ok,894.3,7,TRUE
+season only,St-Ch. & Lennox.,0.03,ok,896.6,7,TRUE
+season only,St-Ch. & Lennox.,0.04,ok,898.1,7,TRUE
+season only,St-Ch. & Lennox.,0.05,ok,899,7,TRUE
+season only,St-Ch. & Lennox.,0.06,ok,898.9,7,TRUE
+season only,St-Ch. & Lennox.,0.07,ok,898.3,7,TRUE
+season only,St-Ch. & Lennox.,0.08,ok,898.3,7,TRUE
+season only,St-Ch. & Lennox.,0.09,ok,897.7,7,TRUE
+season only,St-Ch. & Lennox.,0.1,ok,895.7,7,TRUE
+season only,St-Ch. & Lennox.,0.11,ok,893.2,7,TRUE
+season only,St-Ch. & Lennox.,0.12,ok,891.1,7,TRUE
+season only,St-Ch. & Lennox.,0.13,ok,889.1,7,TRUE
+season only,St-Ch. & Lennox.,0.14,ok,886.3,7,TRUE
+season only,St-Ch. & Lennox.,0.15,ok,883.9,7,TRUE
+season only,St-Ch. & Lennox.,0.16,ok,881.9,7,TRUE
+season only,St-Ch. & Lennox.,0.17,ok,880.2,7,TRUE
+season only,St-Ch. & Lennox.,0.18,ok,878.9,7,TRUE
+season only,St-Ch. & Lennox.,0.19,ok,877.6,7,TRUE
+season only,St-Ch. & Lennox.,0.2,ok,876.3,7,TRUE
+season only,St-Ch. & Lennox.,0.21,ok,874.8,7,TRUE
+season only,St-Ch. & Lennox.,0.22,ok,873.5,7,TRUE
+season only,St-Ch. & Lennox.,0.23,ok,872.2,7,TRUE
+season only,St-Ch. & Lennox.,0.24,ok,871,7,TRUE
+season only,St-Ch. & Lennox.,0.25,ok,869.9,7,TRUE
+season only,St-Ch. & Lennox.,0.26,ok,868.9,7,TRUE
+season only,St-Ch. & Lennox.,0.27,ok,868.1,7,TRUE
+season only,St-Ch. & Lennox.,0.28,ok,867.4,7,TRUE
+season only,St-Ch. & Lennox.,0.29,ok,867,7,TRUE
+season only,St-Ch. & Lennox.,0.3,ok,867,7,TRUE
+season only,St-Ch. & Lennox.,0.31,ok,866.9,7,TRUE
+season only,St-Ch. & Lennox.,0.32,ok,867.1,7,TRUE
+season only,St-Ch. & Lennox.,0.33,ok,867.1,7,TRUE
+season only,St-Ch. & Lennox.,0.34,ok,867.2,7,TRUE
+season only,St-Ch. & Lennox.,0.35,ok,867.1,7,TRUE
+season only,St-Ch. & Lennox.,0.36,ok,867.1,7,TRUE
+season only,St-Ch. & Lennox.,0.37,ok,866.9,7,TRUE
+season only,St-Ch. & Lennox.,0.38,ok,866.7,7,TRUE
+season only,St-Ch. & Lennox.,0.39,ok,866.3,7,TRUE
+season only,St-Ch. & Lennox.,0.4,ok,866,7,TRUE
+season only,St-Ch. & Lennox.,0.41,ok,865.7,7,TRUE
+season only,St-Ch. & Lennox.,0.42,ok,865.4,7,TRUE
+season only,St-Ch. & Lennox.,0.43,ok,865.1,7,TRUE
+season only,St-Ch. & Lennox.,0.44,ok,864.9,7,TRUE
+season only,St-Ch. & Lennox.,0.45,ok,864.6,7,TRUE
+season only,St-Ch. & Lennox.,0.46,ok,864.5,7,TRUE
+season only,St-Ch. & Lennox.,0.47,ok,864.3,7,TRUE
+season only,St-Ch. & Lennox.,0.48,ok,864.3,7,TRUE
+season only,St-Ch. & Lennox.,0.49,ok,864.5,7,TRUE
+season only,St-Ch. & Lennox.,0.5,ok,865,7,TRUE
+season only,St-Ch. & Lennox.,0.51,ok,865.2,7,TRUE
+season only,St-Ch. & Lennox.,0.52,ok,865.5,7,TRUE
+season only,St-Ch. & Lennox.,0.53,ok,866,7,TRUE
+season only,St-Ch. & Lennox.,0.54,ok,866.7,7,TRUE
+season only,St-Ch. & Lennox.,0.55,ok,867.5,7,TRUE
+season only,St-Ch. & Lennox.,0.56,ok,868.4,7,TRUE
+season only,St-Ch. & Lennox.,0.57,ok,869.4,7,TRUE
+season only,St-Ch. & Lennox.,0.58,ok,870,7,TRUE
+season only,St-Ch. & Lennox.,0.59,ok,870.7,7,TRUE
+season only,St-Ch. & Lennox.,0.6,ok,871.7,7,TRUE
+season only,St-Ch. & Lennox.,0.61,ok,872.6,7,TRUE
+season only,St-Ch. & Lennox.,0.62,ok,873.5,7,TRUE
+season only,St-Ch. & Lennox.,0.63,ok,874.5,7,TRUE
+season only,St-Ch. & Lennox.,0.64,ok,875.4,7,TRUE
+season only,St-Ch. & Lennox.,0.65,ok,875.9,7,TRUE
+season only,St-Ch. & Lennox.,0.66,ok,876.7,7,TRUE
+season only,St-Ch. & Lennox.,0.67,ok,877.5,7,TRUE
+season only,St-Ch. & Lennox.,0.68,ok,878.3,7,TRUE
+season only,St-Ch. & Lennox.,0.69,ok,879.3,7,TRUE
+season only,St-Ch. & Lennox.,0.7,ok,880.3,7,TRUE
+season only,St-Ch. & Lennox.,0.71,ok,881,7,TRUE
+season only,St-Ch. & Lennox.,0.72,ok,881.6,7,TRUE
+season only,St-Ch. & Lennox.,0.73,ok,882.2,7,TRUE
+season only,St-Ch. & Lennox.,0.74,ok,882.6,7,TRUE
+season only,St-Ch. & Lennox.,0.75,ok,883.2,7,TRUE
+season only,St-Ch. & Lennox.,0.76,ok,883.7,7,TRUE
+season only,St-Ch. & Lennox.,0.77,ok,884.1,7,TRUE
+season only,St-Ch. & Lennox.,0.78,ok,884.7,7,TRUE
+season only,St-Ch. & Lennox.,0.79,ok,884.9,7,TRUE
+season only,St-Ch. & Lennox.,0.8,ok,884.8,7,TRUE
+season only,St-Ch. & Lennox.,0.81,ok,884.7,7,TRUE
+season only,St-Ch. & Lennox.,0.82,ok,884.6,7,TRUE
+season only,St-Ch. & Lennox.,0.83,ok,885,7,TRUE
+season only,St-Ch. & Lennox.,0.84,ok,885.5,7,TRUE
+season only,St-Ch. & Lennox.,0.85,ok,886.4,7,TRUE
+season only,St-Ch. & Lennox.,0.86,ok,887.4,7,TRUE
+season only,St-Ch. & Lennox.,0.87,ok,888.5,7,TRUE
+season only,St-Ch. & Lennox.,0.88,ok,889.5,7,TRUE
+season only,St-Ch. & Lennox.,0.89,ok,890.4,7,TRUE
+season only,St-Ch. & Lennox.,0.9,ok,891.3,7,TRUE
+season only,St-Ch. & Lennox.,0.91,ok,892.8,7,TRUE
+season only,St-Ch. & Lennox.,0.92,ok,894.3,7,TRUE
+season only,St-Ch. & Lennox.,0.93,ok,894.6,7,TRUE
+season only,St-Ch. & Lennox.,0.94,ok,894.9,7,TRUE
+season only,St-Ch. & Lennox.,0.95,ok,895.5,7,TRUE
+season only,St-Ch. & Lennox.,0.96,ok,895.7,7,TRUE
+season only,St-Ch. & Lennox.,0.97,ok,896.2,7,TRUE
+season only,St-Ch. & Lennox.,0.98,ok,896,7,TRUE
+season only,St-Ch. & Lennox.,0.99,ok,895.7,7,TRUE
+season only,St-Ch. & Nicolet,0.01,ok,889.1,6,TRUE
+season only,St-Ch. & Nicolet,0.02,ok,886,7,TRUE
+season only,St-Ch. & Nicolet,0.03,ok,887.1,7,TRUE
+season only,St-Ch. & Nicolet,0.04,ok,889.5,7,TRUE
+season only,St-Ch. & Nicolet,0.05,ok,890.9,7,TRUE
+season only,St-Ch. & Nicolet,0.06,ok,892.5,7,TRUE
+season only,St-Ch. & Nicolet,0.07,ok,894.7,7,TRUE
+season only,St-Ch. & Nicolet,0.08,ok,897.4,7,TRUE
+season only,St-Ch. & Nicolet,0.09,ok,900.2,7,TRUE
+season only,St-Ch. & Nicolet,0.1,ok,902.7,7,TRUE
+season only,St-Ch. & Nicolet,0.11,ok,905.1,7,TRUE
+season only,St-Ch. & Nicolet,0.12,ok,907,7,TRUE
+season only,St-Ch. & Nicolet,0.13,ok,908.7,7,TRUE
+season only,St-Ch. & Nicolet,0.14,ok,910.7,7,TRUE
+season only,St-Ch. & Nicolet,0.15,ok,912.9,7,TRUE
+season only,St-Ch. & Nicolet,0.16,ok,915.1,7,TRUE
+season only,St-Ch. & Nicolet,0.17,ok,916.5,7,TRUE
+season only,St-Ch. & Nicolet,0.18,ok,918.1,7,TRUE
+season only,St-Ch. & Nicolet,0.19,ok,920.1,7,TRUE
+season only,St-Ch. & Nicolet,0.2,ok,921.8,7,TRUE
+season only,St-Ch. & Nicolet,0.21,ok,923.6,7,TRUE
+season only,St-Ch. & Nicolet,0.22,ok,925.2,7,TRUE
+season only,St-Ch. & Nicolet,0.23,ok,926.9,7,TRUE
+season only,St-Ch. & Nicolet,0.24,ok,928.5,7,TRUE
+season only,St-Ch. & Nicolet,0.25,ok,930.2,7,TRUE
+season only,St-Ch. & Nicolet,0.26,ok,932,7,TRUE
+season only,St-Ch. & Nicolet,0.27,ok,933.8,7,TRUE
+season only,St-Ch. & Nicolet,0.28,ok,935.8,7,TRUE
+season only,St-Ch. & Nicolet,0.29,ok,938.2,7,TRUE
+season only,St-Ch. & Nicolet,0.3,ok,940.4,7,TRUE
+season only,St-Ch. & Nicolet,0.31,ok,942.5,7,TRUE
+season only,St-Ch. & Nicolet,0.32,ok,944.6,7,TRUE
+season only,St-Ch. & Nicolet,0.33,ok,946.6,7,TRUE
+season only,St-Ch. & Nicolet,0.34,ok,948.4,7,TRUE
+season only,St-Ch. & Nicolet,0.35,ok,950.3,7,TRUE
+season only,St-Ch. & Nicolet,0.36,ok,952.2,7,TRUE
+season only,St-Ch. & Nicolet,0.37,ok,954.1,7,TRUE
+season only,St-Ch. & Nicolet,0.38,ok,955.8,7,TRUE
+season only,St-Ch. & Nicolet,0.39,ok,957.1,7,TRUE
+season only,St-Ch. & Nicolet,0.4,ok,958.1,7,TRUE
+season only,St-Ch. & Nicolet,0.41,ok,958.9,7,TRUE
+season only,St-Ch. & Nicolet,0.42,ok,959.5,7,TRUE
+season only,St-Ch. & Nicolet,0.43,ok,960.2,7,TRUE
+season only,St-Ch. & Nicolet,0.44,ok,960.9,7,TRUE
+season only,St-Ch. & Nicolet,0.45,ok,961.7,7,TRUE
+season only,St-Ch. & Nicolet,0.46,ok,962.7,7,FALSE
+season only,St-Ch. & Nicolet,0.47,ok,963.7,7,FALSE
+season only,St-Ch. & Nicolet,0.48,ok,964.5,7,FALSE
+season only,St-Ch. & Nicolet,0.49,ok,965.2,7,FALSE
+season only,St-Ch. & Nicolet,0.5,ok,965.9,7,FALSE
+season only,St-Ch. & Nicolet,0.51,ok,966.3,7,FALSE
+season only,St-Ch. & Nicolet,0.52,ok,966.6,7,FALSE
+season only,St-Ch. & Nicolet,0.53,ok,966.8,7,FALSE
+season only,St-Ch. & Nicolet,0.54,ok,966.9,7,FALSE
+season only,St-Ch. & Nicolet,0.55,ok,967.1,7,FALSE
+season only,St-Ch. & Nicolet,0.56,ok,967.2,7,FALSE
+season only,St-Ch. & Nicolet,0.57,ok,967.3,7,FALSE
+season only,St-Ch. & Nicolet,0.58,ok,966.8,7,FALSE
+season only,St-Ch. & Nicolet,0.59,ok,966,7,FALSE
+season only,St-Ch. & Nicolet,0.6,ok,965,7,FALSE
+season only,St-Ch. & Nicolet,0.61,ok,964,7,FALSE
+season only,St-Ch. & Nicolet,0.62,ok,962.8,7,FALSE
+season only,St-Ch. & Nicolet,0.63,ok,961.4,7,FALSE
+season only,St-Ch. & Nicolet,0.64,ok,960.1,7,FALSE
+season only,St-Ch. & Nicolet,0.65,ok,959,7,FALSE
+season only,St-Ch. & Nicolet,0.66,ok,957.8,7,FALSE
+season only,St-Ch. & Nicolet,0.67,ok,956.2,7,FALSE
+season only,St-Ch. & Nicolet,0.68,ok,954.6,7,FALSE
+season only,St-Ch. & Nicolet,0.69,ok,953.1,7,FALSE
+season only,St-Ch. & Nicolet,0.7,ok,951.5,7,FALSE
+season only,St-Ch. & Nicolet,0.71,ok,949.8,7,FALSE
+season only,St-Ch. & Nicolet,0.72,ok,948.1,7,FALSE
+season only,St-Ch. & Nicolet,0.73,ok,946.2,7,FALSE
+season only,St-Ch. & Nicolet,0.74,ok,944.2,7,FALSE
+season only,St-Ch. & Nicolet,0.75,ok,942.4,7,FALSE
+season only,St-Ch. & Nicolet,0.76,ok,940.5,7,FALSE
+season only,St-Ch. & Nicolet,0.77,ok,938.2,7,FALSE
+season only,St-Ch. & Nicolet,0.78,ok,935.9,7,FALSE
+season only,St-Ch. & Nicolet,0.79,ok,933.8,7,FALSE
+season only,St-Ch. & Nicolet,0.8,ok,931.9,7,TRUE
+season only,St-Ch. & Nicolet,0.81,ok,929.8,7,TRUE
+season only,St-Ch. & Nicolet,0.82,ok,927.8,7,TRUE
+season only,St-Ch. & Nicolet,0.83,ok,925.9,7,TRUE
+season only,St-Ch. & Nicolet,0.84,ok,923.9,7,TRUE
+season only,St-Ch. & Nicolet,0.85,ok,921.5,7,TRUE
+season only,St-Ch. & Nicolet,0.86,ok,919.6,7,TRUE
+season only,St-Ch. & Nicolet,0.87,ok,917.8,7,TRUE
+season only,St-Ch. & Nicolet,0.88,ok,916,7,TRUE
+season only,St-Ch. & Nicolet,0.89,ok,914.5,7,TRUE
+season only,St-Ch. & Nicolet,0.9,ok,912.8,7,TRUE
+season only,St-Ch. & Nicolet,0.91,ok,911.1,7,TRUE
+season only,St-Ch. & Nicolet,0.92,ok,909.7,7,FALSE
+season only,St-Ch. & Nicolet,0.93,ok,908.9,7,FALSE
+season only,St-Ch. & Nicolet,0.94,ok,908.7,7,FALSE
+season only,St-Ch. & Nicolet,0.95,ok,907.2,7,FALSE
+season only,St-Ch. & Nicolet,0.96,ok,904,7,FALSE
+season only,St-Ch. & Nicolet,0.97,ok,899.9,6,FALSE
+season only,St-Ch. & Nicolet,0.98,ok,895.9,6,TRUE
+season only,St-Ch. & Nicolet,0.99,ok,891.1,6,TRUE
+season only,Lennox. & Nicolet,0.01,ok,915,6,TRUE
+season only,Lennox. & Nicolet,0.02,ok,917.2,7,TRUE
+season only,Lennox. & Nicolet,0.03,ok,920.9,7,TRUE
+season only,Lennox. & Nicolet,0.04,ok,922.6,7,TRUE
+season only,Lennox. & Nicolet,0.05,ok,924.1,7,TRUE
+season only,Lennox. & Nicolet,0.06,ok,924.4,7,FALSE
+season only,Lennox. & Nicolet,0.07,ok,924.9,7,FALSE
+season only,Lennox. & Nicolet,0.08,ok,925.8,7,FALSE
+season only,Lennox. & Nicolet,0.09,ok,927.1,7,FALSE
+season only,Lennox. & Nicolet,0.1,ok,928.4,7,FALSE
+season only,Lennox. & Nicolet,0.11,ok,928.2,7,TRUE
+season only,Lennox. & Nicolet,0.12,ok,928.2,7,TRUE
+season only,Lennox. & Nicolet,0.13,ok,928.1,7,TRUE
+season only,Lennox. & Nicolet,0.14,ok,928.6,7,TRUE
+season only,Lennox. & Nicolet,0.15,ok,929.7,7,TRUE
+season only,Lennox. & Nicolet,0.16,ok,930.5,7,TRUE
+season only,Lennox. & Nicolet,0.17,ok,931.2,7,TRUE
+season only,Lennox. & Nicolet,0.18,ok,931.7,7,TRUE
+season only,Lennox. & Nicolet,0.19,ok,932.4,7,TRUE
+season only,Lennox. & Nicolet,0.2,ok,933,7,TRUE
+season only,Lennox. & Nicolet,0.21,ok,933.4,7,TRUE
+season only,Lennox. & Nicolet,0.22,ok,933.9,7,TRUE
+season only,Lennox. & Nicolet,0.23,ok,934.3,7,TRUE
+season only,Lennox. & Nicolet,0.24,ok,934.8,7,TRUE
+season only,Lennox. & Nicolet,0.25,ok,935.3,7,TRUE
+season only,Lennox. & Nicolet,0.26,ok,935.8,7,TRUE
+season only,Lennox. & Nicolet,0.27,ok,936.2,7,TRUE
+season only,Lennox. & Nicolet,0.28,ok,936.9,7,TRUE
+season only,Lennox. & Nicolet,0.29,ok,937.4,7,TRUE
+season only,Lennox. & Nicolet,0.3,ok,937.9,7,TRUE
+season only,Lennox. & Nicolet,0.31,ok,938.4,7,TRUE
+season only,Lennox. & Nicolet,0.32,ok,939.2,7,TRUE
+season only,Lennox. & Nicolet,0.33,ok,940.1,7,TRUE
+season only,Lennox. & Nicolet,0.34,ok,940.8,7,TRUE
+season only,Lennox. & Nicolet,0.35,ok,941.3,7,TRUE
+season only,Lennox. & Nicolet,0.36,ok,941.5,7,TRUE
+season only,Lennox. & Nicolet,0.37,ok,941.7,7,TRUE
+season only,Lennox. & Nicolet,0.38,ok,941.6,7,TRUE
+season only,Lennox. & Nicolet,0.39,ok,941.7,7,FALSE
+season only,Lennox. & Nicolet,0.4,ok,942,7,FALSE
+season only,Lennox. & Nicolet,0.41,ok,942.3,7,FALSE
+season only,Lennox. & Nicolet,0.42,ok,942.7,7,FALSE
+season only,Lennox. & Nicolet,0.43,ok,943.1,7,FALSE
+season only,Lennox. & Nicolet,0.44,ok,943.7,7,FALSE
+season only,Lennox. & Nicolet,0.45,ok,944.4,7,FALSE
+season only,Lennox. & Nicolet,0.46,ok,945.3,7,FALSE
+season only,Lennox. & Nicolet,0.47,ok,946.2,7,FALSE
+season only,Lennox. & Nicolet,0.48,ok,947.1,7,FALSE
+season only,Lennox. & Nicolet,0.49,ok,947.9,7,FALSE
+season only,Lennox. & Nicolet,0.5,ok,948.7,7,FALSE
+season only,Lennox. & Nicolet,0.51,ok,949.2,7,FALSE
+season only,Lennox. & Nicolet,0.52,ok,949.8,7,FALSE
+season only,Lennox. & Nicolet,0.53,ok,950.4,7,FALSE
+season only,Lennox. & Nicolet,0.54,ok,951,7,FALSE
+season only,Lennox. & Nicolet,0.55,ok,951.3,7,FALSE
+season only,Lennox. & Nicolet,0.56,ok,951.5,7,FALSE
+season only,Lennox. & Nicolet,0.57,ok,951.6,7,FALSE
+season only,Lennox. & Nicolet,0.58,ok,951.5,7,FALSE
+season only,Lennox. & Nicolet,0.59,ok,951,7,FALSE
+season only,Lennox. & Nicolet,0.6,ok,950.7,7,TRUE
+season only,Lennox. & Nicolet,0.61,ok,950.3,7,TRUE
+season only,Lennox. & Nicolet,0.62,ok,950,7,TRUE
+season only,Lennox. & Nicolet,0.63,ok,949.6,7,TRUE
+season only,Lennox. & Nicolet,0.64,ok,949.2,7,TRUE
+season only,Lennox. & Nicolet,0.65,ok,949.1,7,TRUE
+season only,Lennox. & Nicolet,0.66,ok,949.3,7,TRUE
+season only,Lennox. & Nicolet,0.67,ok,949.4,7,TRUE
+season only,Lennox. & Nicolet,0.68,ok,948.9,7,TRUE
+season only,Lennox. & Nicolet,0.69,ok,948.2,7,TRUE
+season only,Lennox. & Nicolet,0.7,ok,947.7,7,TRUE
+season only,Lennox. & Nicolet,0.71,ok,947,7,TRUE
+season only,Lennox. & Nicolet,0.72,ok,945.9,7,TRUE
+season only,Lennox. & Nicolet,0.73,ok,944.7,7,TRUE
+season only,Lennox. & Nicolet,0.74,ok,943.2,7,TRUE
+season only,Lennox. & Nicolet,0.75,ok,941.7,7,TRUE
+season only,Lennox. & Nicolet,0.76,ok,940,7,TRUE
+season only,Lennox. & Nicolet,0.77,ok,938.2,7,TRUE
+season only,Lennox. & Nicolet,0.78,ok,936.8,7,TRUE
+season only,Lennox. & Nicolet,0.79,ok,935.5,7,TRUE
+season only,Lennox. & Nicolet,0.8,ok,934.2,7,TRUE
+season only,Lennox. & Nicolet,0.81,ok,932.7,7,TRUE
+season only,Lennox. & Nicolet,0.82,ok,931.1,7,TRUE
+season only,Lennox. & Nicolet,0.83,ok,929.7,7,TRUE
+season only,Lennox. & Nicolet,0.84,ok,928.5,7,TRUE
+season only,Lennox. & Nicolet,0.85,ok,927.5,7,TRUE
+season only,Lennox. & Nicolet,0.86,ok,926.4,7,TRUE
+season only,Lennox. & Nicolet,0.87,ok,925.5,7,TRUE
+season only,Lennox. & Nicolet,0.88,ok,924.7,7,TRUE
+season only,Lennox. & Nicolet,0.89,ok,923.9,7,TRUE
+season only,Lennox. & Nicolet,0.9,ok,923,7,TRUE
+season only,Lennox. & Nicolet,0.91,ok,922.6,7,TRUE
+season only,Lennox. & Nicolet,0.92,ok,922.5,7,TRUE
+season only,Lennox. & Nicolet,0.93,ok,922.1,7,TRUE
+season only,Lennox. & Nicolet,0.94,ok,921.4,7,TRUE
+season only,Lennox. & Nicolet,0.95,ok,920.4,7,TRUE
+season only,Lennox. & Nicolet,0.96,ok,919.3,7,TRUE
+season only,Lennox. & Nicolet,0.97,ok,917.3,7,TRUE
+season only,Lennox. & Nicolet,0.98,ok,915.2,7,TRUE
+season only,Lennox. & Nicolet,0.99,ok,915.1,7,TRUE

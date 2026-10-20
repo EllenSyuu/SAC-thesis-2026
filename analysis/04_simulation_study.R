@@ -8,7 +8,8 @@
 #            margins shifted by a monotone transform (copula unchanged), as
 #            seasons shift the level of precipitation. Pseudo-observations
 #            are formed either by pooled ranks or by within-group ranks (the
-#            scheme used for the real data in steps 05, 06 and 09).
+#            scheme used for the real data in steps 05, 06 and 09); theta is
+#            estimated from within-group ranks and shared by both schemes.
 #
 # Every replicate draws from its own pre-generated seed, so results do not
 # depend on the number of cores; results are cached (see _setup.R).
@@ -32,9 +33,21 @@ par_lapply <- function(B, FUN, seed) {
     set.seed(seeds[b])
     FUN(b)
   }
-  if (.Platform$OS.type == "unix" && N_CORES > 1) {
+  out <- if (.Platform$OS.type == "unix" && N_CORES > 1) {
     parallel::mclapply(seq_len(B), run, mc.cores = N_CORES, mc.preschedule = FALSE)
-  } else lapply(seq_len(B), run)
+  } else {
+    lapply(seq_len(B), function(b) tryCatch(run(b), error = function(e) {
+      structure(conditionMessage(e), class = "try-error")
+    }))
+  }
+  # A failed replicate is a bug in the design, not noise: stop (and do not
+  # cache) instead of silently averaging over the survivors.
+  bad <- vapply(out, inherits, logical(1), "try-error")
+  if (any(bad)) {
+    stop(sprintf("%d of %d simulation replicates failed; first error: %s",
+                 sum(bad), B, trimws(as.character(out[bad][[1]]))), call. = FALSE)
+  }
+  out
 }
 
 # ---- Study 1 ---------------------------------------------------------------------
@@ -115,12 +128,15 @@ study2 <- cached("sim_study2", list(B2, N2, THETA, w, w_coarse, SEED + 1),
   U <- pseudo_obs(raw)
   th <- estimate_theta(U[, 1], U[, 2], se = FALSE)$theta
   main <- err_rows(fit_all(U, th, w, TRUE), w, "identical margins / pooled ranks")
-  # Study 2b: shifted margins in group 1; theta from pooled ranks as in the data
+  # Study 2b: shifted margins in group 1. theta is estimated once from the
+  # within-group ranks and shared by both schemes, so that only the ranks
+  # entering xi(omega) differ (pooled ranks of shifted data can even push the
+  # moment estimator of theta below 0).
   raw_s <- raw
   raw_s[z == 1, ] <- shift_margins(raw_s[z == 1, ])
   Up <- pseudo_obs(raw_s)
-  th_s <- estimate_theta(Up[, 1], Up[, 2], se = FALSE)$theta
   Ug <- pseudo_obs_by_group(raw_s, z)
+  th_s <- estimate_theta(Ug[, 1], Ug[, 2], se = FALSE)$theta
   wc <- c(0, w_coarse, 1)
   extra <- rbind(
     err_rows(fit_all(pseudo_obs_by_group(raw, z), th, wc, FALSE), wc,

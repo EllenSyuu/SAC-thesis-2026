@@ -1,6 +1,6 @@
 # Run metadata (written by analysis/99_run_metadata.R)
-timestamp:        2026-10-20T20:36:59+0000
-git_sha:          1a192a5807598cb9536d3ae96fce37ee2d8c0839  (uncommitted changes in R/, analysis/ or data/raw/)
+timestamp:        2026-10-20T21:23:59+0000
+git_sha:          2c206823c032669a0e5478b4dffb8bb0642cd038  (uncommitted changes in R/, analysis/ or data/raw/)
 r_version:        R version 4.3.3 (2024-02-29)
 platform:         x86_64-pc-linux-gnu
 cores:            2
@@ -33,6 +33,15 @@ sf               1.0.15
 rnaturalearth    1.2.0
 
 ## step timings (seconds, this run)
-1      20:36:16      9.0  quick=FALSE pobs=raw min_days=0
-2      20:36:58     40.4  quick=FALSE pobs=raw min_days=0
-total               49.4
+01     20:51:24      8.1  quick=FALSE pobs=raw min_days=0
+02     20:52:03     37.7  quick=FALSE pobs=raw min_days=0
+03     20:55:44    219.3  quick=FALSE pobs=raw min_days=0
+04     21:10:06    416.9  quick=FALSE pobs=raw min_days=0
+05     21:12:09    121.7  quick=FALSE pobs=raw min_days=0
+06     21:12:12      1.9  quick=FALSE pobs=raw min_days=0
+08     21:12:22      8.2  quick=FALSE pobs=raw min_days=0
+09     21:21:46    562.9  quick=FALSE pobs=raw min_days=0
+07     21:21:49      1.0  quick=FALSE pobs=raw min_days=0
+05     21:23:54    124.3  quick=FALSE pobs=gumbel min_days=0
+06     21:23:57      2.0  quick=FALSE pobs=gumbel min_days=0
+total             1504.0

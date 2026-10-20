@@ -1,5 +1,5 @@
-# Reproduce every table and figure:   make all      (~40 min cold, ~10 min with cache)
-# Fast smoke run (small Monte-Carlo):  make quick
+# Reproduce every table and figure:   make all      (~25 min cold on 2 cores, ~6 min with cache)
+# Fast smoke run -> results/quick/:    make quick
 # Install pinned dependencies:         make restore   (renv)
 # Package unit tests / checks:         make test | make check | make lint | make coverage
 # Recompute cached results:            make refresh
@@ -7,14 +7,14 @@
 R      ?= Rscript
 STEPS  := 01_prepare_data 02_marginal_gev 03_dependence_eda \
           04_simulation_study 05_archimax_pairwise 06_archimax_6d \
-          07_key_findings 08_sensitivity_min_days 09_bootstrap_ci
+          08_sensitivity_min_days 09_bootstrap_ci 07_key_findings
 
 .PHONY: all quick restore test check coverage lint docs sensitivity refresh clean start metadata $(STEPS)
 
 all: start $(STEPS) sensitivity metadata
 
 start:
-	@rm -f results/run_steps.csv
+	@rm -f results/run_steps.csv results/quick/run_steps.csv
 
 $(STEPS):
 	$(R) analysis/$@.R

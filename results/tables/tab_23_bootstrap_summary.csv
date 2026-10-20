@@ -1,2 +1,2 @@
 B,replicates_ok,level,grid,compute_seconds,max_gap_full_vs_fast_starts,pairs_JJ_minus_ON_excludes_0,beta4_cells_excluding_0,beta4_cells
-200,200,0.9,0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9,599,0,8,29,135
+200,200,0.9,0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9,554,0,8,29,135

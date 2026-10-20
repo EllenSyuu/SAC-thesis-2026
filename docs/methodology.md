@@ -65,6 +65,16 @@ The moment estimator of Chatelain et al. (2020, Eq. 7.4) is $\hat\theta = S_n/R_
 - the **extremal coefficient** $\eta = d\,\hat A(\omega_0)$ at the centroid, which runs from 1 (complete dependence) to $d$ (independence) (`extremal_coefficient()`);
 - **simplex paths** $\omega(t) = (1-t)\,\omega_{jk} + t\,\omega_0$, from a bivariate face to the centroid (`simplex_path()`).
 
+## 7. Uncertainty
+
+**Year-block bootstrap** (`boot_years()`, `analysis/09_bootstrap_ci.R`). Resample the 88 calendar years with replacement and stack their months. Within each replicate, re-rank the pseudo-observations, re-estimate θ, re-rank within covariate cells, and refit every covariate model. Report 90 % percentile intervals. Each replicate has a pre-drawn seed, so results are independent of parallelism. The optimiser runs with one intercept start (`n_grid_starts = 1`) plus the least-squares and previous-ω warm starts; `tab_23` reports the largest gap between this shortcut and the full five-start search on the original data.
+
+**Composite likelihood** (`gev_sandwich_vcov()`). For the pooled GEV with $\ell_C(\psi) = \sum_{c}\sum_{i\in c}\log g(x_i;\psi)$, the robust covariance is $H^{-1}JH^{-1}$, with $H$ the observed information and $J = \sum_c s_c s_c^\top$ the outer product of cluster-summed scores. Clusters are calendar months (cross-station dependence) or years (cross-station and within-season dependence). Scores are central finite differences of the per-observation log-likelihood, which is checked to reproduce `fevd`'s value before use.
+
+## 8. Failure handling
+
+Every optimiser path returns a status: `pickands_cov_mle()$diagnostics` holds, per ω, the status (ok / maxit / failed), the minimised negative log-likelihood, the number of feasible starts, and whether a profile lies on the Pickands bound. Infeasible problems return `NA` with a warning. `safe_fit()` returns a classed error object and warns, and `gev_backward()` records failed fits in its selection path. `boot_years()` counts failed replicates and reports the first error.
+
 ## References
 
 - Chatelain, S., Fougères, A.-L., Nešlehová, J. G. (2020). Inference for Archimax copulas. *Annals of Statistics* 48(2), 1025–1051.

@@ -29,6 +29,17 @@ The original analysis lived in roughly 140 exploratory R scripts with hard-coded
 
 5. **EV test pairing.** The original script aligned the two series of a pair by row index, so station series of different lengths were truncated rather than matched by date. Here pairs are matched by month. Test statistics move slightly; all 15 rejections stand.
 
-6. **Homogeneous simulation (Table 5.1).** The script behind Table 5.1 is not in the project archive. The rebuilt study (θ = 0.4, ρ = 4.5, n = 1000, B = 100) reproduces the ranking MLE < CFG < Pickands, but its absolute ISE values are smaller than those printed in the thesis.
+6. **Homogeneous simulation (Table 5.1).** The script behind Table 5.1 is not in the project archive. The rebuilt study (θ = 0.4, ρ = 4.5, n = 1000, B = 100) reproduces Pickands as clearly the worst estimator, but **does not** reproduce a clear advantage of the MLE over CFG: their IRAE values are 0.0030 and 0.0032, and CFG has the lower ISE. The thesis's absolute ISE values are also larger than here. Study 2b adds that with within-group ranks, CFG is slightly more accurate than the MLE; the MLE's edge appears under pooled ranks.
 
-7. **Period effect.** The histogram of β̂₄(ω) is centred near zero (median ≈ −0.006). Its tail is longer than the thesis wording suggests, though: about 60 % of the 15 × 99 estimates fall within ±0.02, and a few pairs reach −0.14. The conclusion that season dominates period still holds; it is just less one-sided than stated.
+7. **Period effect, now with intervals.** The histogram of β̂₄(ω) is centred near zero (median ≈ −0.006), but the year-block bootstrap (step 09) shows the period effect is not negligible everywhere. 29 of 135 (pair, ω) intervals exclude 0, against about 13 expected by chance, and 21 of the 29 come from the three pairs St-Charles–L'Assomption, St-Charles–Nicolet and St-Charles–Drummondville, all with stronger post-1975 dependence. For the other 12 pairs the thesis statement that period has a much weaker effect than season holds. The README states it in this qualified form.
+
+8. **Season effect, now with intervals.** At the network level the June–July vs October–November difference in the 6-d extremal coefficient is 1.83, 90 % CI (1.24, 2.28). Pairwise, A_JJ(½) − A_ON(½) has an interval excluding 0 for 8 of 15 pairs. The other seven are the five Lennoxville pairs and Drummondville with L'Assomption and with St-Charles.
+
+9. **Incomplete months (not in the thesis).** 34 of 4,174 station-months have fewer than 20 valid days. The thesis keeps them, and so does the default here (`MIN_DAYS = 0`). Step 08 refits the headline quantities for thresholds from 0 to 25 days: θ̂ and η̂ move by at most 0.01 and 0.11, while the Drummondville post-1975 location shift falls from 1.35 to 1.06 mm.
+
+10. **Composite-likelihood SEs (not in the thesis).** The thesis notes that the pooled GEV SEs are optimistic but does not correct them. Godambe sandwich SEs are now reported. The season, scale and shape effects remain clearly non-zero; the post-1975 shift at Drummondville is borderline (95 % sandwich CI 0.02 to 2.67).
+
+## Engineering conventions
+
+- `analysis/.lintr` relaxes three style rules for plotting scripts: long label strings, one-line anonymous functions and compact pipes. Package code is linted with the stricter root `.lintr`. Both are enforced in CI.
+- The cache in `results/cache/` is content-addressed: the key hashes the input data, the parameters and every file in `R/`. A stale cache is therefore recomputed automatically, never silently reused.

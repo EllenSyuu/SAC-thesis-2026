@@ -1,16 +1,16 @@
 station_1,station_2,n,statistic,p_value
-Drummondville,L'Assomption,685,4.823,1.415e-6
-Drummondville,Les Cèdres,688,3.52,4.309e-4
-Drummondville,St-Charles-de-Mandeville,675,5.543,2.971e-8
-Drummondville,Lennoxville,693,3.118,0.001824
-Drummondville,Nicolet,690,5.323,1.02e-7
-L'Assomption,Les Cèdres,690,4.632,3.628e-6
-L'Assomption,St-Charles-de-Mandeville,675,2.592,0.009555
-L'Assomption,Lennoxville,694,4.271,1.946e-5
-L'Assomption,Nicolet,691,3.853,1.166e-4
-Les Cèdres,St-Charles-de-Mandeville,679,3.687,2.266e-4
-Les Cèdres,Lennoxville,697,3.504,4.588e-4
-Les Cèdres,Nicolet,694,2.99,0.002791
-St-Charles-de-Mandeville,Lennoxville,683,2.656,0.007904
-St-Charles-de-Mandeville,Nicolet,680,3.255,0.001134
-Lennoxville,Nicolet,699,2.992,0.002768
+Drummondville,L'Assomption,685,4.972,6.615e-7
+Drummondville,Les Cèdres,688,3.66,2.523e-4
+Drummondville,St-Charles-de-Mandeville,675,5.622,1.893e-8
+Drummondville,Lennoxville,693,3.208,0.001337
+Drummondville,Nicolet,690,5.129,2.92e-7
+L'Assomption,Les Cèdres,690,4.638,3.521e-6
+L'Assomption,St-Charles-de-Mandeville,675,2.448,0.01437
+L'Assomption,Lennoxville,694,4.147,3.368e-5
+L'Assomption,Nicolet,691,3.767,1.654e-4
+Les Cèdres,St-Charles-de-Mandeville,679,3.819,1.34e-4
+Les Cèdres,Lennoxville,697,3.523,4.262e-4
+Les Cèdres,Nicolet,694,3.134,0.001725
+St-Charles-de-Mandeville,Lennoxville,683,2.869,0.004121
+St-Charles-de-Mandeville,Nicolet,680,3.219,0.001287
+Lennoxville,Nicolet,699,2.72,0.006528
