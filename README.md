@@ -53,9 +53,9 @@ flowchart TD
     A --> S[lambda_L, lambda_U, beta of omega,<br/>6-d extremal coefficient]
     S --> B[year-block bootstrap B = 200<br/>re-estimates ranks, theta and fits]
     B --> O[results/: tables, figures,<br/>run_metadata.txt]
-    M -.MIN_DAYS 0-25.-> SD[sensitivity: incomplete months]
-    G -.Gumbel residual ranks.-> SG[sensitivity: pseudo-obs construction]
-    SIM[Monte-Carlo: estimator accuracy<br/>and rank scheme] -.validates.-> A
+    M -. MIN_DAYS 0 to 25 .-> SD[sensitivity: incomplete months]
+    G -. Gumbel residual ranks .-> SG[sensitivity: pseudo-obs construction]
+    SIM[Monte-Carlo: estimator accuracy<br/>and rank scheme] -. validates .-> A
 ```
 
 **Code layout.** Estimators live in an installable package; numbered analysis scripts only orchestrate.
