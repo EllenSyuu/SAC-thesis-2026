@@ -1,126 +1,126 @@
-station,order,parameter,term,LR,df,p_value,removed
-Drummondville,scale_first,scale,period:season,1.539,3,0.6733,TRUE
-Drummondville,scale_first,scale,anomaly:period,0.535,1,0.4645,TRUE
-Drummondville,scale_first,scale,anomaly:season,4.375,3,0.2237,TRUE
-Drummondville,scale_first,scale,anomaly,0.1464,1,0.702,TRUE
-Drummondville,scale_first,scale,period,2.431,1,0.1189,TRUE
-Drummondville,scale_first,scale,season,26.73,3,6.691e-6,FALSE
-Drummondville,scale_first,location,period:season,0.6161,3,0.8927,TRUE
-Drummondville,scale_first,location,anomaly:period,0.4885,1,0.4846,TRUE
-Drummondville,scale_first,location,anomaly:season,2.884,3,0.4099,TRUE
-Drummondville,scale_first,location,anomaly,0.02659,1,0.8705,TRUE
-Drummondville,scale_first,location,period,4.863,1,0.02743,FALSE
-Drummondville,location_first,location,anomaly:season,0.9908,3,0.8035,TRUE
-Drummondville,location_first,location,period:season,1.002,3,0.8008,TRUE
-Drummondville,location_first,location,anomaly:period,0.385,1,0.5349,TRUE
-Drummondville,location_first,location,anomaly,0.01695,1,0.8964,TRUE
-Drummondville,location_first,location,period,7.453,1,0.006332,FALSE
-Drummondville,location_first,scale,period:season,1.006,3,0.79990000000000006,TRUE
-Drummondville,location_first,scale,anomaly:period,1.409,1,0.2353,TRUE
-Drummondville,location_first,scale,anomaly:season,5.317,3,0.15,TRUE
-Drummondville,location_first,scale,anomaly,0.03271,1,0.8565,TRUE
-Drummondville,location_first,scale,period,2.883,1,0.08949,TRUE
-Drummondville,location_first,scale,season,26.56,3,7.267e-6,FALSE
-L'Assomption,scale_first,scale,anomaly:season,0.5038,3,0.9181,TRUE
-L'Assomption,scale_first,scale,period:season,1.415,3,0.702,TRUE
-L'Assomption,scale_first,scale,anomaly:period,4.539,1,0.03314,FALSE
-L'Assomption,scale_first,location,anomaly:period,3.712e-4,1,0.9846,TRUE
-L'Assomption,scale_first,location,period:season,0.86,3,0.8351,TRUE
-L'Assomption,scale_first,location,anomaly:season,0.6353,3,0.8883,TRUE
-L'Assomption,scale_first,location,anomaly,0.05308,1,0.8178,TRUE
-L'Assomption,scale_first,location,period,3.014,1,0.08256,TRUE
-L'Assomption,scale_first,location,season,30.49,3,1.091e-6,FALSE
-L'Assomption,location_first,location,anomaly:period,-1.065e-5,1,1,TRUE
-L'Assomption,location_first,location,period:season,0.7871,3,0.8526,TRUE
-L'Assomption,location_first,location,anomaly:season,0.5097,3,0.9168,TRUE
-L'Assomption,location_first,location,anomaly,0.08957,1,0.7647,TRUE
-L'Assomption,location_first,location,period,3.146,1,0.07613,TRUE
-L'Assomption,location_first,location,season,30.29,3,1.199e-6,FALSE
-L'Assomption,location_first,scale,anomaly:season,0.7732,3,0.8559,TRUE
-L'Assomption,location_first,scale,period:season,1.177,3,0.7586,TRUE
-L'Assomption,location_first,scale,anomaly:period,6.042,1,0.01397,FALSE
-Les Cèdres,scale_first,scale,anomaly:season,2.427,3,0.4886,TRUE
-Les Cèdres,scale_first,scale,anomaly:period,1.441,1,0.23,TRUE
-Les Cèdres,scale_first,scale,anomaly,0.8865,1,0.3464,TRUE
-Les Cèdres,scale_first,scale,period:season,4.804,3,0.1867,TRUE
-Les Cèdres,scale_first,scale,period,1.199,1,0.2734,TRUE
-Les Cèdres,scale_first,scale,season,32.83,3,3.496e-7,FALSE
-Les Cèdres,scale_first,location,anomaly:period,0.0986,1,0.7535,TRUE
-Les Cèdres,scale_first,location,anomaly:season,2.053,3,0.5616,TRUE
-Les Cèdres,scale_first,location,period:season,3.067,3,0.3814,TRUE
-Les Cèdres,scale_first,location,anomaly,1.463,1,0.2265,TRUE
-Les Cèdres,scale_first,location,period,6.584,1,0.01029,FALSE
-Les Cèdres,location_first,location,anomaly:period,0.05052,1,0.8222,TRUE
-Les Cèdres,location_first,location,anomaly:season,1.168,3,0.7607,TRUE
-Les Cèdres,location_first,location,period:season,5.559,3,0.1352,TRUE
-Les Cèdres,location_first,location,anomaly,2.198,1,0.1382,TRUE
-Les Cèdres,location_first,location,period,6.604,1,0.01018,FALSE
-Les Cèdres,location_first,scale,anomaly:season,2.395,3,0.4946,TRUE
-Les Cèdres,location_first,scale,period:season,2.991,3,0.393,TRUE
-Les Cèdres,location_first,scale,anomaly:period,1.98,1,0.1593,TRUE
-Les Cèdres,location_first,scale,anomaly,0.02511,1,0.8741,TRUE
-Les Cèdres,location_first,scale,period,1.072,1,0.3004,TRUE
-Les Cèdres,location_first,scale,season,32.93,3,3.332e-7,FALSE
-St-Charles-de-Mandeville,scale_first,scale,anomaly:period,0.2545,1,0.6139,TRUE
-St-Charles-de-Mandeville,scale_first,scale,anomaly:season,5.04,3,0.1689,TRUE
-St-Charles-de-Mandeville,scale_first,scale,anomaly,0.001616,1,0.9679,TRUE
-St-Charles-de-Mandeville,scale_first,scale,period:season,5.624,3,0.1314,TRUE
-St-Charles-de-Mandeville,scale_first,scale,period,2.407,1,0.1208,TRUE
-St-Charles-de-Mandeville,scale_first,scale,season,10.29,3,0.01627,FALSE
-St-Charles-de-Mandeville,scale_first,location,anomaly:season,0.5455,3,0.9088,TRUE
-St-Charles-de-Mandeville,scale_first,location,period:season,6.254,3,0.09989,TRUE
-St-Charles-de-Mandeville,scale_first,location,anomaly:period,4.057,1,0.04398,FALSE
-St-Charles-de-Mandeville,location_first,location,anomaly:season,0.7379,3,0.8643,TRUE
-St-Charles-de-Mandeville,location_first,location,period:season,8.389,3,0.03862,FALSE
-St-Charles-de-Mandeville,location_first,scale,anomaly:period,0.2288,1,0.6325,TRUE
-St-Charles-de-Mandeville,location_first,scale,anomaly:season,4.695,3,0.1956,TRUE
-St-Charles-de-Mandeville,location_first,scale,anomaly,0.008907,1,0.9248,TRUE
-St-Charles-de-Mandeville,location_first,scale,period:season,5.556,3,0.1353,TRUE
-St-Charles-de-Mandeville,location_first,scale,period,2.646,1,0.1038,TRUE
-St-Charles-de-Mandeville,location_first,scale,season,10.13,3,0.0175,FALSE
-Lennoxville,scale_first,scale,anomaly:period,0.03859,1,0.8443,TRUE
-Lennoxville,scale_first,scale,anomaly:season,2.975,3,0.3954,TRUE
-Lennoxville,scale_first,scale,anomaly,0.9826,1,0.3216,TRUE
-Lennoxville,scale_first,scale,period:season,3.752,3,0.2895,TRUE
-Lennoxville,scale_first,scale,period,0.2347,1,0.6281,TRUE
-Lennoxville,scale_first,scale,season,49.69,3,9.284e-11,FALSE
-Lennoxville,scale_first,location,period:season,1.672,3,0.6433,TRUE
-Lennoxville,scale_first,location,anomaly:season,3.633,3,0.3039,TRUE
-Lennoxville,scale_first,location,anomaly:period,1.397,1,0.2373,TRUE
-Lennoxville,scale_first,location,period,1.798,1,0.1799,TRUE
-Lennoxville,scale_first,location,anomaly,6.348,1,0.01175,FALSE
-Lennoxville,location_first,location,period:season,3.997,3,0.2617,TRUE
-Lennoxville,location_first,location,anomaly:season,2.579,3,0.4612,TRUE
-Lennoxville,location_first,location,anomaly:period,2.152,1,0.1424,TRUE
-Lennoxville,location_first,location,period,0.885,1,0.3468,TRUE
-Lennoxville,location_first,location,anomaly,7.021,1,0.008054,FALSE
-Lennoxville,location_first,scale,anomaly:period,0.1762,1,0.6746,TRUE
-Lennoxville,location_first,scale,anomaly:season,1.571,3,0.666,TRUE
-Lennoxville,location_first,scale,anomaly,0.8284,1,0.3627,TRUE
-Lennoxville,location_first,scale,period:season,3.416,3,0.3318,TRUE
-Lennoxville,location_first,scale,period,0.8775,1,0.3489,TRUE
-Lennoxville,location_first,scale,season,49.73,3,9.119e-11,FALSE
-Nicolet,scale_first,scale,anomaly:period,0.07806,1,0.7799,TRUE
-Nicolet,scale_first,scale,period:season,2.731,3,0.4351,TRUE
-Nicolet,scale_first,scale,period,0.01825,1,0.8925,TRUE
-Nicolet,scale_first,scale,anomaly:season,6.905,3,0.075,TRUE
-Nicolet,scale_first,scale,anomaly,0.6902,1,0.4061,TRUE
-Nicolet,scale_first,scale,season,37.32,3,3.94e-8,FALSE
-Nicolet,scale_first,location,period:season,1.829,3,0.6088,TRUE
-Nicolet,scale_first,location,anomaly:season,1.983,3,0.5759,TRUE
-Nicolet,scale_first,location,anomaly:period,0.5025,1,0.4784,TRUE
-Nicolet,scale_first,location,period,1.216,1,0.2702,TRUE
-Nicolet,scale_first,location,anomaly,0.9814,1,0.3218,TRUE
-Nicolet,scale_first,location,season,36.08,3,7.212e-8,FALSE
-Nicolet,location_first,location,anomaly:season,1.859,3,0.6021,TRUE
-Nicolet,location_first,location,period:season,2.427,3,0.4887,TRUE
-Nicolet,location_first,location,anomaly:period,0.4,1,0.5271,TRUE
-Nicolet,location_first,location,period,1.891,1,0.1691,TRUE
-Nicolet,location_first,location,anomaly,1.006,1,0.316,TRUE
-Nicolet,location_first,location,season,35.4,3,1.001e-7,FALSE
-Nicolet,location_first,scale,anomaly:period,0.1841,1,0.6679,TRUE
-Nicolet,location_first,scale,period:season,2.611,3,0.4555,TRUE
-Nicolet,location_first,scale,period,0.1433,1,0.705,TRUE
-Nicolet,location_first,scale,anomaly:season,5.738,3,0.1251,TRUE
-Nicolet,location_first,scale,anomaly,0.6747,1,0.4114,TRUE
-Nicolet,location_first,scale,season,36.91,3,4.802e-8,FALSE
+station,order,parameter,term,LR,df,p_value,removed,note
+Drummondville,scale_first,scale,period:season,1.539,3,0.6733,TRUE,
+Drummondville,scale_first,scale,anomaly:period,0.535,1,0.4645,TRUE,
+Drummondville,scale_first,scale,anomaly:season,4.375,3,0.2237,TRUE,
+Drummondville,scale_first,scale,anomaly,0.1464,1,0.702,TRUE,
+Drummondville,scale_first,scale,period,2.431,1,0.1189,TRUE,
+Drummondville,scale_first,scale,season,26.73,3,6.691e-6,FALSE,
+Drummondville,scale_first,location,period:season,0.6161,3,0.8927,TRUE,
+Drummondville,scale_first,location,anomaly:period,0.4885,1,0.4846,TRUE,
+Drummondville,scale_first,location,anomaly:season,2.884,3,0.4099,TRUE,
+Drummondville,scale_first,location,anomaly,0.02659,1,0.8705,TRUE,
+Drummondville,scale_first,location,period,4.863,1,0.02743,FALSE,
+Drummondville,location_first,location,anomaly:season,0.9908,3,0.8035,TRUE,
+Drummondville,location_first,location,period:season,1.002,3,0.8008,TRUE,
+Drummondville,location_first,location,anomaly:period,0.385,1,0.5349,TRUE,
+Drummondville,location_first,location,anomaly,0.01695,1,0.8964,TRUE,
+Drummondville,location_first,location,period,7.453,1,0.006332,FALSE,
+Drummondville,location_first,scale,period:season,1.006,3,0.79990000000000006,TRUE,
+Drummondville,location_first,scale,anomaly:period,1.409,1,0.2353,TRUE,
+Drummondville,location_first,scale,anomaly:season,5.317,3,0.15,TRUE,
+Drummondville,location_first,scale,anomaly,0.03271,1,0.8565,TRUE,
+Drummondville,location_first,scale,period,2.883,1,0.08949,TRUE,
+Drummondville,location_first,scale,season,26.56,3,7.267e-6,FALSE,
+L'Assomption,scale_first,scale,anomaly:season,0.5038,3,0.9181,TRUE,
+L'Assomption,scale_first,scale,period:season,1.415,3,0.702,TRUE,
+L'Assomption,scale_first,scale,anomaly:period,4.539,1,0.03314,FALSE,
+L'Assomption,scale_first,location,anomaly:period,3.712e-4,1,0.9846,TRUE,
+L'Assomption,scale_first,location,period:season,0.86,3,0.8351,TRUE,
+L'Assomption,scale_first,location,anomaly:season,0.6353,3,0.8883,TRUE,
+L'Assomption,scale_first,location,anomaly,0.05308,1,0.8178,TRUE,
+L'Assomption,scale_first,location,period,3.014,1,0.08256,TRUE,
+L'Assomption,scale_first,location,season,30.49,3,1.091e-6,FALSE,
+L'Assomption,location_first,location,anomaly:period,-1.065e-5,1,1,TRUE,
+L'Assomption,location_first,location,period:season,0.7871,3,0.8526,TRUE,
+L'Assomption,location_first,location,anomaly:season,0.5097,3,0.9168,TRUE,
+L'Assomption,location_first,location,anomaly,0.08957,1,0.7647,TRUE,
+L'Assomption,location_first,location,period,3.146,1,0.07613,TRUE,
+L'Assomption,location_first,location,season,30.29,3,1.199e-6,FALSE,
+L'Assomption,location_first,scale,anomaly:season,0.7732,3,0.8559,TRUE,
+L'Assomption,location_first,scale,period:season,1.177,3,0.7586,TRUE,
+L'Assomption,location_first,scale,anomaly:period,6.042,1,0.01397,FALSE,
+Les Cèdres,scale_first,scale,anomaly:season,2.427,3,0.4886,TRUE,
+Les Cèdres,scale_first,scale,anomaly:period,1.441,1,0.23,TRUE,
+Les Cèdres,scale_first,scale,anomaly,0.8865,1,0.3464,TRUE,
+Les Cèdres,scale_first,scale,period:season,4.804,3,0.1867,TRUE,
+Les Cèdres,scale_first,scale,period,1.199,1,0.2734,TRUE,
+Les Cèdres,scale_first,scale,season,32.83,3,3.496e-7,FALSE,
+Les Cèdres,scale_first,location,anomaly:period,0.0986,1,0.7535,TRUE,
+Les Cèdres,scale_first,location,anomaly:season,2.053,3,0.5616,TRUE,
+Les Cèdres,scale_first,location,period:season,3.067,3,0.3814,TRUE,
+Les Cèdres,scale_first,location,anomaly,1.463,1,0.2265,TRUE,
+Les Cèdres,scale_first,location,period,6.584,1,0.01029,FALSE,
+Les Cèdres,location_first,location,anomaly:period,0.05052,1,0.8222,TRUE,
+Les Cèdres,location_first,location,anomaly:season,1.168,3,0.7607,TRUE,
+Les Cèdres,location_first,location,period:season,5.559,3,0.1352,TRUE,
+Les Cèdres,location_first,location,anomaly,2.198,1,0.1382,TRUE,
+Les Cèdres,location_first,location,period,6.604,1,0.01018,FALSE,
+Les Cèdres,location_first,scale,anomaly:season,2.395,3,0.4946,TRUE,
+Les Cèdres,location_first,scale,period:season,2.991,3,0.393,TRUE,
+Les Cèdres,location_first,scale,anomaly:period,1.98,1,0.1593,TRUE,
+Les Cèdres,location_first,scale,anomaly,0.02511,1,0.8741,TRUE,
+Les Cèdres,location_first,scale,period,1.072,1,0.3004,TRUE,
+Les Cèdres,location_first,scale,season,32.93,3,3.332e-7,FALSE,
+St-Charles-de-Mandeville,scale_first,scale,anomaly:period,0.2545,1,0.6139,TRUE,
+St-Charles-de-Mandeville,scale_first,scale,anomaly:season,5.04,3,0.1689,TRUE,
+St-Charles-de-Mandeville,scale_first,scale,anomaly,0.001616,1,0.9679,TRUE,
+St-Charles-de-Mandeville,scale_first,scale,period:season,5.624,3,0.1314,TRUE,
+St-Charles-de-Mandeville,scale_first,scale,period,2.407,1,0.1208,TRUE,
+St-Charles-de-Mandeville,scale_first,scale,season,10.29,3,0.01627,FALSE,
+St-Charles-de-Mandeville,scale_first,location,anomaly:season,0.5455,3,0.9088,TRUE,
+St-Charles-de-Mandeville,scale_first,location,period:season,6.254,3,0.09989,TRUE,
+St-Charles-de-Mandeville,scale_first,location,anomaly:period,4.057,1,0.04398,FALSE,
+St-Charles-de-Mandeville,location_first,location,anomaly:season,0.7379,3,0.8643,TRUE,
+St-Charles-de-Mandeville,location_first,location,period:season,8.389,3,0.03862,FALSE,
+St-Charles-de-Mandeville,location_first,scale,anomaly:period,0.2288,1,0.6325,TRUE,
+St-Charles-de-Mandeville,location_first,scale,anomaly:season,4.695,3,0.1956,TRUE,
+St-Charles-de-Mandeville,location_first,scale,anomaly,0.008907,1,0.9248,TRUE,
+St-Charles-de-Mandeville,location_first,scale,period:season,5.556,3,0.1353,TRUE,
+St-Charles-de-Mandeville,location_first,scale,period,2.646,1,0.1038,TRUE,
+St-Charles-de-Mandeville,location_first,scale,season,10.13,3,0.0175,FALSE,
+Lennoxville,scale_first,scale,anomaly:period,0.03859,1,0.8443,TRUE,
+Lennoxville,scale_first,scale,anomaly:season,2.975,3,0.3954,TRUE,
+Lennoxville,scale_first,scale,anomaly,0.9826,1,0.3216,TRUE,
+Lennoxville,scale_first,scale,period:season,3.752,3,0.2895,TRUE,
+Lennoxville,scale_first,scale,period,0.2347,1,0.6281,TRUE,
+Lennoxville,scale_first,scale,season,49.69,3,9.284e-11,FALSE,
+Lennoxville,scale_first,location,period:season,1.672,3,0.6433,TRUE,
+Lennoxville,scale_first,location,anomaly:season,3.633,3,0.3039,TRUE,
+Lennoxville,scale_first,location,anomaly:period,1.397,1,0.2373,TRUE,
+Lennoxville,scale_first,location,period,1.798,1,0.1799,TRUE,
+Lennoxville,scale_first,location,anomaly,6.348,1,0.01175,FALSE,
+Lennoxville,location_first,location,period:season,3.997,3,0.2617,TRUE,
+Lennoxville,location_first,location,anomaly:season,2.579,3,0.4612,TRUE,
+Lennoxville,location_first,location,anomaly:period,2.152,1,0.1424,TRUE,
+Lennoxville,location_first,location,period,0.885,1,0.3468,TRUE,
+Lennoxville,location_first,location,anomaly,7.021,1,0.008054,FALSE,
+Lennoxville,location_first,scale,anomaly:period,0.1762,1,0.6746,TRUE,
+Lennoxville,location_first,scale,anomaly:season,1.571,3,0.666,TRUE,
+Lennoxville,location_first,scale,anomaly,0.8284,1,0.3627,TRUE,
+Lennoxville,location_first,scale,period:season,3.416,3,0.3318,TRUE,
+Lennoxville,location_first,scale,period,0.8775,1,0.3489,TRUE,
+Lennoxville,location_first,scale,season,49.73,3,9.119e-11,FALSE,
+Nicolet,scale_first,scale,anomaly:period,0.07806,1,0.7799,TRUE,
+Nicolet,scale_first,scale,period:season,2.731,3,0.4351,TRUE,
+Nicolet,scale_first,scale,period,0.01825,1,0.8925,TRUE,
+Nicolet,scale_first,scale,anomaly:season,6.905,3,0.075,TRUE,
+Nicolet,scale_first,scale,anomaly,0.6902,1,0.4061,TRUE,
+Nicolet,scale_first,scale,season,37.32,3,3.94e-8,FALSE,
+Nicolet,scale_first,location,period:season,1.829,3,0.6088,TRUE,
+Nicolet,scale_first,location,anomaly:season,1.983,3,0.5759,TRUE,
+Nicolet,scale_first,location,anomaly:period,0.5025,1,0.4784,TRUE,
+Nicolet,scale_first,location,period,1.216,1,0.2702,TRUE,
+Nicolet,scale_first,location,anomaly,0.9814,1,0.3218,TRUE,
+Nicolet,scale_first,location,season,36.08,3,7.212e-8,FALSE,
+Nicolet,location_first,location,anomaly:season,1.859,3,0.6021,TRUE,
+Nicolet,location_first,location,period:season,2.427,3,0.4887,TRUE,
+Nicolet,location_first,location,anomaly:period,0.4,1,0.5271,TRUE,
+Nicolet,location_first,location,period,1.891,1,0.1691,TRUE,
+Nicolet,location_first,location,anomaly,1.006,1,0.316,TRUE,
+Nicolet,location_first,location,season,35.4,3,1.001e-7,FALSE,
+Nicolet,location_first,scale,anomaly:period,0.1841,1,0.6679,TRUE,
+Nicolet,location_first,scale,period:season,2.611,3,0.4555,TRUE,
+Nicolet,location_first,scale,period,0.1433,1,0.705,TRUE,
+Nicolet,location_first,scale,anomaly:season,5.738,3,0.1251,TRUE,
+Nicolet,location_first,scale,anomaly,0.6747,1,0.4114,TRUE,
+Nicolet,location_first,scale,season,36.91,3,4.802e-8,FALSE,

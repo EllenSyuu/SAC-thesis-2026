@@ -49,8 +49,19 @@ save_tab(st_coef, "tab_05_gev_station_coefficients")
 # ---- 2c. pooled model --------------------------------------------------------------
 pooled <- fit_gev(as.data.frame(mm), location = ~ period * station + season,
                   scale = ~ season)
-save_tab(cbind(gev_coef_table(pooled), gev_ic(pooled)[rep(1, length(pooled$results$par)),
-         c("loglik", "BIC")]), "tab_06_gev_pooled_coefficients")
+# The pooled likelihood treats the six stations as independent (composite
+# likelihood). Godambe sandwich SEs, clustered by calendar month (spatial
+# dependence) and by year (spatial + within-season serial dependence), show
+# how optimistic the naive SEs are.
+tab_pool <- gev_coef_table(pooled, cluster = mm$date)
+tab_year <- gev_coef_table(pooled, cluster = mm$year)
+tab_pool$se_sandwich_year <- tab_year$se_sandwich
+tab_pool$se_ratio_month <- tab_pool$se_sandwich / tab_pool$se
+save_tab(cbind(tab_pool, gev_ic(pooled)[rep(1, nrow(tab_pool)), c("loglik", "BIC")]),
+         "tab_06_gev_pooled_coefficients")
+log_step(sprintf("  pooled GEV: sandwich/naive SE ratio median %.2f (range %.2f-%.2f)",
+                 median(tab_pool$se_ratio_month), min(tab_pool$se_ratio_month),
+                 max(tab_pool$se_ratio_month)))
 
 pars <- gev_params(pooled)
 mm <- mm |>

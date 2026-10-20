@@ -2,13 +2,23 @@
 % Please edit documentation in R/gev_margins.R
 \name{gev_coef_table}
 \alias{gev_coef_table}
-\title{Coefficient table (estimate, SE, z, p, 95\% Wald CI) for an fevd fit}
+\title{Coefficient table for an fevd fit, with optional cluster-robust SEs}
 \usage{
-gev_coef_table(fit)
+gev_coef_table(fit, level = 0.95, cluster = NULL)
 }
 \arguments{
 \item{fit}{An `fevd` object.}
+
+\item{level}{Confidence level of the Wald intervals.}
+
+\item{cluster}{Optional vector (one entry per observation) defining
+independent clusters.}
 }
 \description{
-Coefficient table (estimate, SE, z, p, 95\% Wald CI) for an fevd fit
+Wald table based on the inverse observed information. When `cluster` is
+given, a Godambe (sandwich) standard error is added:
+`V = H^{-1} J H^{-1}`, `J = sum_c s_c s_c'`, where `s_c` is the score
+summed over the observations of cluster `c` (e.g. all stations in one
+month). This corrects the composite-likelihood SEs of a pooled model for
+within-cluster dependence.
 }

@@ -16,7 +16,8 @@ pickands_at(U, omega, theta, method = c("mle", "cfg", "pickands"))
 \item{method}{One of `"mle"`, `"cfg"`, `"pickands"`.}
 }
 \value{
-A single numeric value.
+A single numeric value; `NA` (with a warning) if the estimate is
+  not finite, e.g. because `U` contains 0 or 1.
 }
 \description{
 Works in any dimension d; `omega` with a single non-zero coordinate

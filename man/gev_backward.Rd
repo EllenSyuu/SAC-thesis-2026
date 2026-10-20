@@ -24,10 +24,16 @@ parameters).}
 }
 \value{
 A list with final `location`, `scale` terms, the `fit`, and a
-  `path` data frame recording each step.
+  `path` data frame recording each step (`parameter`, `term`, `LR`,
+  `df`, `p_value`, `removed`, `note`).
 }
 \description{
 Removes, one at a time, the least significant *removable* term (respecting
 marginality: a main effect cannot be dropped while an interaction
 containing it remains) until every remaining candidate has `p < alpha`.
+}
+\details{
+Failed fits are never dropped silently: each failure raises a warning and
+is recorded in `path` (column `note`). A candidate whose reduced model
+cannot be fitted is not eligible for removal at that step.
 }
