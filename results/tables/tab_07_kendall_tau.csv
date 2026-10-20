@@ -1,0 +1,106 @@
+group,station_1,station_2,tau
+All months,Drummondville,L'Assomption,0.3468
+All months,Drummondville,Les Cèdres,0.2889
+All months,Drummondville,St-Charles-de-Mandeville,0.2714
+All months,Drummondville,Lennoxville,0.241
+All months,Drummondville,Nicolet,0.3765
+All months,L'Assomption,Les Cèdres,0.3499
+All months,L'Assomption,St-Charles-de-Mandeville,0.3339
+All months,L'Assomption,Lennoxville,0.2095
+All months,L'Assomption,Nicolet,0.3625
+All months,Les Cèdres,St-Charles-de-Mandeville,0.2488
+All months,Les Cèdres,Lennoxville,0.188
+All months,Les Cèdres,Nicolet,0.2474
+All months,St-Charles-de-Mandeville,Lennoxville,0.1303
+All months,St-Charles-de-Mandeville,Nicolet,0.2874
+All months,Lennoxville,Nicolet,0.2346
+AM,Drummondville,L'Assomption,0.3683
+AM,Drummondville,Les Cèdres,0.2883
+AM,Drummondville,St-Charles-de-Mandeville,0.3074
+AM,Drummondville,Lennoxville,0.264
+AM,Drummondville,Nicolet,0.4133
+AM,L'Assomption,Les Cèdres,0.3732
+AM,L'Assomption,St-Charles-de-Mandeville,0.3775
+AM,L'Assomption,Lennoxville,0.1968
+AM,L'Assomption,Nicolet,0.3263
+AM,Les Cèdres,St-Charles-de-Mandeville,0.2984
+AM,Les Cèdres,Lennoxville,0.202
+AM,Les Cèdres,Nicolet,0.2422
+AM,St-Charles-de-Mandeville,Lennoxville,0.2015
+AM,St-Charles-de-Mandeville,Nicolet,0.3096
+AM,Lennoxville,Nicolet,0.2761
+JJ,Drummondville,L'Assomption,0.2185
+JJ,Drummondville,Les Cèdres,0.1526
+JJ,Drummondville,St-Charles-de-Mandeville,0.1701
+JJ,Drummondville,Lennoxville,0.1499
+JJ,Drummondville,Nicolet,0.2268
+JJ,L'Assomption,Les Cèdres,0.1471
+JJ,L'Assomption,St-Charles-de-Mandeville,0.1806
+JJ,L'Assomption,Lennoxville,0.06513
+JJ,L'Assomption,Nicolet,0.2364
+JJ,Les Cèdres,St-Charles-de-Mandeville,0.1084
+JJ,Les Cèdres,Lennoxville,0.01643
+JJ,Les Cèdres,Nicolet,0.1269
+JJ,St-Charles-de-Mandeville,Lennoxville,0.05009
+JJ,St-Charles-de-Mandeville,Nicolet,0.1358
+JJ,Lennoxville,Nicolet,0.1726
+AS,Drummondville,L'Assomption,0.3674
+AS,Drummondville,Les Cèdres,0.2627
+AS,Drummondville,St-Charles-de-Mandeville,0.2538
+AS,Drummondville,Lennoxville,0.2224
+AS,Drummondville,Nicolet,0.3429
+AS,L'Assomption,Les Cèdres,0.3619
+AS,L'Assomption,St-Charles-de-Mandeville,0.3237
+AS,L'Assomption,Lennoxville,0.2944
+AS,L'Assomption,Nicolet,0.3516
+AS,Les Cèdres,St-Charles-de-Mandeville,0.1904
+AS,Les Cèdres,Lennoxville,0.2411
+AS,Les Cèdres,Nicolet,0.2151
+AS,St-Charles-de-Mandeville,Lennoxville,0.1358
+AS,St-Charles-de-Mandeville,Nicolet,0.284
+AS,Lennoxville,Nicolet,0.2388
+ON,Drummondville,L'Assomption,0.3622
+ON,Drummondville,Les Cèdres,0.3674
+ON,Drummondville,St-Charles-de-Mandeville,0.2442
+ON,Drummondville,Lennoxville,0.1928
+ON,Drummondville,Nicolet,0.4557
+ON,L'Assomption,Les Cèdres,0.4725
+ON,L'Assomption,St-Charles-de-Mandeville,0.3934
+ON,L'Assomption,Lennoxville,0.1364
+ON,L'Assomption,Nicolet,0.4798
+ON,Les Cèdres,St-Charles-de-Mandeville,0.3298
+ON,Les Cèdres,Lennoxville,0.1441
+ON,Les Cèdres,Nicolet,0.3385
+ON,St-Charles-de-Mandeville,Lennoxville,-0.001147
+ON,St-Charles-de-Mandeville,Nicolet,0.3298
+ON,Lennoxville,Nicolet,0.1356
+1930-1975,Drummondville,L'Assomption,0.3386
+1930-1975,Drummondville,Les Cèdres,0.3171
+1930-1975,Drummondville,St-Charles-de-Mandeville,0.234
+1930-1975,Drummondville,Lennoxville,0.2316
+1930-1975,Drummondville,Nicolet,0.3805
+1930-1975,L'Assomption,Les Cèdres,0.338
+1930-1975,L'Assomption,St-Charles-de-Mandeville,0.2401
+1930-1975,L'Assomption,Lennoxville,0.1947
+1930-1975,L'Assomption,Nicolet,0.3428
+1930-1975,Les Cèdres,St-Charles-de-Mandeville,0.1986
+1930-1975,Les Cèdres,Lennoxville,0.1928
+1930-1975,Les Cèdres,Nicolet,0.2625
+1930-1975,St-Charles-de-Mandeville,Lennoxville,0.138
+1930-1975,St-Charles-de-Mandeville,Nicolet,0.2248
+1930-1975,Lennoxville,Nicolet,0.2193
+1976-2017,Drummondville,L'Assomption,0.3551
+1976-2017,Drummondville,Les Cèdres,0.2539
+1976-2017,Drummondville,St-Charles-de-Mandeville,0.3013
+1976-2017,Drummondville,Lennoxville,0.2651
+1976-2017,Drummondville,Nicolet,0.3787
+1976-2017,L'Assomption,Les Cèdres,0.3522
+1976-2017,L'Assomption,St-Charles-de-Mandeville,0.4276
+1976-2017,L'Assomption,Lennoxville,0.2311
+1976-2017,L'Assomption,Nicolet,0.3956
+1976-2017,Les Cèdres,St-Charles-de-Mandeville,0.2884
+1976-2017,Les Cèdres,Lennoxville,0.1915
+1976-2017,Les Cèdres,Nicolet,0.2382
+1976-2017,St-Charles-de-Mandeville,Lennoxville,0.1445
+1976-2017,St-Charles-de-Mandeville,Nicolet,0.3911
+1976-2017,Lennoxville,Nicolet,0.2505
