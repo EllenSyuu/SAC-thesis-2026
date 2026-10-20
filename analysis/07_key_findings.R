@@ -38,4 +38,4 @@ hero <- (pa | pb) + plot_annotation(
   subtitle = "Non-stationarity in the margins and in the dependence structure are different stories",
   theme = theme(plot.title = element_text(face = "bold", size = 15)))
 save_fig(hero, "fig_00_key_findings", 10.5, 4.6)
-log_step("07 done")
+finish_step("07")

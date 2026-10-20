@@ -107,4 +107,4 @@ p2 <- ggplot(err2, aes(method, IRAE, fill = method)) +
   labs(title = sprintf("Binary covariate: IRAE over B = %d replicates", B2),
        x = NULL, y = "IRAE")
 save_fig(p1 + p2 + plot_layout(widths = c(1, 1.3)), "fig_06_simulation_study", 11, 4.4)
-log_step("04 done")
+finish_step("04")

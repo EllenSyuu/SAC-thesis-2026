@@ -78,4 +78,4 @@ pe <- ggplot(eta, aes(reorder(group, eta), eta,
        subtitle = "Six stations jointly: June-July extremes behave almost independently",
        x = NULL, y = expression(hat(eta)))
 save_fig(pe, paste0("fig_12_extremal_coefficient", sfx), 7, 3.6)
-log_step("06 done")
+finish_step("06")

@@ -152,4 +152,4 @@ p_A <- ggplot(transform(curves, pair = factor(pair, pairs$pair)),
        subtitle = "Lower curve = stronger extremal dependence. JJ (orange) is closest to independence, ON (purple) the most coherent",
        x = expression(omega), y = expression(hat(A)(omega)), colour = NULL)
 save_fig(p_A, paste0("fig_10_pickands_by_season", sfx), 11, 7)
-log_step("05 done")
+finish_step("05")

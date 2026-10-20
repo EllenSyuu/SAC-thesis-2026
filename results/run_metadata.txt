@@ -1,0 +1,38 @@
+# Run metadata (written by analysis/99_run_metadata.R)
+timestamp:        2026-10-20T20:36:59+0000
+git_sha:          1a192a5807598cb9536d3ae96fce37ee2d8c0839  (uncommitted changes in R/, analysis/ or data/raw/)
+r_version:        R version 4.3.3 (2024-02-29)
+platform:         x86_64-pc-linux-gnu
+cores:            2
+
+## parameters
+seed:             20260408
+quick:            FALSE
+years:            1930-2017
+period_cut:       1975
+min_days:         0
+bootstrap_B:      200
+omega_grid:       0.01..0.99 by 0.01 (99 points)
+
+## input checksums (md5)
+corrections.csv                          b03412d6a6b25f7c955fc60624083f25
+eccc_daily_precip.csv.gz                 08c66fcc3af0ffb224f7f3e5505a4a9f
+noaa_na_land_temp_anomaly.csv            dc7d7f326f3d0e963981632ace134fae
+
+## package versions
+covarchimax      1.0.0
+extRemes         2.2.1
+copula           1.1.7
+dplyr            1.1.4
+tidyr            1.3.1
+readr            2.1.5
+ggplot2          3.4.4
+patchwork        1.2.0
+ragg             1.2.7
+sf               1.0.15
+rnaturalearth    1.2.0
+
+## step timings (seconds, this run)
+1      20:36:16      9.0  quick=FALSE pobs=raw min_days=0
+2      20:36:58     40.4  quick=FALSE pobs=raw min_days=0
+total               49.4
