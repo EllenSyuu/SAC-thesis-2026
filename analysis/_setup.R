@@ -26,6 +26,8 @@ QUICK   <- identical(Sys.getenv("QUICK"), "1")
 SEED    <- 20260408
 N_CORES <- max(1L, parallel::detectCores() - 0L)
 
+MIN_DAYS     <- as.integer(Sys.getenv("MIN_DAYS", "0"))  # 0 = thesis (no threshold)
+BOOT_B       <- as.integer(Sys.getenv("BOOT_B", if (QUICK) "20" else "200"))
 YEARS        <- c(1930, 2017)   # 2018-19 dropped: ECCC manual->automatic gap
 PERIOD_CUT   <- 1975
 W_GRID       <- if (QUICK) seq(0.05, 0.95, by = 0.05) else seq(0.01, 0.99, by = 0.01)
@@ -70,8 +72,10 @@ save_fig <- function(p, name, width = 8, height = 5) {
 }
 
 save_tab <- function(df, name, digits = 4) {
-  num <- vapply(df, is.numeric, logical(1))
-  df[num] <- lapply(df[num], signif, digits = digits)
+  # round only genuinely fractional columns; counts stay exact
+  frac <- vapply(df, function(x) is.numeric(x) && any(abs(x - round(x)) > 1e-9, na.rm = TRUE),
+                 logical(1))
+  df[frac] <- lapply(df[frac], signif, digits = digits)
   readr::write_csv(df, file.path(TAB, paste0(name, ".csv")))
   invisible(df)
 }
@@ -91,3 +95,52 @@ load_pobs <- function(source = c("raw", "gumbel")) {
 }
 
 log_step <- function(...) message(format(Sys.time(), "[%H:%M:%S] "), ...)
+
+# ---- run bookkeeping ---------------------------------------------------------
+STEP_T0 <- Sys.time()
+RUN_LOG <- file.path(ROOT, "results", "run_steps.csv")
+finish_step <- function(id) {
+  secs <- as.numeric(difftime(Sys.time(), STEP_T0, units = "secs"))
+  row <- data.frame(step = id, finished = format(Sys.time(), "%Y-%m-%dT%H:%M:%S"),
+                    seconds = round(secs, 1), quick = QUICK,
+                    pobs = Sys.getenv("POBS", "raw"), min_days = MIN_DAYS)
+  utils::write.table(row, RUN_LOG, sep = ",", row.names = FALSE,
+                     col.names = !file.exists(RUN_LOG), append = file.exists(RUN_LOG))
+  log_step(id, " done (", round(secs), " s)")
+}
+
+# ---- result cache ------------------------------------------------------------
+# Expensive results (bootstrap, Monte-Carlo, EV test) are cached under
+# results/cache/. The key hashes the inputs, the parameters and the package
+# source, so any change invalidates the cache; FORCE=1 recomputes regardless.
+CACHE <- file.path(ROOT, "results", "cache")
+dir.create(CACHE, showWarnings = FALSE)
+code_hash <- function() {
+  f <- sort(list.files(file.path(ROOT, "R"), full.names = TRUE))
+  unname(tools::md5sum(f))
+}
+cached <- function(name, key, expr) {
+  path <- file.path(CACHE, paste0(name, ".rds"))
+  key_hash <- digest_key(list(key, code_hash()))
+  if (!identical(Sys.getenv("FORCE"), "1") && file.exists(path)) {
+    obj <- readRDS(path)
+    if (identical(attr(obj, "cache_key"), key_hash)) {
+      log_step("  cache hit: ", name)
+      return(obj)
+    }
+  }
+  t0 <- Sys.time()
+  obj <- force(expr)
+  attr(obj, "cache_key") <- key_hash
+  attr(obj, "compute_seconds") <- as.numeric(difftime(Sys.time(), t0, units = "secs"))
+  saveRDS(obj, path)
+  log_step("  computed and cached: ", name, " (",
+           round(attr(obj, "compute_seconds")), " s)")
+  obj
+}
+digest_key <- function(x) {
+  f <- tempfile()
+  saveRDS(x, f, version = 2)
+  on.exit(unlink(f))
+  unname(tools::md5sum(f))
+}

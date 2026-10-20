@@ -93,4 +93,4 @@ ev <- do.call(rbind, lapply(seq_len(nrow(pairs)), function(k) {
 }))
 save_tab(ev, "tab_08_ev_dependence_test")
 log_step("  evTestK: ", sum(ev$p_value < 0.05), "/15 pairs reject EV dependence at 5%")
-log_step("03 done")
+finish_step("03")

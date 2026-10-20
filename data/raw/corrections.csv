@@ -1,0 +1,2 @@
+station_name,date,original_mm,corrected_mm,reason
+ST CHARLES DE MANDEVILLE,1996-07-02,147.0,14.7,"Decimal-shift error: nearby St-Alexis-des-Monts recorded 16.2 mm and no storm of that size was reported (thesis Sec. 3.1)"

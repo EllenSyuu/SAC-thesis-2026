@@ -77,7 +77,8 @@ gev_coef_table <- function(fit, level = 0.95, cluster = NULL) {
   V <- extRemes::parcov.fevd(fit)
   se <- sqrt(diag(V))
   zc <- stats::qnorm(1 - (1 - level) / 2)
-  out <- data.frame(term = names(est), estimate = unname(est), se = unname(se),
+  out <- data.frame(term = names(est), covariate = gev_term_labels(fit),
+                    estimate = unname(est), se = unname(se),
                     z = unname(est / se),
                     p_value = 2 * stats::pnorm(-abs(unname(est / se))),
                     ci_lower = unname(est - zc * se),
@@ -90,6 +91,20 @@ gev_coef_table <- function(fit, level = 0.95, cluster = NULL) {
     out$ci_upper_sandwich <- out$estimate + zc * se_s
   }
   out
+}
+
+#' Human-readable labels for fevd parameters (e.g. mu8 -> "location: seasonAS")
+#'
+#' @param fit An `fevd` object.
+#' @export
+gev_term_labels <- function(fit) {
+  d <- fit$cov.data
+  lab <- function(f, nm) {
+    cn <- colnames(stats::model.matrix(f, d))
+    paste0(nm, ": ", sub("^\\(Intercept\\)$", "intercept", cn))
+  }
+  c(lab(fit$par.models$location, "location"), lab(fit$par.models$scale, "scale"),
+    "shape: intercept")
 }
 
 #' Per-observation GEV log-likelihood of a fitted non-stationary model

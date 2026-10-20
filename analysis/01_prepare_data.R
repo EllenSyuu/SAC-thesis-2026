@@ -12,12 +12,21 @@ daily <- readr::read_csv(file.path(RAW, "eccc_daily_precip.csv.gz"),
   mutate(year = as.integer(year), month = as.integer(month),
          day = as.integer(day))
 
-# 147.0 mm on 1996-07-02 at St-Charles is a decimal-shift error: no nearby
-# station (St-Alexis-des-Monts: 16.2 mm) or news report supports it.
-fix <- with(daily, station_name == "ST CHARLES DE MANDEVILLE" & year == 1996 &
-              month == 7 & day == 2)
-stopifnot(sum(fix) == 1, daily$total_precip[fix] == 147)
-daily$total_precip[fix] <- 14.7
+val_raw <- validate_daily(daily)
+
+# Documented manual corrections (data/raw/corrections.csv). Each correction
+# must match exactly one record holding the stated original value.
+corr <- readr::read_csv(file.path(RAW, "corrections.csv"), show_col_types = FALSE)
+for (k in seq_len(nrow(corr))) {
+  hit <- daily$station_name == corr$station_name[k] &
+    as.Date(daily$date) == as.Date(corr$date[k])
+  if (sum(hit) != 1 || !isTRUE(all.equal(daily$total_precip[hit], corr$original_mm[k]))) {
+    stop("Correction ", k, " (", corr$station_name[k], " ", corr$date[k],
+         ") does not match the raw data; refusing to apply it.", call. = FALSE)
+  }
+  daily$total_precip[hit] <- corr$corrected_mm[k]
+}
+val_clean <- validate_daily(daily)
 
 # ---- missingness by calendar month (Fig. 3.3) -------------------------------
 miss <- daily |>
@@ -52,9 +61,23 @@ mm <- monthly_maxima(daily) |>
   mutate(station = factor(station_name, levels = STATIONS$key),
          date = as.Date(sprintf("%d-%02d-01", year, month))) |>
   arrange(station, date)
-stopifnot(!anyNA(mm$anomaly))
+readr::write_csv(mm, file.path(PROC, "monthly_maxima_all.csv"))  # before any MIN_DAYS filter
+n_all <- nrow(mm)
+mm <- filter(mm, n_days >= MIN_DAYS)
+if (MIN_DAYS > 0) {
+  log_step("  MIN_DAYS = ", MIN_DAYS, ": dropped ", n_all - nrow(mm),
+           " station-months (non-default; results will differ from the thesis)")
+}
+val_mm <- validate_monthly(mm)
+save_tab(rbind(cbind(stage = "raw daily", val_raw),
+               cbind(stage = "after corrections", val_clean)),
+         "tab_01_data_validation_daily")
+save_tab(cbind(min_days = MIN_DAYS, n_before_filter = n_all, val_mm),
+         "tab_01_data_validation_monthly")
 readr::write_csv(mm, file.path(PROC, "monthly_maxima.csv"))
-log_step("  monthly maxima: ", nrow(mm), " station-months")
+log_step("  validated: ", val_raw$n_rows, " daily rows, ", nrow(corr),
+         " correction(s); ", nrow(mm), " station-months (",
+         val_mm$n_incomplete_lt20, " with < 20 valid days)")
 
 # ---- Table 3.3 / 3.4: counts, means and standard errors ----------------------
 desc <- mm |>
@@ -115,4 +138,4 @@ if (requireNamespace("rnaturalearthhires", quietly = TRUE)) {
   save_fig(p_map, "fig_03_station_map", 7.5, 4.6)
 }
 readr::write_csv(STATIONS, file.path(PROC, "stations.csv"))
-log_step("01 done")
+finish_step("01")

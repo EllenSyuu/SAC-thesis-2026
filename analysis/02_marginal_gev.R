@@ -134,4 +134,4 @@ readr::write_csv(make_pobs(mm$z), file.path(PROC, "pseudo_obs_gumbel.csv"))
 readr::write_csv(select(mm, -station), file.path(PROC, "monthly_maxima_gumbel.csv"))
 log_step("  pseudo-observations: ", nrow(pobs), " months, ",
          sum(complete.cases(pobs[U_COLS])), " complete")
-log_step("02 done")
+finish_step("02")
