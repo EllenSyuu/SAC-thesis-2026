@@ -14,15 +14,20 @@ test_that("each class of bad input fails with an actionable message", {
   d <- read_fixture()
   expect_error(validate_daily(d[0, ]), "zero rows")
   expect_error(validate_daily(d[, -6]), "missing required column\\(s\\): total_precip")
-  bad <- d; bad$total_precip <- as.character(bad$total_precip)
+  bad <- d
+  bad$total_precip <- as.character(bad$total_precip)
   expect_error(validate_daily(bad), "'total_precip' must be numeric")
-  bad <- d; bad$date[3] <- "2000-13-45"
+  bad <- d
+  bad$date[3] <- "2000-13-45"
   expect_error(validate_daily(bad), "cannot be parsed")
-  bad <- d; bad$station_name[5] <- NA
+  bad <- d
+  bad$station_name[5] <- NA
   expect_error(validate_daily(bad), "missing station_name or date; first at row 5")
-  bad <- d; bad$day[7] <- 30
+  bad <- d
+  bad$day[7] <- 30
   expect_error(validate_daily(bad), "disagree with date; first at row 7")
-  bad <- d; bad$total_precip[9] <- -1
+  bad <- d
+  bad$total_precip[9] <- -1
   expect_error(validate_daily(bad), "negative precipitation .* row 9")
   expect_error(validate_daily(rbind(d, d[10, ])), "duplicated \\(station_name, date\\)")
 })
@@ -39,7 +44,8 @@ test_that("validate_monthly catches structural problems", {
   expect_equal(validate_monthly(mm)$n_station_months, 2)
   expect_error(validate_monthly(mm[0, ]), "no station-months")
   expect_error(validate_monthly(rbind(mm, mm[1, ])), "more than one row")
-  bad <- mm; bad$anomaly[1] <- NA
+  bad <- mm
+  bad$anomaly[1] <- NA
   expect_error(validate_monthly(bad), "missing value\\(s\\) in 'anomaly'")
 })
 

@@ -6,39 +6,56 @@ on:
   pull_request:
 
 jobs:
-  test-and-smoke-run:
+  check:
+    name: R CMD check, lint, pipeline smoke run
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
     steps:
       - uses: actions/checkout@v4
 
+      - name: System libraries (copula -> gsl, ragg -> freetype/harfbuzz)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libgsl-dev libharfbuzz-dev libfribidi-dev \
+            libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
       - uses: r-lib/actions/setup-r@v2
         with:
+          r-version: '4.3.3'          # matches renv.lock
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: |
-            any::rcmdcheck
-            any::devtools
-            any::rprojroot
-            any::ragg
-            any::rnaturalearth
-            any::rnaturalearthdata
-            any::sf
-            any::lintr
-          needs: check
+      - uses: r-lib/actions/setup-renv@v2   # restores renv.lock (cached)
 
-      - name: R CMD check (unit tests)
-        uses: r-lib/actions/check-r-package@v2
-        with:
-          args: 'c("--no-manual", "--as-cran")'
-          error-on: '"error"'
-
-      - name: Pipeline smoke run (QUICK=1)
+      - name: R CMD check (includes unit tests)
         run: |
-          QUICK=1 Rscript analysis/01_prepare_data.R
-          QUICK=1 Rscript analysis/02_marginal_gev.R
-          QUICK=1 Rscript analysis/04_simulation_study.R
-          QUICK=1 Rscript analysis/06_archimax_6d.R
+          Rscript -e 'rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = "--no-manual",
+                                           error_on = "warning", check_dir = "check")'
+
+      - name: Lint
+        run: |
+          Rscript -e 'l <- c(lintr::lint_package(), lintr::lint_dir("analysis"));
+                      print(l); quit(status = as.integer(length(l) > 0))'
+
+      - name: Pipeline smoke run (QUICK=1, small bootstrap)
+        env:
+          QUICK: "1"
+          BOOT_B: "4"
+        run: |
+          for s in 01_prepare_data 02_marginal_gev 04_simulation_study \
+                   06_archimax_6d 08_sensitivity_min_days 09_bootstrap_ci 99_run_metadata; do
+            Rscript analysis/$s.R
+          done
+          cat results/run_metadata.txt
+
+      - name: Test coverage (informational)
+        continue-on-error: true
+        run: Rscript -e 'print(covr::package_coverage())'
+
+      - name: Upload check results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r-check
+          path: check
