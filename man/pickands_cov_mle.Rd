@@ -9,7 +9,8 @@ pickands_cov_mle(
   X,
   theta,
   w = seq(0.01, 0.99, by = 0.01),
-  link = c("identity", "logit")
+  link = c("identity", "logit"),
+  n_grid_starts = 5
 )
 }
 \arguments{
@@ -22,6 +23,10 @@ pickands_cov_mle(
 \item{w}{Grid in (0, 1).}
 
 \item{link}{`"identity"` or `"logit"`.}
+
+\item{n_grid_starts}{Number of intercept starts for the identity link (in
+addition to the least-squares warm start and the solution at the
+previous `w`). The default reproduces the thesis; the bootstrap uses 1.}
 }
 \value{
 A list with `beta` (length(w) x p), `A` (length(w) x G fitted

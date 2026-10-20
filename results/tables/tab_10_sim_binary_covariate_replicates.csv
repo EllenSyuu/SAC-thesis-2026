@@ -1,401 +1,105 @@
-rep,group,method,ISE,IRAE
-1,0,Pickands,3.8125e-4,0.018927
-1,0,CFG,0.003695,0.070543
-1,1,Pickands,0.0024894,0.065354
-1,1,CFG,0.0025266,0.065073
-1,0,MLE,0.0010299,0.035752
-1,0,MLE (link),0.0010264,0.035695
-1,1,MLE,8.5869e-4,0.038036
-1,1,MLE (link),8.5851e-4,0.038031
-2,0,Pickands,0.064348,0.29059
-2,0,CFG,7.4995e-4,0.028987
-2,1,Pickands,0.0049618,0.090452
-2,1,CFG,6.9976e-5,0.010315
-2,0,MLE,0.0015546,0.043268
-2,0,MLE (link),0.0015522,0.043146
-2,1,MLE,2.0613e-6,0.0014237
-2,1,MLE (link),2.0228e-6,0.0013681
-3,0,Pickands,0.68429,0.9583
-3,0,CFG,0.015162,0.14245
-3,1,Pickands,0.06273,0.32707
-3,1,CFG,0.0016904,0.04842
-3,0,MLE,0.011129,0.11933
-3,0,MLE (link),0.011116,0.11925
-3,1,MLE,4.7936e-5,0.0070395
-3,1,MLE (link),4.739e-5,0.0070125
-4,0,Pickands,8.585e-4,0.030574
-4,0,CFG,1.7083e-4,0.013993
-4,1,Pickands,0.010802,0.13579
-4,1,CFG,1.6164e-4,0.014955
-4,0,MLE,1.5206e-4,0.012864
-4,0,MLE (link),1.5068e-4,0.012735
-4,1,MLE,3.3225e-5,0.0062369
-4,1,MLE (link),3.2347e-5,0.0061779
-5,0,Pickands,0.0023062,0.050441
-5,0,CFG,4.0144e-4,0.01897
-5,1,Pickands,9.1497e-4,0.033687
-5,1,CFG,5.5472e-4,0.029247
-5,0,MLE,8.3408e-5,0.0082427
-5,0,MLE (link),8.3409e-5,0.0082516
-5,1,MLE,2.0264e-4,0.01531
-5,1,MLE (link),2.0045e-4,0.015269
-6,0,Pickands,0.0018558,0.04456
-6,0,CFG,7.0557e-4,0.029922
-6,1,Pickands,0.015079,0.16086
-6,1,CFG,0.0011367,0.044247
-6,0,MLE,4.0408e-4,0.022594
-6,0,MLE (link),4.0181e-4,0.022538
-6,1,MLE,0.001223,0.044249
-6,1,MLE (link),0.0012218,0.044236
-7,0,Pickands,0.0012951,0.036013
-7,0,CFG,0.0010045,0.035071
-7,1,Pickands,9.0839e-4,0.034758
-7,1,CFG,9.8292e-4,0.03942
-7,0,MLE,9.5246e-5,0.008394
-7,0,MLE (link),9.4823e-5,0.0083513
-7,1,MLE,2.149e-4,0.016134
-7,1,MLE (link),2.1432e-4,0.016125
-8,0,Pickands,7.2054e-4,0.0281
-8,0,CFG,0.0028669,0.061355
-8,1,Pickands,0.002135,0.054727
-8,1,CFG,0.0020923,0.05852
-8,0,MLE,0.0016368,0.04415
-8,0,MLE (link),0.0016322,0.044071
-8,1,MLE,0.001998,0.057362
-8,1,MLE (link),0.0019963,0.057339
-9,0,Pickands,5.5509e-4,0.024156
-9,0,CFG,2.7652e-4,0.018145
-9,1,Pickands,6.5573e-4,0.033337
-9,1,CFG,3.0037e-4,0.021245
-9,0,MLE,3.569e-4,0.021275
-9,0,MLE (link),3.5645e-4,0.021265
-9,1,MLE,4.8935e-5,0.0071481
-9,1,MLE (link),4.8629e-5,0.0071257
-10,0,Pickands,6.4412e-4,0.025641
-10,0,CFG,1.2329e-4,0.011709
-10,1,Pickands,8.599e-5,0.011186
-10,1,CFG,8.0068e-5,0.0091109
-10,0,MLE,1.1253e-4,0.010998
-10,0,MLE (link),1.1099e-4,0.010897
-10,1,MLE,8.2453e-5,0.011435
-10,1,MLE (link),8.092e-5,0.011283
-11,0,Pickands,3.123e-4,0.01621
-11,0,CFG,8.6031e-4,0.029895
-11,1,Pickands,7.9526e-4,0.02619
-11,1,CFG,8.5989e-4,0.027347
-11,0,MLE,2.6354e-4,0.016558
-11,0,MLE (link),2.6171e-4,0.016523
-11,1,MLE,6.2314e-4,0.024398
-11,1,MLE (link),6.2157e-4,0.0244
-12,0,Pickands,9.4202e-4,0.03305
-12,0,CFG,0.003546,0.069118
-12,1,Pickands,0.0053408,0.094692
-12,1,CFG,0.0027328,0.066828
-12,0,MLE,0.0014844,0.042475
-12,0,MLE (link),0.001482,0.042425
-12,1,MLE,0.001318,0.046852
-12,1,MLE (link),0.0013169,0.046838
-13,0,Pickands,0.0029802,0.06158
-13,0,CFG,5.3305e-4,0.025679
-13,1,Pickands,0.0070264,0.10864
-13,1,CFG,5.2585e-4,0.02974
-13,0,MLE,5.6874e-4,0.02554
-13,0,MLE (link),5.6535e-4,0.025468
-13,1,MLE,9.9022e-4,0.041183
-13,1,MLE (link),9.8891e-4,0.041164
-14,0,Pickands,0.0036669,0.067989
-14,0,CFG,2.2371e-4,0.015328
-14,1,Pickands,0.0026085,0.06683
-14,1,CFG,2.1432e-4,0.017209
-14,0,MLE,2.5059e-4,0.016895
-14,0,MLE (link),2.4887e-4,0.01679
-14,1,MLE,1.8744e-4,0.014469
-14,1,MLE (link),1.8686e-4,0.014482
-15,0,Pickands,0.026087,0.18506
-15,0,CFG,0.0023149,0.053536
-15,1,Pickands,0.0036258,0.070213
-15,1,CFG,8.2006e-5,0.0094237
-15,0,MLE,0.0017948,0.046522
-15,0,MLE (link),0.0017943,0.046503
-15,1,MLE,2.1603e-5,0.0043709
-15,1,MLE (link),2.1644e-5,0.0044303
-16,0,Pickands,2.5237e-4,0.015944
-16,0,CFG,0.003582,0.069462
-16,1,Pickands,2.5631e-5,0.0059883
-16,1,CFG,0.0022953,0.061345
-16,0,MLE,9.6946e-4,0.034489
-16,0,MLE (link),9.6555e-4,0.034422
-16,1,MLE,7.3347e-4,0.03436
-16,1,MLE (link),7.3171e-4,0.034332
-17,0,Pickands,0.0012576,0.037108
-17,0,CFG,2.5318e-4,0.016339
-17,1,Pickands,0.0082815,0.11416
-17,1,CFG,1.8277e-5,0.0053902
-17,0,MLE,1.1247e-4,0.01133
-17,0,MLE (link),1.1177e-4,0.011246
-17,1,MLE,1.5225e-4,0.016711
-17,1,MLE (link),1.5122e-4,0.016666
-18,0,Pickands,0.0024016,0.054513
-18,0,CFG,0.0034993,0.068458
-18,1,Pickands,2.636e-5,0.0066899
-18,1,CFG,0.0019616,0.057306
-18,0,MLE,0.0026933,0.059744
-18,0,MLE (link),0.002694,0.059753
-18,1,MLE,1.7484e-4,0.012614
-18,1,MLE (link),1.7415e-4,0.012595
-19,0,Pickands,3.3031e-4,0.020399
-19,0,CFG,1.8452e-4,0.014736
-19,1,Pickands,6.2101e-4,0.030255
-19,1,CFG,5.2219e-5,0.0073258
-19,0,MLE,3.8686e-4,0.021938
-19,0,MLE (link),3.8551e-4,0.021895
-19,1,MLE,3.3795e-4,0.021721
-19,1,MLE (link),3.3626e-4,0.021687
-20,0,Pickands,3.1659e-4,0.014218
-20,0,CFG,4.9525e-4,0.024912
-20,1,Pickands,0.0051488,0.094102
-20,1,CFG,1.3111e-4,0.013018
-20,0,MLE,5.3216e-5,0.0078674
-20,0,MLE (link),5.1899e-5,0.0077566
-20,1,MLE,1.0332e-4,0.012656
-20,1,MLE (link),1.0308e-4,0.012643
-21,0,Pickands,0.014079,0.1332
-21,0,CFG,0.0024037,0.055776
-21,1,Pickands,0.0011999,0.030628
-21,1,CFG,0.0018436,0.0547
-21,0,MLE,0.0018895,0.049484
-21,0,MLE (link),0.001889,0.049479
-21,1,MLE,1.8124e-4,0.012805
-21,1,MLE (link),1.8111e-4,0.012802
-22,0,Pickands,3.8342e-4,0.020366
-22,0,CFG,2.8007e-4,0.018655
-22,1,Pickands,0.0020307,0.057401
-22,1,CFG,7.0068e-5,0.010783
-22,0,MLE,3.6155e-5,0.0061104
-22,0,MLE (link),3.6087e-5,0.0060977
-22,1,MLE,1.2225e-5,0.0039619
-22,1,MLE (link),1.2266e-5,0.0041074
-23,0,Pickands,0.0089711,0.10815
-23,0,CFG,0.0042052,0.075044
-23,1,Pickands,6.2742e-4,0.031186
-23,1,CFG,0.0027568,0.066944
-23,0,MLE,0.0035257,0.06815
-23,0,MLE (link),0.0035242,0.068135
-23,1,MLE,1.7109e-4,0.012465
-23,1,MLE (link),1.7377e-4,0.012523
-24,0,Pickands,0.092749,0.35056
-24,0,CFG,0.0050568,0.081164
-24,1,Pickands,4.1145e-4,0.024333
-24,1,CFG,6.5528e-4,0.030827
-24,0,MLE,0.0038774,0.070475
-24,0,MLE (link),0.0038776,0.070471
-24,1,MLE,2.4298e-5,0.0051522
-24,1,MLE (link),2.4155e-5,0.0051438
-25,0,Pickands,0.001326,0.040138
-25,0,CFG,3.5682e-4,0.019914
-25,1,Pickands,0.0016376,0.050972
-25,1,CFG,1.0807e-4,0.00974
-25,0,MLE,9.2265e-4,0.033026
-25,0,MLE (link),9.211e-4,0.032929
-25,1,MLE,4.2618e-5,0.0064718
-25,1,MLE (link),4.2178e-5,0.0064528
-26,0,Pickands,0.0021781,0.053533
-26,0,CFG,1.7037e-5,0.0034895
-26,1,Pickands,2.252e-4,0.019523
-26,1,CFG,3.8121e-5,0.0071137
-26,0,MLE,6.5158e-5,0.008719
-26,0,MLE (link),6.4639e-5,0.008692
-26,1,MLE,6.7314e-5,0.0081727
-26,1,MLE (link),6.6967e-5,0.008139
-27,0,Pickands,0.0023002,0.046725
-27,0,CFG,6.1806e-5,0.0081118
-27,1,Pickands,0.0011504,0.038056
-27,1,CFG,1.9951e-5,0.0057672
-27,0,MLE,2.101e-4,0.014433
-27,0,MLE (link),2.0809e-4,0.014295
-27,1,MLE,6.0563e-5,0.0076108
-27,1,MLE (link),5.9973e-5,0.0076069
-28,0,Pickands,0.0051002,0.082058
-28,0,CFG,9.6124e-4,0.03592
-28,1,Pickands,2.5267e-4,0.018945
-28,1,CFG,2.5991e-4,0.01863
-28,0,MLE,0.0010251,0.036803
-28,0,MLE (link),0.0010245,0.036792
-28,1,MLE,1.3317e-5,0.0036384
-28,1,MLE (link),1.3174e-5,0.003619
-29,0,Pickands,9.6299e-5,0.0090455
-29,0,CFG,5.0511e-4,0.023921
-29,1,Pickands,0.0017064,0.053186
-29,1,CFG,5.8478e-4,0.030989
-29,0,MLE,2.8687e-4,0.017113
-29,0,MLE (link),2.8452e-4,0.017052
-29,1,MLE,8.527e-4,0.036895
-29,1,MLE (link),8.4971e-4,0.036852
-30,0,Pickands,3.9784e-4,0.018498
-30,0,CFG,7.1018e-5,0.0085337
-30,1,Pickands,0.0019692999999999998,0.057784
-30,1,CFG,1.1614e-4,0.012797
-30,0,MLE,5.0492e-5,0.0064474
-30,0,MLE (link),4.9946e-5,0.006434
-30,1,MLE,6.6514e-6,0.0029065
-30,1,MLE (link),6.7422e-6,0.0029292
-31,0,Pickands,0.016668,0.14737
-31,0,CFG,1.2805e-4,0.010029
-31,1,Pickands,0.0030571,0.072824
-31,1,CFG,5.0714e-4,0.029717
-31,0,MLE,5.5077e-5,0.0066747
-31,0,MLE (link),5.348e-5,0.0066074
-31,1,MLE,6.7833e-4,0.034507
-31,1,MLE (link),6.7602e-4,0.034462
-32,0,Pickands,0.0093711,0.1127
-32,0,CFG,1.8058e-4,0.012691
-32,1,Pickands,6.8519e-5,0.0099707
-32,1,CFG,3.4777e-4,0.021405
-32,0,MLE,2.5671e-4,0.016972
-32,0,MLE (link),2.5461e-4,0.016876
-32,1,MLE,3.1294e-4,0.018713
-32,1,MLE (link),3.1185e-4,0.0187
-33,0,Pickands,0.0016497,0.03965
-33,0,CFG,0.0025374,0.058028
-33,1,Pickands,0.0061058,0.1016
-33,1,CFG,5.7665e-4,0.029382
-33,0,MLE,0.0026479,0.058668
-33,0,MLE (link),0.002646,0.058642
-33,1,MLE,4.2943e-5,0.0067262
-33,1,MLE (link),4.2614e-5,0.0067095
-34,0,Pickands,0.0030737,0.06421
-34,0,CFG,1.2661e-5,0.0031693
-34,1,Pickands,1.4635e-5,0.0046256
-34,1,CFG,1.5203e-5,0.0044091
-34,0,MLE,1.5047e-4,0.014165
-34,0,MLE (link),1.4857e-4,0.014039
-34,1,MLE,5.92e-6,0.0025947
-34,1,MLE (link),5.7276e-6,0.0025508
-35,0,Pickands,0.0025439,0.055875
-35,0,CFG,1.5713e-4,0.0115
-35,1,Pickands,6.4908e-4,0.026932
-35,1,CFG,4.5369e-4,0.026143
-35,0,MLE,1.5583e-4,0.013148
-35,0,MLE (link),1.5427e-4,0.013108
-35,1,MLE,8.0894e-5,0.0088537
-35,1,MLE (link),8.0331e-5,0.0087954
-36,0,Pickands,4.2359e-4,0.021964
-36,0,CFG,0.0013722,0.042883
-36,1,Pickands,4.9541e-4,0.028116
-36,1,CFG,5.5582e-4,0.029757
-36,0,MLE,5.6093e-4,0.026618
-36,0,MLE (link),5.595e-4,0.026574
-36,1,MLE,2.65e-4,0.020708
-36,1,MLE (link),2.6441e-4,0.020693
-37,0,Pickands,0.0011459,0.032101
-37,0,CFG,0.0022197,0.054743
-37,1,Pickands,0.0023504,0.06444
-37,1,CFG,0.0015631,0.050171
-37,0,MLE,0.0013438,0.04191
-37,0,MLE (link),0.0013453,0.041932
-37,1,MLE,5.1739e-5,0.0073881
-37,1,MLE (link),5.1409e-5,0.0073684
-38,0,Pickands,3.6931e-4,0.02067
-38,0,CFG,2.9114e-4,0.016727
-38,1,Pickands,5.1861e-4,0.029626
-38,1,CFG,4.1083e-4,0.025962
-38,0,MLE,1.2269e-4,0.0095488
-38,0,MLE (link),1.2157e-4,0.0094982
-38,1,MLE,3.9738e-4,0.026129
-38,1,MLE (link),3.9787e-4,0.02614
-39,0,Pickands,6.3096e-4,0.027741
-39,0,CFG,2.3527e-4,0.015849
-39,1,Pickands,0.0035496,0.073803
-39,1,CFG,3.5423e-5,0.0076469
-39,0,MLE,1.0095e-4,0.010902
-39,0,MLE (link),1.0068e-4,0.010839
-39,1,MLE,2.3858e-6,0.0016494
-39,1,MLE (link),2.2161e-6,0.0015907
-40,0,Pickands,0.01156,0.12462
-40,0,CFG,0.0022547,0.054865
-40,1,Pickands,2.508e-4,0.016982
-40,1,CFG,5.4254e-4,0.028972
-40,0,MLE,0.001326,0.040992
-40,0,MLE (link),0.0013259,0.040967
-40,1,MLE,8.4207e-6,0.0027904
-40,1,MLE (link),8.2272e-6,0.0027651
-41,0,Pickands,0.0024027,0.055627
-41,0,CFG,9.6342e-4,0.032158
-41,1,Pickands,2.6605e-5,0.0062038
-41,1,CFG,8.0798e-4,0.030266
-41,0,MLE,1.0376e-4,0.0089761
-41,0,MLE (link),1.0343e-4,0.008935
-41,1,MLE,1.2453e-4,0.011489
-41,1,MLE (link),1.2424e-4,0.011507999999999999
-42,0,Pickands,0.0032537,0.065411
-42,0,CFG,0.0018549,0.047798
-42,1,Pickands,0.011185,0.1376
-42,1,CFG,0.0024161,0.064375
-42,0,MLE,8.2303e-4,0.031066
-42,0,MLE (link),8.1827e-4,0.030991
-42,1,MLE,0.002317,0.063113
-42,1,MLE (link),0.0023158,0.063096
-43,0,Pickands,3.3864e-4,0.018785
-43,0,CFG,3.6945e-4,0.020705
-43,1,Pickands,0.0045878,0.086811
-43,1,CFG,3.4252e-4,0.021331
-43,0,MLE,5.7836e-5,0.0060814
-43,0,MLE (link),5.6867e-5,0.0060528
-43,1,MLE,1.2668e-4,0.011322
-43,1,MLE (link),1.2646e-4,0.011499
-44,0,Pickands,0.0076002,0.098875
-44,0,CFG,0.0010037,0.033658
-44,1,Pickands,0.0067028,0.10928
-44,1,CFG,2.8176e-4,0.01527
-44,0,MLE,4.0604e-4,0.021505
-44,0,MLE (link),4.0525e-4,0.021478
-44,1,MLE,3.5153e-5,0.0063787
-44,1,MLE (link),3.5075e-5,0.0063651
-45,0,Pickands,0.04142,0.235
-45,0,CFG,0.0061962,0.091245
-45,1,Pickands,9.538e-4,0.040857
-45,1,CFG,0.0017177,0.052451
-45,0,MLE,0.006253,0.089883
-45,0,MLE (link),0.0062546,0.089896
-45,1,MLE,1.3512e-4,0.011316
-45,1,MLE (link),1.3883e-4,0.01142
-46,0,Pickands,3.0314e-4,0.020039
-46,0,CFG,1.4681e-4,0.009543
-46,1,Pickands,2.7548e-4,0.02179
-46,1,CFG,3.5701e-4,0.020888
-46,0,MLE,1.027e-4,0.010202
-46,0,MLE (link),1.0221e-4,0.010179
-46,1,MLE,1.8796e-5,0.0046144
-46,1,MLE (link),1.8215e-5,0.0045346
-47,0,Pickands,5.8609e-4,0.025982
-47,0,CFG,3.4781e-4,0.019631
-47,1,Pickands,0.0028743,0.067403
-47,1,CFG,6.2046e-5,0.0091277
-47,0,MLE,6.2424e-4,0.025681
-47,0,MLE (link),6.2213e-4,0.025542
-47,1,MLE,5.9261e-5,0.007936
-47,1,MLE (link),5.856e-5,0.0079191
-48,0,Pickands,9.4024e-5,0.01029
-48,0,CFG,4.2809e-4,0.023953
-48,1,Pickands,0.001934,0.05779
-48,1,CFG,1.1009e-4,0.012777
-48,0,MLE,1.3912e-4,0.012893
-48,0,MLE (link),1.3884e-4,0.012864
-48,1,MLE,9.3295e-6,0.0035202
-48,1,MLE (link),9.1626e-6,0.0036385
-49,0,Pickands,9.3304e-4,0.035203
-49,0,CFG,0.001441,0.043963
-49,1,Pickands,0.0012708,0.044836
-49,1,CFG,4.1002e-4,0.024155
-49,0,MLE,9.6486e-4,0.034654
-49,0,MLE (link),9.6362e-4,0.034608
-49,1,MLE,3.5127e-4,0.022911
-49,1,MLE (link),3.5013e-4,0.022885
-50,0,Pickands,0.0014794,0.043359
-50,0,CFG,1.2165e-4,0.01135
-50,1,Pickands,2.6132e-4,0.021411
-50,1,CFG,1.6645e-5,0.0050959
-50,0,MLE,8.8043e-5,0.0076958
-50,0,MLE (link),8.7662e-5,0.0076674
-50,1,MLE,3.6657e-5,0.006236
-50,1,MLE (link),3.6143e-5,0.0062386
+rep,setting,group,method,ISE,IRAE
+1,identical margins / pooled ranks,0,Pickands,0.021716,0.16649
+1,identical margins / pooled ranks,0,CFG,2.0087e-4,0.013957
+1,identical margins / pooled ranks,1,Pickands,0.013123,0.14879
+1,identical margins / pooled ranks,1,CFG,2.0456e-4,0.015335
+1,identical margins / pooled ranks,0,MLE,1.2152e-4,0.010621
+1,identical margins / pooled ranks,1,MLE,5.4719e-5,0.0081409
+1,identical margins / pooled ranks,0,MLE (link),1.1922e-4,0.010507
+1,identical margins / pooled ranks,1,MLE (link),5.1227e-5,0.0079392
+1,identical margins / within-group ranks,0,Pickands,0.029304,0.19469
+1,identical margins / within-group ranks,0,CFG,2.6468e-4,0.018179
+1,identical margins / within-group ranks,1,Pickands,0.030141,0.22646
+1,identical margins / within-group ranks,1,CFG,5.7529e-6,0.0030394
+1,identical margins / within-group ranks,0,MLE,5.711e-5,0.0078724
+1,identical margins / within-group ranks,1,MLE,8.4051e-6,0.0033641
+1,shifted margins / pooled ranks,0,Pickands,0.095973,0.35954
+1,shifted margins / pooled ranks,0,CFG,0.13377,0.42343
+1,shifted margins / pooled ranks,1,Pickands,0.38014,0.78772
+1,shifted margins / pooled ranks,1,CFG,0.21264,0.59022
+1,shifted margins / pooled ranks,0,MLE,0.01992,0.13569
+1,shifted margins / pooled ranks,1,MLE,0.071905,0.34796
+1,shifted margins / within-group ranks,0,Pickands,0.0036459,0.059520000000000003
+1,shifted margins / within-group ranks,0,CFG,0.0028829,0.057929
+1,shifted margins / within-group ranks,1,Pickands,1.2228e-4,0.013049
+1,shifted margins / within-group ranks,1,CFG,8.7308e-5,0.012051
+1,shifted margins / within-group ranks,0,MLE,0.0032019,0.057059
+1,shifted margins / within-group ranks,1,MLE,4.9029e-5,0.0084931
+2,identical margins / pooled ranks,0,Pickands,0.0029751,0.060714
+2,identical margins / pooled ranks,0,CFG,1.9105e-4,0.01418
+2,identical margins / pooled ranks,1,Pickands,0.018196,0.16744
+2,identical margins / pooled ranks,1,CFG,3.532e-4,0.019157
+2,identical margins / pooled ranks,0,MLE,5.1981e-4,0.0233
+2,identical margins / pooled ranks,1,MLE,1.015e-4,0.0097803
+2,identical margins / pooled ranks,0,MLE (link),5.169e-4,0.023244
+2,identical margins / pooled ranks,1,MLE (link),9.9970000000000007e-05,0.0097221
+2,identical margins / within-group ranks,0,Pickands,0.012245,0.12457
+2,identical margins / within-group ranks,0,CFG,3.3469e-4,0.019243
+2,identical margins / within-group ranks,1,Pickands,0.0087872,0.11933
+2,identical margins / within-group ranks,1,CFG,8.5368e-6,0.0038372
+2,identical margins / within-group ranks,0,MLE,2.0776e-4,0.014054
+2,identical margins / within-group ranks,1,MLE,7.1434e-6,0.0033737
+2,shifted margins / pooled ranks,0,Pickands,0.096425,0.36041
+2,shifted margins / pooled ranks,0,CFG,0.14299,0.43794
+2,shifted margins / pooled ranks,1,Pickands,0.32918,0.73284
+2,shifted margins / pooled ranks,1,CFG,0.21327,0.59113
+2,shifted margins / pooled ranks,0,MLE,0.01992,0.13569
+2,shifted margins / pooled ranks,1,MLE,0.070411,0.34466
+2,shifted margins / within-group ranks,0,Pickands,0.0035286,0.058158
+2,shifted margins / within-group ranks,0,CFG,0.0025732,0.053954
+2,shifted margins / within-group ranks,1,Pickands,1.1677e-4,0.013145
+2,shifted margins / within-group ranks,1,CFG,9.5401e-5,0.01234
+2,shifted margins / within-group ranks,0,MLE,0.0033158,0.057099
+2,shifted margins / within-group ranks,1,MLE,6.1511e-5,0.009344
+3,identical margins / pooled ranks,0,Pickands,0.0048605,0.077794
+3,identical margins / pooled ranks,0,CFG,7.6761e-4,0.024241
+3,identical margins / pooled ranks,1,Pickands,0.02066,0.18837
+3,identical margins / pooled ranks,1,CFG,0.0014653,0.047949
+3,identical margins / pooled ranks,0,MLE,1.8429e-4,0.013777
+3,identical margins / pooled ranks,1,MLE,4.8953e-4,0.028952
+3,identical margins / pooled ranks,0,MLE (link),1.8235e-4,0.01369
+3,identical margins / pooled ranks,1,MLE (link),4.8676e-4,0.028898
+3,identical margins / within-group ranks,0,Pickands,0.025979,0.18638
+3,identical margins / within-group ranks,0,CFG,0.0012096,0.037288
+3,identical margins / within-group ranks,1,Pickands,0.011548,0.14096
+3,identical margins / within-group ranks,1,CFG,9.4434e-6,0.003806
+3,identical margins / within-group ranks,0,MLE,0.0013703,0.040301
+3,identical margins / within-group ranks,1,MLE,3.8815e-6,0.0022501
+3,shifted margins / pooled ranks,0,Pickands,0.10061,0.36798
+3,shifted margins / pooled ranks,0,CFG,0.1526,0.45154
+3,shifted margins / pooled ranks,1,Pickands,0.34432,0.74916
+3,shifted margins / pooled ranks,1,CFG,0.23712,0.62253
+3,shifted margins / pooled ranks,0,MLE,0.01992,0.13569
+3,shifted margins / pooled ranks,1,MLE,0.072821,0.34993
+3,shifted margins / within-group ranks,0,Pickands,0.0018952,0.04237
+3,shifted margins / within-group ranks,0,CFG,3.1588e-4,0.017929
+3,shifted margins / within-group ranks,1,Pickands,8.5394e-5,0.011222
+3,shifted margins / within-group ranks,1,CFG,1.2233e-4,0.014113
+3,shifted margins / within-group ranks,0,MLE,0.0017865,0.041177
+3,shifted margins / within-group ranks,1,MLE,8.0244e-5,0.01077
+4,identical margins / pooled ranks,0,Pickands,0.0014164,0.039485
+4,identical margins / pooled ranks,0,CFG,8.0477e-4,0.021158
+4,identical margins / pooled ranks,1,Pickands,0.024728,0.20647
+4,identical margins / pooled ranks,1,CFG,0.0023491,0.053598
+4,identical margins / pooled ranks,0,MLE,6.0241e-4,0.023734
+4,identical margins / pooled ranks,1,MLE,0.0015234,0.045872
+4,identical margins / pooled ranks,0,MLE (link),6.013e-4,0.023605
+4,identical margins / pooled ranks,1,MLE (link),0.0015209,0.04581
+4,identical margins / within-group ranks,0,Pickands,0.011733,0.12454
+4,identical margins / within-group ranks,0,CFG,0.0013307,0.03853
+4,identical margins / within-group ranks,1,Pickands,0.0049399,0.092732
+4,identical margins / within-group ranks,1,CFG,2.1925e-5,0.0050583
+4,identical margins / within-group ranks,0,MLE,0.0023057,0.051553
+4,identical margins / within-group ranks,1,MLE,7.1045e-5,0.0095322
+4,shifted margins / pooled ranks,0,Pickands,0.094371,0.35631
+4,shifted margins / pooled ranks,0,CFG,0.14258,0.43635
+4,shifted margins / pooled ranks,1,Pickands,0.32909,0.73329
+4,shifted margins / pooled ranks,1,CFG,0.22627,0.60975
+4,shifted margins / pooled ranks,0,MLE,0.01992,0.13569
+4,shifted margins / pooled ranks,1,MLE,0.072969,0.35024
+4,shifted margins / within-group ranks,0,Pickands,0.0012457,0.03511
+4,shifted margins / within-group ranks,0,CFG,1.9869e-4,0.013148
+4,shifted margins / within-group ranks,1,Pickands,5.6384e-5,0.0091748
+4,shifted margins / within-group ranks,1,CFG,4.6472e-5,0.0089647
+4,shifted margins / within-group ranks,0,MLE,0.0011855,0.034201
+4,shifted margins / within-group ranks,1,MLE,5.1292e-5,0.0087511

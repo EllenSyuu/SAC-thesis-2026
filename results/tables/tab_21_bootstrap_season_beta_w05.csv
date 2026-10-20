@@ -1,0 +1,76 @@
+pair,coefficient,estimate,ci_lower,ci_upper,boot_se,n_boot,excludes_zero
+Drum. & L'Ass.,beta0 (AM level),0.8155,0.7714,0.8717,0.03173,200,TRUE
+Drum. & L'Ass.,beta1 (JJ - AM),0.1125,0.02933,0.2067,0.05369,200,TRUE
+Drum. & L'Ass.,beta2 (AS - AM),0.02503,-0.0422,0.09281,0.04173,200,FALSE
+Drum. & L'Ass.,beta3 (ON - AM),0.03698,-0.04537,0.1103,0.04817,200,FALSE
+Drum. & L'Ass.,A_JJ - A_ON (= beta1 - beta3),0.07553,-0.004873,0.1629,0.05523,200,FALSE
+Drum. & Les Cèd.,beta0 (AM level),0.8825,0.8383,0.9506,0.03534,200,TRUE
+Drum. & Les Cèd.,beta1 (JJ - AM),0.1146,0.02457,0.1522,0.04199,200,TRUE
+Drum. & Les Cèd.,beta2 (AS - AM),0.02067,-0.07871,0.09788,0.05343,200,FALSE
+Drum. & Les Cèd.,beta3 (ON - AM),-0.04436,-0.1252,0.02076,0.04526,200,FALSE
+Drum. & Les Cèd.,A_JJ - A_ON (= beta1 - beta3),0.1589,0.08175,0.1996,0.03715,200,TRUE
+Drum. & St-Ch.,beta0 (AM level),0.8737,0.832,0.9362,0.03244,200,TRUE
+Drum. & St-Ch.,beta1 (JJ - AM),0.1175,0.03053,0.1557,0.03978,200,TRUE
+Drum. & St-Ch.,beta2 (AS - AM),0.03876,-0.04793,0.1231,0.05125,200,FALSE
+Drum. & St-Ch.,beta3 (ON - AM),0.03986,-0.05018,0.129,0.05431,200,FALSE
+Drum. & St-Ch.,A_JJ - A_ON (= beta1 - beta3),0.07763,-0.02039,0.1388,0.04907,200,FALSE
+Drum. & Lennox.,beta0 (AM level),0.9068,0.8577,0.982,0.03773,200,TRUE
+Drum. & Lennox.,beta1 (JJ - AM),0.0932,9.676e-10,0.1331,0.04149,200,TRUE
+Drum. & Lennox.,beta2 (AS - AM),0.02963,-0.06538,0.1028,0.05223,200,FALSE
+Drum. & Lennox.,beta3 (ON - AM),0.07687,-0.02694,0.1367,0.05132,200,FALSE
+Drum. & Lennox.,A_JJ - A_ON (= beta1 - beta3),0.01633,-0.04537,0.07333,0.03601,200,FALSE
+Drum. & Nicolet,beta0 (AM level),0.8066,0.7703,0.8704,0.0337,200,TRUE
+Drum. & Nicolet,beta1 (JJ - AM),0.1406,0.03696,0.2163,0.05243,200,TRUE
+Drum. & Nicolet,beta2 (AS - AM),0.05736,-0.02232,0.1199,0.04126,200,FALSE
+Drum. & Nicolet,beta3 (ON - AM),-0.03378,-0.1027,0.01652,0.04165,200,FALSE
+Drum. & Nicolet,A_JJ - A_ON (= beta1 - beta3),0.1744,0.09211,0.248,0.04632,200,TRUE
+L'Ass. & Les Cèd.,beta0 (AM level),0.8416,0.8,0.8993,0.02974,200,TRUE
+L'Ass. & Les Cèd.,beta1 (JJ - AM),0.1527,0.07394,0.193,0.03724,200,TRUE
+L'Ass. & Les Cèd.,beta2 (AS - AM),0.00393,-0.06846,0.08413,0.05153,200,FALSE
+L'Ass. & Les Cèd.,beta3 (ON - AM),-0.07454,-0.1361,-0.02424,0.03645,200,TRUE
+L'Ass. & Les Cèd.,A_JJ - A_ON (= beta1 - beta3),0.2272,0.1624,0.2645,0.03584,200,TRUE
+L'Ass. & St-Ch.,beta0 (AM level),0.8408,0.7963,0.9062,0.03322,200,TRUE
+L'Ass. & St-Ch.,beta1 (JJ - AM),0.1329,0.06499,0.1844,0.03801,200,TRUE
+L'Ass. & St-Ch.,beta2 (AS - AM),0.05418,-0.01117,0.1245,0.04221,200,FALSE
+L'Ass. & St-Ch.,beta3 (ON - AM),-0.02225,-0.1065,0.04946,0.04787,200,FALSE
+L'Ass. & St-Ch.,A_JJ - A_ON (= beta1 - beta3),0.1551,0.0664,0.2184,0.04456,200,TRUE
+L'Ass. & Lennox.,beta0 (AM level),0.9551,0.908,1,0.03276,200,TRUE
+L'Ass. & Lennox.,beta1 (JJ - AM),0.04487,-8.34e-9,0.08941,0.03369,200,FALSE
+L'Ass. & Lennox.,beta2 (AS - AM),-0.04931,-0.1195,0.03636,0.04631,200,FALSE
+L'Ass. & Lennox.,beta3 (ON - AM),0.03594,-0.05621,0.0879,0.04478,200,FALSE
+L'Ass. & Lennox.,A_JJ - A_ON (= beta1 - beta3),0.00893,-0.008376,0.0681,0.02763,200,FALSE
+L'Ass. & Nicolet,beta0 (AM level),0.8648,0.8193,0.9281,0.03334,200,TRUE
+L'Ass. & Nicolet,beta1 (JJ - AM),0.06772,-0.01473,0.1497,0.05118,200,FALSE
+L'Ass. & Nicolet,beta2 (AS - AM),-0.002572,-0.08785,0.0651,0.045469999999999997,200,FALSE
+L'Ass. & Nicolet,beta3 (ON - AM),-0.1013,-0.1803,-0.03506,0.04268,200,TRUE
+L'Ass. & Nicolet,A_JJ - A_ON (= beta1 - beta3),0.169,0.1032,0.2461,0.04613,200,TRUE
+Les Cèd. & St-Ch.,beta0 (AM level),0.8874,0.8417,0.9466,0.03455,200,TRUE
+Les Cèd. & St-Ch.,beta1 (JJ - AM),0.1126,0.03896,0.1509,0.03523,200,TRUE
+Les Cèd. & St-Ch.,beta2 (AS - AM),0.08518,0.004843,0.1427,0.04417,200,TRUE
+Les Cèd. & St-Ch.,beta3 (ON - AM),-0.01724,-0.1035,0.05162,0.04714,200,FALSE
+Les Cèd. & St-Ch.,A_JJ - A_ON (= beta1 - beta3),0.1298,0.04771,0.1738,0.03996,200,TRUE
+Les Cèd. & Lennox.,beta0 (AM level),0.9681,0.9181,1,0.02935,200,TRUE
+Les Cèd. & Lennox.,beta1 (JJ - AM),0.03194,-5.119e-9,0.08191,0.0293,200,FALSE
+Les Cèd. & Lennox.,beta2 (AS - AM),-0.04182,-0.1199,0.03279,0.04553,200,FALSE
+Les Cèd. & Lennox.,beta3 (ON - AM),0.03194,-0.04098,0.08123,0.03751,200,FALSE
+Les Cèd. & Lennox.,A_JJ - A_ON (= beta1 - beta3),3.142e-9,-2.05e-9,0.05474,0.02018,200,FALSE
+Les Cèd. & Nicolet,beta0 (AM level),0.9255,0.8803,0.9975,0.03335,200,TRUE
+Les Cèd. & Nicolet,beta1 (JJ - AM),0.07453,4.899e-9,0.1181,0.03358,200,TRUE
+Les Cèd. & Nicolet,beta2 (AS - AM),0.02694,-0.04522,0.1016,0.04363,200,FALSE
+Les Cèd. & Nicolet,beta3 (ON - AM),-0.0708,-0.1562,-0.003493,0.04563,200,TRUE
+Les Cèd. & Nicolet,A_JJ - A_ON (= beta1 - beta3),0.1453,0.07724,0.1944,0.03464,200,TRUE
+St-Ch. & Lennox.,beta0 (AM level),0.9929,0.9409,1,0.02117,200,TRUE
+St-Ch. & Lennox.,beta1 (JJ - AM),0.007127,-9.167e-9,0.05913,0.02117,200,FALSE
+St-Ch. & Lennox.,beta2 (AS - AM),0.007127,-6.845e-9,0.05864,0.02161,200,FALSE
+St-Ch. & Lennox.,beta3 (ON - AM),0.007127,2.762e-9,0.05913,0.02117,200,TRUE
+St-Ch. & Lennox.,A_JJ - A_ON (= beta1 - beta3),1.775e-8,-4.31e-8,1.743e-8,2.017e-8,200,FALSE
+St-Ch. & Nicolet,beta0 (AM level),0.8852,0.8319,0.9512,0.03522,200,TRUE
+St-Ch. & Nicolet,beta1 (JJ - AM),0.1148,0.0362,0.1604,0.0397,200,TRUE
+St-Ch. & Nicolet,beta2 (AS - AM),0.0108,-0.06015,0.1132,0.05214,200,FALSE
+St-Ch. & Nicolet,beta3 (ON - AM),-0.01942,-0.09862,0.06074,0.04969,200,FALSE
+St-Ch. & Nicolet,A_JJ - A_ON (= beta1 - beta3),0.1342,0.05783,0.1813,0.03924,200,TRUE
+Lennox. & Nicolet,beta0 (AM level),0.9125,0.8616,0.9853,0.03519,200,TRUE
+Lennox. & Nicolet,beta1 (JJ - AM),0.06974,-0.01639,0.1115,0.03802,200,FALSE
+Lennox. & Nicolet,beta2 (AS - AM),0.01866,-0.06449,0.08473,0.04747,200,FALSE
+Lennox. & Nicolet,beta3 (ON - AM),0.08423,-0.009463,0.1301,0.04402,200,FALSE
+Lennox. & Nicolet,A_JJ - A_ON (= beta1 - beta3),-0.01449,-0.0702,0.06237,0.0373,200,FALSE

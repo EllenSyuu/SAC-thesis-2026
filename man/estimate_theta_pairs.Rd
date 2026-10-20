@@ -4,12 +4,14 @@
 \alias{estimate_theta_pairs}
 \title{Pairwise and global theta estimates for a d-variate sample}
 \usage{
-estimate_theta_pairs(U, alpha = 0.1)
+estimate_theta_pairs(U, alpha = 0.1, se = TRUE)
 }
 \arguments{
 \item{U}{n x d matrix of pseudo-observations (may contain `NA`).}
 
 \item{alpha}{Significance level for the Wald interval.}
+
+\item{se}{Logical; compute a delete-one jackknife standard error?}
 }
 \value{
 A list: `pairs` (data frame) and `global` (numeric).

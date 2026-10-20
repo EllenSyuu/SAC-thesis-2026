@@ -97,6 +97,9 @@ pickands_curve <- function(U, theta, w = seq(0.01, 0.99, by = 0.01),
 #' @inheritParams clayton
 #' @param w Grid in (0, 1).
 #' @param link `"identity"` or `"logit"`.
+#' @param n_grid_starts Number of intercept starts for the identity link (in
+#'   addition to the least-squares warm start and the solution at the
+#'   previous `w`). The default reproduces the thesis; the bootstrap uses 1.
 #' @return A list with `beta` (length(w) x p), `A` (length(w) x G fitted
 #'   values for the G unique covariate profiles), `profiles`, `w`, `link`
 #'   and `diagnostics`: a data frame with one row per `w` giving `status`
@@ -106,7 +109,7 @@ pickands_curve <- function(U, theta, w = seq(0.01, 0.99, by = 0.01),
 #'   the boundary of `[max(w, 1-w), 1]`).
 #' @export
 pickands_cov_mle <- function(U, X, theta, w = seq(0.01, 0.99, by = 0.01),
-                             link = c("identity", "logit")) {
+                             link = c("identity", "logit"), n_grid_starts = 5) {
   link <- match.arg(link)
   check_theta(theta)
   U <- as.matrix(U)[, 1:2, drop = FALSE]
@@ -127,7 +130,7 @@ pickands_cov_mle <- function(U, X, theta, w = seq(0.01, 0.99, by = 0.01),
     xi <- xi_transform(U, c(w[k], 1 - w[k]), theta)
     lo <- max(w[k], 1 - w[k])
     fit <- if (link == "identity") {
-      fit_identity(xi, X, X_u, theta, lo, init = prev)
+      fit_identity(xi, X, X_u, theta, lo, init = prev, n_grid = n_grid_starts)
     } else {
       fit_logit(xi, X, theta, lo, init = prev)
     }
@@ -149,7 +152,8 @@ pickands_cov_mle <- function(U, X, theta, w = seq(0.01, 0.99, by = 0.01),
 
   failed <- diag$status == "failed"
   if (any(failed)) {
-    warning(sprintf("pickands_cov_mle: no feasible optimum at %d of %d grid points (w = %s); returned NA there.",
+    warning(sprintf(paste("pickands_cov_mle: no feasible optimum at %d of %d grid",
+                          "points (w = %s); returned NA there."),
                     sum(failed), length(w),
                     paste(utils::head(signif(w[failed], 3), 5), collapse = ", ")),
             call. = FALSE)
@@ -189,7 +193,7 @@ multistart <- function(starts, nll, method, maxit, bounds_1d) {
        nll = best$value, n_feasible = n_feasible)
 }
 
-fit_identity <- function(xi, X, X_u, theta, lo, init = NULL) {
+fit_identity <- function(xi, X, X_u, theta, lo, init = NULL, n_grid = 5) {
   p <- ncol(X)
   nll <- function(b) {
     a <- as.numeric(X %*% b)
@@ -199,7 +203,8 @@ fit_identity <- function(xi, X, X_u, theta, lo, init = NULL) {
     if (!all(is.finite(term)) || any(term <= 0)) return(PENALTY)
     -sum(log(a) - (1 / theta + 1) * log(term))
   }
-  starts <- lapply(seq(lo + 0.01, 0.99, length.out = 5),
+  starts <- lapply(if (n_grid > 1) seq(lo + 0.01, 0.99, length.out = n_grid) else
+                     (lo + 1) / 2,
                    function(b0) c(b0, rep(0, p - 1)))
   # warm start: group-wise MLE mapped back to beta by least squares
   key <- apply(X, 1, paste, collapse = "_")

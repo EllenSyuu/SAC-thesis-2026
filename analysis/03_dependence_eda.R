@@ -13,7 +13,8 @@ lab_pair <- function(i, j) paste(STATIONS$abbr[i], STATIONS$abbr[j], sep = "-")
 tau_long <- function(dat, group) {
   U <- as.matrix(dat[U_COLS])
   do.call(rbind, lapply(seq_len(nrow(pairs)), function(k) {
-    i <- pairs$i[k]; j <- pairs$j[k]
+    i <- pairs$i[k]
+    j <- pairs$j[k]
     data.frame(group = group, i = i, j = j,
                tau = cor(U[, i], U[, j], method = "kendall",
                          use = "pairwise.complete.obs"))
@@ -49,7 +50,8 @@ save_fig(p_tau, "fig_05_kendall_tau", 10, 5.6)
 # ---- empirical tail dependence across thresholds (Fig. 4.4) ----------------------
 q_grid <- seq(0.50, 0.95, by = 0.01)
 tdc <- do.call(rbind, lapply(seq_len(nrow(pairs)), function(k) {
-  i <- pairs$i[k]; j <- pairs$j[k]
+  i <- pairs$i[k]
+  j <- pairs$j[k]
   cbind(pair = pairs$pair[k],
         tail_dependence_empirical(r[[U_COLS[i]]], r[[U_COLS[j]]], q_grid))
 })) |>
@@ -70,7 +72,8 @@ save_fig(p_tdc, "fig_05_tail_dependence_curves", 10, 6.2)
 # ---- lambda by season (q = .80) and period (q = .85), Fig. 4.5 ------------------
 lam_group <- function(dat, group, q) {
   do.call(rbind, lapply(seq_len(nrow(pairs)), function(k) {
-    i <- pairs$i[k]; j <- pairs$j[k]
+    i <- pairs$i[k]
+    j <- pairs$j[k]
     cbind(group = group, pair = lab_pair(i, j), i = i, j = j,
           tail_dependence_empirical(dat[[U_COLS[i]]], dat[[U_COLS[j]]], q))
   }))
@@ -83,14 +86,18 @@ lam <- rbind(
 save_tab(lam, "tab_07_tail_dependence_empirical")
 
 # ---- extreme-value dependence test (Table 4.1) -----------------------------------
-set.seed(SEED)
-ev <- do.call(rbind, lapply(seq_len(nrow(pairs)), function(k) {
-  i <- pairs$i[k]; j <- pairs$j[k]
+ev_one <- function(k) {
+  i <- pairs$i[k]
+  j <- pairs$j[k]
   x <- na.omit(as.matrix(r[U_COLS[c(i, j)]]))
+  set.seed(SEED + k)
   t <- copula::evTestK(copula::pobs(x))
   data.frame(station_1 = STATIONS$label[i], station_2 = STATIONS$label[j],
              n = nrow(x), statistic = unname(t$statistic), p_value = t$p.value)
-}))
+}
+ev <- cached("ev_dependence_test", list(digest_key(r[U_COLS]), SEED),
+             do.call(rbind, parallel::mclapply(seq_len(nrow(pairs)), ev_one,
+                                               mc.cores = N_CORES)))
 save_tab(ev, "tab_08_ev_dependence_test")
 log_step("  evTestK: ", sum(ev$p_value < 0.05), "/15 pairs reject EV dependence at 5%")
 finish_step("03")
