@@ -98,7 +98,7 @@ p_lam <- lam_sp |>
   facet_wrap(~ coef) +
   scale_fill_gradient(low = "white", high = "#B2182B", name = expression(hat(lambda))) +
   labs(title = "Model-implied tail dependence by season and period",
-       subtitle = "Read across: JJ is near tail-independent and ON/AM strongest for most pairs; pre/post-1975 shifts are smaller and pair-specific",
+       subtitle = "Point estimates at omega = 0.5; uncertainty bands for these quantities are in step 09",
        x = NULL, y = NULL) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         panel.grid = element_blank())

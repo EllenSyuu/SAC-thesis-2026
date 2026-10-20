@@ -69,7 +69,7 @@ estimate_theta <- function(u, v, alpha = 0.10, se = TRUE) {
 #' @inheritParams estimate_theta
 #' @return A list: `pairs` (data frame) and `global` (numeric).
 #' @export
-estimate_theta_pairs <- function(U, alpha = 0.10) {
+estimate_theta_pairs <- function(U, alpha = 0.10, se = TRUE) {
   U <- as.matrix(U)
   nm <- colnames(U)
   if (is.null(nm)) nm <- paste0("X", seq_len(ncol(U)))
@@ -77,7 +77,7 @@ estimate_theta_pairs <- function(U, alpha = 0.10) {
   rows <- lapply(seq_len(ncol(idx)), function(k) {
     i <- idx[1, k]
     j <- idx[2, k]
-    e <- estimate_theta(U[, i], U[, j], alpha = alpha)
+    e <- estimate_theta(U[, i], U[, j], alpha = alpha, se = se)
     data.frame(station_1 = nm[i], station_2 = nm[j], n = e$n,
                theta = e$theta, se = e$se, ci_lower = e$ci[1],
                ci_upper = e$ci[2])
