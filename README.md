@@ -4,7 +4,7 @@
 
 ### Covariate-Dependent Archimax Copulas for Spatial Extremes
 
-*Applied to six decades of precipitation extremes in southern Québec (M.Sc. thesis, McGill 2026)*
+*Applied to 88 years (1930–2017) of precipitation extremes in southern Québec · M.Sc. thesis, McGill 2026*
 
 [![CI](https://github.com/EllenSyuu/SAC-thesis-2026/actions/workflows/ci.yaml/badge.svg)](https://github.com/EllenSyuu/SAC-thesis-2026/actions/workflows/ci.yaml)
 ![R ≥ 4.1](https://img.shields.io/badge/R-%E2%89%A5%204.1-276DC3?logo=r)
