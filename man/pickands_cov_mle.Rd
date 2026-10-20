@@ -25,7 +25,12 @@ pickands_cov_mle(
 }
 \value{
 A list with `beta` (length(w) x p), `A` (length(w) x G fitted
-  values for the G unique covariate profiles), `profiles`, `w`.
+  values for the G unique covariate profiles), `profiles`, `w`, `link`
+  and `diagnostics`: a data frame with one row per `w` giving `status`
+  (`"ok"`, `"maxit"` or `"failed"`), the minimised negative
+  log-likelihood `nll`, the number of starts that returned a feasible
+  value `n_feasible_starts`, and `at_bound` (some fitted profile lies on
+  the boundary of `[max(w, 1-w), 1]`).
 }
 \description{
 At each grid point `w`, fits `A(w | z_i) = g(z_i' beta(w))` by maximising
@@ -39,4 +44,8 @@ the Clayton-Archimax pseudo-likelihood
 * `link = "logit"`:
   `a_i = m + (1 - m) plogis(z_i' beta)`, `m = max(w, 1-w)`; the bounds
   hold automatically and the problem is unconstrained (BFGS).
+
+Failure is never silent: if no start reaches a feasible finite optimum at
+some `w`, that row of `beta` / `A` is `NA`, `diagnostics$status` is
+`"failed"` and a single warning summarises the affected grid points.
 }

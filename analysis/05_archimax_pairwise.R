@@ -113,6 +113,17 @@ fit_s <- lapply(seq_len(nrow(pairs)), function(k) {
 })
 log_step("  season-only model fitted")
 
+# Optimiser diagnostics for every pair x grid point (never silently dropped)
+diag_all <- rbind(
+  do.call(rbind, lapply(seq_len(nrow(pairs)), function(k)
+    cbind(model = "season x period", pair = pairs$pair[k], fit_sp[[k]]$diagnostics))),
+  do.call(rbind, lapply(seq_len(nrow(pairs)), function(k)
+    cbind(model = "season only", pair = pairs$pair[k], fit_s[[k]]$diagnostics))))
+save_tab(diag_all, paste0("tab_19_optimizer_diagnostics", sfx))
+log_step(sprintf("  optimiser: %d fits, %d failed, %d hit maxit, %d with a profile on the A-bound",
+                 nrow(diag_all), sum(diag_all$status == "failed"),
+                 sum(diag_all$status == "maxit"), sum(diag_all$at_bound)))
+
 beta05 <- do.call(rbind, lapply(seq_len(nrow(pairs)), function(k) {
   b <- fit_s[[k]]$beta[k05, ]
   data.frame(station_1 = STATIONS$short[pairs$i[k]],

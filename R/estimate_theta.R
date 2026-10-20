@@ -30,6 +30,10 @@ estimate_theta <- function(u, v, alpha = 0.10, se = TRUE) {
   v <- v[ok]
   n <- length(u)
   if (n < 4) stop("Need at least 4 complete pairs.", call. = FALSE)
+  if (any(u <= 0 | u >= 1) || any(v <= 0 | v >= 1)) {
+    stop("u and v must be pseudo-observations strictly inside (0, 1); ",
+         "use pseudo_obs() on raw data first.", call. = FALSE)
+  }
 
   M  <- concordance_matrix(u, v)
   A  <- rowSums(M)                    # #{j : X_i <= X_j}
