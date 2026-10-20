@@ -8,18 +8,21 @@ on:
 jobs:
   check:
     name: R CMD check, lint, pipeline smoke run
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04            # pinned: package binaries / sysreqs are image-specific
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
     steps:
       - uses: actions/checkout@v4
 
-      - name: System libraries (copula -> gsl, ragg -> freetype/harfbuzz)
+      - name: System libraries for packages built from source
+        # gsl: copula; freetype/harfbuzz/fribidi/fontconfig/png/tiff/jpeg: ragg,
+        # systemfonts, textshaping; curl/ssl/xml2/git2: covr, lintr, rcmdcheck
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq libgsl-dev libharfbuzz-dev libfribidi-dev \
-            libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+            libfreetype6-dev libfontconfig1-dev libpng-dev libtiff5-dev libjpeg-dev \
+            libwebp-dev libcurl4-openssl-dev libssl-dev libxml2-dev libgit2-dev
 
       - uses: r-lib/actions/setup-r@v2
         with:
