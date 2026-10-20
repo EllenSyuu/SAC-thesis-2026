@@ -1,6 +1,6 @@
 # Run metadata (written by analysis/99_run_metadata.R)
-timestamp:        2026-10-20T21:23:59+0000
-git_sha:          2c206823c032669a0e5478b4dffb8bb0642cd038  (uncommitted changes in R/, analysis/ or data/raw/)
+timestamp:        2026-10-20T21:36:28+0000
+git_sha:          f42d8e6c32d0728b574070a683a45424e312f089
 r_version:        R version 4.3.3 (2024-02-29)
 platform:         x86_64-pc-linux-gnu
 cores:            2
