@@ -1,5 +1,5 @@
 method,mean_ISE,mean_IRAE
-CFG,1.026e-5,0.003939
-MLE,1.454e-5,0.004413
-Pickands,0.002599,0.06031
-"theta_hat (mean, sd)",0.4232,0.1128
+CFG,9.106e-6,0.003164
+MLE,9.514e-6,0.003013
+Pickands,0.00259,0.04296
+"theta_hat (mean, sd)",0.4188,0.1289

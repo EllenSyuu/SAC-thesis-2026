@@ -8,3 +8,6 @@
 *.Rcheck/
 covarchimax_*.tar.gz
 /tmp/
+results/quick/
+data/processed/quick/
+results/run_steps.csv

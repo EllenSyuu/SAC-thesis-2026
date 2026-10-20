@@ -7,10 +7,9 @@
 *Applied to 88 years (1930–2017) of precipitation extremes in southern Québec · M.Sc. thesis, McGill 2026*
 
 [![CI](https://github.com/EllenSyuu/SAC-thesis-2026/actions/workflows/ci.yaml/badge.svg)](https://github.com/EllenSyuu/SAC-thesis-2026/actions/workflows/ci.yaml)
-![R ≥ 4.1](https://img.shields.io/badge/R-%E2%89%A5%204.1-276DC3?logo=r)
-![R CMD check](https://img.shields.io/badge/R%20CMD%20check-OK-brightgreen)
+![R 4.3](https://img.shields.io/badge/R-4.3-276DC3?logo=r)
+![renv](https://img.shields.io/badge/dependencies-renv%20locked-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
-![M.Sc. thesis](https://img.shields.io/badge/M.Sc.%20thesis-McGill%202026-ED1B2F)
 
 **Ziyi (Ellen) Zhou** · M.Sc. Mathematics & Statistics, McGill University · supervised by Prof. Johanna G. Nešlehová
 
@@ -18,172 +17,243 @@
 
 <p align="center"><img src="results/figures/fig_00_key_findings.png" width="92%" alt="Key findings"></p>
 
-> **TL;DR.** Using 88 years of daily rainfall from six ECCC stations, I separate *how large* extreme rainfall gets from *how often extremes hit several places at once*. Magnitudes are non-stationary: late-summer maxima rose by about 3 mm/day after 1975. The spatial co-occurrence of extremes is instead governed by **season**: June–July storms are almost independent across the network (η̂ = 5.7 out of 6), while autumn systems are the most coherent (η̂ = 3.9). To show this I developed a **maximum-likelihood estimator for a covariate-dependent Pickands dependence function** inside the Clayton–Archimax copula. It beats existing estimators in simulation and ships here as a tested R package.
+**In one paragraph.** Whether heavy rain hits several places *at the same time* is a different question from how heavy it gets at one place. Regional flood risk depends on both. This repository estimates both for six ECCC stations in southern Québec. Margins are modelled with non-stationary GEV regressions. The joint behaviour is modelled with a Clayton–Archimax copula whose Pickands dependence function depends on covariates, estimated by a new maximum-likelihood method developed in the thesis. The method ships as a tested R package. Every number below comes with an uncertainty statement and is regenerated from raw data by `make all`.
+
+**What the data say** (90 % year-block bootstrap intervals unless stated):
+
+- **Magnitude.** Mean monthly maxima rose after 1975 in August–September (+3.0 mm, Welch p = 0.005) and October–November (+3.2 mm, p < 0.001). In the pooled GEV the post-1975 shift differs by station, ranging from −1.2 mm (Lennoxville) to +3.6 mm (St-Charles).
+- **Co-occurrence by season.** Across the six-station network, June–July extremes are close to independent: η̂ = 5.73 (5.23, 6.00) on a scale where 6 means independence. October–November extremes are the most coherent: η̂ = 3.90 (3.60, 4.33). The difference is 1.83 (1.24, 2.28).
+- **Co-occurrence by period.** For 12 of 15 station pairs the post-1975 coefficient β̂₄(ω) has intervals covering 0 along most of ω. The exception is the three pairs involving St-Charles-de-Mandeville, whose dependence is *stronger* after 1975. The intervals there exclude 0 over most of ω.
 
 ---
 
-## Why this matters
+## Contents
 
-Regional flood and catastrophe risk depends on whether extremes **co-occur**, not just on how extreme each site gets. Two regions with identical marginal return levels can carry very different aggregate losses. Insurers, reinsurers and infrastructure planners therefore model the dependence structure explicitly. Classical extreme-value copulas, however:
+[Problem](#problem) · [Architecture](#architecture) · [Statistical methodology](#statistical-methodology) · [Uncertainty quantification](#uncertainty-quantification) · [Results](#results) · [Validation by simulation](#validation-by-simulation) · [Engineering](#engineering) · [Reproducibility](#reproducibility) · [Limitations](#limitations) · [Future work](#future-work)
 
-1. **assume max-stability**, which is rejected for every one of the 15 station pairs here (lower-tail dependence is present);
-2. **have no covariates**, so a seasonal change in storm type cannot be represented.
+## Problem
 
-This project addresses both, combining the semiparametric Archimax framework of [Chatelain et al. (2020, *Ann. Statist.*)](https://doi.org/10.1214/19-AOS1836) with the covariate-modelling idea of [Mhalla et al. (2017, *JMVA*)](https://doi.org/10.1016/j.jmva.2017.05.001).
+Classical models for multivariate extremes rely on *extreme-value copulas*. For these data that assumption is rejected for all 15 station pairs (Ben Ghorbal–Genest–Nešlehová test, [table](results/tables/tab_08_ev_dependence_test.csv)), because monthly maxima carry lower-tail dependence that an extreme-value copula cannot represent. Existing semiparametric Archimax inference (Chatelain, Fougères & Nešlehová, 2020) handles that, but has no covariates. Seasonal changes in storm type therefore cannot be represented. The thesis adds covariates to the Pickands dependence function, in the spirit of Mhalla, Chavez-Demoulin & Naveau (2017), and the analysis separates covariate effects on *magnitude* from effects on *co-occurrence*.
 
-## Pipeline
+## Architecture
+
+**Statistical workflow.** Solid arrows are the default, thesis-faithful path; dotted arrows are robustness and validation branches.
+
+```mermaid
+flowchart TD
+    R[ECCC daily records<br/>197,232 rows] --> V{validate_daily}
+    V -->|fail: actionable error| X[stop]
+    V --> C[documented corrections<br/>data/raw/corrections.csv]
+    C --> M[monthly block maxima<br/>Apr-Nov 1930-2017, 4,174 station-months]
+    N[NOAA anomaly] --> M
+    M --> G[non-stationary GEV<br/>LRT backward selection<br/>sandwich SEs for pooled fit]
+    M --> P[rank pseudo-observations<br/>re-ranked within covariate cells]
+    P --> T[theta: Kendall-moment estimator<br/>jackknife SE]
+    T --> A[covariate MLE of A of omega given z<br/>optimiser diagnostics per grid point]
+    A --> S[lambda_L, lambda_U, beta of omega,<br/>6-d extremal coefficient]
+    S --> B[year-block bootstrap B = 200<br/>re-estimates ranks, theta and fits]
+    B --> O[results/: tables, figures,<br/>run_metadata.txt]
+    M -.MIN_DAYS 0-25.-> SD[sensitivity: incomplete months]
+    G -.Gumbel residual ranks.-> SG[sensitivity: pseudo-obs construction]
+    SIM[Monte-Carlo: estimator accuracy<br/>and rank scheme] -.validates.-> A
+```
+
+**Code layout.** Estimators live in an installable package; numbered analysis scripts only orchestrate.
 
 ```mermaid
 flowchart LR
-    A[ECCC daily rainfall<br/>6 stations, 1930-2017<br/>197k records] --> B[Monthly block maxima<br/>Apr-Nov, 4,174 station-months]
-    N[NOAA temperature<br/>anomaly] --> B
-    B --> C[Non-stationary GEV<br/>backward LRT selection<br/>station + pooled]
-    B --> D[Rank pseudo-observations]
-    D --> E[EDA: Kendall tau,<br/>tail dependence,<br/>EV-dependence test]
-    D --> F[Clayton generator theta<br/>moment estimator + jackknife]
-    F --> G[Covariate MLE of<br/>A of omega given season, period]
-    G --> H[Pairwise: 15 station pairs<br/>lambda_L, lambda_U]
-    G --> I[6-d: extremal coefficient,<br/>simplex paths]
-    S[Monte-Carlo study<br/>B = 100 / 50] -.validates.-> G
+    subgraph pkg["covarchimax (R/)"]
+      core[archimax_core.R<br/>generator, xi, sampler]
+      th[estimate_theta.R]
+      pk[estimate_pickands.R<br/>Pickands, CFG, MLE, covariate MLE]
+      gev[gev_margins.R<br/>fit, selection, sandwich]
+      val[data_validation.R]
+      bs[bootstrap.R]
+    end
+    subgraph run["analysis/ 01-09, 99"]
+      s[_setup.R: config, cache, logging]
+    end
+    pkg --> run --> res[(results/<br/>tables, figures, cache)]
+    tests[tests/testthat<br/>30 cases, fixtures] --> pkg
+    ci[GitHub Actions<br/>rcmdcheck, lintr, smoke run] --> tests
 ```
+
+## Statistical methodology
+
+Full derivations are in [`docs/methodology.md`](docs/methodology.md).
+
+1. **Margins.** Each station's monthly maxima follow GEV(μ, σ, ξ) with μ ~ period + season and σ ~ season. The structure was chosen by marginality-respecting likelihood-ratio backward elimination, run in both orders as a robustness check ([table](results/tables/tab_04_backward_elimination.csv)). A pooled model with μ ~ period × station + season shares season and shape effects. Because the stations are dependent, its likelihood is a composite likelihood, so Godambe sandwich SEs (clustered by month and by year) are reported alongside the naive ones.
+2. **Dependence.** A Clayton–Archimax copula has a generator ψ_θ (lower tail) and a Pickands function A (upper tail). For any ω on the simplex, ξ(ω) = minⱼ φ_θ(Uⱼ)/ωⱼ has survival function ψ_θ(x·A(ω)), so **A(ω) is a scale parameter** with an explicit likelihood:
+
+$$\ell\{\beta(\omega)\} = \sum_i \log a_i - \Big(\tfrac1\theta+1\Big)\log\{1+\theta a_i\hat\xi_i(\omega)\},\qquad a_i = z_i^\top\beta(\omega)\in[\max\omega, 1].$$
+
+   It is maximised separately at each grid point, with an identity link (constrained) or a logit link (unconstrained, bounds automatic).
+3. **Generator.** θ is estimated by the Kendall-distribution moment estimator (Chatelain et al. 2020, Eq. 7.4), averaged over the 15 pairs. Pairwise standard errors come from a delete-one jackknife computed in O(n²).
+4. **Conditional ranks.** Pseudo-observations are re-ranked inside each covariate cell, so that seasonal shifts in the *margins* are not read as dependence. Study 2b below quantifies why this matters.
+
+## Uncertainty quantification
+
+| Quantity | Method | Where |
+|---|---|---|
+| GEV coefficients | Wald (inverse observed information); pooled model also Godambe sandwich, clustered by month / year | `tab_05`, `tab_06` |
+| Pairwise θ | delete-one jackknife, 90 % Wald | `tab_11` |
+| Global θ, η by season, β(0.5), A_JJ − A_ON, β₄(ω), A(ω) bands | **year-block bootstrap**, 90 % percentile | `tab_20`–`tab_24` |
+| Estimator accuracy | Monte-Carlo (ISE, IRAE) | `tab_09`, `tab_10*` |
+
+**Bootstrap design.** Resampling 88 calendar years with replacement keeps the six stations and the eight months of each year together, so both spatial and within-year dependence are preserved. Every replicate recomputes the pseudo-observations, θ, and all fits, so the intervals include the uncertainty of θ and of the ranks. Settings: B = 200, seed 20260408 with pre-drawn per-replicate seeds (results do not depend on the core count), ω-grid 0.1, …, 0.9. Runtime is about 10 minutes on 2 cores. Results are cached, keyed on data, parameters and package source. Inside replicates the optimiser uses one intercept start instead of five; on the original data both settings give identical estimates, a check reported in `tab_23`.
+
+**How to read it.** Percentile intervals are reported as estimated, without multiple-testing adjustment. Across 135 (pair, ω) cells, about 13 intervals at the 90 % level would exclude 0 by chance even with no period effect; 29 do, and they cluster in three pairs. Where the estimate sits on the boundary of the parameter space (A = 1, i.e. tail independence), percentile intervals are not reliable; see [Limitations](#limitations).
 
 ## Results
 
-### 1. Margins: extremes got bigger, but not everywhere and not in every season
+### Margins
 
-Non-stationary GEV with location ~ period + season, scale ~ season, constant shape. Selected by backward likelihood-ratio tests; the selection is identical under both elimination orders at 5 of 6 stations ([table](results/tables/tab_04_backward_elimination.csv)).
+| Pooled GEV (baseline: Drummondville, pre-1975, AM) | Estimate | 95 % CI (naive) | 95 % CI (sandwich, month clusters) |
+|---|---:|---|---|
+| Location: AS vs AM | 5.74 mm | (4.88, 6.61) | (4.23, 7.26) |
+| Location: JJ vs AM | 4.48 mm | (3.71, 5.25) | (3.25, 5.71) |
+| Location: post-1975, Drummondville | 1.35 mm | (0.08, 2.61) | (0.02, 2.67) |
+| Location: post-1975 × St-Charles | 2.22 mm | (0.42, 4.01) | (0.78, 3.65) |
+| Location: post-1975 × Lennoxville | −2.51 mm | (−4.30, −0.72) | (−3.99, −1.03) |
+| Shape ξ | 0.058 | (0.035, 0.080) | (0.029, 0.086) |
 
-| Pooled model (Drummondville baseline) | Estimate | 95% CI |
-|---|---:|---|
-| Location, AS vs AM | **+5.74 mm** | (4.88, 6.61) |
-| Location, JJ vs AM | +4.48 mm | (3.71, 5.25) |
-| Post-1975 shift, Drummondville | +1.35 mm | (0.08, 2.61) |
-| Post-1975 shift, St-Charles (net) | +3.56 mm | interaction +2.22 (0.42, 4.01) |
-| Post-1975 shift, Lennoxville (net) | −1.17 mm | interaction −2.51 (−4.30, −0.72) |
-| Shape ξ | 0.058 | (0.035, 0.080) |
-
-The tail is mildly heavy (Fréchet-type), and the period effect is **station-specific**: [full coefficients](results/tables/tab_06_gev_pooled_coefficients.csv) · [QQ plot](results/figures/fig_04_pooled_gev_qq.png).
+The sandwich correction widens the shared season, scale and shape effects by a factor of 1.3–1.8. It narrows station contrasts, because positively correlated stations partly cancel in differences ([full table](results/tables/tab_06_gev_pooled_coefficients.csv)).
 
 <p align="center"><img src="results/figures/fig_04_gev_mean_station_vs_pooled.png" width="85%"></p>
 
-### 2. Why a new copula model is needed
+### Dependence
 
-<table><tr>
-<td width="50%"><img src="results/figures/fig_05_kendall_tau.png"></td>
-<td width="50%"><img src="results/figures/fig_05_tail_dependence_curves.png"></td>
-</tr></table>
+| | Estimate | 90 % CI |
+|---|---:|---|
+| Clayton θ (global) | 0.348 | (0.292, 0.457) |
+| η, April–May | 4.03 | (3.71, 4.56) |
+| η, June–July | 5.73 | (5.23, 6.00) |
+| η, August–September | 4.12 | (3.72, 4.73) |
+| η, October–November | 3.90 | (3.60, 4.33) |
+| η_JJ − η_ON | 1.83 | (1.24, 2.28) |
+| η_JJ − η_AM | 1.70 | (0.97, 2.13) |
 
-- Kendall's τ ranges from 0.13 to 0.38 overall. It is highest in **autumn** (up to 0.48) and lowest in **June–July** (at most 0.24).
-- Empirical **lower**-tail dependence does not vanish. The extreme-value-dependence test of Ben Ghorbal, Genest & Nešlehová (2009) rejects **15 / 15** pairs ([table](results/tables/tab_08_ev_dependence_test.csv)), so a Clayton–Archimax copula, which allows dependence in both tails, is appropriate.
+- **Pairwise season contrast.** A_JJ(½) − A_ON(½) is positive (weaker dependence in early summer) with an interval excluding 0 for **8 of 15 pairs**. The seven exceptions are all five pairs with Lennoxville, where dependence is weak in every season, plus Drummondville with L'Assomption and with St-Charles ([table](results/tables/tab_21_bootstrap_season_beta_w05.csv)).
+- **Period effect.** β̂₄(ω) intervals exclude 0 in 29 of 135 cells. 21 of those come from L'Assomption–St-Charles (9/9), St-Charles–Nicolet (6/9) and Drummondville–St-Charles (6/9), all negative, i.e. stronger post-1975 dependence. St-Charles also has the largest post-1975 marginal shift and the most gaps in its record (1961–64, 1997–98). The data cannot separate a climatic cause from a station-history artefact.
 
-### 3. The estimator: MLE for a covariate-dependent Pickands function
+<p align="center"><img src="results/figures/fig_14_bootstrap_A_bands.png" width="95%"></p>
+<p align="center"><img src="results/figures/fig_15_bootstrap_beta4.png" width="95%"></p>
 
-At each point ω of the unit simplex, the transformed variable ξ(ω) = minⱼ φθ(Uⱼ)/ωⱼ has survival function ψθ(x·A(ω)). A(ω) is therefore a **scale parameter**, which gives the likelihood
+More figures: [θ by pair](results/figures/fig_07_theta_pairwise.png) · [Kendall's τ](results/figures/fig_05_kendall_tau.png) · [empirical tail dependence](results/figures/fig_05_tail_dependence_curves.png) · [model λ heatmap](results/figures/fig_09_lambda_season_period.png) · [6-d simplex paths](results/figures/fig_11_simplex_paths_6d.png).
 
-$$
-\ell\{\beta(\omega)\} = \sum_{i} \log a_i - \Big(\tfrac{1}{\theta}+1\Big)\log\{1+\theta\,a_i\,\hat\xi_i(\omega)\},
-\qquad a_i = A(\omega\mid z_i) = z_i^\top\beta(\omega)\in[\max\omega,\,1].
-$$
+### Sensitivity analyses
 
-The estimates stay within the Pickands bounds by construction, a logit-link variant removes the constraint, and the same code works in any dimension. Details are in [`docs/methodology.md`](docs/methodology.md).
+| Change | Effect on headline quantities | Source |
+|---|---|---|
+| Drop months with fewer than `MIN_DAYS` valid days (0 → 25; 0 to 95 station-months removed) | θ̂ 0.348 → 0.352; η̂ changes by at most 0.11; AS location 5.74 → 5.86; Drummondville post-1975 shift 1.35 → 1.06 mm | [`tab_18`](results/tables/tab_18_sensitivity_min_days.csv), [figure](results/figures/fig_13_sensitivity_min_days.png) |
+| Pseudo-observations from Gumbel residuals of the pooled GEV instead of raw ranks | θ̂ 0.348 → 0.324; η̂ AM/JJ/AS/ON 4.03/5.73/4.12/3.90 → 3.99/5.68/4.06/3.88 | `*_gumbel` tables |
+| Elimination order in GEV selection | same model at 5 of 6 stations | `tab_04` |
 
-**Simulation** (Clayton–Archimax, θ = 0.4, logistic A; [study 1](results/tables/tab_09_sim_homogeneous.csv) n = 1000 × B = 100, [study 2](results/tables/tab_10_sim_binary_covariate.csv) n = 2000 × B = 50):
+The defaults reproduce the thesis (`MIN_DAYS = 0`, raw ranks). The alternatives are reported, not substituted.
 
-| Mean IRAE | Homogeneous | Binary covariate, z = 0 | Binary covariate, z = 1 |
+## Validation by simulation
+
+Clayton–Archimax samples with θ = 0.4 and a logistic Pickands function. Study 1: homogeneous, n = 1000, B = 100. Study 2: binary covariate, ρ = 1.5 vs 4.5, n = 2000, B = 50.
+
+| Mean IRAE (ISE) | Study 1 | Study 2, z = 0 | Study 2, z = 1 |
 |---|---:|---:|---:|
-| Pickands-type | 0.0390 | 0.0826 | 0.0594 |
-| CFG-type | 0.0035 | 0.0353 | 0.0279 |
-| **MLE (this work)** | **0.0028** | 0.0282 | 0.0163 |
-| **MLE, logit link (this work)** | — | **0.0281** | **0.0162** |
+| Pickands-type | 0.0430 (2.6e-3) | 0.0661 (5.6e-3) | 0.0502 (2.3e-3) |
+| CFG-type | 0.0032 (9.1e-6) | 0.0341 (1.3e-3) | 0.0288 (7.6e-4) |
+| MLE | 0.0030 (9.5e-6) | 0.0318 (1.1e-3) | 0.0190 (4.4e-4) |
+| MLE, logit link | — | 0.0317 (1.1e-3) | 0.0190 (4.4e-4) |
 
-<p align="center"><img src="results/figures/fig_06_simulation_study.png" width="90%"></p>
+In the homogeneous case the MLE and CFG estimators are equally accurate: the MLE has the lower IRAE and the CFG estimator the lower ISE. In the thesis design of Study 2 (pseudo-observations ranked over the pooled sample), the covariate MLE has the lowest error in both groups. The logit link is indistinguishable from the constrained identity link. The θ moment estimator averages 0.419 (sd 0.129) against a true value of 0.4 ([`tab_09`](results/tables/tab_09_sim_homogeneous.csv), [`tab_10`](results/tables/tab_10_sim_binary_covariate.csv)).
 
-### 4. Application: season, not era, drives co-occurrence
+**Study 2b, rank scheme.** The empirical analysis re-ranks within covariate cells. Study 2b checks whether that matters by shifting the margins of group z = 1 with the monotone transform x ↦ x^{1/3}. The copula is unchanged, as happens when seasons shift the level of precipitation. θ is estimated once from the within-group ranks, so the schemes differ only in the ranks entering ξ(ω).
 
-- **Generator θ.** The pairwise moment estimates range from 0.21 to 0.54 and all 90 % jackknife intervals overlap, so a common θ̂ = 0.35 is used (s = 1/θ̂ = 2.87, τ(ψ) = 0.15) ([table](results/tables/tab_11_theta_pairwise.csv), [plot](results/figures/fig_07_theta_pairwise.png)).
-- **Season × period model.** The period coefficient β̂₄(ω) is centred at zero across the 15 pairs × 99 grid points ([histogram](results/figures/fig_08_beta4_histogram.png)), while season effects are systematic ([λ heatmap](results/figures/fig_09_lambda_season_period.png)).
-- **Season-only model** (below). JJ curves hug the independence line A = 1. ON (and often AM) are lowest, i.e. most dependent. Pairs involving Lennoxville, in the Appalachian foothills of the Eastern Townships, are the weakest.
+| Mean IRAE | CFG, z = 0 | CFG, z = 1 | MLE, z = 0 | MLE, z = 1 |
+|---|---:|---:|---:|---:|
+| identical margins, pooled ranks | 0.034 | 0.029 | 0.032 | 0.019 |
+| identical margins, within-group ranks | 0.011 | 0.003 | 0.013 | 0.003 |
+| shifted margins, pooled ranks | 0.449 | 0.808 | 0.136 | 0.352 |
+| shifted margins, within-group ranks | 0.010 | 0.003 | 0.013 | 0.003 |
 
-<p align="center"><img src="results/figures/fig_10_pickands_by_season.png" width="95%"></p>
+Pooled ranks break down as soon as the margins differ between groups: the error rises by one to two orders of magnitude. Even with identical margins they cost accuracy, because another group's observations perturb each group's empirical margins. With within-group ranks, the scheme used for the data, both estimators are accurate and CFG is slightly better than the MLE. The MLE's advantage in Study 2 is therefore mainly robustness to distorted ranks, not a uniform efficiency gain ([`tab_10b`](results/tables/tab_10b_sim_rank_scheme.csv)).
 
-**Six stations jointly.** The extremal coefficient η = 6·Â(ω₀) runs from 1 (all stations together) to 6 (independent):
+<p align="center"><img src="results/figures/fig_06b_sim_rank_scheme.png" width="80%"></p>
 
-| Season | AM | JJ | AS | ON | All months |
-|---|---:|---:|---:|---:|---:|
-| η̂ | 4.03 | **5.73** | 4.12 | **3.90** | 4.12 |
+## Engineering
 
-<p align="center"><img src="results/figures/fig_11_simplex_paths_6d.png" width="90%"></p>
+**Tech stack.** R 4.3 · `extRemes` (GEV) · `copula` · `ggplot2` / `patchwork` / `ragg` · `testthat` · `roxygen2` · `lintr` · `covr` · `renv` · GNU Make · GitHub Actions.
 
-**Interpretation.** Summer extremes come from localised convective thunderstorms, whereas spring and autumn extremes come from synoptic-scale systems that hit the whole St. Lawrence lowlands. The climate signal after 1975 shows up in *how much* it rains at a site, not in *how widely* extremes co-occur. Regional risk models should therefore let the margins and the dependence evolve separately.
+**Key engineering decisions**
 
-## The `covarchimax` R package
-
-```r
-# install.packages("remotes")
-remotes::install_github("EllenSyuu/SAC-thesis-2026")
-library(covarchimax)
-
-set.seed(1)
-U  <- pseudo_obs(rclayton_archimax(1000, theta = 0.4, rho = 3))  # simulate + rank
-th <- estimate_theta(U[, 1], U[, 2])                              # theta, jackknife SE, 90% CI
-A  <- pickands_curve(U, th$theta, method = "mle")                 # A(w), always admissible
-
-# covariate-dependent A(w | z): one fit per grid point, identity or logit link
-z   <- rbinom(1000, 1, 0.5)
-fit <- pickands_cov_mle(U, cbind(1, z), th$theta, link = "logit")
-```
-
-| Function | Purpose |
+| Decision | Reason |
 |---|---|
-| `estimate_theta()`, `estimate_theta_pairs()` | Moment estimator of the Clayton parameter with O(n²) jackknife SE |
-| `pickands_at()`, `pickands_curve()` | Pickands-type, CFG-type and MLE estimators of A(ω), any dimension |
-| `pickands_cov_mle()` | Covariate model for A(ω \| z), identity (constrained) or logit link |
-| `extremal_coefficient()`, `simplex_path()` | Summaries of d-dimensional dependence |
-| `tail_dependence_archimax()`, `tail_dependence_empirical()` | Model-implied and empirical λ_L, λ_U |
-| `fit_gev()`, `gev_backward()`, `gev_coef_table()`, `gev_to_gumbel()` | Non-stationary GEV margins and marginality-respecting LRT selection |
-| `rclayton_archimax()`, `ise()`, `irae()` | Exact sampler and error metrics for simulation |
+| Estimators in a package, scripts only orchestrate | testable units, one implementation shared by analysis, bootstrap and simulation |
+| Raw data versioned in the repo (2.3 MB) and validated on load | offline, deterministic runs; schema drift or a bad download fails loudly ([`validate_daily()`](R/data_validation.R)) |
+| Manual corrections declared in `data/raw/corrections.csv` and checked against the raw value before applying | auditable cleaning instead of a silent edit in code |
+| No silent failures | optimiser failures return `NA` plus per-grid diagnostics and a warning; failed GEV fits are logged in the selection path; failed bootstrap replicates are counted |
+| Thesis-faithful defaults, alternatives behind switches (`MIN_DAYS`, `POBS`) | improvements are visible as sensitivity analyses, not hidden changes to reported numbers |
+| Content-addressed cache for expensive steps | `make all` is cheap to rerun; any change to data, parameters or `R/` invalidates the cache; `make refresh` forces recomputation |
+| Per-replicate seeds | Monte-Carlo and bootstrap results are identical on 1 or 64 cores |
+| `results/run_metadata.txt` | git SHA, R and package versions, input md5s, parameters and step timings for every full run |
 
-The package passes `R CMD check` with status OK, has 19 unit tests (bounds, closed-form moments, recovery of θ and A from simulated data, covariate separation) and is lint-clean.
+**Quality gates (CI on every push).** `R CMD check` with no warnings allowed, 30 test cases covering estimator correctness, failure paths, data validation, block-bootstrap invariants and GEV selection, with small fixtures rather than the full data. Also a `lintr` gate on `R/`, `tests/` and `analysis/`, a pipeline smoke run (`QUICK=1`, small bootstrap), and an informational coverage report.
 
-## Reproduce everything
+## Reproducibility
 
 ```bash
 git clone https://github.com/EllenSyuu/SAC-thesis-2026 && cd SAC-thesis-2026
-Rscript -e 'install.packages(c("devtools","rprojroot","extRemes","copula","dplyr","tidyr","readr","ggplot2","patchwork","ragg","sf","rnaturalearth","rnaturalearthdata"))'
+Rscript -e 'install.packages("renv"); renv::restore()'   # exact versions from renv.lock
 
-make test      # unit tests
-make quick     # smoke run of the whole pipeline (~2 min)
-make all       # every table and figure (~25 min on 2 cores)
+make test        # unit tests
+make check       # R CMD check
+make quick       # smoke run with small Monte-Carlo / bootstrap; writes to results/quick/
+make all         # every table and figure (~25 min cold on 2 cores, ~6 min with cache)
+make refresh     # ignore the cache and recompute everything
 ```
 
-Raw data are versioned in [`data/raw`](data/README.md) (ECCC under the Open Government Licence – Canada, NOAA public domain), so the pipeline runs offline. All randomness is seeded.
+- Optional: the station map needs `sf`, `rnaturalearth`, `rnaturalearthdata` and `rnaturalearthhires` (not in the lockfile; the step skips the map if they are missing).
+- Switches: `MIN_DAYS=20 make all` applies an incomplete-month filter to the main pipeline. `POBS=gumbel` switches the pseudo-observation construction. `BOOT_B` sets the number of bootstrap replicates.
+- Provenance of every input is in [`data/README.md`](data/README.md). Where the code and the thesis text differ, this is recorded in [`docs/reproducibility.md`](docs/reproducibility.md). Every headline thesis table is reproduced, and the deviations found by the rebuild are listed there.
 
-Rebuilding the thesis from raw data reproduced every headline table. It also surfaced a few places where the code and the thesis text disagree (how the pseudo-observations were built, which standard-error formula was used, one interval that just misses θ̂). These are documented in [`docs/reproducibility.md`](docs/reproducibility.md). `make sensitivity` reruns the copula analysis on GEV-standardised pseudo-observations as a robustness check. The conclusions do not change: θ̂ = 0.32 and η̂ = 3.99 / 5.68 / 4.06 / 3.88 for AM / JJ / AS / ON, giving the same seasonal ordering.
-
-## Repository layout
+<details>
+<summary>Repository layout</summary>
 
 ```
-├── R/                        # covarchimax package: estimators, GEV margins, utilities
-├── tests/testthat/           # unit tests
-├── analysis/                 # numbered, re-runnable pipeline
-│   ├── 01_prepare_data.R         daily -> monthly maxima, cleaning, EDA
-│   ├── 02_marginal_gev.R         GEV selection, station + pooled fits, pseudo-obs
-│   ├── 03_dependence_eda.R       Kendall tau, tail dependence, EV test
-│   ├── 04_simulation_study.R     Monte-Carlo comparison of estimators
-│   ├── 05_archimax_pairwise.R    theta, season x period and season-only models
+├── R/                        covarchimax package
+├── tests/testthat/           unit tests + fixtures/
+├── analysis/
+│   ├── _setup.R                  config, cache, logging, run bookkeeping
+│   ├── 01_prepare_data.R         validation, corrections, monthly maxima, EDA
+│   ├── 02_marginal_gev.R         GEV selection, station + pooled fits, sandwich SEs, pseudo-obs
+│   ├── 03_dependence_eda.R       Kendall tau, tail dependence, EV-dependence test
+│   ├── 04_simulation_study.R     estimator accuracy; rank-scheme study 2b
+│   ├── 05_archimax_pairwise.R    theta, season x period and season-only models, diagnostics
 │   ├── 06_archimax_6d.R          six-station extremal coefficient, simplex paths
-│   └── 07_key_findings.R         summary figure
-├── data/                     # raw inputs (versioned) + processed (regenerated)
-├── results/{figures,tables}/ # every figure / table in this README
-├── docs/                     # methodology and reproducibility notes
-├── Makefile                  # make all | quick | test | lint | sensitivity
-└── .github/workflows/ci.yaml # R CMD check + pipeline smoke run on every push
+│   ├── 08_sensitivity_min_days.R incomplete-month sensitivity
+│   ├── 09_bootstrap_ci.R         year-block bootstrap intervals
+│   ├── 07_key_findings.R         summary figure
+│   └── 99_run_metadata.R         provenance record
+├── data/{raw,processed}/     versioned inputs; regenerated intermediates
+├── results/{tables,figures,cache}/
+├── docs/                     methodology, reproducibility notes
+├── renv.lock, Makefile, .github/workflows/ci.yaml
 ```
+</details>
 
-## Skills demonstrated
+## Limitations
 
-**Statistics.** Extreme-value theory (GEV, block maxima, max-stability), copulas (Archimax, Pickands dependence functions, tail dependence), semiparametric and likelihood inference, U-statistics, jackknife, model selection with likelihood-ratio tests, simulation design.
-**Engineering.** R package development (roxygen2, testthat, `R CMD check`), reproducible pipelines (Make, seeded parallel Monte-Carlo), CI with GitHub Actions, data provenance and cleaning, publication-quality visualisation with ggplot2.
+- **Inference for A(ω) is pointwise.** The bootstrap bands are pointwise, not simultaneous; the covariate model is fitted separately at each ω, so the estimate need not be convex in ω and is not guaranteed to be a valid Pickands function between grid points.
+- **Boundary estimates.** Many June–July and Lennoxville estimates lie on A = 1 (across both covariate models, 1,488 of 2,970 pair × ω fits have at least one season or period profile on a bound, partly trivially near ω = 0 or 1; [`tab_19`](results/tables/tab_19_optimizer_diagnostics.csv)). The bootstrap is not consistent at a boundary, so intervals touching 1 (e.g. η_JJ up to 6.00) should be read as "compatible with independence", not as calibrated 90 % intervals.
+- **Composite likelihood.** The pooled GEV treats stations as independent. Sandwich SEs correct the variance, but the likelihood-ratio tests used for selection are not adjusted (no Satterthwaite or Chandler–Bate correction).
+- **Common θ.** A single θ is assumed across pairs and covariates; 14 of 15 pairwise jackknife intervals contain the global θ̂.
+- **Fixed design choices.** The 1975 split is chosen from the temperature record, not estimated, and seasons are fixed two-month blocks. Only six stations are used, and pairs that share St-Charles are not independent pieces of evidence.
+- **Simulation scope.** Logistic Pickands functions only, one sample size per study, B ≤ 100. With correctly formed (within-group) pseudo-observations, the simulation does not show the covariate MLE to be more accurate than the CFG-type estimator.
+
+## Future work
+
+1. Smooth covariates (temperature anomaly, day of year) through spline or GAM-type models for β(ω), as in Mhalla et al. (2017).
+2. Covariate-dependent θ, and a likelihood-based test of a common θ.
+3. Shape-constrained (convex, bounded) estimators of A, and simultaneous confidence bands.
+4. A larger station network with a spatial model for pair-specific effects; investigate the St-Charles period signal against station metadata.
+5. A wider simulation design: non-logistic A, several n, and boundary cases.
 
 ## Citation
 
@@ -197,8 +267,4 @@ Rebuilding the thesis from raw data reproduced every headline table. It also sur
 }
 ```
 
-## Acknowledgements
-
-I am grateful to Prof. Johanna G. Nešlehová for her supervision. Data: Environment and Climate Change Canada (via [`weathercan`](https://docs.ropensci.org/weathercan/)) and NOAA NCEI *Climate at a Glance*. Copula machinery builds on [`copula`](https://cran.r-project.org/package=copula) and GEV fitting on [`extRemes`](https://cran.r-project.org/package=extRemes).
-
-<sub>MIT licensed.</sub>
+I am grateful to Prof. Johanna G. Nešlehová for her supervision. Data: Environment and Climate Change Canada (Open Government Licence – Canada) via [`weathercan`](https://docs.ropensci.org/weathercan/); NOAA NCEI *Climate at a Glance*. MIT licensed.

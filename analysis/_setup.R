@@ -14,15 +14,17 @@ suppressPackageStartupMessages({
   library(patchwork)
 })
 
+# QUICK=1 shrinks the Monte-Carlo study, bootstrap and omega-grid for a fast
+# smoke run and writes to results/quick/ so the real results are untouched.
+QUICK   <- identical(Sys.getenv("QUICK"), "1")
+
 ROOT    <- rprojroot::find_root("DESCRIPTION")
 RAW     <- file.path(ROOT, "data", "raw")
-PROC    <- file.path(ROOT, "data", "processed")
-FIG     <- file.path(ROOT, "results", "figures")
-TAB     <- file.path(ROOT, "results", "tables")
+PROC    <- file.path(ROOT, "data", "processed", if (QUICK) "quick" else "")
+RES     <- file.path(ROOT, "results", if (QUICK) "quick" else "")
+FIG     <- file.path(RES, "figures")
+TAB     <- file.path(RES, "tables")
 for (d in c(PROC, FIG, TAB)) dir.create(d, recursive = TRUE, showWarnings = FALSE)
-
-# QUICK=1 shrinks the Monte-Carlo study and the omega-grid for a fast smoke run
-QUICK   <- identical(Sys.getenv("QUICK"), "1")
 SEED    <- 20260408
 N_CORES <- max(1L, parallel::detectCores() - 0L)
 
@@ -98,7 +100,7 @@ log_step <- function(...) message(format(Sys.time(), "[%H:%M:%S] "), ...)
 
 # ---- run bookkeeping ---------------------------------------------------------
 STEP_T0 <- Sys.time()
-RUN_LOG <- file.path(ROOT, "results", "run_steps.csv")
+RUN_LOG <- file.path(RES, "run_steps.csv")
 finish_step <- function(id) {
   secs <- as.numeric(difftime(Sys.time(), STEP_T0, units = "secs"))
   row <- data.frame(step = id, finished = format(Sys.time(), "%Y-%m-%dT%H:%M:%S"),
@@ -113,7 +115,7 @@ finish_step <- function(id) {
 # Expensive results (bootstrap, Monte-Carlo, EV test) are cached under
 # results/cache/. The key hashes the inputs, the parameters and the package
 # source, so any change invalidates the cache; FORCE=1 recomputes regardless.
-CACHE <- file.path(ROOT, "results", "cache")
+CACHE <- file.path(RES, "cache")          # QUICK runs keep a separate cache
 dir.create(CACHE, showWarnings = FALSE)
 code_hash <- function() {
   f <- sort(list.files(file.path(ROOT, "R"), full.names = TRUE))

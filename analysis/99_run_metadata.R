@@ -51,5 +51,5 @@ lines <- c(
                            steps$quick, steps$pobs, steps$min_days) else "(no step log)",
   if (nrow(steps)) sprintf("total  %17.1f", sum(steps$seconds)) else NULL
 )
-writeLines(lines, file.path(ROOT, "results", "run_metadata.txt"))
+writeLines(lines, file.path(RES, "run_metadata.txt"))
 log_step("99 run metadata written")

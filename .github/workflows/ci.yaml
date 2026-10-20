@@ -50,7 +50,7 @@ jobs:
                    06_archimax_6d 08_sensitivity_min_days 09_bootstrap_ci 99_run_metadata; do
             Rscript analysis/$s.R
           done
-          cat results/run_metadata.txt
+          cat results/quick/run_metadata.txt
 
       - name: Test coverage (informational)
         continue-on-error: true
