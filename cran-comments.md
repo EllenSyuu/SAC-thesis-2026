@@ -9,9 +9,13 @@ First submission of covarchimax (1.0.0).
 
 ## R CMD check results
 
-`R CMD check --as-cran`: 0 errors | 0 warnings | 1 note
+`R CMD check --as-cran` (local, with the PDF manual): 0 errors | 0 warnings | 1 note
 
-* "New submission". This is the package's first submission.
+* "checking for future file timestamps ... unable to verify current time".
+  This comes from the build machine having no access to the time server and
+  does not concern the package.
+
+On CRAN, the "New submission" note is expected as well.
 
 ## Notes for reviewers
 
