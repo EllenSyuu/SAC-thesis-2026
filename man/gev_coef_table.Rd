@@ -14,6 +14,12 @@ gev_coef_table(fit, level = 0.95, cluster = NULL)
 \item{cluster}{Optional vector (one entry per observation) defining
 independent clusters.}
 }
+\value{
+Data frame with one row per parameter: `term`, `covariate`,
+  `estimate`, `se`, `z`, `p_value`, `ci_lower`, `ci_upper` and, when
+  `cluster` is supplied, `se_sandwich`, `p_sandwich`,
+  `ci_lower_sandwich`, `ci_upper_sandwich`.
+}
 \description{
 Wald table based on the inverse observed information. When `cluster` is
 given, a Godambe (sandwich) standard error is added:
@@ -21,4 +27,20 @@ given, a Godambe (sandwich) standard error is added:
 summed over the observations of cluster `c` (e.g. all stations in one
 month). This corrects the composite-likelihood SEs of a pooled model for
 within-cluster dependence.
+}
+\examples{
+# Simulated monthly maxima with a seasonal location shift (240 months)
+set.seed(11)
+season <- factor(rep(c("AM", "JJ", "AS", "ON"), 60), levels = c("AM", "JJ", "AS", "ON"))
+period <- factor(rep(c("pre", "post"), each = 120), levels = c("pre", "post"))
+toy <- data.frame(season = season, period = period,
+                  max_precip = extRemes::revd(240, loc = 17 + c(0, 4, 6, 2)[season],
+                                              scale = 7, shape = 0.05))
+fit <- fit_gev(toy, location = ~ season, scale = ~ 1)
+# clusters of 12 consecutive observations (e.g. the months of one year)
+gev_coef_table(fit, cluster = rep(1:20, each = 12))
+}
+\references{
+Varin, C., Reid, N. and Firth, D. (2011). An overview of composite
+likelihood methods. \emph{Statistica Sinica}, 21(1), 5--42.
 }

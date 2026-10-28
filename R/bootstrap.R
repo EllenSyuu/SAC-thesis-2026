@@ -23,6 +23,12 @@
 #' @param cores Number of forked workers (`parallel::mclapply`; 1 on Windows).
 #' @return A list with `replicates` (length-B list), `n_failed`, `errors`,
 #'   `seeds`, `B`.
+#' @examples
+#' set.seed(1)
+#' d <- data.frame(year = rep(1:30, each = 4), x = stats::rnorm(120))
+#' b <- boot_years(d, function(dat) mean(dat$x), B = 50, seed = 1)
+#' b$n_failed
+#' boot_ci(unlist(b$replicates))
 #' @export
 boot_years <- function(data, statistic, B = 200, seed = 1, year_col = "year",
                        cores = 1) {
@@ -61,6 +67,8 @@ boot_years <- function(data, statistic, B = 200, seed = 1, year_col = "year",
 #' @param x Numeric vector of bootstrap replicates (`NA` allowed).
 #' @param level Confidence level.
 #' @return Named vector `lower`, `upper`, `n_ok`.
+#' @examples
+#' boot_ci(stats::rnorm(1000))
 #' @export
 boot_ci <- function(x, level = 0.90) {
   a <- (1 - level) / 2
@@ -76,6 +84,9 @@ boot_ci <- function(x, level = 0.90) {
 #' of column j. Unlike [pseudo_obs()] this accepts `NA`.
 #'
 #' @param X Numeric matrix or data frame.
+#' @return Numeric matrix with the dimensions of `X`; `NA` stays `NA`.
+#' @examples
+#' rank_columns(cbind(c(1, NA, 3), c(2, 1, 3)))
 #' @export
 rank_columns <- function(X) {
   X <- as.matrix(X)

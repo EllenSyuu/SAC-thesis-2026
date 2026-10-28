@@ -1,23 +1,57 @@
 cff-version: 1.2.0
-message: "If you use this code or analysis, please cite the thesis."
-title: "Semiparametric Analysis of Precipitation Extremes in Southern Québec using Archimax Copulas"
+message: "If you use the method or the analysis, please cite the thesis (preferred citation). To cite the software itself, use the metadata below."
+title: "covarchimax: Covariate-Dependent Clayton-Archimax Copulas for Spatial Extremes"
 type: software
 authors:
   - family-names: Zhou
     given-names: Ziyi
-    alias: Ellen Zhou
     affiliation: "Department of Mathematics and Statistics, McGill University"
 repository-code: "https://github.com/EllenSyuu/SAC-thesis-2026"
 license: MIT
 version: 1.0.0
-date-released: 2026-06-24
+date-released: 2026-10-28
 keywords:
   - extreme value theory
   - Archimax copula
   - Pickands dependence function
+  - covariate-dependent dependence
   - non-stationary GEV
   - precipitation extremes
   - R
+references:
+  - type: article
+    authors:
+      - family-names: Chatelain
+        given-names: Simon
+      - family-names: Fougères
+        given-names: Anne-Laure
+      - family-names: Nešlehová
+        given-names: Johanna G.
+    title: "Inference for Archimax copulas"
+    journal: "The Annals of Statistics"
+    volume: 48
+    issue: 2
+    start: 1025
+    end: 1051
+    year: 2020
+    doi: 10.1214/19-AOS1836
+  - type: article
+    authors:
+      - family-names: Charpentier
+        given-names: Arthur
+      - family-names: Fougères
+        given-names: Anne-Laure
+      - family-names: Genest
+        given-names: Christian
+      - family-names: Nešlehová
+        given-names: Johanna G.
+    title: "Multivariate Archimax copulas"
+    journal: "Journal of Multivariate Analysis"
+    volume: 126
+    start: 118
+    end: 136
+    year: 2014
+    doi: 10.1016/j.jmva.2013.12.013
 preferred-citation:
   type: thesis
   thesis-type: "M.Sc. thesis"

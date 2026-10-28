@@ -114,12 +114,15 @@ finish_step <- function(id) {
 # ---- result cache ------------------------------------------------------------
 # Expensive results (bootstrap, Monte-Carlo, EV test) are cached under
 # results/cache/. The key hashes the inputs, the parameters and the package
-# source, so any change invalidates the cache; FORCE=1 recomputes regardless.
+# code (comments excluded), so any substantive change invalidates the cache;
+# FORCE=1 recomputes regardless.
 CACHE <- file.path(RES, "cache")          # QUICK runs keep a separate cache
 dir.create(CACHE, showWarnings = FALSE)
 code_hash <- function() {
-  f <- sort(list.files(file.path(ROOT, "R"), full.names = TRUE))
-  unname(tools::md5sum(f))
+  # hash the parsed code without comments, so documentation-only edits
+  # (roxygen blocks) do not invalidate cached results
+  f <- sort(list.files(file.path(ROOT, "R"), pattern = "\\.R$", full.names = TRUE))
+  digest_key(lapply(f, function(x) deparse(parse(x, keep.source = FALSE))))
 }
 cached <- function(name, key, expr) {
   path <- file.path(CACHE, paste0(name, ".rds"))

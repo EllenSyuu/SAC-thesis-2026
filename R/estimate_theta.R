@@ -23,6 +23,21 @@ concordance_matrix <- function(u, v) {
 #' @param alpha Significance level for the Wald interval.
 #' @param se Logical; compute a delete-one jackknife standard error?
 #' @return A list with `theta`, `se`, `ci` (length 2), `n`, `m1`, `m2`.
+#' @examples
+#' set.seed(1)
+#' U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+#' est <- estimate_theta(U[, 1], U[, 2])
+#' est$theta
+#' est$ci
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
+#'
+#' Ben Ghorbal, N., Genest, C. and Nešlehová, J. (2009). On the Ghoudi,
+#' Khoudraji, and Rivest test for extreme-value dependence.
+#' \emph{The Canadian Journal of Statistics}, 37(4), 534--552.
+#' \doi{10.1002/cjs.10034}
 #' @export
 estimate_theta <- function(u, v, alpha = 0.10, se = TRUE) {
   ok <- stats::complete.cases(u, v)
@@ -68,6 +83,17 @@ estimate_theta <- function(u, v, alpha = 0.10, se = TRUE) {
 #' @param U n x d matrix of pseudo-observations (may contain `NA`).
 #' @inheritParams estimate_theta
 #' @return A list: `pairs` (data frame) and `global` (numeric).
+#' @examples
+#' set.seed(1)
+#' x <- rclayton_archimax(200, theta = 0.4, rho = 2)
+#' U <- pseudo_obs(cbind(s1 = x$u, s2 = x$v, s3 = x$v + stats::rnorm(200, sd = 0.2)))
+#' res <- estimate_theta_pairs(U)
+#' res$pairs
+#' res$global
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
 #' @export
 estimate_theta_pairs <- function(U, alpha = 0.10, se = TRUE) {
   U <- as.matrix(U)

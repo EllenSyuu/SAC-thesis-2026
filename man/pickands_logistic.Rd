@@ -12,6 +12,12 @@ pickands_logistic(w, rho)
 \item{rho}{Dependence parameter (`rho = 1`: independence,
 `rho -> Inf`: comonotonicity).}
 }
+\value{
+Numeric vector of `A(w)`, between `max(w, 1 - w)` and 1.
+}
 \description{
 `A(w) = (w^rho + (1 - w)^rho)^(1/rho)`, `rho >= 1`.
+}
+\examples{
+pickands_logistic(seq(0, 1, by = 0.25), rho = 2)
 }

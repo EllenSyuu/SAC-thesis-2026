@@ -13,6 +13,20 @@ extremal_coefficient(U, theta, method = "mle")
 
 \item{method}{One of `"mle"`, `"cfg"`, `"pickands"`.}
 }
+\value{
+A single number in \[1, d\]: the estimate of `d * A(omega_0)`.
+}
 \description{
 `eta = 1` under complete dependence and `eta = d` under independence.
+}
+\examples{
+set.seed(1)
+U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+extremal_coefficient(U, theta = 0.4)
+2 * pickands_logistic(0.5, rho = 2)  # true value
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
 }

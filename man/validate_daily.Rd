@@ -22,3 +22,13 @@ station or date; no negative precipitation; no duplicated
 `(station_name, date)`. Missing `total_precip` values are allowed (they
 are common in ECCC records) and are counted in the summary.
 }
+\examples{
+daily <- data.frame(station_name = "A",
+                    date = as.character(as.Date("2000-04-01") + 0:29),
+                    year = 2000, month = 4, day = 1:30,
+                    total_precip = c(NA, stats::rexp(29, rate = 0.2)))
+validate_daily(daily)
+bad <- daily
+bad$total_precip[5] <- -1
+try(validate_daily(bad))
+}

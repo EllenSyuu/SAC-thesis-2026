@@ -1,0 +1,234 @@
+---
+title: "Covariate-dependent Clayton-Archimax copulas with covarchimax"
+author: "Ziyi Zhou"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Covariate-dependent Clayton-Archimax copulas with covarchimax}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 6,
+                      fig.height = 4, fig.align = "center")
+```
+
+This vignette walks through the estimators in **covarchimax** on simulated
+data whose true dependence structure is known. All of it runs in a few
+seconds. The application to precipitation extremes in southern Québec is in
+the repository's `analysis/` directory and is not part of the package.
+
+## 1. Model
+
+A $d$-variate Clayton-Archimax copula [@charpentier2014] is
+$$
+C(u_1,\dots,u_d) = \psi_\theta\Big(\ell\big(\phi_\theta(u_1),\dots,\phi_\theta(u_d)\big)\Big),
+\qquad \psi_\theta(t) = (1 + \theta t)^{-1/\theta},\quad \phi_\theta = \psi_\theta^{-1},
+$$
+where $\ell(x) = (x_1 + \dots + x_d)\,A\{x / (x_1 + \dots + x_d)\}$ is a stable
+tail dependence function with Pickands dependence function $A$ on the unit
+simplex. The Archimedean generator $\psi_\theta$ carries the lower-tail
+dependence, and $A$ carries the extremal dependence. With $A \equiv 1$ the
+copula is the Clayton copula. With $\theta \to 0$ it tends to an extreme-value
+copula.
+
+All estimators of $A$ in the package rest on one identity
+[@chatelain2020, Section 3]. For fixed $\omega$ on the simplex, let
+$$
+\xi(\omega) = \min_{j:\,\omega_j > 0} \phi_\theta(U_j) / \omega_j .
+$$
+Then $\Pr\{\xi(\omega) > x\} = \psi_\theta\{x A(\omega)\}$. In other words,
+$A(\omega)$ is a pure scale parameter of $\xi(\omega)$, and once $\theta$ is
+known, estimating $A(\omega)$ is a one-parameter problem at each $\omega$.
+
+## 2. Simulated data
+
+`rclayton_archimax()` draws from the bivariate model with the logistic
+Pickands function $A(w) = \{w^\rho + (1-w)^\rho\}^{1/\rho}$, by numerical
+inversion of the conditional distribution. Below, two covariate groups share
+$\theta = 0.4$ but differ in extremal dependence: weak ($\rho = 1.5$) for
+$z = 0$ and strong ($\rho = 4$) for $z = 1$.
+
+```{r data}
+library(covarchimax)
+set.seed(2026)
+n <- 150
+x0 <- rclayton_archimax(n, theta = 0.4, rho = 1.5)
+x1 <- rclayton_archimax(n, theta = 0.4, rho = 4)
+dat <- data.frame(year = rep(seq_len(n), 2), z = rep(0:1, each = n),
+                  x1 = c(x0$u, x1$u), x2 = c(x0$v, x1$v))
+```
+
+Inference is rank-based. Because the covariate may shift the margins, the
+pseudo-observations are formed **within** each covariate cell, so that every
+cell is a proper rank sample.
+
+```{r pobs}
+U <- pseudo_obs_by_group(cbind(dat$x1, dat$x2), dat$z)
+```
+
+## 3. The generator parameter
+
+`estimate_theta()` implements the moment estimator of @chatelain2020
+(Example 7.1). It inverts the first two moments of the Kendall distribution,
+estimated by U-statistics. Its standard error is a delete-one jackknife,
+computed in $O(n^2)$ by closed-form updates of the U-statistics.
+
+```{r theta}
+th <- estimate_theta(U[, 1], U[, 2], alpha = 0.10)
+c(theta = th$theta, se = th$se, lower = th$ci[1], upper = th$ci[2])
+```
+
+For $d > 2$, `estimate_theta_pairs()` returns every pairwise estimate and
+their average, which is the global estimate recommended in
+@chatelain2020 (Section 7).
+
+## 4. The Pickands dependence function, no covariates
+
+Given $\theta$, `pickands_at()` estimates $A(\omega)$ at one point of the
+simplex in any dimension. Three estimators are available:
+
+* **Pickands-type:** $E(Z)/\overline{\xi}$.
+* **CFG-type**, after @caperaa1997: $\exp\{E\log Z - \overline{\log\xi}\}$.
+* **Maximum likelihood**, which maximises the likelihood of $\xi(\omega)$
+  over $a \in [\max_j \omega_j, 1]$. This estimate therefore always satisfies
+  the Pickands bounds.
+
+```{r curve, fig.cap = "Estimates of A(w) for the group z = 1 (true rho = 4)."}
+w <- seq(0.02, 0.98, by = 0.02)
+U1 <- U[dat$z == 1, ]
+A_mle <- pickands_curve(U1, theta = th$theta, w = w, method = "mle")
+A_cfg <- pickands_curve(U1, theta = th$theta, w = w, method = "cfg")
+A_pck <- pickands_curve(U1, theta = th$theta, w = w, method = "pickands")
+plot(w, pickands_logistic(w, 4), type = "l", lwd = 2, ylim = c(0.5, 1),
+     xlab = "w", ylab = "A(w)")
+lines(w, A_mle, col = "#0072B2", lwd = 2)
+lines(w, A_cfg, col = "#E69F00", lty = 2)
+lines(w, A_pck, col = "#999999", lty = 3)
+lines(c(0, 0.5, 1), c(1, 0.5, 1), col = "grey80")
+legend("bottom", c("true", "MLE", "CFG-type", "Pickands-type"), bty = "n",
+       col = c("black", "#0072B2", "#E69F00", "#999999"), lty = c(1, 1, 2, 3),
+       lwd = c(2, 2, 1, 1), horiz = TRUE, cex = 0.8)
+c(ISE_mle = ise(w, A_mle, pickands_logistic(w, 4)),
+  ISE_cfg = ise(w, A_cfg, pickands_logistic(w, 4)))
+```
+
+A single sample and a single $\theta$ do not show which estimator is more
+accurate. The repository's Monte-Carlo study (`analysis/04_simulation_study.R`)
+addresses that question.
+
+## 5. Covariate-dependent Pickands function
+
+`pickands_cov_mle()` models $A(w \mid z)$ separately at each grid point $w$:
+
+* **identity link:** $A(w \mid z) = z^\top\beta(w)$, maximised subject to the
+  Pickands bounds for every observed covariate profile;
+* **logit link:** $A(w \mid z) = m + (1 - m)\,\mathrm{logit}^{-1}\{z^\top\beta(w)\}$
+  with $m = \max(w, 1 - w)$, so the bounds hold by construction.
+
+The approach of letting the dependence function vary with covariates follows
+@mhalla2017. The likelihood is the one of Section 4, applied jointly across
+observations.
+
+```{r covmodel}
+X <- cbind(intercept = 1, z = dat$z)
+fit <- pickands_cov_mle(U, X, theta = th$theta, w = c(0.25, 0.5, 0.75))
+round(cbind(fit$A,
+            true_z0 = pickands_logistic(fit$w, 1.5),
+            true_z1 = pickands_logistic(fit$w, 4)), 3)
+fit$diagnostics
+```
+
+`fit$beta[, "z"]` is the covariate effect $\beta_1(w)$, here the difference
+$A(w \mid 1) - A(w \mid 0)$. The `diagnostics` table records, for each $w$:
+
+* the optimiser status (`ok`, `maxit` or `failed`);
+* the minimised negative log-likelihood;
+* how many starting values reached a feasible optimum;
+* whether a fitted profile lies on the boundary of the parameter space.
+
+Failures are never silent. If no start is feasible, the row is `NA`, the
+status is `"failed"`, and a warning names the affected grid points:
+
+```{r failure}
+U_bad <- U
+U_bad[1, ] <- 0  # a pseudo-observation on the boundary makes xi infinite
+bad <- suppressWarnings(pickands_cov_mle(U_bad, X, th$theta, w = 0.5))
+bad$diagnostics
+```
+
+## 6. Tail dependence and extremal coefficients
+
+The bivariate model implies $\lambda_L = \{2A(1/2)\}^{-1/\theta}$ and
+$\lambda_U = 2 - 2A(1/2)$ [@chatelain2020]:
+
+```{r taildep}
+tail_dependence_archimax(fit$A[2, ], theta = th$theta)
+```
+
+For $d > 2$, `extremal_coefficient()` returns
+$\eta = d\,A(1/d, \dots, 1/d)$. It equals 1 under complete dependence and $d$
+under independence. `simplex_path()` traces $A$ from a bivariate face of the
+simplex to its centroid.
+
+## 7. Uncertainty: block bootstrap
+
+Point estimates are reported with intervals. `boot_years()` resamples whole
+blocks (here, the index `year`), which preserves any dependence within a
+block. Every replicate repeats the full estimation:
+
+1. re-rank within cells;
+2. re-estimate $\theta$;
+3. refit the covariate model.
+
+Each replicate has a pre-drawn seed, so results do not depend on the number
+of cores. Replicates that error are counted and reported, never dropped
+silently.
+
+```{r boot}
+effect_at_half <- function(d) {
+  U <- pseudo_obs_by_group(cbind(d$x1, d$x2), d$z)
+  theta <- estimate_theta(U[, 1], U[, 2], se = FALSE)$theta
+  X <- cbind(1, d$z)
+  pickands_cov_mle(U, X, theta, w = 0.5, n_grid_starts = 1)$beta[1, 2]
+}
+b <- boot_years(dat, effect_at_half, B = 100, seed = 1)
+b$n_failed
+c(estimate = effect_at_half(dat),
+  boot_ci(unlist(b$replicates), level = 0.90),
+  truth = pickands_logistic(0.5, 4) - pickands_logistic(0.5, 1.5))
+```
+
+Replicates can fail here because the moment estimator of $\theta$ is not
+constrained to be positive. With $n = 300$ its standard error is large, so
+some resamples give $\hat\theta \le 0$, outside the Clayton family. The
+warning reports these replicates, and `n_ok` shows how many entered the
+interval. If failures are frequent, the interval is conditional on
+$\hat\theta > 0$ and should be read with that in mind.
+
+`B = 100` keeps this vignette fast. The thesis analysis uses `B = 200` and
+reports how its single-start shortcut compares with the full multi-start fit.
+
+Two caveats apply to such intervals:
+
+* They are **pointwise in $w$**, not simultaneous bands.
+* A percentile bootstrap is not consistent when the estimate lies on the
+  boundary of the parameter space ($A = 1$ or $A = \max(w, 1-w)$). Intervals
+  that touch a bound should be read as "compatible with the bound", not as
+  calibrated intervals.
+
+## 8. Margins
+
+The copula is estimated from ranks, so it does not depend on marginal
+models. For the marginal analysis the package provides thin wrappers around
+**extRemes** [@gilleland2016]:
+
+* `fit_gev()` fits a non-stationary GEV;
+* `gev_backward()` runs likelihood-ratio backward selection that respects
+  marginality;
+* `gev_coef_table()` gives Wald tables with optional Godambe sandwich
+  standard errors, for composite likelihoods of pooled, dependent stations
+  [@varin2011].
+
+## References

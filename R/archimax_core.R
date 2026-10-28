@@ -17,6 +17,10 @@
 #' @param u Numeric vector in (0, 1].
 #' @param theta Clayton parameter, `theta > 0`.
 #' @return Numeric vector.
+#' @examples
+#' u <- c(0.1, 0.5, 0.9)
+#' t <- clayton_phi(u, theta = 0.5)
+#' clayton_psi(t, theta = 0.5)  # recovers u
 #' @name clayton
 NULL
 
@@ -41,6 +45,17 @@ clayton_phi <- function(u, theta) {
 #'
 #' @inheritParams clayton
 #' @return A single numeric value.
+#' @examples
+#' clayton_EZ(0.4)
+#' clayton_ElogZ(0.4)
+#' # Monte-Carlo check: Z has survival function psi_theta
+#' theta <- 0.4
+#' z <- ((1 - stats::runif(1e5))^(-theta) - 1) / theta
+#' mean(z)
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
 #' @name clayton_moments
 NULL
 
@@ -68,6 +83,15 @@ clayton_ElogZ <- function(theta) {
 #' @param omega Numeric vector of length d on the unit simplex.
 #' @inheritParams clayton
 #' @return Numeric vector of length n.
+#' @examples
+#' set.seed(1)
+#' U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+#' xi <- xi_transform(U, omega = c(0.5, 0.5), theta = 0.4)
+#' summary(xi)
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
 #' @export
 xi_transform <- function(U, omega, theta) {
   U <- as.matrix(U)
@@ -91,6 +115,9 @@ xi_transform <- function(U, omega, theta) {
 #' @param w Numeric vector in \[0, 1\].
 #' @param rho Dependence parameter (`rho = 1`: independence,
 #'   `rho -> Inf`: comonotonicity).
+#' @return Numeric vector of `A(w)`, between `max(w, 1 - w)` and 1.
+#' @examples
+#' pickands_logistic(seq(0, 1, by = 0.25), rho = 2)
 #' @export
 pickands_logistic <- function(w, rho) {
   stopifnot(rho >= 1)
@@ -106,6 +133,14 @@ pickands_logistic <- function(w, rho) {
 #' @inheritParams clayton
 #' @param rho Logistic Pickands parameter, `rho >= 1`.
 #' @return A data frame with columns `u`, `v`.
+#' @examples
+#' set.seed(42)
+#' x <- rclayton_archimax(200, theta = 0.4, rho = 2)
+#' stats::cor(x$u, x$v, method = "kendall")
+#' @references
+#' Charpentier, A., Fougères, A.-L., Genest, C. and Nešlehová, J. G. (2014).
+#' Multivariate Archimax copulas. \emph{Journal of Multivariate Analysis},
+#' 126, 118--136. \doi{10.1016/j.jmva.2013.12.013}
 #' @export
 rclayton_archimax <- function(n, theta, rho) {
   check_theta(theta)
@@ -131,6 +166,9 @@ rclayton_archimax <- function(n, theta, rho) {
 #' Rank-based pseudo-observations, rank / (n + 1), column-wise
 #'
 #' @param X Numeric matrix or data frame (no missing values).
+#' @return Numeric `n x d` matrix with entries in (0, 1).
+#' @examples
+#' pseudo_obs(cbind(c(3, 1, 2), c(10, 30, 20)))
 #' @export
 pseudo_obs <- function(X) {
   X <- as.matrix(X)
@@ -148,6 +186,11 @@ pseudo_obs <- function(X) {
 #'
 #' @param X Numeric matrix (no missing values).
 #' @param group Vector of group labels, length `nrow(X)`.
+#' @return Numeric matrix with the dimensions of `X`; each group's rows are
+#'   ranked separately.
+#' @examples
+#' X <- cbind(a = c(1, 5, 2, 8), b = c(4, 3, 9, 1))
+#' pseudo_obs_by_group(X, group = c("g1", "g1", "g2", "g2"))
 #' @export
 pseudo_obs_by_group <- function(X, group) {
   X <- as.matrix(X)

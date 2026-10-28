@@ -11,9 +11,17 @@ pseudo_obs_by_group(X, group)
 
 \item{group}{Vector of group labels, length `nrow(X)`.}
 }
+\value{
+Numeric matrix with the dimensions of `X`; each group's rows are
+  ranked separately.
+}
 \description{
 Conditional copula inference given a discrete covariate: ranks are
 computed separately inside each group so that every subgroup is a
 proper rank sample (marginal shifts between groups do not leak into
 the dependence estimate).
+}
+\examples{
+X <- cbind(a = c(1, 5, 2, 8), b = c(4, 3, 9, 1))
+pseudo_obs_by_group(X, group = c("g1", "g1", "g2", "g2"))
 }

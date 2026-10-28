@@ -23,3 +23,19 @@ A single numeric value; `NA` (with a warning) if the estimate is
 Works in any dimension d; `omega` with a single non-zero coordinate
 returns 1 by definition.
 }
+\examples{
+set.seed(1)
+U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+pickands_at(U, c(0.5, 0.5), theta = 0.4)                  # MLE
+pickands_at(U, c(0.5, 0.5), theta = 0.4, method = "cfg")
+pickands_logistic(0.5, rho = 2)                            # true value
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+
+Capéraà, P., Fougères, A.-L. and Genest, C. (1997). A nonparametric
+estimation procedure for bivariate extreme value copulas.
+\emph{Biometrika}, 84(3), 567--577. \doi{10.1093/biomet/84.3.567}
+}

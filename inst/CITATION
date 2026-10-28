@@ -1,0 +1,23 @@
+bibentry(
+  bibtype = "MastersThesis",
+  key = "zhou2026archimax",
+  header = "To cite the method and the analysis, please use:",
+  author = person("Ziyi", "Zhou"),
+  title = "Semiparametric Analysis of Precipitation Extremes in Southern Québec using Archimax Copulas",
+  school = "McGill University, Department of Mathematics and Statistics",
+  year = "2026",
+  textVersion = paste("Zhou, Z. (2026). Semiparametric Analysis of Precipitation",
+                      "Extremes in Southern Québec using Archimax Copulas.",
+                      "M.Sc. thesis, McGill University.")
+)
+
+bibentry(
+  bibtype = "Manual",
+  key = "zhou2026covarchimax",
+  header = "To cite the software, please use:",
+  author = person("Ziyi", "Zhou"),
+  title = "covarchimax: Covariate-Dependent Clayton-Archimax Copulas for Spatial Extremes",
+  year = "2026",
+  note = sprintf("R package version %s", meta$Version),
+  url = "https://github.com/EllenSyuu/SAC-thesis-2026"
+)

@@ -30,3 +30,17 @@ Numeric vector, same length as `w`.
 \description{
 Bivariate Pickands dependence function on a grid
 }
+\examples{
+set.seed(1)
+U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+w <- seq(0.05, 0.95, by = 0.05)
+A_hat <- pickands_curve(U, theta = 0.4, w = w)
+plot(w, A_hat, type = "l", ylim = c(0.5, 1), ylab = "A(w)")
+lines(w, pickands_logistic(w, 2), lty = 2)
+lines(c(0, 0.5, 1), c(1, 0.5, 1), col = "grey")
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+}

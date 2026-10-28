@@ -11,7 +11,7 @@
 ![renv](https://img.shields.io/badge/dependencies-renv%20locked-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-**Ziyi (Ellen) Zhou** · M.Sc. Mathematics & Statistics, McGill University · supervised by Prof. Johanna G. Nešlehová
+**Ziyi Zhou** · M.Sc. Mathematics & Statistics, McGill University · supervised by Prof. Johanna G. Nešlehová
 
 </div>
 
@@ -29,11 +29,29 @@
 
 ## Contents
 
-[Problem](#problem) · [Architecture](#architecture) · [Statistical methodology](#statistical-methodology) · [Uncertainty quantification](#uncertainty-quantification) · [Results](#results) · [Validation by simulation](#validation-by-simulation) · [Engineering](#engineering) · [Reproducibility](#reproducibility) · [Limitations](#limitations) · [Future work](#future-work)
+[Problem](#problem) · [Using the package](#using-the-package) · [Architecture](#architecture) · [Statistical methodology](#statistical-methodology) · [Uncertainty quantification](#uncertainty-quantification) · [Results](#results) · [Validation by simulation](#validation-by-simulation) · [Engineering](#engineering) · [Reproducibility](#reproducibility) · [Limitations](#limitations) · [Future work](#future-work)
 
 ## Problem
 
 Classical models for multivariate extremes rely on *extreme-value copulas*. For these data that assumption is rejected for all 15 station pairs (Ben Ghorbal–Genest–Nešlehová test, [table](results/tables/tab_08_ev_dependence_test.csv)), because monthly maxima carry lower-tail dependence that an extreme-value copula cannot represent. Existing semiparametric Archimax inference (Chatelain, Fougères & Nešlehová, 2020) handles that, but has no covariates. Seasonal changes in storm type therefore cannot be represented. The thesis adds covariates to the Pickands dependence function, in the spirit of Mhalla, Chavez-Demoulin & Naveau (2017), and the analysis separates covariate effects on *magnitude* from effects on *co-occurrence*.
+
+## Using the package
+
+The estimators are an installable R package; the thesis analysis in `analysis/` is one client of it.
+
+```r
+# install.packages("remotes")
+remotes::install_github("EllenSyuu/SAC-thesis-2026", build_vignettes = TRUE)
+library(covarchimax)
+
+set.seed(1)
+U <- pseudo_obs(rclayton_archimax(500, theta = 0.4, rho = 2))  # simulated pair
+th <- estimate_theta(U[, 1], U[, 2])          # Kendall-moment estimator, jackknife SE
+pickands_at(U, c(0.5, 0.5), theta = th$theta) # MLE of A(1/2); truth: pickands_logistic(0.5, 2)
+vignette("covarchimax")                       # covariate model, diagnostics, bootstrap
+```
+
+Every exported function has a help page with a runnable example. The vignette runs on simulated data and takes a few seconds. Changes between versions are listed in [`NEWS.md`](NEWS.md).
 
 ## Architecture
 
@@ -100,7 +118,7 @@ $$\ell\{\beta(\omega)\} = \sum_i \log a_i - \Big(\tfrac1\theta+1\Big)\log\{1+\th
 | Global θ, η by season, β(0.5), A_JJ − A_ON, β₄(ω), A(ω) bands | **year-block bootstrap**, 90 % percentile | `tab_20`–`tab_24` |
 | Estimator accuracy | Monte-Carlo (ISE, IRAE) | `tab_09`, `tab_10*` |
 
-**Bootstrap design.** Resampling 88 calendar years with replacement keeps the six stations and the eight months of each year together, so both spatial and within-year dependence are preserved. Every replicate recomputes the pseudo-observations, θ, and all fits, so the intervals include the uncertainty of θ and of the ranks. Settings: B = 200, seed 20260408 with pre-drawn per-replicate seeds (results do not depend on the core count), ω-grid 0.1, …, 0.9. Runtime is about 10 minutes on 2 cores. Results are cached, keyed on data, parameters and package source. Inside replicates the optimiser uses one intercept start instead of five; on the original data both settings give identical estimates, a check reported in `tab_23`.
+**Bootstrap design.** Resampling 88 calendar years with replacement keeps the six stations and the eight months of each year together, so both spatial and within-year dependence are preserved. Every replicate recomputes the pseudo-observations, θ, and all fits, so the intervals include the uncertainty of θ and of the ranks. Settings: B = 200, seed 20260408 with pre-drawn per-replicate seeds (results do not depend on the core count), ω-grid 0.1, …, 0.9. Runtime is about 10 minutes on 2 cores. Results are cached, keyed on data, parameters and the package code (comments excluded). Inside replicates the optimiser uses one intercept start instead of five; on the original data both settings give identical estimates, a check reported in `tab_23`.
 
 **How to read it.** Percentile intervals are reported as estimated, without multiple-testing adjustment. Across 135 (pair, ω) cells, about 13 intervals at the 90 % level would exclude 0 by chance even with no period effect; 29 do, and they cluster in three pairs. Where the estimate sits on the boundary of the parameter space (A = 1, i.e. tail independence), percentile intervals are not reliable; see [Limitations](#limitations).
 
@@ -190,11 +208,11 @@ Pooled ranks break down as soon as the margins differ between groups: the error 
 | Manual corrections declared in `data/raw/corrections.csv` and checked against the raw value before applying | auditable cleaning instead of a silent edit in code |
 | No silent failures | optimiser failures return `NA` plus per-grid diagnostics and a warning; failed GEV fits are logged in the selection path; failed bootstrap replicates are counted |
 | Thesis-faithful defaults, alternatives behind switches (`MIN_DAYS`, `POBS`) | improvements are visible as sensitivity analyses, not hidden changes to reported numbers |
-| Content-addressed cache for expensive steps | `make all` is cheap to rerun; any change to data, parameters or `R/` invalidates the cache; `make refresh` forces recomputation |
+| Content-addressed cache for expensive steps | `make all` is cheap to rerun; any change to data, parameters or the code in `R/` invalidates the cache (documentation-only edits do not); `make refresh` forces recomputation |
 | Per-replicate seeds | Monte-Carlo and bootstrap results are identical on 1 or 64 cores |
 | `results/run_metadata.txt` | git SHA, R and package versions, input md5s, parameters and step timings for every full run |
 
-**Quality gates (CI on every push).** `R CMD check` with no warnings allowed, 30 test cases covering estimator correctness, failure paths, data validation, block-bootstrap invariants and GEV selection, with small fixtures rather than the full data. Also a `lintr` gate on `R/`, `tests/` and `analysis/`, a pipeline smoke run (`QUICK=1`, small bootstrap), and an informational coverage report.
+**Quality gates (CI on every push).** `R CMD check` with no warnings allowed, which runs every help-page example, builds the vignette and runs 30 test cases covering estimator correctness, failure paths, data validation, block-bootstrap invariants and GEV selection, with small fixtures rather than the full data. Also a `lintr` gate on `R/`, `tests/` and `analysis/`, a pipeline smoke run (`QUICK=1`, small bootstrap), and an informational coverage report.
 
 ## Reproducibility
 
@@ -204,6 +222,7 @@ Rscript -e 'install.packages("renv"); renv::restore()'   # exact versions from r
 
 make test        # unit tests
 make check       # R CMD check
+make cran        # build the tarball and run R CMD check --as-cran
 make quick       # smoke run with small Monte-Carlo / bootstrap; writes to results/quick/
 make all         # every table and figure (~25 min cold on 2 cores, ~6 min with cache)
 make refresh     # ignore the cache and recompute everything
@@ -217,7 +236,8 @@ make refresh     # ignore the cache and recompute everything
 <summary>Repository layout</summary>
 
 ```
-├── R/                        covarchimax package
+├── R/, man/                  covarchimax package (roxygen2 documentation)
+├── vignettes/                package vignette (simulated data)
 ├── tests/testthat/           unit tests + fixtures/
 ├── analysis/
 │   ├── _setup.R                  config, cache, logging, run bookkeeping
@@ -257,6 +277,8 @@ make refresh     # ignore the cache and recompute everything
 
 ## Citation
 
+Please cite the thesis for the method and the analysis. To cite the software, use `citation("covarchimax")` or [`CITATION.cff`](CITATION.cff).
+
 ```bibtex
 @mastersthesis{zhou2026archimax,
   author = {Zhou, Ziyi},
@@ -265,6 +287,14 @@ make refresh     # ignore the cache and recompute everything
   year   = {2026},
   note   = {Supervisor: Johanna G. Ne{\v{s}}lehov{\'a}}
 }
+
+@manual{zhou2026covarchimax,
+  author = {Zhou, Ziyi},
+  title  = {covarchimax: Covariate-Dependent Clayton-Archimax Copulas for Spatial Extremes},
+  year   = {2026},
+  note   = {R package version 1.0.0},
+  url    = {https://github.com/EllenSyuu/SAC-thesis-2026}
+}
 ```
 
-I am grateful to Prof. Johanna G. Nešlehová for her supervision. Data: Environment and Climate Change Canada (Open Government Licence – Canada) via [`weathercan`](https://docs.ropensci.org/weathercan/); NOAA NCEI *Climate at a Glance*. MIT licensed.
+I am grateful to Prof. Johanna G. Nešlehová for her supervision. Contains information licensed under the [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada) (Environment and Climate Change Canada historical daily climate data, retrieved with [`weathercan`](https://docs.ropensci.org/weathercan/)). Temperature anomalies: NOAA NCEI *Climate at a Glance* (U.S. Government work, public domain). Code: MIT licence.

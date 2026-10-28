@@ -20,3 +20,16 @@ A single numeric value.
 `E(Z) = 1 / (1 - theta)` (finite only for `theta < 1`) and
 `E(log Z) = digamma(1) - digamma(1/theta) - log(theta)`.
 }
+\examples{
+clayton_EZ(0.4)
+clayton_ElogZ(0.4)
+# Monte-Carlo check: Z has survival function psi_theta
+theta <- 0.4
+z <- ((1 - stats::runif(1e5))^(-theta) - 1) / theta
+mean(z)
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+}

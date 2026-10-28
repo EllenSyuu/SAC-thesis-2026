@@ -2,31 +2,45 @@ Package: covarchimax
 Type: Package
 Title: Covariate-Dependent Clayton-Archimax Copulas for Spatial Extremes
 Version: 1.0.0
-Authors@R: person("Ziyi (Ellen)", "Zhou", email = "ellen.zy.syuu@gmail.com",
-    role = c("aut", "cre"))
-Description: Semiparametric inference for Clayton-Archimax copulas with
-    covariate-dependent Pickands dependence functions. Implements the
-    moment-based estimator of the Clayton generator parameter and its
-    asymptotic variance (Chatelain, Fougeres and Neslehova, 2020), the
-    Pickands-type, CFG-type and a new maximum-likelihood estimator of the
-    Pickands dependence function in arbitrary dimension, a linear and a
-    logit-link covariate model for A(omega | z) evaluated pointwise on the
-    unit simplex, a conditional-inversion sampler, and the non-stationary
-    GEV margin tooling used to analyse precipitation extremes at six
-    stations in southern Quebec (1930-2017).
+Authors@R: person("Ziyi", "Zhou", email = "ellen.zy.syuu@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: Semiparametric inference for Clayton-Archimax copulas
+    (Charpentier, Fougeres, Genest and Neslehova (2014)
+    <doi:10.1016/j.jmva.2013.12.013>) whose Pickands dependence function
+    may depend on covariates. Implements the moment-based estimator of the
+    Clayton generator parameter of Chatelain, Fougeres and Neslehova (2020)
+    <doi:10.1214/19-AOS1836> with a delete-one jackknife standard error;
+    Pickands-type, Caperaa-Fougeres-Genest-type and maximum-likelihood
+    estimators of the Pickands dependence function in arbitrary dimension;
+    an identity-link and a logit-link covariate model for the Pickands
+    dependence function, fitted pointwise on the unit simplex with
+    explicit optimiser diagnostics; model-implied and empirical
+    tail-dependence coefficients; a sampler for bivariate Clayton-Archimax
+    copulas; a year-block bootstrap; and helpers for non-stationary
+    generalized extreme-value margins with cluster-robust (Godambe
+    sandwich) standard errors, built on 'extRemes' (Gilleland and Katz
+    (2016) <doi:10.18637/jss.v072.i08>).
 License: MIT + file LICENSE
+URL: https://github.com/EllenSyuu/SAC-thesis-2026
+BugReports: https://github.com/EllenSyuu/SAC-thesis-2026/issues
 Encoding: UTF-8
+Language: en-GB
 Depends: R (>= 4.1)
 Imports:
     extRemes (>= 2.1),
-    stats
+    parallel,
+    stats,
+    utils
 Suggests:
     copula,
     dplyr,
     ggplot2,
+    knitr,
     patchwork,
     readr,
-    tidyr,
-    testthat (>= 3.0.0)
+    rmarkdown,
+    testthat (>= 3.0.0),
+    tidyr
+VignetteBuilder: knitr
 Config/testthat/edition: 3
 RoxygenNote: 7.3.1

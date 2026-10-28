@@ -16,3 +16,9 @@ Invisibly, a one-row summary.
 \description{
 Validate the monthly-maxima table used for modelling
 }
+\examples{
+mm <- data.frame(station_name = "A", year = 2000, month = 4:5,
+                 max_precip = c(10, 12), n_days = c(30, 31),
+                 season = "AM", period = "post", anomaly = 0.1)
+validate_monthly(mm)
+}

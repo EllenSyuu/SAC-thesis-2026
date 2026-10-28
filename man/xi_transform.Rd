@@ -20,3 +20,14 @@ Numeric vector of length n.
 Coordinates with `omega_j = 0` are dropped from the minimum, so a
 bivariate face of the d-simplex reproduces the bivariate estimator.
 }
+\examples{
+set.seed(1)
+U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+xi <- xi_transform(U, omega = c(0.5, 0.5), theta = 0.4)
+summary(xi)
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+}

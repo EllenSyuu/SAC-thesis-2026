@@ -7,6 +7,15 @@
 | `raw/noaa_na_land_temp_anomaly.csv` | 720 (Apr–Nov, 1930–2019) | NOAA NCEI *Climate at a Glance*, North America land-surface monthly temperature anomaly (°C, base 1910–2000) | Public domain (U.S. Government work) |
 | `processed/*` | — | Written by `analysis/01`–`02`; safe to delete and regenerate | — |
 
+## Licence and redistribution
+
+The two raw inputs are public and licensed for redistribution. They are committed so that every table and figure can be regenerated offline and checked against fixed md5 sums (recorded in `results/run_metadata.txt`).
+
+- **ECCC daily climate data.** Contains information licensed under the [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada). The file is an unmodified extract (selected columns) of the ECCC historical daily records. The one corrected value is kept in a separate file, `raw/corrections.csv`, and applied in code.
+- **NOAA NCEI anomalies.** A work of the U.S. Government, in the public domain. Source: NOAA National Centers for Environmental Information, *Climate at a Glance: Regional Time Series*.
+
+Neither source endorses this analysis. The repository contains no personal or confidential data.
+
 ## Stations
 
 | Station | ECCC ID | Lat (°N) | Lon (°W) | Elev (m) |

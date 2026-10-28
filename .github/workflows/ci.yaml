@@ -29,9 +29,11 @@ jobs:
           r-version: '4.3.3'          # matches renv.lock
           use-public-rspm: true
 
+      - uses: r-lib/actions/setup-pandoc@v2  # vignette
+
       - uses: r-lib/actions/setup-renv@v2   # restores renv.lock (cached)
 
-      - name: R CMD check (includes unit tests)
+      - name: R CMD check (unit tests, examples, vignette)
         run: |
           Rscript -e 'rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = "--no-manual",
                                            error_on = "warning", check_dir = "check")'

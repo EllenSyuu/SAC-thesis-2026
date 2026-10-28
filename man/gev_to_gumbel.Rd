@@ -11,7 +11,14 @@ gev_to_gumbel(x, mu, sigma, xi)
 
 \item{mu, sigma, xi}{GEV parameters (recycled).}
 }
+\value{
+Numeric vector on the standard Gumbel scale.
+}
 \description{
 `z = log(1 + xi (x - mu) / sigma) / xi`, so that
 `exp(-exp(-z))` is approximately Uniform(0, 1).
+}
+\examples{
+z <- gev_to_gumbel(c(10, 20, 40), mu = 18, sigma = 7, xi = 0.05)
+exp(-exp(-z))  # GEV probabilities
 }

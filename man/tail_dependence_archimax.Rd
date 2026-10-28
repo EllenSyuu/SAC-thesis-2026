@@ -19,3 +19,11 @@ For the bivariate Clayton-Archimax copula (Chatelain et al., 2020,
 Remark 2): `lambda_L = (2 A(1/2))^(-1/theta)` and
 `lambda_U = 2 - 2 A(1/2)`.
 }
+\examples{
+tail_dependence_archimax(pickands_logistic(0.5, rho = 2), theta = 0.4)
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+}

@@ -16,3 +16,6 @@ Factor with levels `AM`, `JJ`, `AS`, `ON`.
 AM = Apr-May, JJ = Jun-Jul, AS = Aug-Sep, ON = Oct-Nov; other months
 (snow-dominated) map to `NA`.
 }
+\examples{
+qc_season(1:12)
+}

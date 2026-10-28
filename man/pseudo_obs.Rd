@@ -9,6 +9,12 @@ pseudo_obs(X)
 \arguments{
 \item{X}{Numeric matrix or data frame (no missing values).}
 }
+\value{
+Numeric `n x d` matrix with entries in (0, 1).
+}
 \description{
 Rank-based pseudo-observations, rank / (n + 1), column-wise
+}
+\examples{
+pseudo_obs(cbind(c(3, 1, 2), c(10, 30, 20)))
 }

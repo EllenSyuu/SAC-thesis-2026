@@ -17,3 +17,10 @@ One row per station-month with at least one valid day:
 \description{
 Monthly block maxima from daily records
 }
+\examples{
+set.seed(1)
+daily <- data.frame(station_name = "A", year = 2000,
+                    month = rep(4:5, c(30, 31)),
+                    total_precip = stats::rexp(61, rate = 0.2))
+monthly_maxima(daily)
+}

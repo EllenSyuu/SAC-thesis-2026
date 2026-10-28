@@ -20,3 +20,16 @@ A list: `pairs` (data frame) and `global` (numeric).
 The global estimate is the average of the `choose(d, 2)` pairwise
 estimates, as recommended by Chatelain et al. (2020, Sec. 7).
 }
+\examples{
+set.seed(1)
+x <- rclayton_archimax(200, theta = 0.4, rho = 2)
+U <- pseudo_obs(cbind(s1 = x$u, s2 = x$v, s3 = x$v + stats::rnorm(200, sd = 0.2)))
+res <- estimate_theta_pairs(U)
+res$pairs
+res$global
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+}

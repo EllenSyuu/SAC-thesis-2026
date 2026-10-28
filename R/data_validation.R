@@ -15,6 +15,15 @@
 #' @param max_plausible Values above this (mm/day) are reported in the
 #'   summary as `n_above_plausible`, not rejected.
 #' @return Invisibly, a one-row data frame summarising the input.
+#' @examples
+#' daily <- data.frame(station_name = "A",
+#'                     date = as.character(as.Date("2000-04-01") + 0:29),
+#'                     year = 2000, month = 4, day = 1:30,
+#'                     total_precip = c(NA, stats::rexp(29, rate = 0.2)))
+#' validate_daily(daily)
+#' bad <- daily
+#' bad$total_precip[5] <- -1
+#' try(validate_daily(bad))
 #' @export
 validate_daily <- function(daily, max_plausible = 250) {
   fail <- function(...) stop("validate_daily(): ", ..., call. = FALSE)
@@ -81,6 +90,11 @@ validate_daily <- function(daily, max_plausible = 250) {
 #' @param mm Data frame with `station_name`, `year`, `month`, `max_precip`,
 #'   `n_days`, `season`, `period`, `anomaly`.
 #' @return Invisibly, a one-row summary.
+#' @examples
+#' mm <- data.frame(station_name = "A", year = 2000, month = 4:5,
+#'                  max_precip = c(10, 12), n_days = c(30, 31),
+#'                  season = "AM", period = "post", anomaly = 0.1)
+#' validate_monthly(mm)
 #' @export
 validate_monthly <- function(mm) {
   fail <- function(...) stop("validate_monthly(): ", ..., call. = FALSE)

@@ -15,7 +15,17 @@ irae(w, A_hat, A_true)
 
 \item{A_hat, A_true}{Estimated and true values on `w`.}
 }
+\value{
+A single numeric value.
+}
 \description{
 Trapezoidal approximations of
 `ISE = int (A_hat - A)^2` and `IRAE = int |A_hat - A| / A`.
+}
+\examples{
+w <- seq(0.01, 0.99, by = 0.01)
+A0 <- pickands_logistic(w, rho = 2)
+A1 <- pmin(A0 + 0.01, 1)
+ise(w, A1, A0)
+irae(w, A1, A0)
 }

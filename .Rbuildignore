@@ -13,3 +13,6 @@
 ^renv$
 ^renv\.lock$
 ^results$
+^cran-comments\.md$
+^doc$
+^Meta$

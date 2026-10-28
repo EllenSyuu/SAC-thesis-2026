@@ -34,6 +34,20 @@ mle_scale <- function(xi, theta, lower) {
 #' @param method One of `"mle"`, `"cfg"`, `"pickands"`.
 #' @return A single numeric value; `NA` (with a warning) if the estimate is
 #'   not finite, e.g. because `U` contains 0 or 1.
+#' @examples
+#' set.seed(1)
+#' U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+#' pickands_at(U, c(0.5, 0.5), theta = 0.4)                  # MLE
+#' pickands_at(U, c(0.5, 0.5), theta = 0.4, method = "cfg")
+#' pickands_logistic(0.5, rho = 2)                            # true value
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
+#'
+#' Capéraà, P., Fougères, A.-L. and Genest, C. (1997). A nonparametric
+#' estimation procedure for bivariate extreme value copulas.
+#' \emph{Biometrika}, 84(3), 567--577. \doi{10.1093/biomet/84.3.567}
 #' @export
 pickands_at <- function(U, omega, theta,
                         method = c("mle", "cfg", "pickands")) {
@@ -63,6 +77,18 @@ pickands_at <- function(U, omega, theta,
 #' @param project Clip estimates into the admissible band
 #'   `[max(w, 1 - w), 1]` (only relevant for CFG / Pickands).
 #' @return Numeric vector, same length as `w`.
+#' @examples
+#' set.seed(1)
+#' U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+#' w <- seq(0.05, 0.95, by = 0.05)
+#' A_hat <- pickands_curve(U, theta = 0.4, w = w)
+#' plot(w, A_hat, type = "l", ylim = c(0.5, 1), ylab = "A(w)")
+#' lines(w, pickands_logistic(w, 2), lty = 2)
+#' lines(c(0, 0.5, 1), c(1, 0.5, 1), col = "grey")
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
 #' @export
 pickands_curve <- function(U, theta, w = seq(0.01, 0.99, by = 0.01),
                            method = c("mle", "cfg", "pickands"),
@@ -83,7 +109,8 @@ pickands_curve <- function(U, theta, w = seq(0.01, 0.99, by = 0.01),
 #'
 #' * `link = "identity"`: `a_i = z_i' beta`, maximised subject to
 #'   `max(w, 1-w) <= a_i <= 1` for every observed covariate profile
-#'   (multi-start Nelder-Mead plus a warm start from group-wise MLEs).
+#'   (multi-start Nelder-Mead, or Brent when `X` has one column, plus warm
+#'   starts from group-wise MLEs and from the solution at the previous `w`).
 #' * `link = "logit"`:
 #'   `a_i = m + (1 - m) plogis(z_i' beta)`, `m = max(w, 1-w)`; the bounds
 #'   hold automatically and the problem is unconstrained (BFGS).
@@ -107,6 +134,27 @@ pickands_curve <- function(U, theta, w = seq(0.01, 0.99, by = 0.01),
 #'   log-likelihood `nll`, the number of starts that returned a feasible
 #'   value `n_feasible_starts`, and `at_bound` (some fitted profile lies on
 #'   the boundary of `[max(w, 1-w), 1]`).
+#' @examples
+#' set.seed(1)
+#' # two covariate groups with weak (rho = 1.5) and strong (rho = 4) dependence
+#' x0 <- rclayton_archimax(150, theta = 0.4, rho = 1.5)
+#' x1 <- rclayton_archimax(150, theta = 0.4, rho = 4)
+#' z <- rep(0:1, each = 150)
+#' U <- pseudo_obs_by_group(rbind(as.matrix(x0), as.matrix(x1)), z)
+#' X <- cbind(intercept = 1, z = z)
+#' w <- c(0.25, 0.5, 0.75)
+#' fit <- pickands_cov_mle(U, X, theta = 0.4, w = w)
+#' fit$A                       # columns: covariate profiles (1,0) and (1,1)
+#' fit$diagnostics
+#' cbind(pickands_logistic(w, 1.5), pickands_logistic(w, 4))  # truth
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
+#'
+#' Mhalla, L., Chavez-Demoulin, V. and Naveau, P. (2017). Non-linear models
+#' for extremal dependence. \emph{Journal of Multivariate Analysis}, 159,
+#' 49--66. \doi{10.1016/j.jmva.2017.04.006}
 #' @export
 pickands_cov_mle <- function(U, X, theta, w = seq(0.01, 0.99, by = 0.01),
                              link = c("identity", "logit"), n_grid_starts = 5) {
@@ -243,6 +291,9 @@ fit_logit <- function(xi, X, theta, lo, init = NULL) {
 #' @param j,k Indices of the starting face.
 #' @param t Position in \[0, 1\].
 #' @param d Dimension.
+#' @return Numeric vector of length `d` on the unit simplex.
+#' @examples
+#' simplex_path(1, 2, t = 0.5, d = 6)
 #' @export
 simplex_path <- function(j, k, t, d) {
   start <- numeric(d)
@@ -255,6 +306,16 @@ simplex_path <- function(j, k, t, d) {
 #' `eta = 1` under complete dependence and `eta = d` under independence.
 #'
 #' @inheritParams pickands_at
+#' @return A single number in \[1, d\]: the estimate of `d * A(omega_0)`.
+#' @examples
+#' set.seed(1)
+#' U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+#' extremal_coefficient(U, theta = 0.4)
+#' 2 * pickands_logistic(0.5, rho = 2)  # true value
+#' @references
+#' Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+#' Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+#' \doi{10.1214/19-AOS1836}
 #' @export
 extremal_coefficient <- function(U, theta, method = "mle") {
   d <- ncol(U)

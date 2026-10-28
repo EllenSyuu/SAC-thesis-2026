@@ -17,3 +17,6 @@ Factor with levels `pre`, `post`.
 \description{
 Pre / post climate-period indicator
 }
+\examples{
+qc_period(c(1950, 1975, 1976, 2010))
+}

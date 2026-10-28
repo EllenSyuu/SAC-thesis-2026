@@ -1,7 +1,7 @@
 # Reproduce every table and figure:   make all      (~25 min cold on 2 cores, ~6 min with cache)
 # Fast smoke run -> results/quick/:    make quick
 # Install pinned dependencies:         make restore   (renv)
-# Package unit tests / checks:         make test | make check | make lint | make coverage
+# Package unit tests / checks:         make test | make check | make cran | make lint | make coverage
 # Recompute cached results:            make refresh
 
 R      ?= Rscript
@@ -9,7 +9,7 @@ STEPS  := 01_prepare_data 02_marginal_gev 03_dependence_eda \
           04_simulation_study 05_archimax_pairwise 06_archimax_6d \
           08_sensitivity_min_days 09_bootstrap_ci 07_key_findings
 
-.PHONY: all quick restore test check coverage lint docs sensitivity refresh clean start metadata $(STEPS)
+.PHONY: all quick restore test check cran coverage lint docs sensitivity refresh clean start metadata $(STEPS)
 
 all: start $(STEPS) sensitivity metadata
 
@@ -40,6 +40,10 @@ test:
 
 check:
 	$(R) -e 'rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "warning")'
+
+cran:                   ## source tarball + R CMD check --as-cran (needs pdflatex for the manual)
+	R CMD build .
+	R CMD check --as-cran covarchimax_$$(sed -n 's/^Version: //p' DESCRIPTION).tar.gz
 
 coverage:
 	$(R) -e 'print(covr::package_coverage())'

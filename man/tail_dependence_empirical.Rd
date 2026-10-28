@@ -18,3 +18,8 @@ A data frame with `q`, `lambda_U`, `lambda_L`.
 `chi_U(q) = P(V > q | U > q)` and `chi_L(q) = P(V < 1 - q | U < 1 - q)`,
 computed with [extRemes::taildep()] on rank-transformed data.
 }
+\examples{
+set.seed(1)
+x <- rclayton_archimax(500, theta = 0.4, rho = 2)
+tail_dependence_empirical(x$u, x$v, q = c(0.8, 0.9))
+}

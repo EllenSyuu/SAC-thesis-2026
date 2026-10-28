@@ -17,3 +17,19 @@ An `fevd` object.
 \description{
 Thin wrapper around [extRemes::fevd()] with constant shape.
 }
+\examples{
+# Simulated monthly maxima with a seasonal location shift (240 months)
+set.seed(11)
+season <- factor(rep(c("AM", "JJ", "AS", "ON"), 60), levels = c("AM", "JJ", "AS", "ON"))
+period <- factor(rep(c("pre", "post"), each = 120), levels = c("pre", "post"))
+toy <- data.frame(season = season, period = period,
+                  max_precip = extRemes::revd(240, loc = 17 + c(0, 4, 6, 2)[season],
+                                              scale = 7, shape = 0.05))
+fit <- fit_gev(toy, location = ~ season, scale = ~ 1)
+gev_coef_table(fit)
+}
+\references{
+Gilleland, E. and Katz, R. W. (2016). extRemes 2.0: An extreme value
+analysis package in R. \emph{Journal of Statistical Software}, 72(8),
+1--39. \doi{10.18637/jss.v072.i08}
+}

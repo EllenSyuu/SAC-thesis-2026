@@ -9,6 +9,12 @@ gev_mean(mu, sigma, xi)
 \arguments{
 \item{mu, sigma, xi}{GEV parameters (recycled).}
 }
+\value{
+Numeric vector of GEV means.
+}
 \description{
 Mean of a GEV distribution (xi < 1)
+}
+\examples{
+gev_mean(mu = 18, sigma = 7, xi = c(0, 0.05, 0.2))
 }

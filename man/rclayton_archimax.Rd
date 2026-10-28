@@ -20,3 +20,13 @@ A data frame with columns `u`, `v`.
 Exact sampling by numerical inversion of the conditional distribution
 `C(v | u) = dC(u, v) / du`.
 }
+\examples{
+set.seed(42)
+x <- rclayton_archimax(200, theta = 0.4, rho = 2)
+stats::cor(x$u, x$v, method = "kendall")
+}
+\references{
+Charpentier, A., Fougères, A.-L., Genest, C. and Nešlehová, J. G. (2014).
+Multivariate Archimax copulas. \emph{Journal of Multivariate Analysis},
+126, 118--136. \doi{10.1016/j.jmva.2013.12.013}
+}

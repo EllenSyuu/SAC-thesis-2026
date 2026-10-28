@@ -45,7 +45,8 @@ the Clayton-Archimax pseudo-likelihood
 \details{
 * `link = "identity"`: `a_i = z_i' beta`, maximised subject to
   `max(w, 1-w) <= a_i <= 1` for every observed covariate profile
-  (multi-start Nelder-Mead plus a warm start from group-wise MLEs).
+  (multi-start Nelder-Mead, or Brent when `X` has one column, plus warm
+  starts from group-wise MLEs and from the solution at the previous `w`).
 * `link = "logit"`:
   `a_i = m + (1 - m) plogis(z_i' beta)`, `m = max(w, 1-w)`; the bounds
   hold automatically and the problem is unconstrained (BFGS).
@@ -53,4 +54,27 @@ the Clayton-Archimax pseudo-likelihood
 Failure is never silent: if no start reaches a feasible finite optimum at
 some `w`, that row of `beta` / `A` is `NA`, `diagnostics$status` is
 `"failed"` and a single warning summarises the affected grid points.
+}
+\examples{
+set.seed(1)
+# two covariate groups with weak (rho = 1.5) and strong (rho = 4) dependence
+x0 <- rclayton_archimax(150, theta = 0.4, rho = 1.5)
+x1 <- rclayton_archimax(150, theta = 0.4, rho = 4)
+z <- rep(0:1, each = 150)
+U <- pseudo_obs_by_group(rbind(as.matrix(x0), as.matrix(x1)), z)
+X <- cbind(intercept = 1, z = z)
+w <- c(0.25, 0.5, 0.75)
+fit <- pickands_cov_mle(U, X, theta = 0.4, w = w)
+fit$A                       # columns: covariate profiles (1,0) and (1,1)
+fit$diagnostics
+cbind(pickands_logistic(w, 1.5), pickands_logistic(w, 4))  # truth
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+
+Mhalla, L., Chavez-Demoulin, V. and Naveau, P. (2017). Non-linear models
+for extremal dependence. \emph{Journal of Multivariate Analysis}, 159,
+49--66. \doi{10.1016/j.jmva.2017.04.006}
 }

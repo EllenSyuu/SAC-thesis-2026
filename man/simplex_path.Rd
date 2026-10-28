@@ -13,7 +13,13 @@ simplex_path(j, k, t, d)
 
 \item{d}{Dimension.}
 }
+\value{
+Numeric vector of length `d` on the unit simplex.
+}
 \description{
 `omega(t) = (1 - t) omega_jk + t omega_0`, where `omega_jk` puts mass 1/2
 on coordinates j and k and `omega_0 = (1/d, ..., 1/d)`.
+}
+\examples{
+simplex_path(1, 2, t = 0.5, d = 6)
 }

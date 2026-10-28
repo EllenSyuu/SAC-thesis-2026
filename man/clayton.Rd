@@ -23,3 +23,8 @@ Numeric vector.
 \description{
 Clayton generator and its inverse
 }
+\examples{
+u <- c(0.1, 0.5, 0.9)
+t <- clayton_phi(u, theta = 0.5)
+clayton_psi(t, theta = 0.5)  # recovers u
+}

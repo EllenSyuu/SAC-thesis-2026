@@ -30,3 +30,10 @@ seed is drawn up front from `seed`, so results are identical for any
 number of cores. Replicates that error are kept as `NULL`, counted, and
 reported in a warning - never silently dropped.
 }
+\examples{
+set.seed(1)
+d <- data.frame(year = rep(1:30, each = 4), x = stats::rnorm(120))
+b <- boot_years(d, function(dat) mean(dat$x), B = 50, seed = 1)
+b$n_failed
+boot_ci(unlist(b$replicates))
+}

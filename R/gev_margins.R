@@ -9,6 +9,8 @@
 #'
 #' @param month Integer month 1-12.
 #' @return Factor with levels `AM`, `JJ`, `AS`, `ON`.
+#' @examples
+#' qc_season(1:12)
 #' @export
 qc_season <- function(month) {
   lab <- c(NA, NA, NA, "AM", "AM", "JJ", "JJ", "AS", "AS", "ON", "ON", NA)
@@ -20,6 +22,8 @@ qc_season <- function(month) {
 #' @param year Integer year.
 #' @param cutoff Last year of the reference period (default 1975).
 #' @return Factor with levels `pre`, `post`.
+#' @examples
+#' qc_period(c(1950, 1975, 1976, 2010))
 #' @export
 qc_period <- function(year, cutoff = 1975) {
   factor(ifelse(year <= cutoff, "pre", "post"), levels = c("pre", "post"))
@@ -31,6 +35,12 @@ qc_period <- function(year, cutoff = 1975) {
 #'   `total_precip`.
 #' @return One row per station-month with at least one valid day:
 #'   `station_name`, `year`, `month`, `max_precip`, `n_days`.
+#' @examples
+#' set.seed(1)
+#' daily <- data.frame(station_name = "A", year = 2000,
+#'                     month = rep(4:5, c(30, 31)),
+#'                     total_precip = stats::rexp(61, rate = 0.2))
+#' monthly_maxima(daily)
 #' @export
 monthly_maxima <- function(daily) {
   daily <- daily[!is.na(daily$total_precip),
@@ -51,6 +61,14 @@ monthly_maxima <- function(daily) {
 #' @param data Data frame containing `max_precip` and the covariates.
 #' @param location,scale One-sided formulas.
 #' @return An `fevd` object.
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' fit <- fit_gev(toy, location = ~ season, scale = ~ 1)
+#' gev_coef_table(fit)
+#' @references
+#' Gilleland, E. and Katz, R. W. (2016). extRemes 2.0: An extreme value
+#' analysis package in R. \emph{Journal of Statistical Software}, 72(8),
+#' 1--39. \doi{10.18637/jss.v072.i08}
 #' @export
 fit_gev <- function(data, location = ~ period + season, scale = ~ season) {
   extRemes::fevd(x = data$max_precip, data = data, type = "GEV",
@@ -71,6 +89,18 @@ fit_gev <- function(data, location = ~ period + season, scale = ~ season) {
 #' @param level Confidence level of the Wald intervals.
 #' @param cluster Optional vector (one entry per observation) defining
 #'   independent clusters.
+#' @return Data frame with one row per parameter: `term`, `covariate`,
+#'   `estimate`, `se`, `z`, `p_value`, `ci_lower`, `ci_upper` and, when
+#'   `cluster` is supplied, `se_sandwich`, `p_sandwich`,
+#'   `ci_lower_sandwich`, `ci_upper_sandwich`.
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' fit <- fit_gev(toy, location = ~ season, scale = ~ 1)
+#' # clusters of 12 consecutive observations (e.g. the months of one year)
+#' gev_coef_table(fit, cluster = rep(1:20, each = 12))
+#' @references
+#' Varin, C., Reid, N. and Firth, D. (2011). An overview of composite
+#' likelihood methods. \emph{Statistica Sinica}, 21(1), 5--42.
 #' @export
 gev_coef_table <- function(fit, level = 0.95, cluster = NULL) {
   est <- fit$results$par
@@ -96,6 +126,10 @@ gev_coef_table <- function(fit, level = 0.95, cluster = NULL) {
 #' Human-readable labels for fevd parameters (e.g. mu8 -> "location: seasonAS")
 #'
 #' @param fit An `fevd` object.
+#' @return Character vector, one label per parameter of `fit`.
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' gev_term_labels(fit_gev(toy, location = ~ season, scale = ~ 1))
 #' @export
 gev_term_labels <- function(fit) {
   d <- fit$cov.data
@@ -131,6 +165,15 @@ gev_loglik_obs <- function(par, fit) {
 #' @param fit An `fevd` object.
 #' @param cluster Cluster labels, one per observation.
 #' @param Hinv Inverse observed information (defaults to `parcov.fevd`).
+#' @return Square covariance matrix of the parameter estimates.
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' fit <- fit_gev(toy, location = ~ season, scale = ~ 1)
+#' V <- gev_sandwich_vcov(fit, cluster = rep(1:20, each = 12))
+#' sqrt(diag(V))
+#' @references
+#' Varin, C., Reid, N. and Firth, D. (2011). An overview of composite
+#' likelihood methods. \emph{Statistica Sinica}, 21(1), 5--42.
 #' @export
 gev_sandwich_vcov <- function(fit, cluster, Hinv = extRemes::parcov.fevd(fit)) {
   par <- fit$results$par
@@ -160,6 +203,10 @@ gev_sandwich_vcov <- function(fit, cluster, Hinv = extRemes::parcov.fevd(fit)) {
 #' Information criteria for an fevd fit
 #'
 #' @param fit An `fevd` object.
+#' @return One-row data frame with `loglik`, `n_par`, `AIC`, `BIC`.
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' gev_ic(fit_gev(toy, location = ~ season, scale = ~ 1))
 #' @export
 gev_ic <- function(fit) {
   nll <- fit$results$value
@@ -173,6 +220,9 @@ gev_ic <- function(fit) {
 #'
 #' @param fit An `fevd` object.
 #' @return Data frame with `mu`, `sigma`, `xi`, one row per observation.
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' head(gev_params(fit_gev(toy, location = ~ season, scale = ~ 1)))
 #' @export
 gev_params <- function(fit) {
   p <- extRemes::findpars(fit)
@@ -186,6 +236,10 @@ gev_params <- function(fit) {
 #'
 #' @param x Observations.
 #' @param mu,sigma,xi GEV parameters (recycled).
+#' @return Numeric vector on the standard Gumbel scale.
+#' @examples
+#' z <- gev_to_gumbel(c(10, 20, 40), mu = 18, sigma = 7, xi = 0.05)
+#' exp(-exp(-z))  # GEV probabilities
 #' @export
 gev_to_gumbel <- function(x, mu, sigma, xi) {
   n <- max(length(x), length(mu), length(sigma), length(xi))
@@ -200,6 +254,9 @@ gev_to_gumbel <- function(x, mu, sigma, xi) {
 #' Mean of a GEV distribution (xi < 1)
 #'
 #' @inheritParams gev_to_gumbel
+#' @return Numeric vector of GEV means.
+#' @examples
+#' gev_mean(mu = 18, sigma = 7, xi = c(0, 0.05, 0.2))
 #' @export
 gev_mean <- function(mu, sigma, xi) {
   n <- max(length(mu), length(sigma), length(xi))
@@ -228,6 +285,11 @@ gev_mean <- function(mu, sigma, xi) {
 #' @return A list with final `location`, `scale` terms, the `fit`, and a
 #'   `path` data frame recording each step (`parameter`, `term`, `LR`,
 #'   `df`, `p_value`, `removed`, `note`).
+#' @example inst/examples/gev_toy.R
+#' @examples
+#' sel <- gev_backward(toy, terms = c("period", "season"))
+#' sel$location
+#' sel$path
 #' @export
 gev_backward <- function(data,
                          terms = c("anomaly", "period", "season",

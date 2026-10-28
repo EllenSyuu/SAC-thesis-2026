@@ -20,3 +20,20 @@ A list with `theta`, `se`, `ci` (length 2), `n`, `m1`, `m2`.
 \description{
 Moment estimator of the Clayton-Archimax generator parameter
 }
+\examples{
+set.seed(1)
+U <- pseudo_obs(rclayton_archimax(300, theta = 0.4, rho = 2))
+est <- estimate_theta(U[, 1], U[, 2])
+est$theta
+est$ci
+}
+\references{
+Chatelain, S., Fougères, A.-L. and Nešlehová, J. G. (2020). Inference for
+Archimax copulas. \emph{The Annals of Statistics}, 48(2), 1025--1051.
+\doi{10.1214/19-AOS1836}
+
+Ben Ghorbal, N., Genest, C. and Nešlehová, J. (2009). On the Ghoudi,
+Khoudraji, and Rivest test for extreme-value dependence.
+\emph{The Canadian Journal of Statistics}, 37(4), 534--552.
+\doi{10.1002/cjs.10034}
+}

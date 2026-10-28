@@ -9,7 +9,13 @@ rank_columns(X)
 \arguments{
 \item{X}{Numeric matrix or data frame.}
 }
+\value{
+Numeric matrix with the dimensions of `X`; `NA` stays `NA`.
+}
 \description{
 Column-wise `rank / (n_j + 1)` where `n_j` counts the non-missing values
 of column j. Unlike [pseudo_obs()] this accepts `NA`.
+}
+\examples{
+rank_columns(cbind(c(1, NA, 3), c(2, 1, 3)))
 }

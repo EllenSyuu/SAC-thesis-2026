@@ -11,3 +11,6 @@ covarchimax_*.tar.gz
 results/quick/
 data/processed/quick/
 results/run_steps.csv
+doc/
+Meta/
+/vignettes/*.html

@@ -13,6 +13,25 @@ gev_sandwich_vcov(fit, cluster, Hinv = extRemes::parcov.fevd(fit))
 
 \item{Hinv}{Inverse observed information (defaults to `parcov.fevd`).}
 }
+\value{
+Square covariance matrix of the parameter estimates.
+}
 \description{
 Godambe sandwich covariance for an fevd fit
+}
+\examples{
+# Simulated monthly maxima with a seasonal location shift (240 months)
+set.seed(11)
+season <- factor(rep(c("AM", "JJ", "AS", "ON"), 60), levels = c("AM", "JJ", "AS", "ON"))
+period <- factor(rep(c("pre", "post"), each = 120), levels = c("pre", "post"))
+toy <- data.frame(season = season, period = period,
+                  max_precip = extRemes::revd(240, loc = 17 + c(0, 4, 6, 2)[season],
+                                              scale = 7, shape = 0.05))
+fit <- fit_gev(toy, location = ~ season, scale = ~ 1)
+V <- gev_sandwich_vcov(fit, cluster = rep(1:20, each = 12))
+sqrt(diag(V))
+}
+\references{
+Varin, C., Reid, N. and Firth, D. (2011). An overview of composite
+likelihood methods. \emph{Statistica Sinica}, 21(1), 5--42.
 }

@@ -17,3 +17,6 @@ Named vector `lower`, `upper`, `n_ok`.
 \description{
 Percentile bootstrap interval
 }
+\examples{
+boot_ci(stats::rnorm(1000))
+}
